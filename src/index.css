@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+@theme {
+  --font-sans: 'Playfair Display', 'Times New Roman', serif;
+  --font-serif: 'Playfair Display', 'Times New Roman', serif;
+  --font-number: 'Times New Roman', Times, serif;
+  --color-brand-teal: #2EA39C;
+  --color-brand-navy: #2C5F7C;
+  --color-brand-dark: #1A3A4A;
+  --color-brand-steel: #4A7D96;
+  --color-brand-light: #E8F4F0;
+  --color-brand-muted: #9AADBC;
+  --color-brand-from: #5BABC4;
+  --color-brand-to: #4A7D96;
+}
+
+@keyframes fade-in-down {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-down {
+  animation: fade-in-down 0.6s ease-out both;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out both;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
