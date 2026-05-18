@@ -224,7 +224,7 @@ export default function HeroSlider() {
         </svg>
       </button>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex items-center gap-3">
+      <div className="absolute bottom-10 left-6 sm:left-1/2 sm:-translate-x-1/2 z-30 flex items-center gap-2.5 sm:gap-3">
         {slides.map((s, i) => (
           <button
             key={s.id}
