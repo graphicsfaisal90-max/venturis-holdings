@@ -367,30 +367,52 @@ export default function About() {
             Meet the experienced leaders driving our vision forward.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member) => (
+            {team.map((member, i) => (
               <div
                 key={member.name}
-                className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl hover:shadow-brand-teal/15 hover:-translate-y-2 transition-all duration-500"
+                className="group bg-white rounded-3xl overflow-hidden shadow-lg shadow-gray-200/50 border border-gray-100 hover:shadow-2xl hover:shadow-brand-teal/20 hover:-translate-y-2 transition-all duration-700"
               >
-                <div className="relative h-72 overflow-hidden">
+                <div className="relative h-80 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-teal/20 via-transparent to-brand-navy/20 opacity-0 group-hover:opacity-100 transition-all duration-700 z-10 mix-blend-overlay" />
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
+                    className="w-full h-full object-cover transition-all duration-[1.5s] ease-out group-hover:scale-110 group-hover:saturate-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/60 via-brand-dark/10 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                    <div className="flex items-center gap-2 text-white/80 text-xs mb-2">
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                      </svg>
-                      <span className="uppercase tracking-[0.1em] font-medium">{member.role}</span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-brand-dark/60" />
+                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0 z-20">
+                    <div className="flex gap-2">
+                      <div className="w-9 h-9 rounded-full bg-white/15 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white/30 transition-all cursor-pointer">
+                        <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M22 2s-7.64-.37-10.66 4.34c-1.19 1.86-1.44 4.16-1.32 5.66-2.71.26-5.96-.71-8.02-2.66 0 0-3.31 5.65 4.33 9.66-1.73 1.06-5.33 1.5-5.33 1.5s3.13 4.49 10.66 4.49c9.5 0 14.34-8.31 14.34-16.98 0-.26-.02-.52-.05-.78C20.94 4.58 22 2 22 2z"/></svg>
+                      </div>
+                      <div className="w-9 h-9 rounded-full bg-white/15 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white/30 transition-all cursor-pointer">
+                        <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 4.75c1.24 0 2.25 1.01 2.25 2.25s-1.01 2.25-2.25 2.25S9.75 10.24 9.75 9 10.76 6.75 12 6.75zM17 17H7v-1.5c0-1.67 3.33-2.5 5-2.5s5 .83 5 2.5V17z"/></svg>
+                      </div>
                     </div>
-                    <h3 className="text-xl font-bold text-white">{member.name}</h3>
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
+                    <div className="flex items-center gap-2.5 mb-3">
+                      <span className="w-8 h-0.5 bg-gradient-to-r from-brand-teal to-white" />
+                      <span className="text-brand-teal text-xs font-semibold uppercase tracking-[0.15em]">{member.role}</span>
+                    </div>
+                    <h3 className="text-2xl font-bold text-white mb-1">{member.name}</h3>
+                    <div className="flex items-center gap-2 text-white/50 text-xs opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100">
+                      <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      <span>Dubai, UAE</span>
+                    </div>
                   </div>
                 </div>
-                <div className="p-6">
-                  <p className="text-sm text-gray-500 leading-relaxed">{member.bio}</p>
+                <div className="relative p-7">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="flex-1 h-px bg-gradient-to-r from-brand-teal/30 to-transparent" />
+                    <svg className="w-4 h-4 text-brand-teal/40" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z"/></svg>
+                    <div className="flex-1 h-px bg-gradient-to-l from-brand-teal/30 to-transparent" />
+                  </div>
+                  <p className="text-gray-500 text-sm leading-relaxed text-center">{member.bio}</p>
                 </div>
               </div>
             ))}
@@ -412,18 +434,48 @@ export default function About() {
           <h2 className="text-4xl sm:text-5xl font-bold text-center mt-4 mb-16">
             What Sets Us Apart
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {benefits.map((b) => (
-              <div key={b.title} className="text-center group">
-                <div className="w-16 h-16 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/15 flex items-center justify-center mx-auto mb-6 group-hover:bg-white/20 group-hover:scale-110 transition-all duration-500">
-                  <svg className="w-8 h-8 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
-                  </svg>
+          <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+            <div className="space-y-6">
+              <p className="text-3xl sm:text-4xl font-bold leading-tight">
+                Built Different.<br />
+                <span className="text-white/70">Built Better.</span>
+              </p>
+              <p className="text-white/60 text-lg leading-relaxed">
+                At Venturis Holdings, we don't just deliver services — we forge partnerships that drive lasting success. Our multi-division structure, experienced team, and unwavering commitment to quality make us the preferred choice for businesses across the UAE and beyond.
+              </p>
+              <div className="flex items-center gap-4 pt-4">
+                <div className="flex -space-x-3">
+                  {[1, 2, 3, 4].map((n) => (
+                    <div key={n} className="w-10 h-10 rounded-full border-2 border-white/20 bg-white/10 backdrop-blur-sm flex items-center justify-center text-white text-xs font-bold">
+                      {n}
+                    </div>
+                  ))}
                 </div>
-                <h3 className="text-xl font-bold mb-3">{b.title}</h3>
-                <p className="text-white/70 text-sm leading-relaxed">{b.desc}</p>
+                <div className="text-white/50 text-sm">
+                  <span className="text-white font-semibold">500+</span> Trusted Clients
+                </div>
               </div>
-            ))}
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              {benefits.map((b, i) => (
+                <div
+                  key={b.title}
+                  className="group relative bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-1"
+                >
+                  <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-white/5 to-transparent rounded-bl-2xl" />
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-white/80 group-hover:bg-gradient-to-br group-hover:from-brand-teal group-hover:to-brand-navy group-hover:text-white group-hover:shadow-lg group-hover:shadow-brand-teal/30 transition-all duration-500">
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-2xl font-bold text-white/10 font-number">{(i + 1).toString().padStart(2, '0')}</span>
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2">{b.title}</h3>
+                  <p className="text-white/60 text-sm leading-relaxed">{b.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
