@@ -478,8 +478,8 @@ export default function About() {
       </section>
 
       <section className="py-24 bg-gray-50 relative overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-brand-teal/3 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-brand-navy/3 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -top-40 -right-40 w-96 h-96 bg-brand-teal/3 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-brand-navy/3 rounded-full blur-3xl pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="flex items-center gap-4 justify-center mb-4">
             <span className="w-12 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
@@ -490,37 +490,53 @@ export default function About() {
           <p className="text-gray-500 max-w-2xl mx-auto text-lg text-center mb-16">
             Key milestones that have shaped our growth.
           </p>
-          <div className="relative">
-            <div className="absolute left-4 sm:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-brand-teal via-brand-navy to-brand-teal -translate-x-1/2 hidden sm:block" />
-            <div className="space-y-12">
+
+          <div className="hidden lg:block relative">
+            <div className="absolute left-0 right-0 top-[52px] h-0.5 bg-gradient-to-r from-brand-teal via-brand-navy to-brand-teal" />
+            <div className="grid grid-cols-5 gap-6">
               {journey.map((item, i) => (
-                <div key={item.year} className={`relative flex flex-col sm:flex-row items-start gap-6 sm:gap-0 ${i % 2 === 0 ? 'sm:flex-row' : 'sm:flex-row-reverse'}`}>
-                  <div className={`hidden sm:block w-1/2 ${i % 2 === 0 ? 'text-right pr-12' : 'text-left pl-12'}`}>
-                    <div className={`bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:shadow-brand-teal/10 transition-all duration-500 ${i % 2 === 0 ? 'text-right' : 'text-left'}`}>
-                      <span className="text-3xl font-bold text-brand-teal font-number">{item.year}</span>
-                      <h3 className="text-lg font-bold text-brand-dark mt-1">{item.title}</h3>
-                      <p className="text-gray-500 text-sm mt-2 leading-relaxed">{item.desc}</p>
-                    </div>
-                  </div>
-                  <div className="hidden sm:flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-br from-brand-teal to-brand-navy text-white text-xs font-bold shrink-0 relative z-10 -ml-4">
+                <div key={item.year} className="relative flex flex-col items-center">
+                  <div className="relative z-10 w-12 h-12 rounded-2xl bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center text-white text-lg font-bold font-number shadow-lg shadow-brand-teal/30 group-hover:scale-110 transition-transform duration-500">
                     {i + 1}
                   </div>
-                  <div className="sm:hidden w-full">
-                    <div className="flex items-start gap-4">
-                      <div className="flex flex-col items-center">
-                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-brand-teal to-brand-navy text-white text-xs font-bold flex items-center justify-center shrink-0">
-                          {i + 1}
-                        </div>
-                        <div className="w-0.5 flex-1 bg-gradient-to-b from-brand-teal to-brand-navy mt-2" />
-                      </div>
-                      <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex-1 hover:shadow-xl transition-all duration-500">
-                        <span className="text-2xl font-bold text-brand-teal font-number">{item.year}</span>
-                        <h3 className="text-lg font-bold text-brand-dark mt-1">{item.title}</h3>
-                        <p className="text-gray-500 text-sm mt-2 leading-relaxed">{item.desc}</p>
-                      </div>
+                  <div className="relative mt-8 bg-white rounded-2xl p-6 shadow-lg shadow-gray-200/50 border border-gray-100 hover:shadow-xl hover:shadow-brand-teal/15 hover:-translate-y-1 transition-all duration-500 group">
+                    <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[10px] border-r-[10px] border-b-[12px] border-l-transparent border-r-transparent border-b-white" />
+                    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-teal to-brand-navy rounded-t-2xl" />
+                    <span className="text-2xl font-bold text-brand-teal font-number">{item.year}</span>
+                    <h3 className="text-lg font-bold text-brand-dark mt-2 mb-2">{item.title}</h3>
+                    <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                    <div className="flex items-center gap-2 mt-4 text-brand-teal/60 text-xs font-semibold group/link">
+                      <span>Milestone</span>
+                      <svg className="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
                     </div>
                   </div>
-                  <div className={`hidden sm:block w-1/2 ${i % 2 === 0 ? 'text-left pl-12' : 'text-right pr-12'}`} />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="lg:hidden relative">
+            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-brand-teal via-brand-navy to-brand-teal" />
+            <div className="space-y-10">
+              {journey.map((item, i) => (
+                <div key={item.year} className="relative flex items-start gap-6 pl-0">
+                  <div className="relative z-10 flex-shrink-0 w-12 h-12 rounded-2xl bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center text-white text-lg font-bold font-number shadow-lg shadow-brand-teal/30">
+                    {i + 1}
+                  </div>
+                  <div className="flex-1 bg-white rounded-2xl p-6 shadow-lg shadow-gray-200/50 border border-gray-100 hover:shadow-xl hover:shadow-brand-teal/15 hover:-translate-y-1 transition-all duration-500 group">
+                    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-teal to-brand-navy rounded-t-2xl" />
+                    <span className="text-2xl font-bold text-brand-teal font-number">{item.year}</span>
+                    <h3 className="text-lg font-bold text-brand-dark mt-2 mb-2">{item.title}</h3>
+                    <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                    <div className="flex items-center gap-2 mt-4 text-brand-teal/60 text-xs font-semibold">
+                      <span>Milestone</span>
+                      <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
