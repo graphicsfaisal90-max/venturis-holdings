@@ -131,14 +131,14 @@ export default function About() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-36">
           <div className="animate-fade-in-down">
             <div className="flex items-center gap-4 mb-6">
-              <span className="w-12 h-0.5 bg-white/60" />
-              <span className="text-sm font-semibold text-white/80 uppercase tracking-[0.2em]">Who We Are</span>
+              <span className="w-12 h-0.5 bg-white" />
+              <span className="text-sm font-semibold text-white uppercase tracking-[0.2em]">Who We Are</span>
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
               Shaping Industries,<br />
-              <span className="text-white/80">Building Trust</span>
+              <span className="text-white">Building Trust</span>
             </h1>
-            <p className="text-xl sm:text-2xl text-white/70 max-w-3xl leading-relaxed mb-10">
+            <p className="text-xl sm:text-2xl text-white max-w-3xl leading-relaxed mb-10">
               Venturis Holdings is a diversified group of companies committed to delivering exceptional value across transport, heavy equipment, logistics, construction support, and industrial solutions.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -166,7 +166,7 @@ export default function About() {
               {stats.map((s) => (
                 <div key={s.label} className="text-center">
                   <div className="text-3xl sm:text-4xl font-bold text-white font-number">{s.value}</div>
-                  <div className="text-xs text-white/60 uppercase tracking-[0.15em] mt-1">{s.label}</div>
+                  <div className="text-xs text-white/80 uppercase tracking-[0.15em] mt-1">{s.label}</div>
                 </div>
               ))}
             </div>
@@ -306,16 +306,39 @@ export default function About() {
           <p className="text-gray-500 max-w-2xl mx-auto text-lg text-center mb-16">
             The principles that guide everything we do.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-            {values.map((v, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            {values.slice(0, 2).map((v, i) => (
               <div
                 key={v.title}
                 className="group relative bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-brand-teal/20 hover:-translate-y-2 transition-all duration-500 overflow-hidden flex flex-col"
               >
                 <div className="absolute inset-0 bg-gradient-to-b from-brand-teal/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-                <div className="relative p-8 sm:p-9 flex flex-col items-center text-center flex-1">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 text-brand-teal text-lg font-bold font-number mb-5 group-hover:from-brand-teal group-hover:to-brand-navy group-hover:text-white group-hover:shadow-lg group-hover:shadow-brand-teal/30 transition-all duration-500">
+                <div className="relative p-10 sm:p-12 flex flex-col items-center text-center flex-1">
+                  <div className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 text-brand-teal text-xl font-bold font-number mb-6 group-hover:from-brand-teal group-hover:to-brand-navy group-hover:text-white group-hover:shadow-lg group-hover:shadow-brand-teal/30 transition-all duration-500">
                     {(i + 1).toString().padStart(2, '0')}
+                  </div>
+                  <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center mb-6 text-brand-teal group-hover:from-brand-teal group-hover:to-brand-navy group-hover:text-white group-hover:shadow-xl group-hover:shadow-brand-teal/30 transition-all duration-500">
+                    {v.icon}
+                  </div>
+                  <h3 className="text-2xl font-bold text-brand-dark mb-4 group-hover:text-brand-teal transition-colors duration-300">{v.title}</h3>
+                  <p className="text-gray-500 text-lg leading-relaxed flex-1">{v.desc}</p>
+                </div>
+                <div className="relative h-2 bg-gray-50 group-hover:bg-gradient-to-r group-hover:from-brand-teal group-hover:to-brand-navy transition-all duration-700">
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent" />
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {values.slice(2, 5).map((v, i) => (
+              <div
+                key={v.title}
+                className="group relative bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-brand-teal/20 hover:-translate-y-2 transition-all duration-500 overflow-hidden flex flex-col"
+              >
+                <div className="absolute inset-0 bg-gradient-to-b from-brand-teal/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                <div className="relative p-7 sm:p-8 flex flex-col items-center text-center flex-1">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 text-brand-teal text-lg font-bold font-number mb-5 group-hover:from-brand-teal group-hover:to-brand-navy group-hover:text-white group-hover:shadow-lg group-hover:shadow-brand-teal/30 transition-all duration-500">
+                    {(i + 3).toString().padStart(2, '0')}
                   </div>
                   <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center mb-5 text-brand-teal group-hover:from-brand-teal group-hover:to-brand-navy group-hover:text-white group-hover:shadow-xl group-hover:shadow-brand-teal/30 transition-all duration-500">
                     {v.icon}
