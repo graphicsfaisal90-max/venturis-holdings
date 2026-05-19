@@ -134,7 +134,7 @@ export default function About() {
               <span className="w-12 h-0.5 bg-white" />
               <span className="text-sm font-semibold text-white uppercase tracking-[0.2em]">Who We Are</span>
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-white">
               Shaping Industries,<br />
               <span className="text-white">Building Trust</span>
             </h1>
@@ -307,48 +307,46 @@ export default function About() {
             The principles that guide everything we do.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-            {values.slice(0, 2).map((v, i) => (
+            {values.slice(0, 2).map((v) => (
               <div
                 key={v.title}
-                className="group relative bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-brand-teal/20 hover:-translate-y-2 transition-all duration-500 overflow-hidden flex flex-col"
+                className="group relative bg-white rounded-3xl border border-gray-100 shadow-lg shadow-gray-200/50 hover:shadow-2xl hover:shadow-brand-teal/20 hover:-translate-y-2 transition-all duration-700 overflow-hidden flex flex-col"
               >
-                <div className="absolute inset-0 bg-gradient-to-b from-brand-teal/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-b from-brand-teal/[0.02] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-teal to-brand-navy" />
                 <div className="relative p-10 sm:p-12 flex flex-col items-center text-center flex-1">
-                  <div className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 text-brand-teal text-xl font-bold font-number mb-6 group-hover:from-brand-teal group-hover:to-brand-navy group-hover:text-white group-hover:shadow-lg group-hover:shadow-brand-teal/30 transition-all duration-500">
-                    {(i + 1).toString().padStart(2, '0')}
+                  <div className="relative mb-7">
+                    <div className="absolute inset-0 w-28 h-28 rounded-2xl bg-gradient-to-br from-brand-teal/20 to-brand-navy/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                    <div className="relative w-28 h-28 rounded-2xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center text-brand-teal border border-brand-teal/10 group-hover:from-brand-teal group-hover:to-brand-navy group-hover:text-white group-hover:border-transparent group-hover:shadow-2xl group-hover:shadow-brand-teal/30 transition-all duration-700">
+                      {v.icon}
+                    </div>
                   </div>
-                  <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center mb-6 text-brand-teal group-hover:from-brand-teal group-hover:to-brand-navy group-hover:text-white group-hover:shadow-xl group-hover:shadow-brand-teal/30 transition-all duration-500">
-                    {v.icon}
-                  </div>
-                  <h3 className="text-2xl font-bold text-brand-dark mb-4 group-hover:text-brand-teal transition-colors duration-300">{v.title}</h3>
+                  <h3 className="text-2xl font-bold text-brand-dark mb-4 tracking-tight">{v.title}</h3>
                   <p className="text-gray-500 text-lg leading-relaxed flex-1">{v.desc}</p>
                 </div>
-                <div className="relative h-2 bg-gray-50 group-hover:bg-gradient-to-r group-hover:from-brand-teal group-hover:to-brand-navy transition-all duration-700">
-                  <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent" />
-                </div>
+                <div className="relative mx-8 mb-8 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent group-hover:via-brand-teal/40 transition-all duration-700" />
               </div>
             ))}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {values.slice(2, 5).map((v, i) => (
+            {values.slice(2, 5).map((v) => (
               <div
                 key={v.title}
-                className="group relative bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-brand-teal/20 hover:-translate-y-2 transition-all duration-500 overflow-hidden flex flex-col"
+                className="group relative bg-white rounded-3xl border border-gray-100 shadow-lg shadow-gray-200/50 hover:shadow-2xl hover:shadow-brand-teal/20 hover:-translate-y-2 transition-all duration-700 overflow-hidden flex flex-col"
               >
-                <div className="absolute inset-0 bg-gradient-to-b from-brand-teal/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-b from-brand-teal/[0.02] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-teal to-brand-navy" />
                 <div className="relative p-7 sm:p-8 flex flex-col items-center text-center flex-1">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 text-brand-teal text-lg font-bold font-number mb-5 group-hover:from-brand-teal group-hover:to-brand-navy group-hover:text-white group-hover:shadow-lg group-hover:shadow-brand-teal/30 transition-all duration-500">
-                    {(i + 3).toString().padStart(2, '0')}
+                  <div className="relative mb-6">
+                    <div className="absolute inset-0 w-24 h-24 rounded-2xl bg-gradient-to-br from-brand-teal/20 to-brand-navy/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                    <div className="relative w-24 h-24 rounded-2xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center text-brand-teal border border-brand-teal/10 group-hover:from-brand-teal group-hover:to-brand-navy group-hover:text-white group-hover:border-transparent group-hover:shadow-2xl group-hover:shadow-brand-teal/30 transition-all duration-700">
+                      {v.icon}
+                    </div>
                   </div>
-                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center mb-5 text-brand-teal group-hover:from-brand-teal group-hover:to-brand-navy group-hover:text-white group-hover:shadow-xl group-hover:shadow-brand-teal/30 transition-all duration-500">
-                    {v.icon}
-                  </div>
-                  <h3 className="text-xl font-bold text-brand-dark mb-3 group-hover:text-brand-teal transition-colors duration-300">{v.title}</h3>
+                  <h3 className="text-xl font-bold text-brand-dark mb-3 tracking-tight">{v.title}</h3>
                   <p className="text-gray-500 leading-relaxed flex-1">{v.desc}</p>
                 </div>
-                <div className="relative h-1.5 bg-gray-50 group-hover:bg-gradient-to-r group-hover:from-brand-teal group-hover:to-brand-navy transition-all duration-700">
-                  <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent" />
-                </div>
+                <div className="relative mx-7 mb-7 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent group-hover:via-brand-teal/40 transition-all duration-700" />
               </div>
             ))}
           </div>
