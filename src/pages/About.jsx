@@ -218,49 +218,64 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-gray-50 relative overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-96 h-96 bg-brand-teal/3 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-brand-navy/3 rounded-full blur-3xl pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="flex items-center gap-4 justify-center mb-4">
             <span className="w-12 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
             <span className="text-sm font-semibold text-brand-teal uppercase tracking-[0.2em]">Our Purpose</span>
             <span className="w-12 h-0.5 bg-gradient-to-r from-brand-navy to-brand-teal" />
           </div>
-          <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark text-center mt-4 mb-16">
-            Mission & Vision
+          <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark text-center mt-4 mb-4">
+            Vision & Mission
           </h2>
+          <p className="text-gray-500 max-w-2xl mx-auto text-lg text-center mb-16">
+            Clear direction and purpose driving everything we do.
+          </p>
           <div className="grid md:grid-cols-2 gap-10">
-            <div className="bg-white rounded-2xl p-10 shadow-sm border border-gray-100 relative group hover:shadow-xl hover:shadow-brand-teal/10 transition-all duration-500">
-              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-brand-teal to-brand-navy rounded-t-2xl" />
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-teal/15 to-brand-navy/15 flex items-center justify-center mb-6 group-hover:from-brand-teal group-hover:to-brand-navy group-hover:text-white transition-all duration-500">
-                <svg className="w-8 h-8 text-brand-teal group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+            <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 group hover:shadow-2xl hover:shadow-brand-teal/15 hover:-translate-y-1 transition-all duration-500">
+              <div className="relative p-10 pb-20">
+                <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-brand-navy/[0.03] to-transparent rounded-bl-full" />
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-navy to-brand-teal flex items-center justify-center mb-6 shadow-lg shadow-brand-teal/20">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-brand-dark mb-4">Vision Statement</h3>
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  To become a globally recognized and innovation-driven company originating from the UAE, delivering excellence across transport, heavy equipment, logistics, construction support, and industrial solutions while creating long-term value for clients and partners worldwide.
+                </p>
               </div>
-              <h3 className="text-2xl font-bold text-brand-dark mb-4">Our Mission</h3>
-              <p className="text-gray-600 leading-relaxed text-lg">
-                To drive sustainable growth and create lasting value for our stakeholders by delivering exceptional services across our diversified portfolio of companies.
-              </p>
+              <div className="bg-gradient-to-r from-brand-navy to-brand-teal px-10 py-4">
+                <p className="text-white/80 text-sm font-medium">Our North Star</p>
+              </div>
             </div>
-            <div className="bg-white rounded-2xl p-10 shadow-sm border border-gray-100 relative group hover:shadow-xl hover:shadow-brand-teal/10 transition-all duration-500">
-              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-brand-navy to-brand-teal rounded-t-2xl" />
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-navy/15 to-brand-teal/15 flex items-center justify-center mb-6 group-hover:from-brand-navy group-hover:to-brand-teal group-hover:text-white transition-all duration-500">
-                <svg className="w-8 h-8 text-brand-navy group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                </svg>
+            <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 group hover:shadow-2xl hover:shadow-brand-teal/15 hover:-translate-y-1 transition-all duration-500">
+              <div className="relative p-10 pb-20">
+                <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-brand-teal/[0.03] to-transparent rounded-bl-full" />
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center mb-6 shadow-lg shadow-brand-teal/20">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-brand-dark mb-4">Mission Statement</h3>
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  Our mission is to provide reliable, efficient, and high-quality transport and heavy equipment services through advanced technology, skilled expertise, and customer-focused solutions. We aim to build strong partnerships, maintain operational excellence, ensure safety standards, and contribute to sustainable growth across the UAE and international markets.
+                </p>
               </div>
-              <h3 className="text-2xl font-bold text-brand-dark mb-4">Our Vision</h3>
-              <p className="text-gray-600 leading-relaxed text-lg">
-                To be the most trusted and respected diversified holding company, setting benchmarks for quality and innovation across every industry we serve.
-              </p>
+              <div className="bg-gradient-to-r from-brand-teal to-brand-navy px-10 py-4">
+                <p className="text-white/80 text-sm font-medium">Our Purpose in Action</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section className="py-24 bg-white relative overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-brand-teal/3 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-brand-navy/3 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -top-40 -right-40 w-96 h-96 bg-brand-teal/3 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-brand-navy/3 rounded-full blur-3xl pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="flex items-center gap-4 justify-center mb-4">
             <span className="w-12 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
@@ -271,20 +286,27 @@ export default function About() {
           <p className="text-gray-500 max-w-2xl mx-auto text-lg text-center mb-16">
             The principles that guide everything we do.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
-            {values.map((v) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            {values.map((v, i) => (
               <div
                 key={v.title}
-                className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-xl hover:shadow-brand-teal/10 hover:-translate-y-2 transition-all duration-500 relative"
+                className="group relative bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-brand-teal/15 hover:-translate-y-2 transition-all duration-500 overflow-hidden"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-teal/0 to-brand-navy/0 rounded-2xl group-hover:from-brand-teal/[0.02] group-hover:to-brand-navy/[0.02] transition-all duration-500 pointer-events-none" />
-                <div className="relative">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center mb-5 group-hover:from-brand-teal group-hover:to-brand-navy group-hover:text-white transition-all duration-500 text-brand-teal">
+                <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-teal to-brand-navy origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-700" />
+                <div className="p-8">
+                  <div className="flex items-center gap-3 mb-6">
+                    <span className="text-3xl font-bold text-gray-200 font-number group-hover:text-brand-teal/20 transition-colors duration-500">
+                      {(i + 1).toString().padStart(2, '0')}
+                    </span>
+                    <div className="flex-1 h-px bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-brand-teal/30 group-hover:to-transparent transition-all duration-500" />
+                  </div>
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center mb-5 text-brand-teal group-hover:from-brand-teal group-hover:to-brand-navy group-hover:text-white group-hover:shadow-lg group-hover:shadow-brand-teal/30 transition-all duration-500">
                     {v.icon}
                   </div>
                   <h3 className="text-xl font-bold text-brand-dark mb-3 group-hover:text-brand-teal transition-colors duration-300">{v.title}</h3>
                   <p className="text-gray-500 text-sm leading-relaxed">{v.desc}</p>
                 </div>
+                <div className="absolute -bottom-2 -right-2 w-20 h-20 bg-gradient-to-br from-brand-teal/5 to-brand-navy/5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             ))}
           </div>
