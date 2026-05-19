@@ -13,7 +13,7 @@ const values = [
     title: 'Innovation',
     desc: 'We embrace creativity and modern solutions to drive continuous growth and industry leadership.',
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
       </svg>
     ),
@@ -22,7 +22,7 @@ const values = [
     title: 'Integrity',
     desc: 'We conduct business with honesty, transparency, and strong ethical standards in every partnership.',
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
       </svg>
     ),
@@ -31,7 +31,7 @@ const values = [
     title: 'Customer Centricity',
     desc: 'Our customers are at the heart of everything we do, and we strive to exceed their expectations.',
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
       </svg>
     ),
@@ -40,7 +40,7 @@ const values = [
     title: 'Agility',
     desc: 'We adapt quickly to changing market demands while maintaining efficiency and excellence.',
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
       </svg>
     ),
@@ -49,7 +49,7 @@ const values = [
     title: 'Global Mindset',
     desc: 'We think beyond borders, building international connections and delivering worldwide impact.',
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
@@ -113,8 +113,18 @@ const benefits = [
 export default function About() {
   return (
     <>
-      <section className="relative bg-gradient-to-br from-brand-from via-brand-navy to-brand-to text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-navy to-brand-from/90" />
+        <div className="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=85"
+            alt="Modern city skyline"
+            className="w-full h-full object-cover transition-all duration-[2s] ease-out scale-105 hover:scale-110 saturate-[0.7]"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/90 via-brand-navy/80 to-brand-from/70" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+        <div className="absolute inset-0 opacity-20">
           <div className="absolute top-20 left-20 w-96 h-96 bg-white rounded-full blur-3xl" />
           <div className="absolute bottom-20 right-20 w-[30rem] h-[30rem] bg-brand-teal rounded-full blur-3xl" />
         </div>
@@ -129,7 +139,7 @@ export default function About() {
               <span className="text-white/80">Building Trust</span>
             </h1>
             <p className="text-xl sm:text-2xl text-white/70 max-w-3xl leading-relaxed mb-10">
-              Venturis Holdings is a diversified group of companies committed to delivering exceptional value across interior solutions, facilities management, real estate, and strategic investments.
+              Venturis Holdings is a diversified group of companies committed to delivering exceptional value across transport, heavy equipment, logistics, construction support, and industrial solutions.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -150,7 +160,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="relative z-10 bg-white/5 backdrop-blur-sm border-t border-white/10">
+        <div className="relative z-10 bg-black/20 backdrop-blur-sm border-t border-white/10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-6 sm:gap-8">
               {stats.map((s) => (
@@ -234,39 +244,49 @@ export default function About() {
             Clear direction and purpose driving everything we do.
           </p>
           <div className="grid md:grid-cols-2 gap-10">
-            <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 group hover:shadow-2xl hover:shadow-brand-teal/15 hover:-translate-y-1 transition-all duration-500">
-              <div className="relative p-10 pb-20">
-                <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-brand-navy/[0.03] to-transparent rounded-bl-full" />
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-navy to-brand-teal flex items-center justify-center mb-6 shadow-lg shadow-brand-teal/20">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                  </svg>
+            <div className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 group hover:shadow-2xl hover:shadow-brand-teal/15 hover:-translate-y-1.5 transition-all duration-500">
+              <div className="flex-1 relative p-10 sm:p-12">
+                <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-brand-navy/[0.03] to-transparent rounded-bl-full" />
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="w-18 h-18 rounded-2xl bg-gradient-to-br from-brand-navy to-brand-teal flex items-center justify-center shadow-lg shadow-brand-teal/20 shrink-0">
+                    <svg className="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark">Vision Statement</h3>
+                    <p className="text-brand-teal text-sm font-semibold uppercase tracking-[0.15em] mt-1">Our North Star</p>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold text-brand-dark mb-4">Vision Statement</h3>
                 <p className="text-gray-600 leading-relaxed text-lg">
                   To become a globally recognized and innovation-driven company originating from the UAE, delivering excellence across transport, heavy equipment, logistics, construction support, and industrial solutions while creating long-term value for clients and partners worldwide.
                 </p>
               </div>
-              <div className="bg-gradient-to-r from-brand-navy to-brand-teal px-10 py-4">
-                <p className="text-white/80 text-sm font-medium">Our North Star</p>
+              <div className="relative h-2 bg-gradient-to-r from-brand-navy to-brand-teal">
+                <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent" />
               </div>
             </div>
-            <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 group hover:shadow-2xl hover:shadow-brand-teal/15 hover:-translate-y-1 transition-all duration-500">
-              <div className="relative p-10 pb-20">
-                <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-brand-teal/[0.03] to-transparent rounded-bl-full" />
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center mb-6 shadow-lg shadow-brand-teal/20">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
+            <div className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 group hover:shadow-2xl hover:shadow-brand-teal/15 hover:-translate-y-1.5 transition-all duration-500">
+              <div className="flex-1 relative p-10 sm:p-12">
+                <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-brand-teal/[0.03] to-transparent rounded-bl-full" />
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="w-18 h-18 rounded-2xl bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center shadow-lg shadow-brand-teal/20 shrink-0">
+                    <svg className="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark">Mission Statement</h3>
+                    <p className="text-brand-teal text-sm font-semibold uppercase tracking-[0.15em] mt-1">Our Purpose in Action</p>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold text-brand-dark mb-4">Mission Statement</h3>
                 <p className="text-gray-600 leading-relaxed text-lg">
                   Our mission is to provide reliable, efficient, and high-quality transport and heavy equipment services through advanced technology, skilled expertise, and customer-focused solutions. We aim to build strong partnerships, maintain operational excellence, ensure safety standards, and contribute to sustainable growth across the UAE and international markets.
                 </p>
               </div>
-              <div className="bg-gradient-to-r from-brand-teal to-brand-navy px-10 py-4">
-                <p className="text-white/80 text-sm font-medium">Our Purpose in Action</p>
+              <div className="relative h-2 bg-gradient-to-r from-brand-teal to-brand-navy">
+                <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent" />
               </div>
             </div>
           </div>
@@ -290,23 +310,22 @@ export default function About() {
             {values.map((v, i) => (
               <div
                 key={v.title}
-                className="group relative bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-brand-teal/15 hover:-translate-y-2 transition-all duration-500 overflow-hidden"
+                className="group relative bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-brand-teal/20 hover:-translate-y-2 transition-all duration-500 overflow-hidden flex flex-col"
               >
-                <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-teal to-brand-navy origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-700" />
-                <div className="p-8">
-                  <div className="flex items-center gap-3 mb-6">
-                    <span className="text-3xl font-bold text-gray-200 font-number group-hover:text-brand-teal/20 transition-colors duration-500">
-                      {(i + 1).toString().padStart(2, '0')}
-                    </span>
-                    <div className="flex-1 h-px bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-brand-teal/30 group-hover:to-transparent transition-all duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-b from-brand-teal/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                <div className="relative p-8 sm:p-9 flex flex-col items-center text-center flex-1">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 text-brand-teal text-lg font-bold font-number mb-5 group-hover:from-brand-teal group-hover:to-brand-navy group-hover:text-white group-hover:shadow-lg group-hover:shadow-brand-teal/30 transition-all duration-500">
+                    {(i + 1).toString().padStart(2, '0')}
                   </div>
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center mb-5 text-brand-teal group-hover:from-brand-teal group-hover:to-brand-navy group-hover:text-white group-hover:shadow-lg group-hover:shadow-brand-teal/30 transition-all duration-500">
+                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center mb-5 text-brand-teal group-hover:from-brand-teal group-hover:to-brand-navy group-hover:text-white group-hover:shadow-xl group-hover:shadow-brand-teal/30 transition-all duration-500">
                     {v.icon}
                   </div>
                   <h3 className="text-xl font-bold text-brand-dark mb-3 group-hover:text-brand-teal transition-colors duration-300">{v.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{v.desc}</p>
+                  <p className="text-gray-500 leading-relaxed flex-1">{v.desc}</p>
                 </div>
-                <div className="absolute -bottom-2 -right-2 w-20 h-20 bg-gradient-to-br from-brand-teal/5 to-brand-navy/5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="relative h-1.5 bg-gray-50 group-hover:bg-gradient-to-r group-hover:from-brand-teal group-hover:to-brand-navy transition-all duration-700">
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent" />
+                </div>
               </div>
             ))}
           </div>
