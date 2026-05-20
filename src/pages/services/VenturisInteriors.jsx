@@ -417,17 +417,17 @@ export default function VenturisInteriors() {
             {services.map((s, i) => (
               <div
                 key={s.title}
-                className="group relative bg-white rounded-2xl overflow-hidden shadow-md shadow-gray-200/50 border border-gray-100 hover:shadow-xl hover:shadow-brand-teal/15 transition-all duration-500"
+                className="group relative bg-white rounded-2xl overflow-hidden shadow-md shadow-gray-200/50 border border-gray-100 hover:shadow-xl hover:shadow-brand-teal/15 active:shadow-xl active:shadow-brand-teal/15 transition-all duration-500"
               >
                 <div className="relative h-56 sm:h-64 overflow-hidden rounded-t-2xl">
                   <img
                     src={s.image}
                     alt={s.title}
-                    className="w-full h-full object-[center_25%] object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:rotate-[2deg]"
+                    className="w-full h-full object-[center_25%] object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:rotate-[2deg] active:scale-110 active:rotate-[2deg]"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/60 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-br from-brand-teal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-3 group-hover:translate-y-0 transition-transform duration-500">
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/60 to-transparent opacity-60 group-hover:opacity-90 active:opacity-90 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-teal/20 to-transparent opacity-0 group-hover:opacity-100 active:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-3 group-hover:translate-y-0 active:translate-y-0 transition-transform duration-500">
                     <h3 className="text-lg font-bold text-white">{s.title}</h3>
                   </div>
                 </div>
