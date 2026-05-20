@@ -383,35 +383,53 @@ export default function About() {
           </p>
           <div className="space-y-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {teamRow1.map((member) => (
+              {teamRow1.map((member, idx) => (
                 <div
                   key={member.name}
-                  className="group relative h-[420px] sm:h-[480px] rounded-3xl overflow-hidden shadow-xl shadow-gray-200/50 border border-gray-100 hover:shadow-2xl hover:shadow-brand-teal/20 active:shadow-2xl active:shadow-brand-teal/20 transition-all duration-700"
+                  className="group relative bg-white rounded-3xl overflow-hidden shadow-lg shadow-gray-200/50 border border-gray-200 hover:shadow-2xl hover:shadow-brand-teal/15 hover:-translate-y-1 active:shadow-2xl active:shadow-brand-teal/15 active:-translate-y-0.5 transition-all duration-700"
                 >
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-brand-dark/30 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-8 sm:p-10">
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="w-8 h-0.5 bg-brand-teal" />
+                  <div className="relative h-72 sm:h-80 overflow-hidden">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                    <div className="absolute top-5 right-5">
+                      <div className="w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm flex items-center justify-center text-brand-teal shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0">
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                      </div>
+                    </div>
+                    <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
+                  </div>
+                  <div className="relative px-7 pb-7 -mt-2">
+                    <div className="flex items-center gap-3 mb-1">
+                      <span className="w-6 h-px bg-gradient-to-r from-brand-teal to-brand-navy" />
                       <span className="text-brand-teal text-xs font-semibold uppercase tracking-[0.15em]">{member.role}</span>
                     </div>
-                    <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3">{member.name}</h3>
-                    <p className="text-white/70 text-sm sm:text-base leading-relaxed max-w-lg line-clamp-2 group-hover:line-clamp-none transition-all duration-700">
-                      {member.bio}
-                    </p>
-                    <div className="flex items-center gap-3 mt-5 pt-5 border-t border-white/10">
-                      <div className="w-9 h-9 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center text-white/70 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-lg hover:shadow-brand-teal/30 transition-all duration-500 cursor-pointer group/icon">
+                    <h3 className="text-2xl font-bold text-brand-dark mb-3">
+                      {member.name.split(' ')[0]}
+                      <br />
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy">
+                        {member.name.split(' ').slice(1).join(' ')}
+                      </span>
+                    </h3>
+                    <p className="text-gray-500 text-sm leading-relaxed mb-5">{member.bio}</p>
+                    <div className="flex items-center gap-3 pt-5 border-t border-gray-100">
+                      <div className="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-lg hover:shadow-brand-teal/20 transition-all duration-500 cursor-pointer group/icon">
                         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22 2s-7.64-.37-10.66 4.34c-1.19 1.86-1.44 4.16-1.32 5.66-2.71.26-5.96-.71-8.02-2.66 0 0-3.31 5.65 4.33 9.66-1.73 1.06-5.33 1.5-5.33 1.5s3.13 4.49 10.66 4.49c9.5 0 14.34-8.31 14.34-16.98 0-.26-.02-.52-.05-.78C20.94 4.58 22 2 22 2z"/></svg>
                       </div>
-                      <div className="w-9 h-9 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center text-white/70 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-lg hover:shadow-brand-teal/30 transition-all duration-500 cursor-pointer group/icon">
+                      <div className="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-lg hover:shadow-brand-teal/20 transition-all duration-500 cursor-pointer group/icon">
                         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 4.75c1.24 0 2.25 1.01 2.25 2.25s-1.01 2.25-2.25 2.25S9.75 10.24 9.75 9 10.76 6.75 12 6.75zM17 17H7v-1.5c0-1.67 3.33-2.5 5-2.5s5 .83 5 2.5V17z"/></svg>
                       </div>
-                      <div className="w-9 h-9 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center text-white/70 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-lg hover:shadow-brand-teal/30 transition-all duration-500 cursor-pointer group/icon">
+                      <div className="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-lg hover:shadow-brand-teal/20 transition-all duration-500 cursor-pointer group/icon">
                         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                      </div>
+                      <div className="ml-auto">
+                        <span className="text-xs text-gray-300 font-medium flex items-center gap-1">
+                          Connect
+                          <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                        </span>
                       </div>
                     </div>
                   </div>
