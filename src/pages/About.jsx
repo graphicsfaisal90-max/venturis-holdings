@@ -58,13 +58,13 @@ const values = [
 
 const teamRow1 = [
   {
-    name: 'Mairaaj Uddin',
+    name: 'Mairaj Uddin',
     role: 'CEO & Founder',
     bio: '20+ years of experience in Real Estate, Operations, Logistics, HR, and IT, with proven expertise in strategic leadership, business growth, and operational excellence across Pakistan and the UAE.',
     image: '/mairaaj-uddin.jpeg',
   },
   {
-    name: 'Robin J. Wood',
+    name: 'Robin J. Wood (USA and UAE)',
     role: 'Co-Founder',
     bio: 'Visionary Co-Founder from Oklahoma with extensive experience across multiple industries, bringing a strong track record in entrepreneurship, business strategy, operations, and market development.',
     image: '/robin-j-wood.jpeg',
