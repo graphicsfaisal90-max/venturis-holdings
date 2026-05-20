@@ -417,24 +417,22 @@ export default function VenturisInteriors() {
             {services.map((s, i) => (
               <div
                 key={s.title}
-                className="group bg-white rounded-2xl overflow-hidden shadow-md shadow-gray-200/50 border border-gray-100 hover:shadow-xl hover:shadow-brand-teal/10 hover:-translate-y-1.5 transition-all duration-500"
+                className="group relative bg-white rounded-2xl overflow-hidden shadow-md shadow-gray-200/50 border border-gray-100 hover:shadow-xl hover:shadow-brand-teal/15 transition-all duration-500"
               >
                 <div className="relative h-56 sm:h-64 overflow-hidden">
                   <img
                     src={s.image}
                     alt={s.title}
-                    className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-105"
+                    className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:rotate-[2deg]"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/40 via-brand-dark/10 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <div className="flex items-center gap-3">
-                      <span className="w-6 h-0.5 bg-brand-teal" />
-                      <h3 className="text-lg font-bold text-white">{s.title}</h3>
-                    </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                    <h3 className="text-lg font-bold text-white">{s.title}</h3>
                   </div>
                 </div>
-                <div className="p-6">
-                  <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
+                <div className="p-6 relative">
+                  <div className="absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-brand-teal/40 via-transparent to-brand-navy/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <p className="text-gray-500 text-sm leading-relaxed pt-2">{s.desc}</p>
                 </div>
               </div>
             ))}
