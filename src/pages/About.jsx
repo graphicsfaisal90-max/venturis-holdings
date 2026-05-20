@@ -82,7 +82,7 @@ const teamRow2 = [
     name: 'Muhammad Faisal',
     role: 'Information Technology',
     bio: 'Experienced IT professional with expertise in technology solutions, digital innovation, and business support services, focused on delivering efficient, reliable, and modern IT solutions for business growth.',
-    image: '/mf.jpeg',
+    image: '/mfaisal.jpeg',
   },
   {
     name: 'Ella Jean Bihasa',
