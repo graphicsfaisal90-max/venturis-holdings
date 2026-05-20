@@ -15,7 +15,7 @@ const services = [
   {
     title: 'Space Planning',
     desc: 'Strategic space optimization for maximum functionality, flow, and efficiency in every environment we design.',
-    image: 'https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&q=80',
+    image: '/space-planning.jpg',
   },
   {
     title: 'Commercial Fit-Outs',
