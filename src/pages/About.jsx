@@ -61,7 +61,7 @@ const teamRow1 = [
     name: 'Mairaaj Uddin',
     role: 'CEO & Founder',
     bio: '20+ years of experience in Real Estate, Operations, Logistics, HR, and IT, with proven expertise in strategic leadership, business growth, and operational excellence across Pakistan and the UAE.',
-    image: '/Mairaaj-Uddin.jpeg',
+    image: '/mairaaj-uddin.jpeg',
   },
   {
     name: 'Fatima Mbatha',
@@ -414,16 +414,6 @@ export default function About() {
                         {member.name.split(' ').slice(1).join(' ')}
                       </span>
                     </h3>
-                    <div className="flex items-center gap-2 mb-4">
-                      <div className="flex -space-x-1.5">
-                        <div className="w-6 h-6 rounded-full bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center text-white text-[8px] font-bold border-2 border-white">★</div>
-                        <div className="w-6 h-6 rounded-full bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center text-white text-[8px] font-bold border-2 border-white">★</div>
-                        <div className="w-6 h-6 rounded-full bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center text-white text-[8px] font-bold border-2 border-white">★</div>
-                        <div className="w-6 h-6 rounded-full bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center text-white text-[8px] font-bold border-2 border-white">★</div>
-                        <div className="w-6 h-6 rounded-full bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center text-white text-[8px] font-bold border-2 border-white">★</div>
-                      </div>
-                      <span className="text-xs text-gray-400 font-medium">Industry Leader</span>
-                    </div>
                     <p className="text-gray-500 text-sm leading-relaxed mb-5">{member.bio}</p>
                     <div className="flex items-center gap-3 pt-5 border-t border-gray-100 mt-auto">
                       <div className="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-lg hover:shadow-brand-teal/20 transition-all duration-500 cursor-pointer group/icon">
