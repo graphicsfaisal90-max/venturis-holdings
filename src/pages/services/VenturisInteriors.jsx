@@ -5,56 +5,32 @@ const services = [
   {
     title: 'Interior Design',
     desc: 'Comprehensive interior design services for residential, commercial, and hospitality spaces, blending aesthetics with functionality.',
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-      </svg>
-    ),
+    image: '/interior-design-card.png',
   },
   {
     title: 'Architecture',
     desc: 'Innovative architectural solutions from concept development to detailed design, ensuring structural elegance and spatial harmony.',
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 21h18M3 10h18M3 7l9-4 9 4M4 10v11m16-11v11M8 14v.01M12 14v.01M16 14v.01M8 18v.01M12 18v.01M16 18v.01" />
-      </svg>
-    ),
+    image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&q=80',
   },
   {
     title: 'Space Planning',
     desc: 'Strategic space optimization for maximum functionality, flow, and efficiency in every environment we design.',
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
-      </svg>
-    ),
+    image: 'https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&q=80',
   },
   {
     title: 'Commercial Fit-Outs',
     desc: 'End-to-end commercial fit-out solutions for offices, retail, and hospitality, delivered on time and within budget.',
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-      </svg>
-    ),
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80',
   },
   {
     title: 'Project Management',
     desc: 'Dedicated project oversight from conception to handover, coordinating all stakeholders for seamless delivery.',
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-      </svg>
-    ),
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80',
   },
   {
     title: 'Furniture & Decor',
     desc: 'Curated furniture selection, custom joinery, and decor styling to bring each interior vision to life.',
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
-      </svg>
-    ),
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80',
   },
 ]
 
@@ -441,13 +417,22 @@ export default function VenturisInteriors() {
             {services.map((s, i) => (
               <div
                 key={s.title}
-                className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 border border-gray-100"
               >
-                <div className="w-14 h-14 rounded-xl bg-brand-light text-brand-teal flex items-center justify-center mb-5 group-hover:bg-brand-teal group-hover:text-white transition-all duration-300">
-                  {s.icon}
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={s.image}
+                    alt={s.title}
+                    className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-5">
+                    <h3 className="text-lg font-bold text-white">{s.title}</h3>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-brand-dark mb-3">{s.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{s.desc}</p>
+                <div className="p-5">
+                  <p className="text-gray-600 text-sm leading-relaxed">{s.desc}</p>
+                </div>
               </div>
             ))}
           </div>
