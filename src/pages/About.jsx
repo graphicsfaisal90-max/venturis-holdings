@@ -85,10 +85,10 @@ const teamRow2 = [
     image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&q=80',
   },
   {
-    name: 'James Okafor',
+    name: 'Ella Jean Bihasa',
     role: 'Head of Business Development',
-    bio: 'Growth strategist passionate about forging strategic partnerships and unlocking new revenue streams across regions.',
-    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80',
+    bio: 'Dynamic Head of Business Development from Philippines with extensive experience in driving revenue growth, building strategic partnerships, and expanding market presence across competitive industries.',
+    image: '/business-development.jpeg',
   },
   {
     name: 'Layla Hassan',
