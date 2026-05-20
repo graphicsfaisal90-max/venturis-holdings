@@ -66,8 +66,7 @@ const teamRow1 = [
   {
     name: 'Robin J. Wood',
     role: 'Co-Founder',
-    location: 'USA and UAE',
-    bio: 'Visionary Co-Founder from Oklahoma with extensive experience across multiple industries, bringing a strong track record in entrepreneurship, business strategy, operations, and market development.',
+    bio: 'Visionary Co-Founder from Oklahoma, USA with extensive experience across multiple industries, bringing a strong track record in entrepreneurship, business strategy, operations, and market development.',
     image: '/robin-j-wood.jpeg',
   },
 ]
