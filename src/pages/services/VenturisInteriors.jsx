@@ -95,24 +95,9 @@ const process = [
 
 const projects = [
   {
-    title: 'Corporate HQ',
-    category: 'Commercial',
-    image: '/pinterest-sheffield.jpg',
-  },
-  {
-    title: 'Luxury Villa',
-    category: 'Residential',
-    image: '/pinterest-modern-house.jpg',
-  },
-  {
     title: 'Boutique Hotel',
     category: 'Hospitality',
     image: '/pinterest-luxury-living.jpg',
-  },
-  {
-    title: 'Executive Office',
-    category: 'Commercial',
-    image: '/pinterest-elegant.jpg',
   },
   {
     title: 'Modern Residence',
@@ -120,9 +105,34 @@ const projects = [
     image: '/pinterest-luxury-home.jpg',
   },
   {
-    title: 'Retail Space',
+    title: 'Luxury Apartment',
+    category: 'Residential',
+    image: '/project-1.png',
+  },
+  {
+    title: 'Corporate Office',
+    category: 'Commercial',
+    image: '/project-2.png',
+  },
+  {
+    title: 'Retail Boutique',
     category: 'Retail',
-    image: '/pinterest-retail.jpg',
+    image: '/project-3.png',
+  },
+  {
+    title: 'Penthouse Suite',
+    category: 'Residential',
+    image: '/project-4.png',
+  },
+  {
+    title: 'Restaurant & Lounge',
+    category: 'Hospitality',
+    image: '/project-5.png',
+  },
+  {
+    title: 'Healthcare Facility',
+    category: 'Healthcare',
+    image: '/project-6.png',
   },
 ]
 
@@ -511,7 +521,7 @@ export default function VenturisInteriors() {
               interior design and architecture projects.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {projects.map((p) => (
               <div
                 key={p.title}
