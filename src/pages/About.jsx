@@ -56,30 +56,45 @@ const values = [
   },
 ]
 
-const team = [
+const teamRow1 = [
   {
-    name: 'John Venturis',
-    role: 'Founder & CEO',
-    bio: 'Over 20 years of experience in business development and strategic leadership across multiple industries.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
+    name: 'Ahmed Al-Rashid',
+    role: 'Chief Executive Officer',
+    bio: 'Visionary leader with 25+ years of experience driving multi-industry growth and strategic transformation across global markets.',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80',
   },
   {
-    name: 'Sarah Ndlovu',
-    role: 'Chief Operating Officer',
-    bio: 'Expert in operations management with a proven track record of driving operational excellence.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
+    name: 'Fatima Mbatha',
+    role: 'Managing Director',
+    bio: 'Operational excellence expert specializing in scaling businesses, building high-performance teams, and delivering measurable results.',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
   },
+]
+
+const teamRow2 = [
   {
-    name: 'Michael Kgosi',
+    name: 'David Chen',
     role: 'Chief Financial Officer',
-    bio: 'Financial strategist with deep expertise in corporate finance and investment management.',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80',
+    bio: 'Strategic financial architect with deep expertise in corporate finance, investment management, and risk mitigation.',
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80',
   },
   {
-    name: 'Lebohang Molefe',
-    role: 'Director of Operations',
-    bio: 'Specializes in facilities management and large-scale project coordination.',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80',
+    name: 'Priya Sharma',
+    role: 'Director of Technology',
+    bio: 'Drives digital transformation and IT strategy, leveraging emerging technologies to create competitive advantages.',
+    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&q=80',
+  },
+  {
+    name: 'James Okafor',
+    role: 'Head of Business Development',
+    bio: 'Growth strategist passionate about forging strategic partnerships and unlocking new revenue streams across regions.',
+    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80',
+  },
+  {
+    name: 'Layla Hassan',
+    role: 'Director of Client Relations',
+    bio: 'Client experience champion dedicated to building lasting relationships and ensuring exceptional service delivery.',
+    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&q=80',
   },
 ]
 
@@ -366,53 +381,78 @@ export default function About() {
           <p className="text-gray-500 max-w-2xl mx-auto text-lg text-center mb-16">
             Meet the experienced leaders driving our vision forward.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member) => (
-              <div
-                key={member.name}
-                className="group relative bg-white rounded-3xl overflow-hidden shadow-lg shadow-gray-200/50 border border-gray-100 hover:shadow-2xl hover:shadow-brand-teal/20 hover:-translate-y-2 active:shadow-2xl active:shadow-brand-teal/20 active:-translate-y-1 transition-all duration-700"
-              >
-                <div className="relative h-28 bg-gradient-to-br from-brand-teal to-brand-navy overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-white/10 via-transparent to-transparent" />
-                  <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/5 rounded-full blur-2xl" />
-                  <div className="absolute -bottom-10 -left-10 w-24 h-24 bg-white/5 rounded-full blur-2xl" />
-                </div>
-                <div className="relative px-6 pb-6">
-                  <div className="flex justify-center -mt-14 mb-4">
-                    <div className="relative">
-                      <div className="w-28 h-28 rounded-2xl overflow-hidden ring-4 ring-white shadow-xl shadow-brand-teal/20 group-hover:shadow-2xl group-hover:shadow-brand-teal/40 active:shadow-2xl active:shadow-brand-teal/40 transition-all duration-700">
-                        <img
-                          src={member.image}
-                          alt={member.name}
-                          className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+          <div className="space-y-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {teamRow1.map((member) => (
+                <div
+                  key={member.name}
+                  className="group relative h-[420px] sm:h-[480px] rounded-3xl overflow-hidden shadow-xl shadow-gray-200/50 border border-gray-100 hover:shadow-2xl hover:shadow-brand-teal/20 active:shadow-2xl active:shadow-brand-teal/20 transition-all duration-700"
+                >
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-brand-dark/30 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-8 sm:p-10">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="w-8 h-0.5 bg-brand-teal" />
+                      <span className="text-brand-teal text-xs font-semibold uppercase tracking-[0.15em]">{member.role}</span>
+                    </div>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3">{member.name}</h3>
+                    <p className="text-white/70 text-sm sm:text-base leading-relaxed max-w-lg line-clamp-2 group-hover:line-clamp-none transition-all duration-700">
+                      {member.bio}
+                    </p>
+                    <div className="flex items-center gap-3 mt-5 pt-5 border-t border-white/10">
+                      <div className="w-9 h-9 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center text-white/70 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-lg hover:shadow-brand-teal/30 transition-all duration-500 cursor-pointer group/icon">
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22 2s-7.64-.37-10.66 4.34c-1.19 1.86-1.44 4.16-1.32 5.66-2.71.26-5.96-.71-8.02-2.66 0 0-3.31 5.65 4.33 9.66-1.73 1.06-5.33 1.5-5.33 1.5s3.13 4.49 10.66 4.49c9.5 0 14.34-8.31 14.34-16.98 0-.26-.02-.52-.05-.78C20.94 4.58 22 2 22 2z"/></svg>
+                      </div>
+                      <div className="w-9 h-9 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center text-white/70 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-lg hover:shadow-brand-teal/30 transition-all duration-500 cursor-pointer group/icon">
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 4.75c1.24 0 2.25 1.01 2.25 2.25s-1.01 2.25-2.25 2.25S9.75 10.24 9.75 9 10.76 6.75 12 6.75zM17 17H7v-1.5c0-1.67 3.33-2.5 5-2.5s5 .83 5 2.5V17z"/></svg>
+                      </div>
+                      <div className="w-9 h-9 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center text-white/70 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-lg hover:shadow-brand-teal/30 transition-all duration-500 cursor-pointer group/icon">
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                       </div>
                     </div>
                   </div>
-                  <div className="text-center mb-4">
-                    <h3 className="text-xl font-bold text-brand-dark mb-1">{member.name}</h3>
-                    <div className="flex items-center justify-center gap-2 mb-3">
-                      <span className="w-6 h-px bg-gradient-to-r from-brand-teal to-brand-navy" />
-                      <span className="text-brand-teal text-xs font-semibold uppercase tracking-[0.15em]">{member.role}</span>
-                      <span className="w-6 h-px bg-gradient-to-r from-brand-navy to-brand-teal" />
+                </div>
+              ))}
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {teamRow2.map((member) => (
+                <div
+                  key={member.name}
+                  className="group relative bg-white rounded-3xl overflow-hidden shadow-lg shadow-gray-200/50 border border-gray-100 hover:shadow-2xl hover:shadow-brand-teal/20 hover:-translate-y-2 active:shadow-2xl active:shadow-brand-teal/20 active:-translate-y-1 transition-all duration-700"
+                >
+                  <div className="relative h-72 overflow-hidden">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                    <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0">
+                      <div className="flex items-center gap-2">
+                        <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy transition-all duration-500 cursor-pointer">
+                          <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 2s-7.64-.37-10.66 4.34c-1.19 1.86-1.44 4.16-1.32 5.66-2.71.26-5.96-.71-8.02-2.66 0 0-3.31 5.65 4.33 9.66-1.73 1.06-5.33 1.5-5.33 1.5s3.13 4.49 10.66 4.49c9.5 0 14.34-8.31 14.34-16.98 0-.26-.02-.52-.05-.78C20.94 4.58 22 2 22 2z"/></svg>
+                        </div>
+                        <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy transition-all duration-500 cursor-pointer">
+                          <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 4.75c1.24 0 2.25 1.01 2.25 2.25s-1.01 2.25-2.25 2.25S9.75 10.24 9.75 9 10.76 6.75 12 6.75zM17 17H7v-1.5c0-1.67 3.33-2.5 5-2.5s5 .83 5 2.5V17z"/></svg>
+                        </div>
+                        <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy transition-all duration-500 cursor-pointer">
+                          <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-brand-teal text-xs font-semibold uppercase tracking-[0.15em]">{member.role}</span>
+                    <h3 className="text-xl font-bold text-brand-dark mt-1 mb-2">{member.name}</h3>
                     <p className="text-gray-500 text-sm leading-relaxed">{member.bio}</p>
                   </div>
-                  <div className="flex items-center justify-center gap-3 pt-3 border-t border-gray-100">
-                    <div className="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-lg hover:shadow-brand-teal/20 transition-all duration-500 cursor-pointer group/icon">
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22 2s-7.64-.37-10.66 4.34c-1.19 1.86-1.44 4.16-1.32 5.66-2.71.26-5.96-.71-8.02-2.66 0 0-3.31 5.65 4.33 9.66-1.73 1.06-5.33 1.5-5.33 1.5s3.13 4.49 10.66 4.49c9.5 0 14.34-8.31 14.34-16.98 0-.26-.02-.52-.05-.78C20.94 4.58 22 2 22 2z"/></svg>
-                    </div>
-                    <div className="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-lg hover:shadow-brand-teal/20 transition-all duration-500 cursor-pointer group/icon">
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 4.75c1.24 0 2.25 1.01 2.25 2.25s-1.01 2.25-2.25 2.25S9.75 10.24 9.75 9 10.76 6.75 12 6.75zM17 17H7v-1.5c0-1.67 3.33-2.5 5-2.5s5 .83 5 2.5V17z"/></svg>
-                    </div>
-                    <div className="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-lg hover:shadow-brand-teal/20 transition-all duration-500 cursor-pointer group/icon">
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
