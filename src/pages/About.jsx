@@ -73,10 +73,10 @@ const teamRow1 = [
 
 const teamRow2 = [
   {
-    name: 'David Chen',
+    name: 'Viartseika Maryana',
     role: 'Chief Financial Officer',
-    bio: 'Strategic financial architect with deep expertise in corporate finance, investment management, and risk mitigation.',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80',
+    bio: 'Seasoned CFO from Belarus with 12 years of experience in financial strategy, budgeting, investment planning, and corporate growth.',
+    image: '/cfo.jpeg',
   },
   {
     name: 'Priya Sharma',
