@@ -419,20 +419,20 @@ export default function VenturisInteriors() {
                 key={s.title}
                 className="group relative bg-white rounded-2xl overflow-hidden shadow-md shadow-gray-200/50 border border-gray-100 hover:shadow-xl hover:shadow-brand-teal/15 transition-all duration-500"
               >
-                <div className="relative h-56 sm:h-64 overflow-hidden">
+                <div className="relative h-56 sm:h-64 overflow-hidden rounded-t-2xl">
                   <img
                     src={s.image}
                     alt={s.title}
                     className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:rotate-[2deg]"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/60 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-teal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-3 group-hover:translate-y-0 transition-transform duration-500">
                     <h3 className="text-lg font-bold text-white">{s.title}</h3>
                   </div>
                 </div>
-                <div className="p-6 relative">
-                  <div className="absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-brand-teal/40 via-transparent to-brand-navy/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <p className="text-gray-500 text-sm leading-relaxed pt-2">{s.desc}</p>
+                <div className="p-6">
+                  <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
                 </div>
               </div>
             ))}
