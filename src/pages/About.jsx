@@ -188,7 +188,7 @@ export default function About() {
                 <img
                   src="/Building.png"
                   alt="Venturis Holdings Headquarters"
-                  className="w-full h-[400px] sm:h-[480px] object-cover"
+                  className="w-full h-[500px] sm:h-[600px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-brand-dark/40 via-transparent to-brand-teal/10" />
                 <div className="absolute bottom-6 left-6 right-6 flex items-center gap-3 bg-white/10 backdrop-blur-xl rounded-xl px-5 py-3 border border-white/15">
