@@ -91,10 +91,10 @@ const teamRow2 = [
     image: '/business-development.jpeg',
   },
   {
-    name: 'Layla Hassan',
-    role: 'Director of Client Relations',
-    bio: 'Client experience champion dedicated to building lasting relationships and ensuring exceptional service delivery.',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&q=80',
+    name: 'Zuleide Pereira',
+    role: 'Managing Director',
+    bio: 'Results-driven Managing Director from Brazil with extensive experience in design, production, and business development across diverse industries.',
+    image: '/md.png',
   },
 ]
 
