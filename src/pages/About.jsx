@@ -467,7 +467,7 @@ export default function About() {
                     </div>
                   </div>
                   <div className="p-6">
-                    <span className="text-brand-teal text-xs font-semibold uppercase tracking-[0.15em]">{member.role}</span>
+                    <span className="text-brand-teal text-xs font-semibold uppercase tracking-[0.15em] leading-tight">{member.role}</span>
                     <h3 className="text-xl font-bold text-brand-dark mt-1 mb-2">{member.name}</h3>
                     <p className="text-gray-500 text-sm leading-relaxed">{member.bio}</p>
                   </div>
