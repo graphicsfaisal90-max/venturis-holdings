@@ -279,7 +279,10 @@ export default function VenturisInteriors() {
               Venturis Holdings Division
             </p>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight mb-6 animate-fade-in-down delay-100">
-              Venturis Interiors
+              Venturis Interiors,
+              <span className="block text-3xl sm:text-4xl md:text-5xl font-light text-white/80 mt-2">
+                Architecture &amp; Design
+              </span>
             </h1>
             <p className="text-lg sm:text-xl text-white/70 max-w-2xl leading-relaxed mb-10 animate-fade-in-down delay-200">
               Transforming spaces into inspiring environments through exceptional interior design,

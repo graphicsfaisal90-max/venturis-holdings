@@ -5,7 +5,7 @@ const slides = [
   {
     id: 'interiors',
     title: 'Luxury Interior Design',
-    subtitle: 'Venturis Interiors & Architecture',
+    subtitle: 'Venturis Interiors',
     desc: 'Modern interiors crafted with elegance, style, and functionality.',
     image: '/interiors-hero.jpeg',
     btn1: 'View Projects',

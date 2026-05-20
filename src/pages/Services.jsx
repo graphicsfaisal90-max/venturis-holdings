@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const divisions = [
   {
-    title: 'Venturis Interiors & Architecture',
+    title: 'Venturis Interiors',
     tagline: 'Designing Excellence',
     desc: 'Award-winning interior design and architecture studio creating inspiring spaces across residential, commercial, and hospitality sectors. From concept to completion, we deliver timeless, functional environments.',
     features: ['Interior Design & Planning', 'Architecture & Build', 'Commercial Fit-Outs', 'Project Management'],
