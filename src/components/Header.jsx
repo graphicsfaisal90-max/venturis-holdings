@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 const services = [
-  { name: 'Venturis Interiors', path: '/services/interiors' },
+  { name: 'Venturis Interiors & Architecture', path: '/services/interiors' },
   { name: 'Venturis Facilities Management', path: '/services/facilities' },
   { name: 'Venturis Realtors', path: '/services/realtors' },
   { name: 'Venturis Partners', path: '/services/partners' },

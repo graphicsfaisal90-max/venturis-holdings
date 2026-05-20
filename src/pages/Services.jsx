@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom'
 
 const divisions = [
   {
-    title: 'Venturis Interiors',
-    tagline: 'Transforming Spaces',
-    desc: 'We specialize in creating stunning interior environments that blend aesthetics with functionality. From concept to completion, our design and fit-out services cover commercial offices, retail spaces, and residential properties.',
-    features: ['Interior Design & Planning', 'Commercial Fit-Outs', 'Residential Renovations', 'Project Management'],
+    title: 'Venturis Interiors & Architecture',
+    tagline: 'Designing Excellence',
+    desc: 'Award-winning interior design and architecture studio creating inspiring spaces across residential, commercial, and hospitality sectors. From concept to completion, we deliver timeless, functional environments.',
+    features: ['Interior Design & Planning', 'Architecture & Build', 'Commercial Fit-Outs', 'Project Management'],
     path: '/services/interiors',
   },
   {

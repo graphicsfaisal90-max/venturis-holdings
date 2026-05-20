@@ -3,7 +3,7 @@ import { submitContactForm } from '../supabase'
 
 const divisions = [
   { value: 'general', label: 'General Enquiry' },
-  { value: 'interiors', label: 'Venturis Interiors' },
+  { value: 'interiors', label: 'Venturis Interiors & Architecture' },
   { value: 'facilities', label: 'Venturis Facilities' },
   { value: 'wheels', label: 'Venturis Wheels' },
   { value: 'holdings', label: 'Venturis Holdings' },

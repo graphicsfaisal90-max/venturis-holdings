@@ -3,7 +3,7 @@ import HeroSlider from '../components/HeroSlider'
 
 const services = [
   {
-    title: 'Venturis Interiors',
+    title: 'Venturis Interiors & Architecture',
     tagline: 'Design & Fit-Out',
     desc: 'Creating elegant, modern, and functional interior spaces with premium craftsmanship.',
     path: '/services/interiors',

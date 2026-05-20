@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: 'Do you work on residential projects?',
-    a: 'Yes. Venturis Interiors handles residential interior design and renovation projects. Contact them directly for residential enquiries.',
+    a: 'Yes. Venturis Interiors & Architecture handles residential interior design and renovation projects. Contact them directly for residential enquiries.',
   },
   {
     q: 'What areas do you service?',
