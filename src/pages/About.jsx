@@ -79,10 +79,10 @@ const teamRow2 = [
     image: '/cfo.jpeg',
   },
   {
-    name: 'Priya Sharma',
-    role: 'Director of Technology',
-    bio: 'Drives digital transformation and IT strategy, leveraging emerging technologies to create competitive advantages.',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&q=80',
+    name: 'Muhammad Faisal',
+    role: 'Information Technology',
+    bio: 'Experienced IT professional with expertise in technology solutions, digital innovation, and business support services, focused on delivering efficient, reliable, and modern IT solutions for business growth.',
+    image: '/mf.jpeg',
   },
   {
     name: 'Ella Jean Bihasa',
