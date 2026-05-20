@@ -100,9 +100,9 @@ const teamRow2 = [
 
 const journey = [
   { year: '2010', title: 'Founded', desc: 'Venturis Holdings was established with a vision to create a diversified business group.' },
-  { year: '2013', title: 'Expansion', desc: 'Expanded into facilities management and interior solutions, doubling our team.' },
-  { year: '2016', title: 'New Horizons', desc: 'Launched Venturis Realtors and Partners divisions, entering new markets.' },
-  { year: '2020', title: 'Innovation Drive', desc: 'Embraced digital transformation and sustainable practices across all divisions.' },
+  { year: '2012', title: 'Expansion', desc: 'Expanded into facilities management and interior solutions, doubling our team.' },
+  { year: '2016', title: 'Partners And Facilities', desc: 'Launched Venturis Realtors and Partners divisions, expanding into new markets with enhanced service offerings.' },
+  { year: '2022', title: 'Information Technology', desc: 'Established IT division to drive digital transformation, innovation, and technology solutions across all operations.' },
   { year: '2024', title: 'Global Reach', desc: 'Extended operations into UAE and international markets with tourism and automotive arms.' },
 ]
 
