@@ -279,9 +279,9 @@ export default function VenturisInteriors() {
               Venturis Holdings Division
             </p>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight mb-6 animate-fade-in-down delay-100">
-              Venturis Interiors
+              Venturis Interiors,
               <span className="block text-3xl sm:text-4xl md:text-5xl font-light text-white/80 mt-2">
-                &amp; Architecture
+                Architecture &amp; Design
               </span>
             </h1>
             <p className="text-lg sm:text-xl text-white/70 max-w-2xl leading-relaxed mb-10 animate-fade-in-down delay-200">
@@ -349,7 +349,7 @@ export default function VenturisInteriors() {
                 <span className="text-brand-teal"> Inspire &amp; Endure</span>
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                At Venturis Interiors &amp; Architecture, we believe great design transforms the way
+                At Venturis Interiors, Architecture &amp; Design, we believe great design transforms the way
                 people live, work, and connect. Our team of award-winning architects and interior
                 designers brings together decades of experience across residential, commercial, and
                 hospitality projects.
