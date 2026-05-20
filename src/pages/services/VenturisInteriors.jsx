@@ -146,7 +146,7 @@ const projects = [
   {
     title: 'Retail Space',
     category: 'Retail',
-    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80',
+    image: '/pinterest-retail.jpg',
   },
 ]
 
@@ -528,27 +528,32 @@ export default function VenturisInteriors() {
             {projects.map((p) => (
               <div
                 key={p.title}
-                className="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white"
+                className="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white cursor-pointer"
               >
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-teal via-brand-teal/50 to-transparent z-10" />
                 <div className="aspect-[4/5] overflow-hidden relative">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent z-[1]" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-teal/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-[1]" />
                   <img
                     src={p.image}
                     alt={p.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                  <div className="absolute top-4 left-4">
-                    <span className="inline-block px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-dark text-[10px] font-bold uppercase tracking-widest rounded-full shadow-sm">
+                  <div className="absolute top-5 left-5 z-10">
+                    <span className="inline-block px-4 py-1.5 bg-black/50 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-[0.15em] rounded-full border border-white/10 shadow-lg">
                       {p.category}
                     </span>
                   </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-0 group-hover:-translate-y-2 transition-transform duration-500">
-                    <h3 className="text-white text-lg font-bold mb-1">{p.title}</h3>
-                    <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0">
-                      <span className="text-white/80 text-xs tracking-wide">View Project</span>
-                      <svg className="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 z-10 translate-y-0 group-hover:-translate-y-1 transition-all duration-500">
+                    <div className="w-10 h-0.5 bg-brand-teal mb-3" />
+                    <h3 className="text-white text-lg font-bold tracking-tight leading-tight">{p.title}</h3>
+                    <div className="mt-4 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-3 group-hover:translate-y-0">
+                      <span className="text-white/80 text-xs font-medium tracking-wider uppercase">Explore</span>
+                      <div className="w-7 h-7 rounded-full bg-brand-teal flex items-center justify-center">
+                        <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </div>
