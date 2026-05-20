@@ -449,7 +449,7 @@ export default function About() {
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-105"
+                      className="w-full h-full object-[center_30%] object-cover transition-all duration-700 ease-out group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/50 to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-5">
