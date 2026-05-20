@@ -405,7 +405,7 @@ export default function About() {
                   <div className="sm:w-3/5 p-7 sm:p-8 flex flex-col justify-center">
                     <div className="hidden sm:flex items-center gap-3 mb-3">
                       <span className="w-8 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
-                      <span className="text-brand-teal text-xs font-semibold uppercase tracking-[0.15em]">{member.role}</span>
+                    <span className="text-brand-teal text-xs font-semibold uppercase tracking-[0.15em] leading-none">{member.role}</span>
                     </div>
                     <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark mb-1 leading-tight">
                       {member.name.split(' ')[0]}
