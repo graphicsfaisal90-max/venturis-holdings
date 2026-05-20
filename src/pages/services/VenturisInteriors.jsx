@@ -20,7 +20,7 @@ const services = [
   {
     title: 'Commercial Fit-Outs',
     desc: 'End-to-end commercial fit-out solutions for offices, retail, and hospitality, delivered on time and within budget.',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80',
+    image: '/commercial-fitouts.jpg',
   },
   {
     title: 'Project Management',
