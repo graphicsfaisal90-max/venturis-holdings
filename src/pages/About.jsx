@@ -58,10 +58,10 @@ const values = [
 
 const teamRow1 = [
   {
-    name: 'Ahmed Al-Rashid',
-    role: 'Chief Executive Officer',
-    bio: 'Visionary leader with 25+ years of experience driving multi-industry growth and strategic transformation across global markets.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80',
+    name: 'Mairaaj Uddin',
+    role: 'CEO & Founder',
+    bio: '20+ years of experience in Real Estate, Operations, Logistics, HR, and IT, with proven expertise in strategic leadership, business growth, and operational excellence across Pakistan and the UAE.',
+    image: '/Mairaaj Uddin.jpeg',
   },
   {
     name: 'Fatima Mbatha',
@@ -383,39 +383,49 @@ export default function About() {
           </p>
           <div className="space-y-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {teamRow1.map((member, idx) => (
+              {teamRow1.map((member) => (
                 <div
                   key={member.name}
-                  className="group relative bg-white rounded-3xl overflow-hidden shadow-lg shadow-gray-200/50 border border-gray-200 hover:shadow-2xl hover:shadow-brand-teal/15 hover:-translate-y-1 active:shadow-2xl active:shadow-brand-teal/15 active:-translate-y-0.5 transition-all duration-700"
+                  className="group relative bg-white rounded-3xl overflow-hidden shadow-lg shadow-gray-200/50 border border-gray-200 hover:shadow-2xl hover:shadow-brand-teal/15 hover:-translate-y-1 active:shadow-2xl active:shadow-brand-teal/15 active:-translate-y-0.5 transition-all duration-700 flex flex-col sm:flex-row"
                 >
-                  <div className="relative h-72 sm:h-80 overflow-hidden">
+                  <div className="relative sm:w-2/5 h-64 sm:h-auto overflow-hidden">
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
+                      className="absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                    <div className="absolute top-5 right-5">
-                      <div className="w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm flex items-center justify-center text-brand-teal shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-                      </div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-white/20" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-transparent sm:bg-none" />
+                    <div className="absolute top-4 left-4 sm:hidden">
+                      <span className="px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.15em] bg-white/90 backdrop-blur-sm text-brand-teal rounded-lg shadow-lg">
+                        {member.role}
+                      </span>
                     </div>
-                    <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
                   </div>
-                  <div className="relative px-7 pb-7 -mt-2">
-                    <div className="flex items-center gap-3 mb-1">
-                      <span className="w-6 h-px bg-gradient-to-r from-brand-teal to-brand-navy" />
+                  <div className="sm:w-3/5 p-7 sm:p-8 flex flex-col justify-center">
+                    <div className="hidden sm:flex items-center gap-3 mb-3">
+                      <span className="w-8 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
                       <span className="text-brand-teal text-xs font-semibold uppercase tracking-[0.15em]">{member.role}</span>
                     </div>
-                    <h3 className="text-2xl font-bold text-brand-dark mb-3">
+                    <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark mb-3 leading-tight">
                       {member.name.split(' ')[0]}
                       <br />
                       <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy">
                         {member.name.split(' ').slice(1).join(' ')}
                       </span>
                     </h3>
-                    <p className="text-gray-500 text-sm leading-relaxed mb-5">{member.bio}</p>
-                    <div className="flex items-center gap-3 pt-5 border-t border-gray-100">
+                    <div className="flex items-center gap-2 mb-4">
+                      <div className="flex -space-x-1.5">
+                        <div className="w-6 h-6 rounded-full bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center text-white text-[8px] font-bold border-2 border-white">★</div>
+                        <div className="w-6 h-6 rounded-full bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center text-white text-[8px] font-bold border-2 border-white">★</div>
+                        <div className="w-6 h-6 rounded-full bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center text-white text-[8px] font-bold border-2 border-white">★</div>
+                        <div className="w-6 h-6 rounded-full bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center text-white text-[8px] font-bold border-2 border-white">★</div>
+                        <div className="w-6 h-6 rounded-full bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center text-white text-[8px] font-bold border-2 border-white">★</div>
+                      </div>
+                      <span className="text-xs text-gray-400 font-medium">Industry Leader</span>
+                    </div>
+                    <p className="text-gray-500 text-sm leading-relaxed mb-5 line-clamp-4">{member.bio}</p>
+                    <div className="flex items-center gap-3 pt-5 border-t border-gray-100 mt-auto">
                       <div className="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-lg hover:shadow-brand-teal/20 transition-all duration-500 cursor-pointer group/icon">
                         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22 2s-7.64-.37-10.66 4.34c-1.19 1.86-1.44 4.16-1.32 5.66-2.71.26-5.96-.71-8.02-2.66 0 0-3.31 5.65 4.33 9.66-1.73 1.06-5.33 1.5-5.33 1.5s3.13 4.49 10.66 4.49c9.5 0 14.34-8.31 14.34-16.98 0-.26-.02-.52-.05-.78C20.94 4.58 22 2 22 2z"/></svg>
                       </div>
