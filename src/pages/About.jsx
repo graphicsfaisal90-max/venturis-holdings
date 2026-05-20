@@ -61,7 +61,7 @@ const teamRow1 = [
     name: 'Mairaaj Uddin',
     role: 'CEO & Founder',
     bio: '20+ years of experience in Real Estate, Operations, Logistics, HR, and IT, with proven expertise in strategic leadership, business growth, and operational excellence across Pakistan and the UAE.',
-    image: '/Mairaaj Uddin.jpeg',
+    image: '/Mairaaj-Uddin.jpeg',
   },
   {
     name: 'Fatima Mbatha',
@@ -424,7 +424,7 @@ export default function About() {
                       </div>
                       <span className="text-xs text-gray-400 font-medium">Industry Leader</span>
                     </div>
-                    <p className="text-gray-500 text-sm leading-relaxed mb-5 line-clamp-4">{member.bio}</p>
+                    <p className="text-gray-500 text-sm leading-relaxed mb-5">{member.bio}</p>
                     <div className="flex items-center gap-3 pt-5 border-t border-gray-100 mt-auto">
                       <div className="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-lg hover:shadow-brand-teal/20 transition-all duration-500 cursor-pointer group/icon">
                         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22 2s-7.64-.37-10.66 4.34c-1.19 1.86-1.44 4.16-1.32 5.66-2.71.26-5.96-.71-8.02-2.66 0 0-3.31 5.65 4.33 9.66-1.73 1.06-5.33 1.5-5.33 1.5s3.13 4.49 10.66 4.49c9.5 0 14.34-8.31 14.34-16.98 0-.26-.02-.52-.05-.78C20.94 4.58 22 2 22 2z"/></svg>
