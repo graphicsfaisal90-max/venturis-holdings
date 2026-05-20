@@ -423,7 +423,7 @@ export default function VenturisInteriors() {
                   <img
                     src={s.image}
                     alt={s.title}
-                    className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:rotate-[2deg]"
+                    className="w-full h-full object-[center_25%] object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:rotate-[2deg]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/60 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
                   <div className="absolute inset-0 bg-gradient-to-br from-brand-teal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
