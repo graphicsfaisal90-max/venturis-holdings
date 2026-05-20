@@ -13,7 +13,7 @@ export default function Layout() {
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/971585318860?text=I'd%20like%20to%20make%20an%20enquiry"
+        href="https://wa.me/971585318860?text=Hello%20%F0%9F%91%8B%20I%E2%80%99m%20interested%20in%20your%20services%20and%20would%20like%20to%20discuss%20my%20project."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center animate-whatsapp-pulse"
