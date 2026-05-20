@@ -64,10 +64,10 @@ const teamRow1 = [
     image: '/mairaaj-uddin.jpeg',
   },
   {
-    name: 'Fatima Mbatha',
-    role: 'Managing Director',
-    bio: 'Operational excellence expert specializing in scaling businesses, building high-performance teams, and delivering measurable results.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
+    name: 'Robin J. Wood',
+    role: 'Co-Founder',
+    bio: 'Visionary Co-Founder from Oklahoma with extensive experience across multiple industries, bringing a strong track record in entrepreneurship, business strategy, operations, and market development.',
+    image: '/robin-j-wood.jpeg',
   },
 ]
 
