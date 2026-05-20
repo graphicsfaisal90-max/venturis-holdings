@@ -112,12 +112,12 @@ const projects = [
   {
     title: 'Executive Office',
     category: 'Commercial',
-    image: '/pinterest-luxury-home.jpg',
+    image: '/pinterest-elegant.jpg',
   },
   {
     title: 'Modern Residence',
     category: 'Residential',
-    image: '/pinterest-elegant.jpg',
+    image: '/pinterest-luxury-home.jpg',
   },
   {
     title: 'Retail Space',
