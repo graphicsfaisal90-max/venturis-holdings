@@ -138,53 +138,82 @@ function CountUp({ end, suffix, label }) {
   )
 }
 
+const heroSlides = [
+  { image: '/pinterest-grand-entrance.jpg', alt: 'Grand Entrance Interior' },
+  { image: '/pinterest-modern-house.jpg', alt: 'Modern Luxury Interior' },
+  { image: '/pinterest-luxury-home.jpg', alt: 'Luxury Home Design' },
+]
+
 export default function VenturisInteriors() {
-  const [activeImage, setActiveImage] = useState(0)
+  const [activeSlide, setActiveSlide] = useState(0)
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setActiveImage((prev) => (prev + 1) % projects.length)
-    }, 4000)
+      setActiveSlide((prev) => (prev + 1) % heroSlides.length)
+    }, 5000)
     return () => clearInterval(timer)
   }, [])
 
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="/interiors-hero.jpeg"
-            alt="Luxury Interior"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
+      <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
+        {heroSlides.map((slide, i) => (
+          <div
+            key={slide.image}
+            className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+              i === activeSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
+            }`}
+          >
+            <img
+              src={slide.image}
+              alt={slide.alt}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/30" />
+
+        {/* Slide Indicators */}
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex gap-3">
+          {heroSlides.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setActiveSlide(i)}
+              className={`w-2.5 h-2.5 rounded-full transition-all duration-500 ${
+                i === activeSlide
+                  ? 'bg-brand-teal w-8'
+                  : 'bg-white/40 hover:bg-white/60'
+              }`}
+            />
+          ))}
         </div>
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center lg:text-left w-full">
           <Link
             to="/services"
-            className="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm mb-8 transition-colors"
+            className="inline-flex items-center gap-2 text-white/60 hover:text-white text-sm mb-8 transition-colors group"
           >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
             Back to Services
           </Link>
           <div className="max-w-3xl">
-            <p className="text-brand-teal uppercase tracking-[0.2em] text-sm font-medium mb-4">
+            <p className="text-brand-teal uppercase tracking-[0.25em] text-sm font-medium mb-4 animate-fade-in-down">
               Venturis Holdings Division
             </p>
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight mb-6">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight mb-6 animate-fade-in-down delay-100">
               Venturis Interiors
               <span className="block text-3xl sm:text-4xl md:text-5xl font-light text-white/80 mt-2">
                 &amp; Architecture
               </span>
             </h1>
-            <p className="text-lg sm:text-xl text-white/80 max-w-2xl leading-relaxed mb-10">
+            <p className="text-lg sm:text-xl text-white/70 max-w-2xl leading-relaxed mb-10 animate-fade-in-down delay-200">
               Transforming spaces into inspiring environments through exceptional interior design,
               architecture, and fit-out solutions tailored to your vision.
             </p>
-            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start animate-fade-in-up delay-300">
               <Link
                 to="/contact"
                 className="inline-flex items-center px-8 py-3.5 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal/90 transition-all duration-300 shadow-lg shadow-brand-teal/25 hover:shadow-xl hover:shadow-brand-teal/30 hover:-translate-y-0.5"
@@ -196,7 +225,7 @@ export default function VenturisInteriors() {
               </Link>
               <a
                 href="#services"
-                className="inline-flex items-center px-8 py-3.5 border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
+                className="inline-flex items-center px-8 py-3.5 border-2 border-white/20 text-white font-semibold rounded-lg hover:bg-white/10 hover:border-white/40 transition-all duration-300"
               >
                 Explore Services
               </a>
@@ -378,23 +407,32 @@ export default function VenturisInteriors() {
               interior design and architecture projects.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((p) => (
               <div
                 key={p.title}
-                className="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500"
+                className="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white"
               >
-                <div className="aspect-[4/3] overflow-hidden">
+                <div className="aspect-[4/5] overflow-hidden relative">
                   <img
                     src={p.image}
                     alt={p.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                  <div>
-                    <p className="text-white/70 text-xs uppercase tracking-widest mb-1">{p.category}</p>
-                    <h3 className="text-white text-lg font-bold">{p.title}</h3>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute top-4 left-4">
+                    <span className="inline-block px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-dark text-[10px] font-bold uppercase tracking-widest rounded-full shadow-sm">
+                      {p.category}
+                    </span>
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-0 group-hover:-translate-y-2 transition-transform duration-500">
+                    <h3 className="text-white text-lg font-bold mb-1">{p.title}</h3>
+                    <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0">
+                      <span className="text-white/80 text-xs tracking-wide">View Project</span>
+                      <svg className="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
