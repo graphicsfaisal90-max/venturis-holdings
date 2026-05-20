@@ -59,11 +59,62 @@ const services = [
 ]
 
 const process = [
-  { step: '01', title: 'Consultation', desc: 'We begin by understanding your vision, requirements, and budget through an in-depth consultation.' },
-  { step: '02', title: 'Concept Design', desc: 'Our team develops mood boards, layout plans, and 3D visualizations to bring ideas to life.' },
-  { step: '03', title: 'Detailed Planning', desc: 'We refine designs, select materials, and prepare technical drawings for approval.' },
-  { step: '04', title: 'Execution', desc: 'Skilled craftsmen and project managers bring the design to life with precision and care.' },
-  { step: '05', title: 'Handover', desc: 'We conduct a final walkthrough, address every detail, and hand over your completed space.' },
+  {
+    step: '01',
+    title: 'Consultation',
+    desc: 'We begin by understanding your vision, requirements, and budget through an in-depth consultation.',
+    outcome: 'Clear project scope & budget',
+    icon: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+      </svg>
+    ),
+  },
+  {
+    step: '02',
+    title: 'Concept Design',
+    desc: 'Our team develops mood boards, layout plans, and 3D visualizations to bring ideas to life.',
+    outcome: 'Visual design direction',
+    icon: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+      </svg>
+    ),
+  },
+  {
+    step: '03',
+    title: 'Detailed Planning',
+    desc: 'We refine designs, select materials, and prepare technical drawings for approval.',
+    outcome: 'Approved technical package',
+    icon: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+      </svg>
+    ),
+  },
+  {
+    step: '04',
+    title: 'Execution',
+    desc: 'Skilled craftsmen and project managers bring the design to life with precision and care.',
+    outcome: 'On-time & on-budget delivery',
+    icon: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
+    ),
+  },
+  {
+    step: '05',
+    title: 'Handover',
+    desc: 'We conduct a final walkthrough, address every detail, and hand over your completed space.',
+    outcome: 'Fully satisfied client',
+    icon: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+      </svg>
+    ),
+  },
 ]
 
 const projects = [
@@ -96,6 +147,44 @@ const projects = [
     title: 'Retail Space',
     category: 'Retail',
     image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80',
+  },
+]
+
+const testimonials = [
+  {
+    quote: 'Venturis transformed our office into a modern, collaborative space. Their attention to detail and project management was exceptional.',
+    name: 'Sarah Khalid',
+    title: 'CEO, TechCorp',
+    initials: 'SK',
+    rating: 5,
+  },
+  {
+    quote: 'From concept to completion, the team delivered a stunning villa design that exceeded our expectations. Truly world-class.',
+    name: 'Ahmed Al Mazroui',
+    title: 'Private Client',
+    initials: 'AM',
+    rating: 5,
+  },
+  {
+    quote: 'Our boutique hotel received rave reviews thanks to the stunning interior design. Venturis understood our brand perfectly.',
+    name: 'Lina Nasser',
+    title: 'Hotel Director',
+    initials: 'LN',
+    rating: 5,
+  },
+  {
+    quote: 'The level of professionalism and creativity Venturis brought to our headquarters redesign was outstanding. Every detail was meticulously planned and executed to perfection.',
+    name: 'James Mitchell',
+    title: 'COO, NovaWorks',
+    initials: 'JM',
+    rating: 5,
+  },
+  {
+    quote: 'I\'ve collaborated with many design firms, but Venturis stands apart. Their ability to blend contemporary aesthetics with functional, livable spaces is truly remarkable.',
+    name: 'Fatima Al Hashimi',
+    title: 'Principal Designer',
+    initials: 'FH',
+    rating: 5,
   },
 ]
 
@@ -146,6 +235,8 @@ const heroSlides = [
 
 export default function VenturisInteriors() {
   const [activeSlide, setActiveSlide] = useState(0)
+  const [activeTestimonial, setActiveTestimonial] = useState(0)
+  const [isTestPaused, setIsTestPaused] = useState(false)
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -153,6 +244,14 @@ export default function VenturisInteriors() {
     }, 5000)
     return () => clearInterval(timer)
   }, [])
+
+  useEffect(() => {
+    if (isTestPaused) return
+    const timer = setInterval(() => {
+      setActiveTestimonial((prev) => (prev + 1) % testimonials.length)
+    }, 6000)
+    return () => clearInterval(timer)
+  }, [isTestPaused])
 
   return (
     <>
@@ -371,23 +470,41 @@ export default function VenturisInteriors() {
             </p>
           </div>
           <div className="relative">
-            <div className="absolute left-8 top-0 bottom-0 w-px bg-gray-200 hidden md:block" />
-            <div className="space-y-12">
-              {process.map((p, i) => (
-                <div key={p.step} className="relative md:flex gap-8 items-start group">
-                  <div className="hidden md:flex absolute left-0 top-0 w-16 h-16 rounded-full bg-brand-teal text-white items-center justify-center text-lg font-bold z-10 shadow-lg">
-                    {p.step}
+            <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gray-200 hidden lg:block -translate-x-px" />
+            {process.map((p, i) => (
+              <div key={p.step} className="relative pb-12 lg:pb-20 last:pb-0">
+                <div className={`lg:flex items-center gap-12 ${i % 2 === 0 ? '' : 'lg:flex-row-reverse'}`}>
+                  <div className={`lg:w-1/2 ${i % 2 === 0 ? 'lg:text-right lg:pr-16' : 'lg:text-left lg:pl-16'}`}>
+                    <div className="group bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-1">
+                      <div className={`flex items-center gap-4 mb-5 ${i % 2 === 0 ? 'lg:flex-row-reverse' : ''}`}>
+                        <div className="w-14 h-14 rounded-xl bg-brand-light text-brand-teal flex items-center justify-center shrink-0 group-hover:bg-brand-teal group-hover:text-white transition-all duration-300">
+                          {p.icon}
+                        </div>
+                        <h3 className="text-xl font-bold text-brand-dark">{p.title}</h3>
+                      </div>
+                      <p className="text-gray-600 leading-relaxed mb-5">{p.desc}</p>
+                      <span className="inline-block text-xs font-semibold text-brand-teal uppercase tracking-wider bg-brand-teal/10 px-3.5 py-1.5 rounded-full">
+                        {p.outcome}
+                      </span>
+                    </div>
                   </div>
-                  <div className="md:ml-24 pl-0 md:pl-0">
-                    <div className="md:hidden w-12 h-12 rounded-full bg-brand-teal text-white flex items-center justify-center text-base font-bold mb-4 shadow-md">
+                  <div className="hidden lg:flex lg:w-1/2 items-center">
+                    <div className={`text-8xl font-bold text-gray-100 select-none ${i % 2 === 0 ? '' : 'lg:text-right lg:w-full'}`}>
                       {p.step}
                     </div>
-                    <h3 className="text-xl font-bold text-brand-dark mb-2">{p.title}</h3>
-                    <p className="text-gray-600 leading-relaxed">{p.desc}</p>
                   </div>
                 </div>
-              ))}
-            </div>
+                <div className="hidden lg:flex absolute left-1/2 top-8 -translate-x-1/2 w-5 h-5 rounded-full bg-brand-teal border-4 border-white shadow z-10" />
+                <div className="lg:hidden flex items-center gap-4 mt-4">
+                  <div className="w-10 h-10 rounded-full bg-brand-teal text-white flex items-center justify-center text-sm font-bold shadow-md shrink-0">
+                    {p.step}
+                  </div>
+                  <span className="text-xs font-semibold text-brand-teal uppercase tracking-wider">
+                    {p.outcome}
+                  </span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -442,73 +559,70 @@ export default function VenturisInteriors() {
       </section>
 
       {/* Testimonial Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-12">
             <p className="text-brand-teal uppercase tracking-[0.2em] text-sm font-medium mb-4">
               Testimonials
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-brand-dark mb-6">
               What Our Clients Say
             </h2>
+            <p className="text-gray-600 leading-relaxed">
+              Don't just take our word for it — hear from the clients we've had the privilege of serving.
+            </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-50 rounded-2xl p-8 relative">
-              <svg className="w-10 h-10 text-brand-teal/20 absolute top-6 left-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-              </svg>
-              <div className="relative z-10">
-                <p className="text-gray-600 leading-relaxed mb-6 italic">
-                  "Venturis transformed our office into a modern, collaborative space. Their attention to detail and project management was exceptional."
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-brand-teal/20 flex items-center justify-center text-brand-teal font-bold">
-                    SK
-                  </div>
-                  <div>
-                    <div className="font-semibold text-brand-dark text-sm">Sarah Khalid</div>
-                    <div className="text-xs text-gray-500">CEO, TechCorp</div>
+          <div
+            className="relative max-w-3xl mx-auto"
+            onMouseEnter={() => setIsTestPaused(true)}
+            onMouseLeave={() => setIsTestPaused(false)}
+          >
+            <div className="relative min-h-[320px]">
+              {testimonials.map((t, i) => (
+                <div
+                  key={i}
+                  className={`transition-all duration-700 ease-in-out absolute inset-0 ${
+                    i === activeTestimonial
+                      ? 'opacity-100 translate-y-0'
+                      : 'opacity-0 translate-y-4 pointer-events-none'
+                  }`}
+                >
+                  <div className="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-gray-100">
+                    <div className="flex gap-1 mb-6">
+                      {[...Array(5)].map((_, s) => (
+                        <svg key={s} className={`w-5 h-5 ${s < t.rating ? 'text-amber-400' : 'text-gray-200'}`} fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8 italic">
+                      &ldquo;{t.quote}&rdquo;
+                    </p>
+                    <div className="flex items-center gap-4">
+                      <div className="w-14 h-14 rounded-full bg-brand-teal/15 flex items-center justify-center text-brand-teal font-bold text-lg">
+                        {t.initials}
+                      </div>
+                      <div>
+                        <div className="font-semibold text-brand-dark text-lg">{t.name}</div>
+                        <div className="text-sm text-gray-500">{t.title}</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 relative">
-              <svg className="w-10 h-10 text-brand-teal/20 absolute top-6 left-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-              </svg>
-              <div className="relative z-10">
-                <p className="text-gray-600 leading-relaxed mb-6 italic">
-                  "From concept to completion, the team delivered a stunning villa design that exceeded our expectations. Truly world-class."
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-brand-teal/20 flex items-center justify-center text-brand-teal font-bold">
-                    AA
-                  </div>
-                  <div>
-                    <div className="font-semibold text-brand-dark text-sm">Ahmed Al Mazroui</div>
-                    <div className="text-xs text-gray-500">Private Client</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-gray-50 rounded-2xl p-8 relative">
-              <svg className="w-10 h-10 text-brand-teal/20 absolute top-6 left-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-              </svg>
-              <div className="relative z-10">
-                <p className="text-gray-600 leading-relaxed mb-6 italic">
-                  "Our boutique hotel received rave reviews thanks to the stunning interior design. Venturis understood our brand perfectly."
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-brand-teal/20 flex items-center justify-center text-brand-teal font-bold">
-                    LN
-                  </div>
-                  <div>
-                    <div className="font-semibold text-brand-dark text-sm">Lina Nasser</div>
-                    <div className="text-xs text-gray-500">Hotel Director</div>
-                  </div>
-                </div>
-              </div>
+            <div className="flex justify-center gap-3 mt-10">
+              {testimonials.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setActiveTestimonial(i)}
+                  className={`rounded-full transition-all duration-500 ${
+                    i === activeTestimonial
+                      ? 'bg-brand-teal w-8 h-2.5'
+                      : 'bg-gray-300 w-2.5 h-2.5 hover:bg-gray-400'
+                  }`}
+                />
+              ))}
             </div>
           </div>
         </div>
