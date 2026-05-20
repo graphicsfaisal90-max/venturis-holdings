@@ -28,9 +28,9 @@ const services = [
     image: '/project-management.jpeg',
   },
   {
-    title: 'Furniture & Decor',
-    desc: 'Curated furniture selection, custom joinery, and decor styling to bring each interior vision to life.',
-    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80',
+    title: 'Office Setup',
+    desc: 'Complete office setup solutions including workspace design, furniture installation, and infrastructure setup for a productive work environment.',
+    image: '/office-setup.jpg',
   },
 ]
 
