@@ -214,13 +214,13 @@ export default function About() {
                   "We don't just build businesses — we build lasting partnerships and a legacy of trust."
                 </p>
                 <p>
-                  Founded with a vision to create a multi-dimensional business group that could serve diverse needs under one umbrella, Venturis Holdings has grown from a single venture into a comprehensive holding company with six specialized divisions.
+                  Founded with a vision to create a dynamic multi-dimensional business group serving diverse industries under one umbrella, Venturis Holdings has evolved into a comprehensive holding company with multiple specialized consultancy and service divisions.
                 </p>
                 <p>
-                  Our journey began with a simple belief: that excellence is not industry-specific. By bringing together talented teams across interiors, facilities, automotive, real estate, and investments, we've created a synergy that allows us to deliver holistic solutions to our clients.
+                  Our journey began with a simple belief — excellence is not limited to one industry. By bringing together experienced professionals across financial consultancy, mortgage and banking advisory, information technology, cyber security, business development, marketing, real estate consultancy, and digital solutions, we have built a strong ecosystem capable of delivering integrated and innovative solutions to our clients.
                 </p>
                 <p>
-                  Today, we stand as a trusted partner to businesses and individuals across South Africa and the UAE, known for our reliability, innovation, and unwavering commitment to quality.
+                  Today, Venturis Holdings proudly serves businesses and individuals across South Africa and the UAE, recognized for our professionalism, reliability, innovation, and unwavering commitment to quality and long-term client success.
                 </p>
               </div>
             </div>
