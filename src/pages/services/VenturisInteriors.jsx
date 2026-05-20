@@ -10,7 +10,7 @@ const services = [
   {
     title: 'Architecture',
     desc: 'Innovative architectural solutions from concept development to detailed design, ensuring structural elegance and spatial harmony.',
-    image: '/Architecture.jpg',
+    image: '/architecture.jpg',
   },
   {
     title: 'Space Planning',
