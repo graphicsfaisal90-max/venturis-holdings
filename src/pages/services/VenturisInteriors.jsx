@@ -70,27 +70,27 @@ const projects = [
   {
     title: 'Corporate HQ',
     category: 'Commercial',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80',
+    image: '/pinterest-sheffield.jpg',
   },
   {
     title: 'Luxury Villa',
     category: 'Residential',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
+    image: '/pinterest-modern-house.jpg',
   },
   {
     title: 'Boutique Hotel',
     category: 'Hospitality',
-    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80',
+    image: '/pinterest-luxury-living.jpg',
   },
   {
     title: 'Executive Office',
     category: 'Commercial',
-    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80',
+    image: '/pinterest-luxury-home.jpg',
   },
   {
     title: 'Modern Residence',
     category: 'Residential',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80',
+    image: '/pinterest-elegant.jpg',
   },
   {
     title: 'Retail Space',
@@ -480,7 +480,7 @@ export default function VenturisInteriors() {
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80"
+            src="/pinterest-modern-house.jpg"
             alt="Luxury Interior"
             className="w-full h-full object-cover"
           />
