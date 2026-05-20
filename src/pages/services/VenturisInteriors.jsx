@@ -25,7 +25,7 @@ const services = [
   {
     title: 'Project Management',
     desc: 'Dedicated project oversight from conception to handover, coordinating all stakeholders for seamless delivery.',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80',
+    image: '/project-management.jpeg',
   },
   {
     title: 'Furniture & Decor',
