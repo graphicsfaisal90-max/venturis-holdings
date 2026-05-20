@@ -139,9 +139,9 @@ function CountUp({ end, suffix, label }) {
 }
 
 const heroSlides = [
-  { image: '/pinterest-grand-entrance.jpg', alt: 'Grand Entrance Interior' },
-  { image: '/pinterest-modern-house.jpg', alt: 'Modern Luxury Interior' },
-  { image: '/pinterest-luxury-home.jpg', alt: 'Luxury Home Design' },
+  { image: '/hero-slide-1.jpg', alt: 'Modern Luxury Living Room' },
+  { image: '/hero-slide-2.jpg', alt: 'Contemporary Interior Design' },
+  { image: '/hero-slide-3.jpg', alt: 'Elegant Living Space' },
 ]
 
 export default function VenturisInteriors() {
