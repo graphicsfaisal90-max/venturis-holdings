@@ -107,6 +107,46 @@ const pakistanDestinations = [
     rating: 5.0,
     tag: 'Expedition',
   },
+  {
+    title: 'Bhurban',
+    location: 'Punjab, Pakistan',
+    locationLong: 'Murree Hills, Punjab',
+    desc: "Escape to an upscale hill station resort nestled deep within the verdant Murree hills. Offering pristine manicured gardens, premium hospitality, and sweeping views of misty valleys, it provides the ultimate serene getaway for elite travelers.",
+    image: "/Bhurban.jpg",
+    heading: 'Luxury in the Hills of Bhurban',
+    rating: 4.7,
+    tag: 'Hill Retreat',
+  },
+  {
+    title: 'Khanpur Dam',
+    location: 'Khyber Pakhtunkhwa, Pakistan',
+    locationLong: 'Haripur District, Khyber Pakhtunkhwa',
+    desc: "Experience the ultimate thrill of water sports on a brilliant turquoise reservoir. From exhilarating parasailing high above the clean waters to high-speed boating, it is northern Pakistan's premier destination for adventure and aquatic leisure.",
+    image: "/khanpur dam.jpeg",
+    heading: 'Vibrant Adventures at Khanpur Dam',
+    rating: 4.6,
+    tag: 'Water Sports',
+  },
+  {
+    title: 'Khunjerab Pass',
+    location: 'Gilgit-Baltistan, Pakistan',
+    locationLong: 'Pakistan-China Border, Karakoram Range',
+    desc: "Stand at the highest paved international border crossing in the world, towering at 4,693 meters. Flanked by massive, snow-covered Karakoram peaks, this monumental gateway offers an unforgettable journey into high-altitude wonder.",
+    image: "/Khunjerab pass.jpg",
+    heading: 'The Roof of the World at Khunjerab',
+    rating: 4.9,
+    tag: 'High-Altitude',
+  },
+  {
+    title: 'Neelum Valley',
+    location: 'Azad Jammu & Kashmir, Pakistan',
+    locationLong: 'Azad Jammu and Kashmir, Pakistan',
+    desc: "Journey through a spectacular, alpine paradise where surging glacial rivers cut through dense pine forests and dramatic mountain slopes. A breathtaking, untouched landscape designed for travelers seeking raw nature and peaceful isolation.",
+    image: "/Neelum Valley.jpg",
+    heading: 'The Untamed Beauty of Neelum Valley',
+    rating: 4.8,
+    tag: 'Alpine Paradise',
+  },
 ]
 
 const experiences = [
@@ -524,7 +564,7 @@ export default function VenturisTourism() {
             </div>
           </AnimatedSection>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {pakistanDestinations.map((d) => (
               <AnimatedSection key={d.title}>
                 <div
