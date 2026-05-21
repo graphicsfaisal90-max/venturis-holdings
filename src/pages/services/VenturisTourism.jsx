@@ -364,51 +364,68 @@ export default function VenturisTourism() {
       </section>
 
       {/* About Section */}
-      <section className="relative bg-white py-24">
+      <section className="relative bg-white py-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-20">
-            <p className="text-brand-teal uppercase tracking-[0.25em] text-sm font-semibold mb-5">About Our Division</p>
-            <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark mb-8 leading-tight">
-              Curating Journeys That <span className="text-brand-teal">Inspire &amp; Transform</span>
-            </h2>
-            <p className="text-gray-500 text-lg leading-relaxed max-w-2xl mx-auto">
-              At Venturis Tourism, we believe in creating experiences that transcend the ordinary. From the
-              futuristic skyline of Dubai to the ancient valleys of Gilgit-Baltistan, every itinerary is
-              meticulously crafted to reflect your unique desires.
-            </p>
-          </div>
           <AnimatedSection>
-            <div className="relative rounded-3xl overflow-hidden mb-20 shadow-xl">
-              <img
-                src="/Desert Safari 2.jpg"
-                alt="Desert Safari"
-                className="w-full h-[400px] sm:h-[500px] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/70 via-brand-dark/20 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-8 sm:p-12">
-                <div className="max-w-3xl">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-14 h-14 rounded-2xl bg-brand-teal flex items-center justify-center text-white shadow-lg shadow-brand-teal/30">
-                      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                      </svg>
+            <div className="grid lg:grid-cols-2 gap-14 items-center mb-20">
+              <div className="relative">
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                  <img
+                    src="/Desert Safari 2.jpg"
+                    alt="Desert Safari"
+                    className="w-full h-[400px] sm:h-[520px] object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-brand-dark/40 via-transparent to-brand-teal/10" />
+                  <div className="absolute bottom-6 left-6 flex items-center gap-3 bg-white/10 backdrop-blur-xl rounded-xl px-5 py-3 border border-white/15">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center text-white text-lg font-bold font-number shrink-0">
+                      8+
                     </div>
-                    <div>
-                      <p className="text-white font-semibold">8+ Years of Excellence</p>
-                      <p className="text-white/50 text-sm">Crafting premium travel since 2016</p>
+                    <div className="text-white text-xs leading-tight">
+                      <p className="font-semibold text-sm">Years of Excellence</p>
+                      <p className="text-white/60">Crafting premium travel since 2016</p>
                     </div>
                   </div>
-                  <p className="text-white/80 text-lg italic leading-relaxed">
+                </div>
+              </div>
+              <div>
+                <p className="text-brand-teal uppercase tracking-[0.25em] text-sm font-semibold mb-5">About Our Division</p>
+                <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark mb-6 leading-tight">
+                  Curating Journeys That
+                  <br />
+                  <span className="text-brand-teal">Inspire &amp; Transform</span>
+                </h2>
+                <div className="space-y-4 text-gray-500 leading-relaxed">
+                  <p className="text-lg text-brand-dark/70 italic border-l-4 border-brand-teal pl-5">
                     "Every journey should be as remarkable as the destination itself."
                   </p>
+                  <p>
+                    At Venturis Tourism, we believe in creating experiences that transcend the ordinary.
+                    From the futuristic skyline of Dubai to the ancient valleys of Gilgit-Baltistan,
+                    every itinerary is meticulously crafted to reflect your unique desires.
+                  </p>
+                  <p>
+                    Whether you seek the thrill of desert dune bashing beneath a golden sunset, the
+                    serenity of alpine meadows under a blanket of stars, or the cultural richness of
+                    Arabian heritage — our expert team ensures every detail is handled with white-glove
+                    service and authentic local insight.
+                  </p>
                 </div>
+                <Link
+                  to="/contact"
+                  className="group mt-8 inline-flex items-center gap-3 px-7 py-3.5 bg-brand-dark text-white font-semibold rounded-xl hover:bg-brand-navy transition-all hover:-translate-y-1 shadow-lg"
+                >
+                  Start Your Journey
+                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
               </div>
             </div>
           </AnimatedSection>
           <AnimatedSection>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {experiences.map((exp) => (
-                <div key={exp.title} className="group text-center p-6 rounded-2xl hover:bg-gray-50 transition-colors duration-300">
+                <div key={exp.title} className="group text-center p-6 rounded-2xl bg-gray-50 hover:bg-white hover:shadow-xl hover:shadow-brand-teal/5 hover:-translate-y-1 transition-all duration-500 border border-gray-100">
                   <div className="w-14 h-14 mx-auto rounded-2xl bg-brand-light text-brand-teal flex items-center justify-center mb-5 group-hover:bg-brand-teal group-hover:text-white group-hover:shadow-lg group-hover:shadow-brand-teal/20 transition-all duration-500">
                     {exp.icon}
                   </div>
@@ -440,56 +457,47 @@ export default function VenturisTourism() {
               <AnimatedSection key={d.title}>
                 <div
                   tabIndex={0}
-                  className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-brand-teal/10 focus-within:shadow-2xl focus-within:shadow-brand-teal/10 hover:-translate-y-1.5 focus-within:-translate-y-1.5 transition-all duration-500 outline-none"
+                  className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-brand-teal/10 focus-within:shadow-2xl focus-within:shadow-brand-teal/10 hover:-translate-y-1.5 focus-within:-translate-y-1.5 transition-all duration-500 outline-none flex flex-col h-full"
                 >
-                  <div className="relative h-72 overflow-hidden">
+                  <div className="relative h-60 overflow-hidden shrink-0">
                     <img
                       src={d.image}
                       alt={d.title}
                       className="w-full h-full object-cover group-hover:scale-110 group-focus-within:scale-110 transition-transform duration-1000"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-                    <div className="absolute top-5 left-5">
-                      <span className="inline-block px-4 py-2 bg-white/15 backdrop-blur-lg text-white text-xs font-bold uppercase tracking-[0.15em] rounded-full border border-white/20 shadow-lg">
+                    <div className="absolute top-4 left-4">
+                      <span className="inline-block px-3.5 py-1.5 bg-white/15 backdrop-blur-lg text-white text-[10px] font-bold uppercase tracking-[0.15em] rounded-full border border-white/20 shadow-lg">
                         {d.location}
                       </span>
                     </div>
-                    <div className="absolute top-5 right-5">
-                      <span className="inline-block px-3 py-1.5 bg-brand-teal/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider rounded-full shadow-lg">
+                    <div className="absolute top-4 right-4">
+                      <span className="inline-block px-2.5 py-1 bg-brand-teal/90 backdrop-blur-md text-white text-[9px] font-bold uppercase tracking-wider rounded-full shadow-lg">
                         {d.tag}
                       </span>
                     </div>
-                    <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <div className="flex items-center gap-2 mb-1">
+                    <div className="absolute bottom-0 left-0 right-0 p-5">
+                      <div className="flex items-center gap-1.5 mb-1">
                         <StarRating rating={d.rating} />
-                        <span className="text-xs font-medium text-white/70">{d.rating}</span>
+                        <span className="text-[11px] font-medium text-white/70">{d.rating}</span>
                       </div>
-                      <h3 className="text-xl font-bold text-white">{d.title}</h3>
-                      {d.locationLong && (
-                        <p className="text-white/60 text-xs mt-1 flex items-center gap-1.5">
-                          <svg className="w-3.5 h-3.5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                          </svg>
-                          {d.locationLong}
-                        </p>
-                      )}
+                      <h3 className="text-lg font-bold text-white">{d.title}</h3>
                     </div>
                   </div>
-                  <div className="p-6">
+                  <div className="p-5 flex flex-col flex-1">
                     {d.highlight && (
-                      <span className="inline-flex items-center gap-1.5 text-brand-teal text-xs font-semibold mb-3">
-                        <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                      <span className="inline-flex items-center gap-1 text-brand-teal text-[10px] font-semibold mb-2">
+                        <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                         </svg>
                         {d.highlight}
                       </span>
                     )}
-                    <p className="text-gray-500 text-sm leading-relaxed line-clamp-3">{d.desc}</p>
-                    <div className="mt-5 pt-4 border-t border-gray-100 flex items-center justify-between">
+                    <p className="text-gray-500 text-sm leading-relaxed line-clamp-3 flex-1">{d.desc}</p>
+                    <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
                       <span className="text-brand-teal text-xs font-semibold uppercase tracking-wider group-hover:opacity-100 opacity-0 transition-opacity duration-500">Discover More</span>
-                      <div className="w-9 h-9 rounded-full bg-brand-dark text-white flex items-center justify-center group-hover:bg-brand-teal transition-all duration-500 group-hover:scale-110 group-focus-within:scale-110 shadow-lg">
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="w-8 h-8 rounded-full bg-brand-dark text-white flex items-center justify-center group-hover:bg-brand-teal transition-all duration-500 group-hover:scale-110 group-focus-within:scale-110 shadow-lg">
+                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                       </div>
@@ -521,49 +529,49 @@ export default function VenturisTourism() {
               <AnimatedSection key={d.title}>
                 <div
                   tabIndex={0}
-                  className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-brand-teal/10 focus-within:shadow-2xl focus-within:shadow-brand-teal/10 hover:-translate-y-1.5 focus-within:-translate-y-1.5 transition-all duration-500 outline-none"
+                  className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-brand-teal/10 focus-within:shadow-2xl focus-within:shadow-brand-teal/10 hover:-translate-y-1.5 focus-within:-translate-y-1.5 transition-all duration-500 outline-none flex flex-col h-full"
                 >
-                  <div className="relative h-72 overflow-hidden">
+                  <div className="relative h-60 overflow-hidden shrink-0">
                     <img
                       src={d.image}
                       alt={d.title}
                       className="w-full h-full object-cover group-hover:scale-110 group-focus-within:scale-110 transition-transform duration-1000"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-                    <div className="absolute top-5 left-5">
-                      <span className="inline-block px-4 py-2 bg-white/15 backdrop-blur-lg text-white text-xs font-bold uppercase tracking-[0.15em] rounded-full border border-white/20 shadow-lg">
+                    <div className="absolute top-4 left-4">
+                      <span className="inline-block px-3.5 py-1.5 bg-white/15 backdrop-blur-lg text-white text-[10px] font-bold uppercase tracking-[0.15em] rounded-full border border-white/20 shadow-lg">
                         {d.location}
                       </span>
                     </div>
-                    <div className="absolute top-5 right-5">
-                      <span className="inline-block px-3 py-1.5 bg-brand-teal/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider rounded-full shadow-lg">
+                    <div className="absolute top-4 right-4">
+                      <span className="inline-block px-2.5 py-1 bg-brand-teal/90 backdrop-blur-md text-white text-[9px] font-bold uppercase tracking-wider rounded-full shadow-lg">
                         {d.tag}
                       </span>
                     </div>
-                    <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <div className="flex items-center gap-2 mb-1">
+                    <div className="absolute bottom-0 left-0 right-0 p-5">
+                      <div className="flex items-center gap-1.5 mb-1">
                         <StarRating rating={d.rating} />
-                        <span className="text-xs font-medium text-white/70">{d.rating}</span>
+                        <span className="text-[11px] font-medium text-white/70">{d.rating}</span>
                       </div>
-                      <h3 className="text-xl font-bold text-white">{d.heading || d.title}</h3>
-                      {d.locationLong && (
-                        <p className="text-white/60 text-xs mt-1 flex items-center gap-1.5">
-                          <svg className="w-3.5 h-3.5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                          </svg>
-                          {d.locationLong}
-                        </p>
-                      )}
+                      <h3 className="text-lg font-bold text-white">{d.heading || d.title}</h3>
                     </div>
                   </div>
-                  <div className="p-6">
-                    <h4 className="text-lg font-bold text-brand-dark mb-1">{d.title}</h4>
-                    <p className="text-gray-500 text-sm leading-relaxed line-clamp-3">{d.desc}</p>
-                    <div className="mt-5 pt-4 border-t border-gray-100 flex items-center justify-between">
+                  <div className="p-5 flex flex-col flex-1">
+                    <h4 className="text-base font-bold text-brand-dark mb-2">{d.title}</h4>
+                    {d.locationLong && (
+                      <p className="text-xs text-gray-400 mb-2 flex items-center gap-1.5">
+                        <svg className="w-3.5 h-3.5 text-brand-teal shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        {d.locationLong}
+                      </p>
+                    )}
+                    <p className="text-gray-500 text-sm leading-relaxed line-clamp-3 flex-1">{d.desc}</p>
+                    <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
                       <span className="text-brand-teal text-xs font-semibold uppercase tracking-wider group-hover:opacity-100 opacity-0 transition-opacity duration-500">Discover More</span>
-                      <div className="w-9 h-9 rounded-full bg-brand-dark text-white flex items-center justify-center group-hover:bg-brand-teal transition-all duration-500 group-hover:scale-110 group-focus-within:scale-110 shadow-lg">
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="w-8 h-8 rounded-full bg-brand-dark text-white flex items-center justify-center group-hover:bg-brand-teal transition-all duration-500 group-hover:scale-110 group-focus-within:scale-110 shadow-lg">
+                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                       </div>
