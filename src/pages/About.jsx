@@ -67,7 +67,7 @@ const teamRow1 = [
     name: 'Robin J. Wood',
     role: 'Co-Founder',
     bio: 'Visionary Co-Founder from Oklahoma, USA with extensive experience across multiple industries, bringing a strong track record in entrepreneurship, business strategy, operations, and market development.',
-    image: '/robin-j-wood.jpeg',
+    image: '/Robin J. Wood.png',
   },
 ]
 
@@ -76,25 +76,25 @@ const teamRow2 = [
     name: 'Viartseika Maryana',
     role: 'Chief Financial Officer',
     bio: 'Seasoned CFO from Belarus with 12 years of experience in financial strategy, budgeting, investment planning, and corporate growth.',
-    image: '/cfo.jpeg',
+    image: '/Viartseika Maryana.png',
   },
   {
     name: 'Muhammad Faisal',
-    role: 'Information Technology',
+    role: 'Head Of IT',
     bio: 'Experienced IT professional with expertise in technology solutions, digital innovation, and business support services, focused on delivering efficient, reliable, and modern IT solutions for business growth.',
-    image: '/mfaisal.jpeg',
+    image: '/Muhammad Faisal.png',
   },
   {
     name: 'Ella Jean Bihasa',
     role: 'Head of Business Development',
     bio: 'Dynamic Head of Business Development from Philippines with extensive experience in driving revenue growth, building strategic partnerships, and expanding market presence across competitive industries.',
-    image: '/business-development.jpeg',
+    image: '/Ella Jean Bihasa.png',
   },
   {
     name: 'Zuleide Pereira',
     role: 'Managing Director',
     bio: 'Results-driven Managing Director from Brazil with extensive experience in design, production, and business development across diverse industries.',
-    image: '/md.png',
+    image: '/Zuleide Pereira.png',
   },
 ]
 
