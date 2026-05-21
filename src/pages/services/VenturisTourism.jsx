@@ -431,8 +431,8 @@ export default function VenturisTourism() {
               <div className="relative">
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                   <img
-                    src="/Desert Safari 2.jpg"
-                    alt="Desert Safari"
+                    src="/Disney world.jpg"
+                    alt="Disney World"
                     className="w-full h-[400px] sm:h-[520px] object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-tr from-brand-dark/40 via-transparent to-brand-teal/10" />
