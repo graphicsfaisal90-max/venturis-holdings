@@ -447,7 +447,7 @@ export default function VenturisTourism() {
         </div>
       </section>
 
-      {/* UAE Destinations - Horizontal Cards */}
+      {/* UAE Destinations - Premium */}
       <section id="uae" className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
@@ -461,56 +461,61 @@ export default function VenturisTourism() {
             </div>
           </AnimatedSection>
 
-          <div className="space-y-8">
-            {uaeDestinations.map((d, i) => (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {uaeDestinations.map((d) => (
               <AnimatedSection key={d.title}>
                 <div
                   tabIndex={0}
-                  className="group bg-white rounded-2xl overflow-hidden shadow-lg shadow-gray-200/50 border border-gray-100 hover:shadow-2xl hover:shadow-brand-teal/15 focus-within:shadow-2xl focus-within:shadow-brand-teal/15 hover:-translate-y-1 focus-within:-translate-y-1 transition-all duration-500 outline-none flex flex-col md:flex-row"
+                  className="group bg-white rounded-2xl overflow-hidden shadow-lg shadow-gray-200/50 border border-gray-100 hover:shadow-2xl hover:shadow-brand-teal/15 focus-within:shadow-2xl focus-within:shadow-brand-teal/15 hover:-translate-y-1.5 focus-within:-translate-y-1.5 transition-all duration-500 outline-none"
                 >
-                  <div className={`relative md:w-2/5 h-56 md:h-auto overflow-hidden ${i % 2 === 0 ? 'md:order-first' : 'md:order-last'}`}>
-                    <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black/60 via-black/10 to-transparent z-[1]" />
+                  <div className="relative h-56 sm:h-60 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent z-[1]" />
                     <img
                       src={d.image}
                       alt={d.title}
-                      className="w-full h-full object-cover group-hover:scale-105 group-focus-within:scale-105 transition-transform duration-700"
+                      className="w-full h-full object-cover group-hover:scale-110 group-focus-within:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute top-4 left-4 z-10">
-                      <span className="inline-block px-3 py-1.5 bg-black/50 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-[0.15em] rounded-full border border-white/10">
+                      <span className="inline-block px-3 py-1.5 bg-black/50 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-[0.15em] rounded-full border border-white/10 shadow-lg">
                         {d.location}
                       </span>
                     </div>
-                    <div className="absolute bottom-4 left-4 z-10 md:hidden">
-                      {d.tag && (
-                        <span className="inline-block px-2.5 py-1 bg-brand-teal text-white text-[9px] font-bold uppercase tracking-wider rounded-full">
-                          {d.tag}
-                        </span>
-                      )}
+                    <div className="absolute top-4 right-4 z-10">
+                      <span className="inline-block px-2.5 py-1 bg-brand-teal/90 backdrop-blur-md text-white text-[9px] font-bold uppercase tracking-wider rounded-full shadow-lg">
+                        {d.tag}
+                      </span>
                     </div>
-                  </div>
-                  <div className="flex-1 p-7 md:p-9 flex flex-col justify-center">
-                    <div className="flex items-center justify-between mb-3">
-                      <h3 className="text-xl font-bold text-brand-dark">{d.heading || d.title}</h3>
-                      <div className="hidden md:flex items-center gap-2">
+                    <div className="absolute bottom-0 left-0 right-0 p-5 z-10">
+                      <div className="flex items-center gap-2">
                         <StarRating rating={d.rating} />
-                        <span className="text-xs font-semibold text-gray-400">{d.rating}</span>
+                        <span className="text-[11px] font-semibold text-white/80">{d.rating}</span>
                       </div>
                     </div>
+                  </div>
+                  <div className="p-6">
+                    {d.highlight && (
+                      <span className="inline-block px-2.5 py-1 bg-brand-teal/10 text-brand-teal text-[9px] font-bold uppercase tracking-wider rounded-full mb-3">
+                        {d.highlight}
+                      </span>
+                    )}
+                    <h3 className="text-lg font-bold text-brand-dark mb-1">{d.title}</h3>
                     {d.locationLong && (
                       <p className="text-xs text-gray-400 mb-3 flex items-center gap-1.5">
-                        <svg className="w-3.5 h-3.5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-3.5 h-3.5 text-brand-teal shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                         {d.locationLong}
                       </p>
                     )}
-                    <p className="text-gray-500 text-sm leading-relaxed">{d.desc}</p>
-                    <div className="mt-5 flex items-center gap-2 text-brand-teal text-sm font-semibold opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-500">
-                      <span>Discover More</span>
-                      <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
+                    <p className="text-gray-500 text-sm leading-relaxed line-clamp-3">{d.desc}</p>
+                    <div className="mt-5 pt-4 border-t border-gray-100 flex items-center justify-between opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-all duration-500">
+                      <span className="text-brand-teal text-xs font-semibold uppercase tracking-wider">Discover More</span>
+                      <div className="w-8 h-8 rounded-full bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center group-hover:scale-110 group-focus-within:scale-110 transition-transform duration-300 shadow-lg shadow-brand-teal/20">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -520,10 +525,9 @@ export default function VenturisTourism() {
         </div>
       </section>
 
-      {/* Pakistan Destinations - Modern Grid */}
-      <section className="py-24 bg-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-brand-teal/[0.02] rounded-full blur-3xl pointer-events-none" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      {/* Pakistan Destinations - Unified Premium */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="max-w-2xl mb-16">
               <p className="text-xs font-bold text-brand-teal uppercase tracking-[0.25em] mb-4">Discover the North</p>
@@ -535,85 +539,58 @@ export default function VenturisTourism() {
             </div>
           </AnimatedSection>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {pakistanDestinations.map((d, i) => (
+          <div className="grid sm:grid-cols-2 gap-8">
+            {pakistanDestinations.map((d) => (
               <AnimatedSection key={d.title}>
                 <div
                   tabIndex={0}
-                  className={`group relative overflow-hidden rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-2xl hover:shadow-brand-teal/15 focus-within:shadow-2xl focus-within:shadow-brand-teal/15 hover:-translate-y-1 focus-within:-translate-y-1 transition-all duration-500 outline-none ${
-                    i === pakistanDestinations.length - 1 ? 'md:col-span-2 md:flex' : ''
-                  }`}
+                  className="group bg-white rounded-2xl overflow-hidden shadow-lg shadow-gray-200/50 border border-gray-100 hover:shadow-2xl hover:shadow-brand-teal/15 focus-within:shadow-2xl focus-within:shadow-brand-teal/15 hover:-translate-y-1.5 focus-within:-translate-y-1.5 transition-all duration-500 outline-none"
                 >
-                  {i === pakistanDestinations.length - 1 ? (
-                    <>
-                      <div className="md:w-1/2 relative h-64 md:h-auto overflow-hidden">
-                        <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black/60 via-black/10 to-transparent z-[1]" />
-                        <img
-                          src={d.image}
-                          alt={d.title}
-                          className="w-full h-full object-cover group-hover:scale-105 group-focus-within:scale-105 transition-transform duration-700"
-                        />
-                        <div className="absolute top-4 left-4 z-10">
-                          <span className="inline-block px-3 py-1.5 bg-brand-teal/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-[0.15em] rounded-full">
-                            {d.tag}
-                          </span>
-                        </div>
+                  <div className="relative h-56 sm:h-64 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent z-[1]" />
+                    <img
+                      src={d.image}
+                      alt={d.title}
+                      className="w-full h-full object-cover group-hover:scale-110 group-focus-within:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute top-4 left-4 z-10">
+                      <span className="inline-block px-3 py-1.5 bg-black/50 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-[0.15em] rounded-full border border-white/10 shadow-lg">
+                        {d.location}
+                      </span>
+                    </div>
+                    <div className="absolute top-4 right-4 z-10">
+                      <span className="inline-block px-2.5 py-1 bg-brand-teal/90 backdrop-blur-md text-white text-[9px] font-bold uppercase tracking-wider rounded-full shadow-lg">
+                        {d.tag}
+                      </span>
+                    </div>
+                    <div className="absolute bottom-0 left-0 right-0 p-5 z-10">
+                      <div className="flex items-center gap-2">
+                        <StarRating rating={d.rating} />
+                        <span className="text-[11px] font-semibold text-white/80">{d.rating}</span>
                       </div>
-                      <div className="md:w-1/2 p-8 md:p-10 flex flex-col justify-center">
-                        <p className="text-xs text-gray-400 mb-2 flex items-center gap-1.5">
-                          <svg className="w-3.5 h-3.5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                          </svg>
-                          {d.locationLong}
-                        </p>
-                        <h3 className="text-2xl font-bold text-brand-dark mb-3">{d.heading || d.title}</h3>
-                        <p className="text-gray-500 text-sm leading-relaxed">{d.desc}</p>
-                        <div className="mt-5 flex items-center gap-2 text-brand-teal text-sm font-semibold opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-500">
-                          <span>Discover More</span>
-                          <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                          </svg>
-                        </div>
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-lg font-bold text-brand-dark mb-1">{d.heading || d.title}</h3>
+                    {d.locationLong && (
+                      <p className="text-xs text-gray-400 mb-3 flex items-center gap-1.5">
+                        <svg className="w-3.5 h-3.5 text-brand-teal shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        {d.locationLong}
+                      </p>
+                    )}
+                    <p className="text-gray-500 text-sm leading-relaxed line-clamp-3">{d.desc}</p>
+                    <div className="mt-5 pt-4 border-t border-gray-100 flex items-center justify-between opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-all duration-500">
+                      <span className="text-brand-teal text-xs font-semibold uppercase tracking-wider">Discover More</span>
+                      <div className="w-8 h-8 rounded-full bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center group-hover:scale-110 group-focus-within:scale-110 transition-transform duration-300 shadow-lg shadow-brand-teal/20">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
                       </div>
-                    </>
-                  ) : (
-                    <>
-                      <div className="relative h-52 overflow-hidden">
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent z-[1]" />
-                        <img
-                          src={d.image}
-                          alt={d.title}
-                          className="w-full h-full object-cover group-hover:scale-105 group-focus-within:scale-105 transition-transform duration-700"
-                        />
-                        <div className="absolute top-4 left-4 z-10">
-                          <span className="inline-block px-3 py-1.5 bg-black/50 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-[0.15em] rounded-full border border-white/10">
-                            {d.location}
-                          </span>
-                        </div>
-                        <div className="absolute top-4 right-4 z-10">
-                          <span className="inline-block px-2.5 py-1 bg-brand-teal/90 backdrop-blur-md text-white text-[9px] font-bold uppercase tracking-wider rounded-full">
-                            {d.tag}
-                          </span>
-                        </div>
-                      </div>
-                      <div className="p-6">
-                        <div className="flex items-center gap-2 mb-2">
-                          <StarRating rating={d.rating} />
-                          <span className="text-xs font-semibold text-gray-400">{d.rating}</span>
-                        </div>
-                        <h3 className="text-lg font-bold text-brand-dark mb-2">{d.title}</h3>
-                        <p className="text-gray-500 text-xs leading-relaxed">{d.locationLong}</p>
-                        <p className="text-gray-500 text-sm leading-relaxed mt-3 line-clamp-2">{d.desc}</p>
-                        <div className="mt-4 flex items-center gap-2 text-brand-teal text-sm font-semibold opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-500">
-                          <span>Discover More</span>
-                          <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                          </svg>
-                        </div>
-                      </div>
-                    </>
-                  )}
+                    </div>
+                  </div>
                 </div>
               </AnimatedSection>
             ))}
