@@ -247,85 +247,96 @@ function StarRating({ rating }) {
   )
 }
 
+const heroSlides = [
+  { image: '/Desert Safari 2.jpg', alt: 'Dubai Desert Safari' },
+  { image: '/Ain Dubai (Dubai, UAE).jpg', alt: 'Ain Dubai Observation Wheel' },
+  { image: '/Fairy Meadows & Nanga Parbat (Pakistan).jpg', alt: 'Fairy Meadows Nanga Parbat' },
+]
+
 export default function VenturisTourism() {
+  const [activeSlide, setActiveSlide] = useState(0)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveSlide((prev) => (prev + 1) % heroSlides.length)
+    }, 5000)
+    return () => clearInterval(timer)
+  }, [])
+
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[750px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="/Desert Safari 2.jpg"
-            alt="Desert Safari"
-            className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-[20s]"
-          />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-black/30" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-brand-teal rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-20 w-[30rem] h-[30rem] bg-white rounded-full blur-3xl" />
+      <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
+        {heroSlides.map((slide, i) => (
+          <div
+            key={slide.image}
+            className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+              i === activeSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
+            }`}
+          >
+            <img
+              src={slide.image}
+              alt={slide.alt}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/30" />
+
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex gap-3">
+          {heroSlides.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setActiveSlide(i)}
+              className={`w-2.5 h-2.5 rounded-full transition-all duration-500 ${
+                i === activeSlide ? 'bg-brand-teal w-8' : 'bg-white/40 hover:bg-white/60'
+              }`}
+            />
+          ))}
         </div>
 
-        <div className="absolute top-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
-          <span className="px-4 py-1.5 bg-white/10 backdrop-blur-md text-white/80 text-[10px] font-bold uppercase tracking-[0.2em] rounded-full border border-white/10">
-            Ultra Premium
-          </span>
-          <span className="px-4 py-1.5 bg-brand-teal/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-[0.2em] rounded-full">
-            Since 2016
-          </span>
-        </div>
-
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center lg:text-left w-full">
           <Link
             to="/services"
-            className="inline-flex items-center gap-2 text-white/50 hover:text-white text-xs mb-6 transition-colors group tracking-wider uppercase"
+            className="inline-flex items-center gap-2 text-white/60 hover:text-white text-sm mb-8 transition-colors group"
           >
-            <svg className="w-3.5 h-3.5 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
             Back to Services
           </Link>
-          <div className="max-w-4xl mx-auto">
-            <p className="text-brand-teal uppercase tracking-[0.3em] text-sm font-medium mb-5 animate-fade-in-down">
+          <div className="max-w-3xl">
+            <p className="text-brand-teal uppercase tracking-[0.25em] text-sm font-medium mb-4 animate-fade-in-down">
               Venturis Holdings Division
             </p>
-            <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold text-white leading-[1.1] mb-8 animate-fade-in-down delay-100">
-              Venturis
-              <span className="block text-4xl sm:text-5xl md:text-6xl font-light text-white/80 mt-3">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight mb-6 animate-fade-in-down delay-100">
+              Venturis Tourism,
+              <span className="block text-3xl sm:text-4xl md:text-5xl font-light text-white/80 mt-2">
                 Curated Travel Experiences
               </span>
             </h1>
-            <p className="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed mb-12 animate-fade-in-down delay-200">
-              From the dazzling skyline of Dubai to the majestic peaks of the Karakoram — discover
-              extraordinary destinations crafted for the discerning luxury traveler.
+            <p className="text-lg sm:text-xl text-white/70 max-w-2xl leading-relaxed mb-10 animate-fade-in-down delay-200">
+              From the dazzling skyline of Dubai to the majestic peaks of the Karakoram — discover extraordinary
+              destinations crafted for the discerning luxury traveler.
             </p>
-            <div className="flex flex-wrap gap-4 justify-center animate-fade-in-up delay-300">
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start animate-fade-in-up delay-300">
               <Link
                 to="/contact"
-                className="group inline-flex items-center px-8 py-4 bg-brand-teal text-white font-semibold rounded-xl hover:bg-brand-teal/90 transition-all duration-300 shadow-lg shadow-brand-teal/25 hover:shadow-xl hover:shadow-brand-teal/40 hover:-translate-y-1"
+                className="inline-flex items-center px-8 py-3.5 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal/90 transition-all duration-300 shadow-lg shadow-brand-teal/25 hover:shadow-xl hover:shadow-brand-teal/30 hover:-translate-y-0.5"
               >
-                <span>Book Your Journey</span>
-                <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                Book Your Journey
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </Link>
               <a
                 href="#uae"
-                className="inline-flex items-center px-8 py-4 border-2 border-white/20 text-white font-semibold rounded-xl hover:bg-white/10 hover:border-white/40 transition-all duration-300"
+                className="inline-flex items-center px-8 py-3.5 border-2 border-white/20 text-white font-semibold rounded-lg hover:bg-white/10 hover:border-white/40 transition-all duration-300"
               >
                 Explore Destinations
               </a>
             </div>
           </div>
-        </div>
-
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20">
-          <a href="#stats" className="flex flex-col items-center gap-2 text-white/40 hover:text-white/70 transition-colors">
-            <span className="text-[10px] uppercase tracking-[0.3em] font-medium">Scroll</span>
-            <div className="w-5 h-8 rounded-full border-2 border-white/20 flex items-start justify-center p-1">
-              <div className="w-1 h-2 bg-white/60 rounded-full animate-bounce" />
-            </div>
-          </a>
         </div>
       </section>
 
