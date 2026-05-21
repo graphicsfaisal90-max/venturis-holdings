@@ -105,9 +105,9 @@ const projects = [
     image: '/pinterest-luxury-home.jpg',
   },
   {
-    title: 'Culinary Elegance – Atlantis The Royal',
-    category: 'Hospitality',
-    image: '/project-1.png',
+    title: 'Subtle Luxury Kitchen',
+    category: 'Residential',
+    image: '/Subtle Luxury Kitchens.png',
   },
   {
     title: 'Marble Symphony Kitchen',
