@@ -33,6 +33,7 @@ export default function Footer() {
               <li><Link to="/services/realtors" className="text-brand-light hover:text-white text-sm transition-colors">Venturis Realtors</Link></li>
               <li><Link to="/services/partners" className="text-brand-light hover:text-white text-sm transition-colors">Venturis Partners</Link></li>
               <li><Link to="/services/wheels" className="text-brand-light hover:text-white text-sm transition-colors">Venturis Wheels</Link></li>
+              <li><Link to="/services/tourism" className="text-brand-light hover:text-white text-sm transition-colors">Venturis Tourism</Link></li>
             </ul>
           </div>
 
