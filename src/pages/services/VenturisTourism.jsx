@@ -67,6 +67,26 @@ const uaeDestinations = [
     rating: 4.6,
     tag: 'Family Fun',
   },
+  {
+    title: 'The House of Hype',
+    location: 'Dubai, UAE',
+    locationLong: 'Level 1, Chinatown, Dubai Mall, Dubai',
+    desc: "Immerse yourself in Dubai's ultimate indoor wonderverse. Spanning a massive digital playground, it features over 25 interactive worlds where glowing neon jungles, tech-driven gaming, live performances, and stunning physical-meets-virtual art installations create an absolute paradise for modern content creators and trendsetters.",
+    image: "/The House of Hype.jpeg",
+    heading: 'Step Into the Metaverse at House of Hype',
+    rating: 4.8,
+    tag: 'Digital Playground',
+  },
+  {
+    title: 'Ferrari World Abu Dhabi',
+    location: 'Abu Dhabi, UAE',
+    locationLong: 'Ferrari World Yas Island, Abu Dhabi',
+    desc: "Experience the ultimate adrenaline rush at the world's premier Ferrari-branded theme park. Home to the world's fastest rollercoaster and a sleek collection of racing simulators, this iconic indoor mega-park perfectly blends Italian automotive luxury with family entertainment.",
+    image: "/Ferrari World Abu Dhabi.jpeg",
+    heading: 'High-Octane Thrills at Ferrari World',
+    rating: 4.9,
+    tag: 'Theme Park',
+  },
 ]
 
 const pakistanDestinations = [
