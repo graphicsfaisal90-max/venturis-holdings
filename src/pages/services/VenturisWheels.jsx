@@ -404,6 +404,230 @@ export default function VenturisWheels() {
         </div>
       </section>
 
+      {/* About Our Rentals Section */}
+      <section className="relative py-24 overflow-hidden bg-black">
+        <div className="absolute inset-0">
+          <img
+            src="/range-rover-1.jpg"
+            alt="Luxury fleet background"
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/95 to-black/80" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/40" />
+        </div>
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-teal/30 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-teal/30 to-transparent" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection className="text-center mb-16">
+            <div className="flex items-center justify-center gap-3 mb-4 sm:mb-6">
+              <div className="h-px w-10 bg-brand-teal" />
+              <span className="text-brand-teal uppercase tracking-[0.3em] text-xs font-medium">Venturis Wheels Rentals</span>
+              <div className="h-px w-10 bg-brand-teal" />
+            </div>
+          </AnimatedSection>
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <AnimatedSection>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+                Premium Rental <span className="text-brand-teal">Experience</span>
+              </h2>
+              <p className="text-white/60 leading-relaxed text-base sm:text-lg max-w-xl">
+                Luxury mobility solutions designed for comfort, flexibility, and elite experiences across the UAE.
+              </p>
+              <div className="hidden lg:flex items-center gap-6 mt-10">
+                <div className="flex -space-x-3">
+                  {[1, 2, 3, 4].map((i) => (
+                    <div key={i} className="w-10 h-10 rounded-full border-2 border-black bg-white/10 backdrop-blur-sm flex items-center justify-center text-white/80 text-xs font-medium">
+                      {String.fromCharCode(64 + i)}
+                    </div>
+                  ))}
+                </div>
+                <span className="text-white/40 text-sm">Trusted by premium clients</span>
+              </div>
+            </AnimatedSection>
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-5">
+              <AnimatedSection className="group p-5 sm:p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 hover:border-brand-teal/30 hover:-translate-y-1 transition-all duration-500">
+                <div className="w-10 h-10 rounded-xl bg-brand-teal/20 flex items-center justify-center mb-4 group-hover:bg-brand-teal/30 transition-colors duration-500">
+                  <svg className="w-5 h-5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-white font-bold text-base sm:text-lg mb-2">Luxury & SUV Fleet</h3>
+                <p className="text-white/50 text-xs sm:text-sm leading-relaxed">
+                  Venturis Wheels offers a curated collection of premium SUVs and luxury vehicles tailored for clients who value comfort, prestige, and performance.
+                </p>
+              </AnimatedSection>
+              <AnimatedSection className="group p-5 sm:p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 hover:border-brand-teal/30 hover:-translate-y-1 transition-all duration-500">
+                <div className="w-10 h-10 rounded-xl bg-brand-teal/20 flex items-center justify-center mb-4 group-hover:bg-brand-teal/30 transition-colors duration-500">
+                  <svg className="w-5 h-5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h3 className="text-white font-bold text-base sm:text-lg mb-2">Flexible Rental Plans</h3>
+                <p className="text-white/50 text-xs sm:text-sm leading-relaxed">
+                  Choose from daily, weekly, monthly, or long-term rental solutions designed to fit business, leisure, and lifestyle needs.
+                </p>
+              </AnimatedSection>
+              <AnimatedSection className="group p-5 sm:p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 hover:border-brand-teal/30 hover:-translate-y-1 transition-all duration-500">
+                <div className="w-10 h-10 rounded-xl bg-brand-teal/20 flex items-center justify-center mb-4 group-hover:bg-brand-teal/30 transition-colors duration-500">
+                  <svg className="w-5 h-5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                </div>
+                <h3 className="text-white font-bold text-base sm:text-lg mb-2">Lease-to-Own Solutions</h3>
+                <p className="text-white/50 text-xs sm:text-sm leading-relaxed">
+                  Our lease-to-own model allows customers to enjoy luxury vehicles with flexible ownership opportunities and manageable monthly payments.
+                </p>
+              </AnimatedSection>
+              <AnimatedSection className="group p-5 sm:p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 hover:border-brand-teal/30 hover:-translate-y-1 transition-all duration-500">
+                <div className="w-10 h-10 rounded-xl bg-brand-teal/20 flex items-center justify-center mb-4 group-hover:bg-brand-teal/30 transition-colors duration-500">
+                  <svg className="w-5 h-5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+                  </svg>
+                </div>
+                <h3 className="text-white font-bold text-base sm:text-lg mb-2">Seamless Booking Experience</h3>
+                <p className="text-white/50 text-xs sm:text-sm leading-relaxed">
+                  Customers can browse, reserve, and manage rentals through a smooth digital experience with fast approvals and premium customer support.
+                </p>
+              </AnimatedSection>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Source of Income Section */}
+      <section className="py-24 bg-white overflow-hidden relative">
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-teal/20 to-transparent" />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-brand-teal/5 rounded-full blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-brand-teal/5 rounded-full blur-3xl" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
+            <div className="flex items-center justify-center gap-3 mb-4 sm:mb-6">
+              <div className="h-px w-8 sm:w-10 bg-brand-teal" />
+              <span className="text-brand-teal uppercase tracking-[0.3em] text-xs font-medium">Revenue Streams</span>
+              <div className="h-px w-8 sm:w-10 bg-brand-teal" />
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-dark mb-4">
+              Source of <span className="text-brand-teal">Income</span>
+            </h2>
+            <p className="text-gray-500 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+              Venturis Wheels operates through multiple revenue streams built around premium mobility services and luxury automotive solutions.
+            </p>
+          </AnimatedSection>
+
+          {/* Income Source Cards */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 mb-16">
+            <AnimatedSection className="group relative p-6 sm:p-8 rounded-2xl bg-white border border-gray-100 shadow-lg shadow-brand-teal/5 hover:shadow-xl hover:shadow-brand-teal/10 hover:border-brand-teal/30 hover:-translate-y-1 transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-brand-teal/[0.02] to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative">
+                <div className="w-12 h-12 rounded-xl bg-brand-teal/10 flex items-center justify-center mb-4 group-hover:bg-brand-teal/15 group-hover:shadow-lg group-hover:shadow-brand-teal/20 transition-all duration-500">
+                  <svg className="w-6 h-6 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div className="text-3xl font-bold text-brand-dark font-number mb-2">01</div>
+                <h3 className="text-lg font-bold text-brand-dark">Luxury Vehicle Rentals</h3>
+                <p className="text-gray-400 text-xs sm:text-sm mt-2 leading-relaxed">
+                  Short-term and monthly luxury vehicle rentals as the primary revenue stream.
+                </p>
+              </div>
+            </AnimatedSection>
+            <AnimatedSection className="group relative p-6 sm:p-8 rounded-2xl bg-white border border-gray-100 shadow-lg shadow-brand-teal/5 hover:shadow-xl hover:shadow-brand-teal/10 hover:border-brand-teal/30 hover:-translate-y-1 transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-brand-teal/[0.02] to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative">
+                <div className="w-12 h-12 rounded-xl bg-brand-teal/10 flex items-center justify-center mb-4 group-hover:bg-brand-teal/15 group-hover:shadow-lg group-hover:shadow-brand-teal/20 transition-all duration-500">
+                  <svg className="w-6 h-6 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                </div>
+                <div className="text-3xl font-bold text-brand-dark font-number mb-2">02</div>
+                <h3 className="text-lg font-bold text-brand-dark">Lease-to-Own Income</h3>
+                <p className="text-gray-400 text-xs sm:text-sm mt-2 leading-relaxed">
+                  Recurring revenue through structured lease-to-own plans with flexible ownership transition.
+                </p>
+              </div>
+            </AnimatedSection>
+            <AnimatedSection className="group relative p-6 sm:p-8 rounded-2xl bg-white border border-gray-100 shadow-lg shadow-brand-teal/5 hover:shadow-xl hover:shadow-brand-teal/10 hover:border-brand-teal/30 hover:-translate-y-1 transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-brand-teal/[0.02] to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative">
+                <div className="w-12 h-12 rounded-xl bg-brand-teal/10 flex items-center justify-center mb-4 group-hover:bg-brand-teal/15 group-hover:shadow-lg group-hover:shadow-brand-teal/20 transition-all duration-500">
+                  <svg className="w-6 h-6 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <div className="text-3xl font-bold text-brand-dark font-number mb-2">03</div>
+                <h3 className="text-lg font-bold text-brand-dark">Long-Term Leasing</h3>
+                <p className="text-gray-400 text-xs sm:text-sm mt-2 leading-relaxed">
+                  Stable recurring income and strong retention through corporate and long-stay leasing packages.
+                </p>
+              </div>
+            </AnimatedSection>
+            <AnimatedSection className="group relative p-6 sm:p-8 rounded-2xl bg-white border border-gray-100 shadow-lg shadow-brand-teal/5 hover:shadow-xl hover:shadow-brand-teal/10 hover:border-brand-teal/30 hover:-translate-y-1 transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-brand-teal/[0.02] to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative">
+                <div className="w-12 h-12 rounded-xl bg-brand-teal/10 flex items-center justify-center mb-4 group-hover:bg-brand-teal/15 group-hover:shadow-lg group-hover:shadow-brand-teal/20 transition-all duration-500">
+                  <svg className="w-6 h-6 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+                  </svg>
+                </div>
+                <div className="text-3xl font-bold text-brand-dark font-number mb-2">04</div>
+                <h3 className="text-lg font-bold text-brand-dark">Premium Concierge Services</h3>
+                <p className="text-gray-400 text-xs sm:text-sm mt-2 leading-relaxed">
+                  Chauffeur services, airport transfers, and VIP transportation as additional income streams.
+                </p>
+              </div>
+            </AnimatedSection>
+          </div>
+
+          {/* Detailed Descriptions */}
+          <div className="grid lg:grid-cols-2 gap-6">
+            <AnimatedSection className="group p-6 sm:p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-brand-teal/20 hover:shadow-lg hover:shadow-brand-teal/5 transition-all duration-500">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-8 h-8 rounded-lg bg-brand-teal/10 flex items-center justify-center">
+                  <span className="text-brand-teal text-sm font-bold font-number">01</span>
+                </div>
+                <h3 className="text-lg font-bold text-brand-dark">Luxury Vehicle Rentals</h3>
+              </div>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                The primary revenue stream comes from short-term and monthly luxury vehicle rentals. Customers can access premium SUVs and executive vehicles with flexible rental durations and competitive pricing.
+              </p>
+            </AnimatedSection>
+            <AnimatedSection className="group p-6 sm:p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-brand-teal/20 hover:shadow-lg hover:shadow-brand-teal/5 transition-all duration-500">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-8 h-8 rounded-lg bg-brand-teal/10 flex items-center justify-center">
+                  <span className="text-brand-teal text-sm font-bold font-number">02</span>
+                </div>
+                <h3 className="text-lg font-bold text-brand-dark">Lease-to-Own Income</h3>
+              </div>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Venturis Wheels generates recurring revenue through lease-to-own plans that allow clients to transition from renting to ownership with structured monthly payments.
+              </p>
+            </AnimatedSection>
+            <AnimatedSection className="group p-6 sm:p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-brand-teal/20 hover:shadow-lg hover:shadow-brand-teal/5 transition-all duration-500">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-8 h-8 rounded-lg bg-brand-teal/10 flex items-center justify-center">
+                  <span className="text-brand-teal text-sm font-bold font-number">03</span>
+                </div>
+                <h3 className="text-lg font-bold text-brand-dark">Long-Term Leasing</h3>
+              </div>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Corporate clients and long-stay customers benefit from long-term leasing packages that provide stable recurring income and strong client retention.
+              </p>
+            </AnimatedSection>
+            <AnimatedSection className="group p-6 sm:p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-brand-teal/20 hover:shadow-lg hover:shadow-brand-teal/5 transition-all duration-500">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-8 h-8 rounded-lg bg-brand-teal/10 flex items-center justify-center">
+                  <span className="text-brand-teal text-sm font-bold font-number">04</span>
+                </div>
+                <h3 className="text-lg font-bold text-brand-dark">Premium Concierge Services</h3>
+              </div>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Additional income is generated through chauffeur services, airport transfers, VIP transportation, and personalized luxury mobility experiences.
+              </p>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
       {/* Jetour G700 Showcase Section */}
       <section id="jetour-g700" className="py-16 sm:py-20 md:py-24 bg-black text-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
