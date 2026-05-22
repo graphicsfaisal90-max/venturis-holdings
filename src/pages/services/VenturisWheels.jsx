@@ -95,6 +95,96 @@ const testimonials = [
   },
 ]
 
+const jetourFeatures = [
+  {
+    title: 'GAIA Off-road Aesthetics Design',
+    desc: 'Bold, aggressive lines and a commanding presence define the G700\'s design language, blending rugged capability with premium craftsmanship.',
+    image: '/Jetour G700.png',
+  },
+  {
+    title: 'A Commanding, Rugged Off-road Stance',
+    desc: 'Elevated ground clearance, muscular wheel arches, and a formidable silhouette built to conquer any terrain with confidence.',
+    image: '/11.png',
+  },
+  {
+    title: 'High-Strength Off-road Body Structure',
+    desc: 'Engineered with a high-strength steel frame and reinforced chassis for maximum durability and safety in the most demanding conditions.',
+    image: '/12.png',
+  },
+]
+
+const jetourPerformance = [
+  {
+    stat: '4.6s',
+    label: '0-100 km/h',
+    desc: 'Rapid Acceleration',
+    icon: (
+      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+    ),
+  },
+  {
+    stat: '2.0TD+',
+    label: 'Dual Motor',
+    desc: 'High Efficiency — Smooth, powerful, and fuel-saving performance',
+    icon: (
+      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+      </svg>
+    ),
+  },
+  {
+    stat: '211Ps',
+    label: 'Max Horsepower',
+    desc: 'Superior Durability — Proven longevity of engine, battery, and transmission',
+    icon: (
+      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+      </svg>
+    ),
+  },
+]
+
+const jetourComfort = [
+  {
+    title: 'Spacious & Comfortable 6-Seat Cabin',
+    desc: 'Generous interior space with three rows of premium seating, designed for uncompromising passenger comfort on every journey.',
+    icon: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Premium Multi-Function Seats',
+    desc: 'Executive-class seats with integrated table, power-adjustable leg rest, and massage function for ultimate relaxation.',
+    icon: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Top-Tier Audio Experience',
+    desc: 'Immersive sound system sourced from the same partner as Rolls-Royce, delivering concert-quality acoustics in every seat.',
+    icon: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Magnetic Ride Control + Air Suspension',
+    desc: 'Adaptive air suspension with magnetic ride control that instantly adjusts to terrain for a supremely smooth and stable ride.',
+    icon: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
+  },
+]
+
 function AnimatedSection({ children, className }) {
   const ref = useRef(null)
   const [visible, setVisible] = useState(false)
@@ -154,6 +244,8 @@ function CountUp({ end, suffix, label, sub }) {
 export default function VenturisWheels() {
   const [activeTestimonial, setActiveTestimonial] = useState(0)
   const [isTestPaused, setIsTestPaused] = useState(false)
+  const [activeFeature, setActiveFeature] = useState(0)
+  const videoRef = useRef(null)
 
   useEffect(() => {
     if (isTestPaused) return
@@ -163,21 +255,32 @@ export default function VenturisWheels() {
     return () => clearInterval(timer)
   }, [isTestPaused])
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveFeature((prev) => (prev + 1) % jetourFeatures.length)
+    }, 5000)
+    return () => clearInterval(timer)
+  }, [])
+
   return (
     <>
-      {/* Hero Section */}
+      {/* Hero Section with Jetour G700 Video */}
       <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0">
-          <img
-            src="/wheels2.jpg"
-            alt="Premium Automotive"
-            className="w-full h-full object-cover opacity-60"
-          />
+          <video
+            ref={videoRef}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover opacity-70"
+          >
+            <source src="/JETOUR G700, JETOUR G700 photos, JETOUR G700 specs, JETOUR G700 review.mp4" type="video/mp4" />
+          </video>
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20" />
         </div>
 
-        {/* Subtle motion overlay */}
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-teal/10 rounded-full blur-[120px]" />
           <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-brand-navy/20 rounded-full blur-[100px]" />
@@ -219,17 +322,16 @@ export default function VenturisWheels() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </Link>
-              <a
-                href="#services"
+              <Link
+                to="/contact"
                 className="inline-flex items-center px-8 py-3.5 border border-white/15 text-white/70 font-semibold rounded-lg hover:bg-white/5 hover:text-white hover:border-white/30 transition-all duration-300"
               >
-                Our Services
-              </a>
+                Discover Jetour G700
+              </Link>
             </div>
           </div>
         </div>
 
-        {/* Scroll indicator */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-3 animate-fade-in-up">
           <span className="text-white/30 text-[10px] uppercase tracking-[0.25em]">Scroll</span>
           <div className="w-5 h-8 rounded-full border border-white/20 flex items-start justify-center p-1.5">
@@ -238,7 +340,7 @@ export default function VenturisWheels() {
         </div>
       </section>
 
-      {/* Stats Bar - overlaps hero */}
+      {/* Stats Bar */}
       <section className="relative -mt-20 z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-r from-brand-dark via-brand-navy to-brand-dark rounded-2xl shadow-2xl p-8 md:p-12 border border-white/5">
@@ -302,6 +404,181 @@ export default function VenturisWheels() {
         </div>
       </section>
 
+      {/* Jetour G700 Showcase Section */}
+      <section id="jetour-g700" className="py-24 bg-black text-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection className="text-center max-w-4xl mx-auto mb-20">
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="h-px w-10 bg-brand-teal" />
+              <span className="text-brand-teal uppercase tracking-[0.3em] text-xs font-medium">Featured Vehicle</span>
+              <div className="h-px w-10 bg-brand-teal" />
+            </div>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-4">
+              JETOUR G700
+            </h2>
+            <p className="text-xl sm:text-2xl text-white/60 font-light tracking-wide">
+              All-terrain Premium Hybrid Off-Road SUV
+            </p>
+            <div className="mt-6 flex items-center justify-center gap-6 text-sm text-white/40">
+              <span className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                Plug-in Hybrid
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                2.0TD + Dual Motor
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                211Ps / 340N·m
+              </span>
+            </div>
+          </AnimatedSection>
+
+          {/* Hero Image */}
+          <AnimatedSection className="mb-24">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-brand-teal/10 border border-white/5">
+              <div className="aspect-[16/9]">
+                <img
+                  src="/Jetour G 700 (4).png"
+                  alt="JETOUR G700"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
+                <div className="max-w-2xl">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">JETOUR G700</h3>
+                  <p className="text-white/60">All-terrain Premium Hybrid Off-Road SUV — Engineered to conquer every frontier.</p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Rugged Off-Road Styling */}
+          <AnimatedSection className="mb-24">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">Rugged Off-Road Styling</h3>
+              <p className="text-white/40 max-w-2xl mx-auto">
+                Every line, every angle of the G700 communicates strength and capability.
+              </p>
+            </div>
+
+            {/* Feature Rotator */}
+            <div className="relative overflow-hidden rounded-2xl bg-white/[0.03] border border-white/5 mb-8">
+              <div className="grid md:grid-cols-2 min-h-[400px]">
+                <div className="relative overflow-hidden">
+                  {jetourFeatures.map((f, i) => (
+                    <div
+                      key={i}
+                      className={`absolute inset-0 transition-all duration-700 ease-in-out ${
+                        i === activeFeature ? 'opacity-100 scale-100' : 'opacity-0 scale-110 pointer-events-none'
+                      }`}
+                    >
+                      <img
+                        src={f.image}
+                        alt={f.title}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
+                    </div>
+                  ))}
+                </div>
+                <div className="p-8 md:p-12 flex flex-col justify-center">
+                  {jetourFeatures.map((f, i) => (
+                    <div
+                      key={i}
+                      className={`transition-all duration-500 ${
+                        i === activeFeature ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 absolute pointer-events-none'
+                      }`}
+                    >
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                        <span className="text-brand-teal text-xs uppercase tracking-[0.2em] font-medium">0{i + 1}</span>
+                      </div>
+                      <h4 className="text-2xl font-bold text-white mb-4">{f.title}</h4>
+                      <p className="text-white/50 leading-relaxed">{f.desc}</p>
+                    </div>
+                  ))}
+                  <div className="flex gap-2 mt-8">
+                    {jetourFeatures.map((_, i) => (
+                      <button
+                        key={i}
+                        onClick={() => setActiveFeature(i)}
+                        className={`rounded-full transition-all duration-500 ${
+                          i === activeFeature ? 'bg-brand-teal w-8 h-2' : 'bg-white/20 w-2 h-2 hover:bg-white/40'
+                        }`}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Performance Stats */}
+          <AnimatedSection className="mb-24">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">Exceptional Off-Road Performance</h3>
+              <p className="text-white/40 max-w-2xl mx-auto">
+                Powered by advanced hybrid technology, the G700 delivers breathtaking performance without compromise.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {jetourPerformance.map((p) => (
+                <div key={p.stat} className="group relative bg-white/[0.03] rounded-2xl p-8 border border-white/5 hover:bg-white/[0.06] hover:border-brand-teal/20 transition-all duration-500 text-center">
+                  <div className="text-brand-teal mb-4 flex justify-center">{p.icon}</div>
+                  <div className="text-4xl md:text-5xl font-bold text-white mb-1 font-number">{p.stat}</div>
+                  <div className="text-brand-teal text-sm uppercase tracking-widest font-medium mb-3">{p.label}</div>
+                  <p className="text-white/40 text-sm leading-relaxed">{p.desc}</p>
+                </div>
+              ))}
+            </div>
+          </AnimatedSection>
+
+          {/* Intelligent Technology + Premium Comfort */}
+          <AnimatedSection className="mb-12">
+            <div className="text-center mb-16">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="h-px w-10 bg-brand-teal" />
+                <span className="text-brand-teal uppercase tracking-[0.3em] text-xs font-medium">Luxury Redefined</span>
+                <div className="h-px w-10 bg-brand-teal" />
+              </div>
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">Intelligent Technology &amp; Premium Comfort</h3>
+              <p className="text-white/40 max-w-2xl mx-auto">
+                Where cutting-edge innovation meets uncompromising luxury — the G700 redefines what an off-road SUV can be.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-6">
+              {jetourComfort.map((c) => (
+                <div key={c.title} className="group flex gap-5 p-6 md:p-8 rounded-2xl bg-white/[0.03] border border-white/5 hover:bg-white/[0.06] hover:border-brand-teal/20 transition-all duration-500">
+                  <div className="w-14 h-14 rounded-2xl bg-brand-teal/10 text-brand-teal flex items-center justify-center shrink-0 group-hover:bg-brand-teal group-hover:text-white transition-all duration-500">
+                    {c.icon}
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold text-white mb-2">{c.title}</h4>
+                    <p className="text-white/40 text-sm leading-relaxed">{c.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </AnimatedSection>
+
+          {/* CTA within Jetour */}
+          <AnimatedSection className="text-center">
+            <Link
+              to="/contact"
+              className="inline-flex items-center px-8 py-3.5 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal/90 transition-all duration-300 shadow-lg shadow-brand-teal/20 hover:shadow-xl hover:shadow-brand-teal/30 hover:-translate-y-0.5"
+            >
+              Enquire About JETOUR G700
+              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -321,11 +598,9 @@ export default function VenturisWheels() {
             </p>
           </AnimatedSection>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((s, i) => (
+            {services.map((s) => (
               <AnimatedSection key={s.title}>
-                <div
-                  className="group relative bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-xl hover:shadow-brand-teal/10 hover:border-brand-teal/20 transition-all duration-500 hover:-translate-y-1"
-                >
+                <div className="group relative bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-xl hover:shadow-brand-teal/10 hover:border-brand-teal/20 transition-all duration-500 hover:-translate-y-1">
                   <div className="w-12 h-12 rounded-xl bg-brand-light text-brand-teal flex items-center justify-center mb-5 group-hover:bg-brand-teal group-hover:text-white transition-all duration-500">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 2l9 4.5v7.2c0 4.2-3.6 7.8-9 9-5.4-1.2-9-4.8-9-9V6.5L12 2z" />
@@ -340,7 +615,7 @@ export default function VenturisWheels() {
         </div>
       </section>
 
-      {/* Performance Features - Inspired by Jetour's Performance Section */}
+      {/* Premium Advantage */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
@@ -359,9 +634,9 @@ export default function VenturisWheels() {
             </p>
           </AnimatedSection>
           <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
-            {features.map((f, i) => (
+            {features.map((f) => (
               <AnimatedSection key={f.title}>
-                <div className={`flex gap-6 p-8 rounded-2xl border border-gray-100 hover:border-brand-teal/20 hover:shadow-lg hover:shadow-brand-teal/5 transition-all duration-500 group ${i % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row'}`}>
+                <div className="flex gap-6 p-8 rounded-2xl border border-gray-100 hover:border-brand-teal/20 hover:shadow-lg hover:shadow-brand-teal/5 transition-all duration-500 group">
                   <div className="w-14 h-14 rounded-2xl bg-brand-dark text-white flex items-center justify-center shrink-0 group-hover:bg-brand-teal transition-all duration-500">
                     {f.icon}
                   </div>
