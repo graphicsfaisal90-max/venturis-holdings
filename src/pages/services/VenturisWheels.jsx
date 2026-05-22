@@ -1544,7 +1544,7 @@ export default function VenturisWheels() {
                 </video>
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
-              <div className="absolute bottom-16 sm:bottom-20 md:bottom-28 left-0 right-0 px-5 sm:px-8 md:px-12">
+              <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-0 right-0 px-5 sm:px-8 md:px-12">
                 <div className="max-w-2xl">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="w-1 h-4 bg-brand-teal" />
