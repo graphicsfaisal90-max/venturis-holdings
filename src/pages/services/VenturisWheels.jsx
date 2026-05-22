@@ -1531,7 +1531,7 @@ export default function VenturisWheels() {
 
           {/* Video Showcase */}
           <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
-            <div className="relative rounded-3xl overflow-hidden border border-white/[0.06]">
+            <div className="rounded-3xl overflow-hidden border border-white/[0.06]">
               <div className="aspect-[16/9]">
                 <video
                   autoPlay
@@ -1545,17 +1545,14 @@ export default function VenturisWheels() {
                   <source src="/nissan-patrol/nissan-patrol-hero.mp4" type="video/mp4" />
                 </video>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
-              <div className="absolute bottom-1 sm:bottom-2 md:bottom-3 left-0 right-0 px-5 sm:px-8 md:px-12">
-                <div className="max-w-2xl">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="w-1 h-4 bg-brand-teal" />
-                    <span className="text-brand-teal text-xs uppercase tracking-[0.2em] font-medium">All-New Generation</span>
-                  </div>
-                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 sm:mb-2">Seventh-Generation Legend</h3>
-                  <p className="text-white/60 text-sm sm:text-base">Reborn with twin-turbo power, cutting-edge technology, and uncompromising luxury.</p>
-                </div>
+            </div>
+            <div className="mt-6 sm:mt-8 text-center max-w-3xl mx-auto">
+              <div className="flex items-center justify-center gap-2 mb-3">
+                <span className="w-1 h-4 bg-brand-teal" />
+                <span className="text-brand-teal text-xs uppercase tracking-[0.2em] font-medium">All-New Generation</span>
               </div>
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2">Seventh-Generation Legend</h3>
+              <p className="text-white/50 text-sm sm:text-base">Reborn with twin-turbo power, cutting-edge technology, and uncompromising luxury.</p>
             </div>
           </AnimatedSection>
 
