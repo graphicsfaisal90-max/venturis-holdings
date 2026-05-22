@@ -445,7 +445,7 @@ export default function VenturisWheels() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-8 md:p-12">
                 <div className="max-w-2xl">
                   <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 sm:mb-2">JETOUR G700</h3>
@@ -609,7 +609,7 @@ export default function VenturisWheels() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-8 md:p-12">
                 <div className="max-w-2xl">
                   <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 sm:mb-2">Range Rover Westminster Edition</h3>
@@ -660,7 +660,7 @@ export default function VenturisWheels() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h4 className="text-lg font-bold text-white mb-1">Refined Travel</h4>
                   <p className="text-white/60 text-sm">Heated centre and door armrests with 'hot stone' massage seats for comforting elegance.</p>
@@ -674,7 +674,7 @@ export default function VenturisWheels() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h4 className="text-lg font-bold text-white mb-1">Executive Control</h4>
                   <p className="text-white/60 text-sm">8-inch Touchscreen controller within the Electrically Deployable centre armrest.</p>
@@ -690,7 +690,7 @@ export default function VenturisWheels() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h4 className="text-lg font-bold text-white mb-1">Space For All</h4>
                   <p className="text-white/60 text-sm">Semi-Aniline heated leather seats in all three rows for up to seven adults.</p>
@@ -704,7 +704,7 @@ export default function VenturisWheels() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h4 className="text-lg font-bold text-white mb-1">Tailored Conditions</h4>
                   <p className="text-white/60 text-sm">Four-zone Climate Control with separate temperature and airflow for driver and three passengers.</p>
@@ -887,7 +887,7 @@ export default function VenturisWheels() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/70 via-brand-dark/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-8 md:p-12">
                 <div className="max-w-2xl">
                   <div className="flex items-center gap-2 mb-2">
@@ -1076,7 +1076,7 @@ export default function VenturisWheels() {
                   alt="G-Class Interior"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-teal via-brand-teal/50 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
                   <h4 className="text-lg font-bold text-white mb-1">Exclusive Interior</h4>
@@ -1089,7 +1089,7 @@ export default function VenturisWheels() {
                   alt="G-Class Design Detail"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-teal via-brand-teal/50 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
                   <h4 className="text-lg font-bold text-white mb-1">Iconic Silhouette</h4>
@@ -1224,7 +1224,7 @@ export default function VenturisWheels() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/70 via-brand-dark/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-8 md:p-12">
                 <div className="max-w-2xl">
                   <div className="flex items-center gap-2 mb-2">
@@ -1367,7 +1367,7 @@ export default function VenturisWheels() {
                   alt="Raptor Exterior Design"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-teal via-brand-teal/50 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
                   <h4 className="text-lg font-bold text-white mb-1">Aggressive Stance</h4>
@@ -1380,7 +1380,7 @@ export default function VenturisWheels() {
                   alt="Raptor Interior"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-teal via-brand-teal/50 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
                   <h4 className="text-lg font-bold text-white mb-1">Raptor Interior</h4>
@@ -1538,6 +1538,8 @@ export default function VenturisWheels() {
                   muted
                   loop
                   playsInline
+                  preload="auto"
+                  poster="/nissan-patrol/v-motion-grill.png"
                   className="w-full h-full object-cover"
                 >
                   <source src="/nissan-patrol/nissan-patrol-hero.mp4" type="video/mp4" />
@@ -1653,7 +1655,7 @@ export default function VenturisWheels() {
                   alt="Nissan Patrol Head-Up Display"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-teal via-brand-teal/50 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
                   <h4 className="text-lg font-bold text-white mb-1">Head-Up Display</h4>
@@ -1666,7 +1668,7 @@ export default function VenturisWheels() {
                   alt="Nissan Patrol Klipsch Audio"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-teal via-brand-teal/50 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
                   <h4 className="text-lg font-bold text-white mb-1">Klipsch Premium Audio</h4>
