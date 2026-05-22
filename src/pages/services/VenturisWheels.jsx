@@ -265,7 +265,7 @@ export default function VenturisWheels() {
   return (
     <>
       {/* Hero Section with Jetour G700 Video */}
-      <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden bg-black">
+      <section className="relative h-screen min-h-[600px] sm:min-h-[700px] flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0">
           <video
             ref={videoRef}
@@ -309,22 +309,22 @@ export default function VenturisWheels() {
                 Automotive Excellence
               </span>
             </h1>
-            <p className="text-base sm:text-lg text-white/50 max-w-xl leading-relaxed mb-10 animate-fade-in-down delay-200 font-sans">
+            <p className="text-sm sm:text-base md:text-lg text-white/50 max-w-xl leading-relaxed mb-8 sm:mb-10 animate-fade-in-down delay-200 font-sans">
               Comprehensive automotive solutions — from premium vehicle sales and leasing to fleet management and expert service — engineered for those who demand the best.
             </p>
-            <div className="flex flex-wrap gap-4 animate-fade-in-up delay-300">
+            <div className="flex flex-wrap gap-3 sm:gap-4 animate-fade-in-up delay-300">
               <Link
                 to="/contact"
-                className="inline-flex items-center px-8 py-3.5 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal/90 transition-all duration-300 shadow-lg shadow-brand-teal/20 hover:shadow-xl hover:shadow-brand-teal/30 hover:-translate-y-0.5"
+                className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-3.5 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal/90 transition-all duration-300 shadow-lg shadow-brand-teal/20 hover:shadow-xl hover:shadow-brand-teal/30 hover:-translate-y-0.5 text-sm sm:text-base"
               >
                 Enquire Now
-                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-1.5 sm:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </Link>
               <Link
                 to="/contact"
-                className="inline-flex items-center px-8 py-3.5 border border-white/15 text-white/70 font-semibold rounded-lg hover:bg-white/5 hover:text-white hover:border-white/30 transition-all duration-300"
+                className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-3.5 border border-white/15 text-white/70 font-semibold rounded-lg hover:bg-white/5 hover:text-white hover:border-white/30 transition-all duration-300 text-sm sm:text-base"
               >
                 Discover Jetour G700
               </Link>
@@ -405,38 +405,38 @@ export default function VenturisWheels() {
       </section>
 
       {/* Jetour G700 Showcase Section */}
-      <section id="jetour-g700" className="py-24 bg-black text-white overflow-hidden">
+      <section id="jetour-g700" className="py-16 sm:py-20 md:py-24 bg-black text-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection className="text-center max-w-4xl mx-auto mb-20">
-            <div className="flex items-center justify-center gap-3 mb-6">
+          <AnimatedSection className="text-center max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20">
+            <div className="flex items-center justify-center gap-3 mb-4 sm:mb-6">
               <div className="h-px w-10 bg-brand-teal" />
               <span className="text-brand-teal uppercase tracking-[0.3em] text-xs font-medium">Featured Vehicle</span>
               <div className="h-px w-10 bg-brand-teal" />
             </div>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-4">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-3 sm:mb-4">
               JETOUR G700
             </h2>
-            <p className="text-xl sm:text-2xl text-white/60 font-light tracking-wide">
+            <p className="text-lg sm:text-xl md:text-2xl text-white/60 font-light tracking-wide">
               All-terrain Premium Hybrid Off-Road SUV
             </p>
-            <div className="mt-6 flex items-center justify-center gap-6 text-sm text-white/40">
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-white/40">
               <span className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-teal shrink-0" />
                 Plug-in Hybrid
               </span>
               <span className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-teal shrink-0" />
                 2.0TD + Dual Motor
               </span>
               <span className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-teal shrink-0" />
                 211Ps / 340N·m
               </span>
             </div>
           </AnimatedSection>
 
           {/* Hero Image */}
-          <AnimatedSection className="mb-24">
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-brand-teal/10 border border-white/5">
               <div className="aspect-[16/9]">
                 <img
@@ -445,29 +445,29 @@ export default function VenturisWheels() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-8 md:p-12">
                 <div className="max-w-2xl">
-                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">JETOUR G700</h3>
-                  <p className="text-white/60">All-terrain Premium Hybrid Off-Road SUV — Engineered to conquer every frontier.</p>
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 sm:mb-2">JETOUR G700</h3>
+                  <p className="text-white/50 text-sm sm:text-base">All-terrain Premium Hybrid Off-Road SUV — Engineered to conquer every frontier.</p>
                 </div>
               </div>
             </div>
           </AnimatedSection>
 
           {/* Rugged Off-Road Styling */}
-          <AnimatedSection className="mb-24">
-            <div className="text-center mb-12">
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">Rugged Off-Road Styling</h3>
-              <p className="text-white/40 max-w-2xl mx-auto">
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="text-center mb-8 sm:mb-12">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">Rugged Off-Road Styling</h3>
+              <p className="text-white/40 max-w-2xl mx-auto px-4 text-sm sm:text-base">
                 Every line, every angle of the G700 communicates strength and capability.
               </p>
             </div>
 
             {/* Feature Rotator */}
             <div className="relative overflow-hidden rounded-2xl bg-white/[0.03] border border-white/5 mb-8">
-              <div className="grid md:grid-cols-2 min-h-[400px]">
-                <div className="relative overflow-hidden">
+              <div className="grid md:grid-cols-2">
+                <div className="relative overflow-hidden h-64 sm:h-80 md:h-auto md:min-h-[400px]">
                   {jetourFeatures.map((f, i) => (
                     <div
                       key={i}
@@ -484,7 +484,7 @@ export default function VenturisWheels() {
                     </div>
                   ))}
                 </div>
-                <div className="p-8 md:p-12 flex flex-col justify-center">
+                <div className="p-6 sm:p-8 md:p-12 flex flex-col justify-center">
                   {jetourFeatures.map((f, i) => (
                     <div
                       key={i}
@@ -496,8 +496,8 @@ export default function VenturisWheels() {
                         <div className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
                         <span className="text-brand-teal text-xs uppercase tracking-[0.2em] font-medium">0{i + 1}</span>
                       </div>
-                      <h4 className="text-2xl font-bold text-white mb-4">{f.title}</h4>
-                      <p className="text-white/50 leading-relaxed">{f.desc}</p>
+                      <h4 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">{f.title}</h4>
+                      <p className="text-white/50 leading-relaxed text-sm sm:text-base">{f.desc}</p>
                     </div>
                   ))}
                   <div className="flex gap-2 mt-8">
@@ -517,16 +517,16 @@ export default function VenturisWheels() {
           </AnimatedSection>
 
           {/* Performance Stats */}
-          <AnimatedSection className="mb-24">
-            <div className="text-center mb-12">
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">Exceptional Off-Road Performance</h3>
-              <p className="text-white/40 max-w-2xl mx-auto">
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="text-center mb-8 sm:mb-12">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">Exceptional Off-Road Performance</h3>
+              <p className="text-white/40 max-w-2xl mx-auto px-4 text-sm sm:text-base">
                 Powered by advanced hybrid technology, the G700 delivers breathtaking performance without compromise.
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
               {jetourPerformance.map((p) => (
-                <div key={p.stat} className="group relative bg-white/[0.03] rounded-2xl p-8 border border-white/5 hover:bg-white/[0.06] hover:border-brand-teal/20 transition-all duration-500 text-center">
+                <div key={p.stat} className="group relative bg-white/[0.03] rounded-2xl p-6 sm:p-8 border border-white/5 hover:bg-white/[0.06] hover:border-brand-teal/20 transition-all duration-500 text-center">
                   <div className="text-brand-teal mb-4 flex justify-center">{p.icon}</div>
                   <div className="text-4xl md:text-5xl font-bold text-white mb-1 font-number">{p.stat}</div>
                   <div className="text-brand-teal text-sm uppercase tracking-widest font-medium mb-3">{p.label}</div>
@@ -537,27 +537,27 @@ export default function VenturisWheels() {
           </AnimatedSection>
 
           {/* Intelligent Technology + Premium Comfort */}
-          <AnimatedSection className="mb-12">
-            <div className="text-center mb-16">
+          <AnimatedSection className="mb-8 sm:mb-12">
+            <div className="text-center mb-10 sm:mb-12 md:mb-16">
               <div className="flex items-center justify-center gap-3 mb-4">
-                <div className="h-px w-10 bg-brand-teal" />
+                <div className="h-px w-8 sm:w-10 bg-brand-teal" />
                 <span className="text-brand-teal uppercase tracking-[0.3em] text-xs font-medium">Luxury Redefined</span>
-                <div className="h-px w-10 bg-brand-teal" />
+                <div className="h-px w-8 sm:w-10 bg-brand-teal" />
               </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">Intelligent Technology &amp; Premium Comfort</h3>
-              <p className="text-white/40 max-w-2xl mx-auto">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4 px-4">Intelligent Technology &amp; Premium Comfort</h3>
+              <p className="text-white/40 max-w-2xl mx-auto px-4 text-sm sm:text-base">
                 Where cutting-edge innovation meets uncompromising luxury — the G700 redefines what an off-road SUV can be.
               </p>
             </div>
-            <div className="grid sm:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
               {jetourComfort.map((c) => (
-                <div key={c.title} className="group flex gap-5 p-6 md:p-8 rounded-2xl bg-white/[0.03] border border-white/5 hover:bg-white/[0.06] hover:border-brand-teal/20 transition-all duration-500">
-                  <div className="w-14 h-14 rounded-2xl bg-brand-teal/10 text-brand-teal flex items-center justify-center shrink-0 group-hover:bg-brand-teal group-hover:text-white transition-all duration-500">
+                <div key={c.title} className="group flex gap-4 sm:gap-5 p-5 sm:p-6 md:p-8 rounded-2xl bg-white/[0.03] border border-white/5 hover:bg-white/[0.06] hover:border-brand-teal/20 transition-all duration-500">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-brand-teal/10 text-brand-teal flex items-center justify-center shrink-0 group-hover:bg-brand-teal group-hover:text-white transition-all duration-500">
                     {c.icon}
                   </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-white mb-2">{c.title}</h4>
-                    <p className="text-white/40 text-sm leading-relaxed">{c.desc}</p>
+                  <div className="min-w-0">
+                    <h4 className="text-base sm:text-lg font-bold text-white mb-1 sm:mb-2">{c.title}</h4>
+                    <p className="text-white/40 text-xs sm:text-sm leading-relaxed">{c.desc}</p>
                   </div>
                 </div>
               ))}
