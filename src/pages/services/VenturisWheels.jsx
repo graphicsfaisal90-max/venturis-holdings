@@ -1529,6 +1529,34 @@ export default function VenturisWheels() {
             </div>
           </AnimatedSection>
 
+          {/* Video Showcase */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-white/5 border border-white/[0.06]">
+              <div className="aspect-[16/9]">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover"
+                >
+                  <source src="/nissan-patrol/nissan-patrol-hero.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/70 via-brand-dark/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-8 md:p-12">
+                <div className="max-w-2xl">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="w-1 h-4 bg-brand-teal" />
+                    <span className="text-brand-teal text-xs uppercase tracking-[0.2em] font-medium">All-New Generation</span>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 sm:mb-2">Seventh-Generation Legend</h3>
+                  <p className="text-white/60 text-sm sm:text-base">Reborn with twin-turbo power, cutting-edge technology, and uncompromising luxury.</p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
           {/* Key Specs Strip */}
           <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
             <div className="text-center mb-8 sm:mb-12">
@@ -1661,49 +1689,83 @@ export default function VenturisWheels() {
                 The Patrol cabin is crafted with premium materials and thoughtful details, offering unmatched comfort for up to eight passengers.
               </p>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
-              <div className="relative rounded-2xl overflow-hidden group shadow-2xl shadow-white/5 border border-white/[0.06] aspect-[4/3]">
-                <img
-                  src="/nissan-patrol/cabin.png"
-                  alt="Nissan Patrol Cabin"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h4 className="text-sm font-bold text-white">Premium Cabin</h4>
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
+              <div className="bg-white/[0.03] rounded-2xl overflow-hidden border border-white/[0.06] group hover:border-brand-teal/20 hover:shadow-lg hover:shadow-brand-teal/10 transition-all duration-500">
+                <div className="aspect-[16/9] overflow-hidden">
+                  <img
+                    src="/nissan-patrol/cabin.png"
+                    alt="Nissan Patrol Cabin"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-5 sm:p-6">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.2em] font-medium">Interior</span>
+                  </div>
+                  <h4 className="text-lg sm:text-xl font-bold text-white">Premium Cabin</h4>
+                  <p className="text-white/40 text-xs sm:text-sm mt-2 leading-relaxed">
+                    Crafted with premium soft-touch materials, ambient lighting, and meticulous attention to detail for an atmosphere of refined luxury.
+                  </p>
                 </div>
               </div>
-              <div className="relative rounded-2xl overflow-hidden group shadow-2xl shadow-white/5 border border-white/[0.06] aspect-[4/3]">
-                <img
-                  src="/nissan-patrol/nissan-patrol-seats.jpeg"
-                  alt="Nissan Patrol Seats"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h4 className="text-sm font-bold text-white">8 Comfortable Seats</h4>
+              <div className="bg-white/[0.03] rounded-2xl overflow-hidden border border-white/[0.06] group hover:border-brand-teal/20 hover:shadow-lg hover:shadow-brand-teal/10 transition-all duration-500">
+                <div className="aspect-[16/9] overflow-hidden">
+                  <img
+                    src="/nissan-patrol/nissan-patrol-seats.jpeg"
+                    alt="Nissan Patrol Seats"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-5 sm:p-6">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.2em] font-medium">Seating</span>
+                  </div>
+                  <h4 className="text-lg sm:text-xl font-bold text-white">8 Comfortable Seats</h4>
+                  <p className="text-white/40 text-xs sm:text-sm mt-2 leading-relaxed">
+                    Spacious three-row seating with premium upholstery, heating, ventilation, and NASA-inspired spinal support for long-distance comfort.
+                  </p>
                 </div>
               </div>
-              <div className="relative rounded-2xl overflow-hidden group shadow-2xl shadow-white/5 border border-white/[0.06] aspect-[4/3]">
-                <img
-                  src="/nissan-patrol/panaromic-sunroof.png"
-                  alt="Nissan Patrol Panoramic Sunroof"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h4 className="text-sm font-bold text-white">Panoramic Sunroof</h4>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 mt-4 sm:mt-6">
+              <div className="bg-white/[0.03] rounded-2xl overflow-hidden border border-white/[0.06] group hover:border-brand-teal/20 hover:shadow-lg hover:shadow-brand-teal/10 transition-all duration-500">
+                <div className="aspect-[16/9] overflow-hidden">
+                  <img
+                    src="/nissan-patrol/panaromic-sunroof.png"
+                    alt="Nissan Patrol Panoramic Sunroof"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-5 sm:p-6">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.2em] font-medium">Ambience</span>
+                  </div>
+                  <h4 className="text-lg sm:text-xl font-bold text-white">Panoramic Sunroof</h4>
+                  <p className="text-white/40 text-xs sm:text-sm mt-2 leading-relaxed">
+                    A vast panoramic sunroof floods the cabin with natural light, creating an airy, open atmosphere for all passengers.
+                  </p>
                 </div>
               </div>
-              <div className="relative rounded-2xl overflow-hidden group shadow-2xl shadow-white/5 border border-white/[0.06] aspect-[4/3]">
-                <img
-                  src="/nissan-patrol/iconic-puddle-lamp.jpeg"
-                  alt="Nissan Patrol Puddle Lamp"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h4 className="text-sm font-bold text-white">Iconic Puddle Lamp</h4>
+              <div className="bg-white/[0.03] rounded-2xl overflow-hidden border border-white/[0.06] group hover:border-brand-teal/20 hover:shadow-lg hover:shadow-brand-teal/10 transition-all duration-500">
+                <div className="aspect-[16/9] overflow-hidden">
+                  <img
+                    src="/nissan-patrol/iconic-puddle-lamp.jpeg"
+                    alt="Nissan Patrol Puddle Lamp"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-5 sm:p-6">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.2em] font-medium">Welcome</span>
+                  </div>
+                  <h4 className="text-lg sm:text-xl font-bold text-white">Iconic Puddle Lamp</h4>
+                  <p className="text-white/40 text-xs sm:text-sm mt-2 leading-relaxed">
+                    A signature illuminated puddle lamp projects the Patrol emblem, greeting you with elegance every time you approach.
+                  </p>
                 </div>
               </div>
             </div>
