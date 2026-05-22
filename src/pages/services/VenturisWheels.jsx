@@ -1899,6 +1899,397 @@ export default function VenturisWheels() {
         </div>
       </section>
 
+      {/* Geely Coolray Showcase Section */}
+      <section className="relative py-16 sm:py-20 md:py-24 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection className="text-center max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20">
+            <div className="flex items-center justify-center gap-3 mb-4 sm:mb-6">
+              <div className="h-px w-8 sm:w-10 bg-brand-teal" />
+              <span className="text-brand-teal uppercase tracking-[0.3em] text-xs font-medium">Styled for the Future</span>
+              <div className="h-px w-8 sm:w-10 bg-brand-teal" />
+            </div>
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-brand-dark leading-tight mb-3 sm:mb-4">
+              Geely Coolray
+            </h2>
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-400 font-light tracking-wide">
+              The New Coolray. A bold new star.
+            </p>
+            <p className="mt-4 text-gray-500 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+              Drawing inspiration from a star-filled night sky, the New Coolray blends dynamic 
+              styling with turbocharged performance. Designed to stand out with confidence, it 
+              sets a new benchmark in the compact SUV segment.
+            </p>
+          </AnimatedSection>
+
+          {/* Hero Image */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="relative rounded-3xl overflow-hidden shadow-xl border border-gray-100">
+              <div className="aspect-[16/9]">
+                <img
+                  src="/geely-coolray/geely-coolray-7.jpg"
+                  alt="Geely Coolray"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-0 right-0 px-5 sm:px-8 md:px-12">
+                <div className="max-w-2xl">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="w-1 h-4 bg-brand-teal" />
+                    <span className="text-brand-teal text-xs uppercase tracking-[0.2em] font-medium">Starlight Trail Design</span>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 sm:mb-2">Geely Coolray</h3>
+                  <p className="text-white/60 text-sm sm:text-base">Dynamic lines. Refined elegance. Young at heart.</p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Video Showcase */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="rounded-3xl overflow-hidden border border-gray-100">
+              <div className="aspect-[16/9]">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="auto"
+                  className="w-full h-full object-cover"
+                >
+                  <source src="/geely-coolray/geely-coolray-16.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Key Specs Strip */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+              <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 text-center border border-gray-100">
+                <div className="text-2xl sm:text-3xl font-bold text-brand-dark font-number">128</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">kW Power</div>
+                <p className="text-gray-400 text-xs mt-1">1.5TD Engine</p>
+              </div>
+              <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 text-center border border-gray-100">
+                <div className="text-2xl sm:text-3xl font-bold text-brand-dark font-number">290</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">Nm Torque</div>
+                <p className="text-gray-400 text-xs mt-1">1.5TD Engine</p>
+              </div>
+              <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 text-center border border-gray-100">
+                <div className="text-2xl sm:text-3xl font-bold text-brand-dark font-number">7.6</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">sec 0-100</div>
+                <p className="text-gray-400 text-xs mt-1">7-Speed DCT</p>
+              </div>
+              <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 text-center border border-gray-100">
+                <div className="text-2xl sm:text-3xl font-bold text-brand-dark font-number">6.5</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">L/100km</div>
+                <p className="text-gray-400 text-xs mt-1">Fuel Efficiency</p>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Exterior Design Gallery */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="text-center mb-8 sm:mb-12">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="h-px w-8 bg-brand-teal" />
+                <span className="text-brand-teal uppercase tracking-[0.2em] text-sm font-medium">Exterior Design</span>
+                <div className="h-px w-8 bg-brand-teal" />
+              </div>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-dark mb-3 sm:mb-4">Bold lines. Starry inspiration.</h3>
+              <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base">
+                The Starlight Trail Design language combines dynamic lines with refined elegance, ensuring the Coolray stands out with confidence.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-3 gap-4 sm:gap-6">
+              <div className="group bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg hover:shadow-brand-teal/10 hover:border-brand-teal/20 transition-all duration-500">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="/geely-coolray/geely-coolray-4.jpg"
+                    alt="Geely Coolray Front Design"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-4 sm:p-5">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.2em] font-medium">Front</span>
+                  </div>
+                  <h4 className="text-base sm:text-lg font-bold text-brand-dark">Starlight Trail Front</h4>
+                  <p className="text-gray-400 text-xs sm:text-sm mt-1">A bold new look inspired by the star-filled night sky.</p>
+                </div>
+              </div>
+              <div className="group bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg hover:shadow-brand-teal/10 hover:border-brand-teal/20 transition-all duration-500">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="/geely-coolray/geely-coolray-1.jpg"
+                    alt="Geely Coolray Taillight"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-4 sm:p-5">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.2em] font-medium">Rear</span>
+                  </div>
+                  <h4 className="text-base sm:text-lg font-bold text-brand-dark">Full-Width LED Taillight</h4>
+                  <p className="text-gray-400 text-xs sm:text-sm mt-1">A striking full-width LED bar that echoes the vehicle's sleek design.</p>
+                </div>
+              </div>
+              <div className="group bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg hover:shadow-brand-teal/10 hover:border-brand-teal/20 transition-all duration-500">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="/geely-coolray/geely-coolray-12.jpg"
+                    alt="Geely Coolray Wheels"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-4 sm:p-5">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.2em] font-medium">Wheels</span>
+                  </div>
+                  <h4 className="text-base sm:text-lg font-bold text-brand-dark">18" Battle Axe Wheels</h4>
+                  <p className="text-gray-400 text-xs sm:text-sm mt-1">Dark-shadow finish with red calipers for a powerful stance.</p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Powertrain Split */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="h-px w-8 bg-brand-teal" />
+                  <span className="text-brand-teal uppercase tracking-[0.2em] text-sm font-medium">Powertrain</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark mb-6">1.5TD Turbocharged Performance</h3>
+                <p className="text-gray-500 leading-relaxed mb-6 text-sm sm:text-base">
+                  The heart of the Coolray is a 1.5-litre turbocharged engine producing 128 kW and 
+                  290 Nm of torque. Paired with a 7-speed wet dual-clutch transmission with 98% 
+                  efficiency, it delivers responsive acceleration and exceptional fuel economy.
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center shrink-0">
+                      <svg className="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-600 text-sm">BMA modular architecture for balanced performance</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center shrink-0">
+                      <svg className="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-600 text-sm">7-speed wet dual-clutch with 98% efficiency</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center shrink-0">
+                      <svg className="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-600 text-sm">0-100 km/h in just 7.6 seconds</span>
+                  </div>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+                  <img
+                    src="/geely-coolray/geely-coolray-19.png"
+                    alt="Geely Coolray Engine"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-brand-teal/10 rounded-full blur-2xl" />
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Interior & Technology */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="text-center mb-8 sm:mb-12">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="h-px w-8 bg-brand-teal" />
+                <span className="text-brand-teal uppercase tracking-[0.2em] text-sm font-medium">Interior & Technology</span>
+                <div className="h-px w-8 bg-brand-teal" />
+              </div>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-dark mb-3 sm:mb-4">Intelligent cabin. Immersive experience.</h3>
+              <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base">
+                From the 14.6-inch HD display to the 72-color ambient lighting, every detail is designed to elevate your driving experience.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
+              <div className="group bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg hover:shadow-brand-teal/10 hover:border-brand-teal/20 transition-all duration-500">
+                <div className="aspect-[16/9] overflow-hidden">
+                  <img
+                    src="/geely-coolray/geely-coolray-19.png"
+                    alt="Geely Coolray Display"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-5 sm:p-6">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.2em] font-medium">Display</span>
+                  </div>
+                  <h4 className="text-lg sm:text-xl font-bold text-brand-dark">14.6" HD Central Display</h4>
+                  <p className="text-gray-400 text-xs sm:text-sm mt-2 leading-relaxed">
+                    Class-leading 1920×1080 resolution with an ultra-slim 7mm bezel for stunning clarity and a customizable interface.
+                  </p>
+                </div>
+              </div>
+              <div className="group bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg hover:shadow-brand-teal/10 hover:border-brand-teal/20 transition-all duration-500">
+                <div className="aspect-[16/9] overflow-hidden">
+                  <img
+                    src="/geely-coolray/geely-coolray-13.jpg"
+                    alt="Geely Coolray Ambient Lighting"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-5 sm:p-6">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.2em] font-medium">Ambience</span>
+                  </div>
+                  <h4 className="text-lg sm:text-xl font-bold text-brand-dark">72-Color Ambient Lighting</h4>
+                  <p className="text-gray-400 text-xs sm:text-sm mt-2 leading-relaxed">
+                    Diamond-pattern door panels illuminated by customizable lighting that lets you set the perfect mood for every drive.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 mt-4 sm:mt-6">
+              <div className="group bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg hover:shadow-brand-teal/10 hover:border-brand-teal/20 transition-all duration-500">
+                <div className="aspect-[16/9] overflow-hidden">
+                  <img
+                    src="/geely-coolray/geely-coolray-14.jpg"
+                    alt="Geely Coolray Sunroof"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-5 sm:p-6">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.2em] font-medium">Sunroof</span>
+                  </div>
+                  <h4 className="text-lg sm:text-xl font-bold text-brand-dark">Panoramic Sunroof</h4>
+                  <p className="text-gray-400 text-xs sm:text-sm mt-2 leading-relaxed">
+                    0.8 sqm of visible area for an expansive sense of space with heat insulation and UV protection.
+                  </p>
+                </div>
+              </div>
+              <div className="group bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg hover:shadow-brand-teal/10 hover:border-brand-teal/20 transition-all duration-500">
+                <div className="aspect-[16/9] overflow-hidden">
+                  <img
+                    src="/geely-coolray/geely-coolray-10.jpg"
+                    alt="Geely Coolray Interior"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-5 sm:p-6">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.2em] font-medium">Comfort</span>
+                  </div>
+                  <h4 className="text-lg sm:text-xl font-bold text-brand-dark">Ventilated & Electric Seats</h4>
+                  <p className="text-gray-400 text-xs sm:text-sm mt-2 leading-relaxed">
+                    6-way electric driver seat, front ventilation, and 6:4 split foldable rear seats for versatile comfort.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Safety Features */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-20">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="relative">
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="rounded-2xl overflow-hidden shadow-md border border-gray-100">
+                    <img
+                      src="/geely-coolray/geely-coolray-15.jpg"
+                      alt="Geely Coolray Safety"
+                      className="w-full h-full object-cover aspect-square"
+                    />
+                  </div>
+                  <div className="rounded-2xl overflow-hidden shadow-md border border-gray-100">
+                    <img
+                      src="/geely-coolray/geely-coolray-11.jpg"
+                      alt="Geely Coolray Camera"
+                      className="w-full h-full object-cover aspect-square"
+                    />
+                  </div>
+                  <div className="rounded-2xl overflow-hidden shadow-md border border-gray-100">
+                    <img
+                      src="/geely-coolray/geely-coolray-8.jpg"
+                      alt="Geely Coolray Detail"
+                      className="w-full h-full object-cover aspect-square"
+                    />
+                  </div>
+                  <div className="rounded-2xl overflow-hidden shadow-md border border-gray-100">
+                    <img
+                      src="/geely-coolray/geely-coolray-9.jpg"
+                      alt="Geely Coolray Detail"
+                      className="w-full h-full object-cover aspect-square"
+                    />
+                  </div>
+                </div>
+                <div className="absolute -top-4 -left-4 w-20 h-20 bg-brand-teal/5 rounded-full blur-xl" />
+              </div>
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="h-px w-8 bg-brand-teal" />
+                  <span className="text-brand-teal uppercase tracking-[0.2em] text-sm font-medium">Safety & Driver Assist</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark mb-6">Intelligent protection at every turn</h3>
+                <p className="text-gray-500 leading-relaxed mb-6 text-sm sm:text-base">
+                  The Coolray is equipped with a comprehensive suite of advanced safety systems, 
+                  from autonomous emergency braking to a 540° panoramic camera, ensuring 
+                  confidence behind the wheel.
+                </p>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="bg-brand-light rounded-xl p-3 sm:p-4">
+                    <div className="text-brand-teal text-sm font-bold">AEB</div>
+                    <div className="text-gray-500 text-xs mt-1">Auto Emergency Brake</div>
+                  </div>
+                  <div className="bg-brand-light rounded-xl p-3 sm:p-4">
+                    <div className="text-brand-teal text-sm font-bold">ACC</div>
+                    <div className="text-gray-500 text-xs mt-1">Adaptive Cruise Control</div>
+                  </div>
+                  <div className="bg-brand-light rounded-xl p-3 sm:p-4">
+                    <div className="text-brand-teal text-sm font-bold">LKA</div>
+                    <div className="text-gray-500 text-xs mt-1">Lane Keeping Assist</div>
+                  </div>
+                  <div className="bg-brand-light rounded-xl p-3 sm:p-4">
+                    <div className="text-brand-teal text-sm font-bold">540°</div>
+                    <div className="text-gray-500 text-xs mt-1">Panoramic Camera</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* CTA */}
+          <AnimatedSection className="text-center">
+            <Link
+              to="/contact"
+              className="inline-flex items-center px-8 py-3.5 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal/90 transition-all duration-300 shadow-lg shadow-brand-teal/25 hover:shadow-xl hover:shadow-brand-teal/30 hover:-translate-y-0.5"
+            >
+              Enquire About Geely Coolray
+              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
