@@ -857,6 +857,337 @@ export default function VenturisWheels() {
         </div>
       </section>
 
+      {/* Mercedes-Benz G-Class Showcase Section */}
+      <section className="relative py-16 sm:py-20 md:py-24 bg-black text-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection className="text-center max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20">
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="h-px w-10 bg-brand-teal" />
+              <span className="text-brand-teal uppercase tracking-[0.3em] text-xs font-medium">Featured Marque</span>
+              <div className="h-px w-10 bg-brand-teal" />
+            </div>
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-4">
+              Mercedes-Benz G-Class
+            </h2>
+            <p className="text-lg sm:text-xl md:text-2xl text-white/50 font-light tracking-wide">
+              Stronger than time
+            </p>
+            <p className="mt-4 text-white/40 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+              An offroad icon. Since 1979, the G-Class has set the benchmark for offroad excellence — evolving from a rugged utility vehicle to a luxury icon without losing its offroad pedigree. Stronger than time.
+            </p>
+          </AnimatedSection>
+
+          {/* Hero Image */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-white/5 border border-white/[0.06]">
+              <div className="aspect-[16/9]">
+                <img
+                  src="/g-wagon-1.jpg"
+                  alt="Mercedes-Benz G-Class"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-8 md:p-12">
+                <div className="max-w-2xl">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="w-1 h-4 bg-brand-teal" />
+                    <span className="text-brand-teal text-xs uppercase tracking-[0.2em] font-medium">Since 1979</span>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 sm:mb-2">Mercedes-Benz G-Class</h3>
+                  <p className="text-white/50 text-sm sm:text-base">The offroad icon. Stronger than time.</p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Model Lineup */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="text-center mb-8 sm:mb-12">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">The G-Class Lineup</h3>
+              <p className="text-white/40 max-w-2xl mx-auto text-sm sm:text-base">
+                Limitless in every way. The widest range ever, with near-endless customisation.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-3 gap-4 sm:gap-6">
+              <div className="group relative bg-white/[0.03] rounded-2xl overflow-hidden border border-white/[0.06] hover:bg-white/[0.06] hover:border-brand-teal/20 transition-all duration-500">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="/g-wagon-8.jpg"
+                    alt="Mercedes-Benz G 500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
+                <div className="p-5 sm:p-6 relative z-10">
+                  <div className="flex items-center gap-2 mb-1">
+                    <div className="w-1 h-3 bg-brand-teal" />
+                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.2em] font-medium">V8</span>
+                  </div>
+                  <h4 className="text-lg sm:text-xl font-bold text-white">G 500</h4>
+                  <p className="text-white/40 text-xs sm:text-sm mt-1">From AED 759,900</p>
+                  <div className="mt-3 flex items-center gap-2 text-white/30 text-xs">
+                    <span>4.0L V8</span>
+                    <span className="w-1 h-1 rounded-full bg-white/20" />
+                    <span>421 PS</span>
+                    <span className="w-1 h-1 rounded-full bg-white/20" />
+                    <span>4x4</span>
+                  </div>
+                </div>
+              </div>
+              <div className="group relative bg-white/[0.03] rounded-2xl overflow-hidden border border-white/[0.06] hover:bg-white/[0.06] hover:border-brand-teal/20 transition-all duration-500">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="/g-wagon-5.jpg"
+                    alt="Mercedes-AMG G 63"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
+                <div className="p-5 sm:p-6 relative z-10">
+                  <div className="flex items-center gap-2 mb-1">
+                    <div className="w-1 h-3 bg-amber-500" />
+                    <span className="text-amber-500 text-[10px] uppercase tracking-[0.2em] font-medium">AMG</span>
+                  </div>
+                  <h4 className="text-lg sm:text-xl font-bold text-white">Mercedes-AMG G 63</h4>
+                  <p className="text-white/40 text-xs sm:text-sm mt-1">From AED 1,049,900</p>
+                  <div className="mt-3 flex items-center gap-2 text-white/30 text-xs">
+                    <span>4.0L V8 Biturbo</span>
+                    <span className="w-1 h-1 rounded-full bg-white/20" />
+                    <span>585 PS</span>
+                    <span className="w-1 h-1 rounded-full bg-white/20" />
+                    <span>4.5s</span>
+                  </div>
+                </div>
+              </div>
+              <div className="group relative bg-white/[0.03] rounded-2xl overflow-hidden border border-white/[0.06] hover:bg-white/[0.06] hover:border-brand-teal/20 transition-all duration-500">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="/g-wagon-6.jpg"
+                    alt="Mercedes-Benz G 580 EQ"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
+                <div className="p-5 sm:p-6 relative z-10">
+                  <div className="flex items-center gap-2 mb-1">
+                    <div className="w-1 h-3 bg-emerald-400" />
+                    <span className="text-emerald-400 text-[10px] uppercase tracking-[0.2em] font-medium">Electric</span>
+                  </div>
+                  <h4 className="text-lg sm:text-xl font-bold text-white">G 580 with EQ</h4>
+                  <p className="text-white/40 text-xs sm:text-sm mt-1">From AED 825,900</p>
+                  <div className="mt-3 flex items-center gap-2 text-white/30 text-xs">
+                    <span>Electric</span>
+                    <span className="w-1 h-1 rounded-full bg-white/20" />
+                    <span>587 PS</span>
+                    <span className="w-1 h-1 rounded-full bg-white/20" />
+                    <span>4x4</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Heritage */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="relative order-2 lg:order-1">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="h-px w-8 bg-brand-teal" />
+                  <span className="text-brand-teal uppercase tracking-[0.2em] text-sm font-medium">45 Years of Dominance</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6">Born in 1979. An everlasting classic.</h3>
+                <p className="text-white/40 leading-relaxed mb-6 text-sm sm:text-base">
+                  Since its inception, the G-Class has set the benchmark for offroad excellence. Born in 1979, it quickly became a symbol of robust engineering and unparalleled versatility. Each generation has surpassed the last, evolving from a rugged utility vehicle to a luxury icon without losing its offroad pedigree.
+                </p>
+                <div className="grid grid-cols-3 gap-4">
+                  <div className="bg-white/[0.03] rounded-xl p-4 text-center border border-white/[0.06]">
+                    <div className="text-2xl font-bold text-white font-number">1979</div>
+                    <div className="text-white/30 text-xs mt-1">Birth</div>
+                  </div>
+                  <div className="bg-white/[0.03] rounded-xl p-4 text-center border border-white/[0.06]">
+                    <div className="text-2xl font-bold text-white font-number">45+</div>
+                    <div className="text-white/30 text-xs mt-1">Years</div>
+                  </div>
+                  <div className="bg-white/[0.03] rounded-xl p-4 text-center border border-white/[0.06]">
+                    <div className="text-2xl font-bold text-white font-number">500k+</div>
+                    <div className="text-white/30 text-xs mt-1">Built</div>
+                  </div>
+                </div>
+              </div>
+              <div className="relative order-1 lg:order-2">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+                  <img
+                    src="/g-wagon-7.jpg"
+                    alt="Mercedes-Benz G-Class Heritage"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-brand-teal/10 rounded-full blur-2xl" />
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Offroad Capability */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="relative rounded-3xl overflow-hidden border border-white/[0.06]">
+              <div className="aspect-[21/9]">
+                <img
+                  src="/g-wagon-3.jpg"
+                  alt="G-Class Offroad"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
+              <div className="absolute inset-0 p-6 sm:p-8 md:p-12 flex flex-col justify-end">
+                <span className="text-brand-teal text-xs uppercase tracking-[0.3em] font-medium mb-3">Offroad Capability</span>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 max-w-lg">Maximum offroad performance</h3>
+                <p className="text-white/50 text-sm sm:text-base max-w-md leading-relaxed">
+                  Unleash adventure with superior offroad capabilities, conquering every terrain with three differential locks, low-range gearbox, and ladder frame construction.
+                </p>
+                <div className="flex flex-wrap gap-4 sm:gap-6 mt-5 text-xs sm:text-sm">
+                  <div><span className="text-white font-semibold">100%</span> <span className="text-white/40">Gradeability</span></div>
+                  <div><span className="text-white font-semibold">700mm</span> <span className="text-white/40">Wading Depth</span></div>
+                  <div><span className="text-white font-semibold">3</span> <span className="text-white/40">Diff Locks</span></div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Design & Luxury */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="text-center mb-8 sm:mb-12">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="h-px w-8 sm:w-10 bg-brand-teal" />
+                <span className="text-brand-teal uppercase tracking-[0.3em] text-xs font-medium">Rugged Design</span>
+                <div className="h-px w-8 sm:w-10 bg-brand-teal" />
+              </div>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4 px-4">A timeless icon in automotive design</h3>
+              <p className="text-white/40 max-w-2xl mx-auto text-sm sm:text-base">
+                Its striking presence speaks volumes. The G-Class fuses formidable offroad capabilities with an air of unmatched elegance.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
+              <div className="relative rounded-2xl overflow-hidden group aspect-[4/3]">
+                <img
+                  src="/g-wagon-4.jpg"
+                  alt="G-Class Interior"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
+                  <h4 className="text-lg font-bold text-white mb-1">Exclusive Interior</h4>
+                  <p className="text-white/50 text-sm">Handcrafted luxury meets rugged durability with premium Nappa leather and carbon fibre accents.</p>
+                </div>
+              </div>
+              <div className="relative rounded-2xl overflow-hidden group aspect-[4/3]">
+                <img
+                  src="/g-wagon-9.jpg"
+                  alt="G-Class Design Detail"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
+                  <h4 className="text-lg font-bold text-white mb-1">Iconic Silhouette</h4>
+                  <p className="text-white/50 text-sm">The unmistakable boxy shape, exposed hinges, and spare wheel carrier — design cues that define a legend.</p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* MANUFAKTUR */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-20">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="h-px w-8 bg-brand-teal" />
+                  <span className="text-brand-teal uppercase tracking-[0.2em] text-sm font-medium">MANUFAKTUR</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6">Individuality in its most beautiful form</h3>
+                <p className="text-white/40 leading-relaxed mb-6 text-sm sm:text-base">
+                  MANUFAKTUR represents a realm of nearly limitless customisation. Choose from over 28 exclusive colours, premium leather options, and bespoke trim accents. With MANUFAKTUR, you'll own more than a G-Class — you will own a custom-made masterpiece.
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-brand-teal/10 flex items-center justify-center shrink-0">
+                      <svg className="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-white/60 text-sm">28+ MANUFAKTUR exterior colours</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-brand-teal/10 flex items-center justify-center shrink-0">
+                      <svg className="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-white/60 text-sm">Full Nappa leather interior packages</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-brand-teal/10 flex items-center justify-center shrink-0">
+                      <svg className="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-white/60 text-sm">Schöckl Design Package & Logo Package</span>
+                  </div>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+                  <img
+                    src="/g-wagon-1.jpeg"
+                    alt="MANUFAKTUR G-Class"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -top-4 -left-4 w-20 h-20 bg-brand-teal/5 rounded-full blur-xl" />
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Performance Specs Strip */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-20">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+              <div className="bg-white/[0.03] rounded-2xl p-6 sm:p-8 text-center border border-white/[0.06]">
+                <div className="text-2xl sm:text-3xl font-bold text-white font-number">585</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">PS Power</div>
+                <p className="text-white/30 text-xs mt-1">AMG G 63</p>
+              </div>
+              <div className="bg-white/[0.03] rounded-2xl p-6 sm:p-8 text-center border border-white/[0.06]">
+                <div className="text-2xl sm:text-3xl font-bold text-white font-number">4.5s</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">0-100 km/h</div>
+                <p className="text-white/30 text-xs mt-1">AMG G 63</p>
+              </div>
+              <div className="bg-white/[0.03] rounded-2xl p-6 sm:p-8 text-center border border-white/[0.06]">
+                <div className="text-2xl sm:text-3xl font-bold text-white font-number">850</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">Nm Torque</div>
+                <p className="text-white/30 text-xs mt-1">AMG G 63</p>
+              </div>
+              <div className="bg-white/[0.03] rounded-2xl p-6 sm:p-8 text-center border border-white/[0.06]">
+                <div className="text-2xl sm:text-3xl font-bold text-white font-number">220</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">km/h</div>
+                <p className="text-white/30 text-xs mt-1">Top Speed</p>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* CTA */}
+          <AnimatedSection className="text-center">
+            <Link
+              to="/contact"
+              className="inline-flex items-center px-8 py-3.5 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal/90 transition-all duration-300 shadow-lg shadow-brand-teal/20 hover:shadow-xl hover:shadow-brand-teal/30 hover:-translate-y-0.5"
+            >
+              Enquire About G-Class
+              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
