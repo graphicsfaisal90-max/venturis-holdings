@@ -1192,6 +1192,265 @@ export default function VenturisWheels() {
         </div>
       </section>
 
+      {/* Ford F-150 Raptor Showcase Section */}
+      <section className="relative py-16 sm:py-20 md:py-24 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection className="text-center max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20">
+            <div className="flex items-center justify-center gap-3 mb-4 sm:mb-6">
+              <div className="h-px w-8 sm:w-10 bg-brand-teal" />
+              <span className="text-brand-teal uppercase tracking-[0.3em] text-xs font-medium">Built Ford Tough</span>
+              <div className="h-px w-8 sm:w-10 bg-brand-teal" />
+            </div>
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-brand-dark leading-tight mb-3 sm:mb-4">
+              Ford F-150 Raptor
+            </h2>
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-400 font-light tracking-wide">
+              The ultimate high-performance off-road truck
+            </p>
+            <p className="mt-4 text-gray-500 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+              Purpose-built to dominate the harshest terrains, the F-150 Raptor combines 
+              race-proven suspension with a high-output EcoBoost V6. Engineered for those 
+              who demand the extraordinary.
+            </p>
+          </AnimatedSection>
+
+          {/* Hero Image */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="relative rounded-3xl overflow-hidden shadow-xl border border-gray-100">
+              <div className="aspect-[16/9]">
+                <img
+                  src="/ford-raptor-3.jpeg"
+                  alt="Ford F-150 Raptor"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/70 via-brand-dark/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-8 md:p-12">
+                <div className="max-w-2xl">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="w-1 h-4 bg-brand-teal" />
+                    <span className="text-brand-teal text-xs uppercase tracking-[0.2em] font-medium">High-Output EcoBoost</span>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 sm:mb-2">Ford F-150 Raptor</h3>
+                  <p className="text-white/60 text-sm sm:text-base">Built to conquer. Designed to thrill.</p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Key Specs Strip */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+              <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 text-center border border-gray-100">
+                <div className="text-2xl sm:text-3xl font-bold text-brand-dark font-number">450</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">HP Power</div>
+                <p className="text-gray-400 text-xs mt-1">3.5L EcoBoost V6</p>
+              </div>
+              <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 text-center border border-gray-100">
+                <div className="text-2xl sm:text-3xl font-bold text-brand-dark font-number">510</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">lb-ft Torque</div>
+                <p className="text-gray-400 text-xs mt-1">High-Output</p>
+              </div>
+              <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 text-center border border-gray-100">
+                <div className="text-2xl sm:text-3xl font-bold text-brand-dark font-number">5.2</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">sec 0-60</div>
+                <p className="text-gray-400 text-xs mt-1">10-Speed Auto</p>
+              </div>
+              <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 text-center border border-gray-100">
+                <div className="text-2xl sm:text-3xl font-bold text-brand-dark font-number">4x4</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">Drive</div>
+                <p className="text-gray-400 text-xs mt-1">Locking Diffs</p>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Engine & Performance Split */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="h-px w-8 bg-brand-teal" />
+                  <span className="text-brand-teal uppercase tracking-[0.2em] text-sm font-medium">Powertrain</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark mb-6">High-Output EcoBoost V6</h3>
+                <p className="text-gray-500 leading-relaxed mb-6 text-sm sm:text-base">
+                  The 3.5-litre EcoBoost V6 high-output engine delivers 450 horsepower and 
+                  510 lb-ft of torque — the most powerful V6 in its class. Paired with a 
+                  10-speed SelectShift automatic transmission, it provides seamless power 
+                  delivery whether you're climbing dunes or carving highways.
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center shrink-0">
+                      <svg className="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-600 text-sm">Twin-scroll turbochargers for instant response</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center shrink-0">
+                      <svg className="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-600 text-sm">10-speed automatic with sport & tow modes</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center shrink-0">
+                      <svg className="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-600 text-sm">Exclusive Raptor exhaust with active valve</span>
+                  </div>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+                  <img
+                    src="/ford-raptor-1.jpeg"
+                    alt="Ford F-150 Raptor Engine"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-brand-teal/10 rounded-full blur-2xl" />
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Off-Road Capability Hero */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="relative rounded-3xl overflow-hidden shadow-xl border border-gray-100">
+              <div className="aspect-[21/9]">
+                <img
+                  src="/ford-raptor-10.jpg"
+                  alt="F-150 Raptor Off-Road"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/80 via-brand-dark/30 to-transparent" />
+              <div className="absolute inset-0 p-6 sm:p-8 md:p-12 flex flex-col justify-end">
+                <span className="text-brand-teal text-xs uppercase tracking-[0.3em] font-medium mb-3">Off-Road Dominance</span>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 max-w-lg">Race-bred suspension. Trail-ready.</h3>
+                <p className="text-white/60 text-sm sm:text-base max-w-md leading-relaxed">
+                  FOX 3.1 Internal Bypass shocks with Live Valve technology continuously 
+                  adapt to terrain, delivering unmatched control and comfort at任何 speed.
+                </p>
+                <div className="flex flex-wrap gap-4 sm:gap-6 mt-5 text-xs sm:text-sm">
+                  <div><span className="text-white font-semibold">13.1"</span> <span className="text-white/50">Ground Clearance</span></div>
+                  <div><span className="text-white font-semibold">31.7°</span> <span className="text-white/50">Approach Angle</span></div>
+                  <div><span className="text-white font-semibold">7</span> <span className="text-white/50">Terrain Modes</span></div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Design & Capability Gallery */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="text-center mb-8 sm:mb-12">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="h-px w-8 sm:w-10 bg-brand-teal" />
+                <span className="text-brand-teal uppercase tracking-[0.2em] text-sm font-medium">Design & Capability</span>
+                <div className="h-px w-8 sm:w-10 bg-brand-teal" />
+              </div>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-dark mb-3 sm:mb-4">Aggressive by design. Proven by performance.</h3>
+              <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base">
+                Every detail of the Raptor is engineered for extreme off-road performance, from the 
+                widened stance to the functional hood vents.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
+              <div className="relative rounded-2xl overflow-hidden group shadow-md border border-gray-100 aspect-[4/3]">
+                <img
+                  src="/ford-raptor-11.jpg"
+                  alt="Raptor Exterior Design"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-teal via-brand-teal/50 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
+                  <h4 className="text-lg font-bold text-white mb-1">Aggressive Stance</h4>
+                  <p className="text-white/60 text-sm">Widened track, bold grille, and integrated skid plates define the Raptor's menacing presence.</p>
+                </div>
+              </div>
+              <div className="relative rounded-2xl overflow-hidden group shadow-md border border-gray-100 aspect-[4/3]">
+                <img
+                  src="/ford-raptor-13.png"
+                  alt="Raptor Interior"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-teal via-brand-teal/50 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
+                  <h4 className="text-lg font-bold text-white mb-1">Raptor Interior</h4>
+                  <p className="text-white/60 text-sm">Sports seats with Raptor branding, aluminium paddles, and a 12-inch touchscreen with SYNC 4.</p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Terrain Management */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-20">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="relative order-2 lg:order-1">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="h-px w-8 bg-brand-teal" />
+                  <span className="text-brand-teal uppercase tracking-[0.2em] text-sm font-medium">Terrain Management</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark mb-6">Seven modes. Unlimited adventure.</h3>
+                <p className="text-gray-500 leading-relaxed mb-6 text-sm sm:text-base">
+                  The Raptor's Terrain Management System lets you optimise performance for any 
+                  environment — from Baja desert runs to rocky crawls. Electronic locking differentials 
+                  and a 4-Auto transfer case ensure maximum traction.
+                </p>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="bg-gray-50 rounded-xl p-3 sm:p-4 border border-gray-100">
+                    <div className="text-brand-teal text-sm font-bold">Normal</div>
+                    <div className="text-gray-400 text-xs">Daily driving</div>
+                  </div>
+                  <div className="bg-gray-50 rounded-xl p-3 sm:p-4 border border-gray-100">
+                    <div className="text-brand-teal text-sm font-bold">Off-Road</div>
+                    <div className="text-gray-400 text-xs">Trail & dirt</div>
+                  </div>
+                  <div className="bg-gray-50 rounded-xl p-3 sm:p-4 border border-gray-100">
+                    <div className="text-brand-teal text-sm font-bold">Baja</div>
+                    <div className="text-gray-400 text-xs">High-speed desert</div>
+                  </div>
+                  <div className="bg-gray-50 rounded-xl p-3 sm:p-4 border border-gray-100">
+                    <div className="text-brand-teal text-sm font-bold">Tow/Haul</div>
+                    <div className="text-gray-400 text-xs">Heavy loads</div>
+                  </div>
+                </div>
+              </div>
+              <div className="relative order-1 lg:order-2">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+                  <img
+                    src="/ford-raptor-16.png"
+                    alt="Raptor Terrain Modes"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-brand-teal/5 rounded-full blur-xl" />
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Performance CTA */}
+          <AnimatedSection className="text-center">
+            <Link
+              to="/contact"
+              className="inline-flex items-center px-8 py-3.5 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal/90 transition-all duration-300 shadow-lg shadow-brand-teal/25 hover:shadow-xl hover:shadow-brand-teal/30 hover:-translate-y-0.5"
+            >
+              Enquire About F-150 Raptor
+              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
