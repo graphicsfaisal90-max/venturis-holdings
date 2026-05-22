@@ -579,6 +579,284 @@ export default function VenturisWheels() {
         </div>
       </section>
 
+      {/* Range Rover Showcase Section */}
+      <section className="relative py-16 sm:py-20 md:py-24 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection className="text-center max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20">
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="h-px w-10 bg-brand-teal" />
+              <span className="text-brand-teal uppercase tracking-[0.3em] text-xs font-medium">Featured Marque</span>
+              <div className="h-px w-10 bg-brand-teal" />
+            </div>
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-brand-dark leading-tight mb-4">
+              Range Rover
+            </h2>
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-400 font-light tracking-wide">
+              The Original Luxury SUV
+            </p>
+            <p className="mt-4 text-gray-500 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+              Guided by more than 50 years of evolution, Range Rover embodies an aesthetic grace that remains uninfluenced by fashions and trends. Forever underpinned by peerless refinement and breathtaking modernity enabled by the latest technologies.
+            </p>
+          </AnimatedSection>
+
+          {/* Hero Image */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="relative rounded-3xl overflow-hidden shadow-xl border border-gray-100">
+              <div className="aspect-[16/9]">
+                <img
+                  src="/range-rover-1.jpg"
+                  alt="Range Rover"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-8 md:p-12">
+                <div className="max-w-2xl">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 sm:mb-2">Range Rover Westminster Edition</h3>
+                  <p className="text-white/60 text-sm sm:text-base">Inspired by the heart of London. A British icon inspired by British icons.</p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Specs Strip */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+              <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 text-center border border-gray-100">
+                <div className="text-2xl sm:text-3xl font-bold text-brand-dark font-number">537</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">PS Power</div>
+                <p className="text-gray-400 text-xs mt-1">Maximum Output</p>
+              </div>
+              <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 text-center border border-gray-100">
+                <div className="text-2xl sm:text-3xl font-bold text-brand-dark font-number">4.8s</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">0-100 km/h</div>
+                <p className="text-gray-400 text-xs mt-1">0-60 in 4.5s</p>
+              </div>
+              <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 text-center border border-gray-100">
+                <div className="text-2xl sm:text-3xl font-bold text-brand-dark font-number">261</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">Top Speed</div>
+                <p className="text-gray-400 text-xs mt-1">162 mph</p>
+              </div>
+              <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 text-center border border-gray-100">
+                <div className="text-2xl sm:text-3xl font-bold text-brand-dark font-number">116</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">KM Electric</div>
+                <p className="text-gray-400 text-xs mt-1">72 Miles PHEV Range</p>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Refined Luxury - Split Layout */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="text-center mb-8 sm:mb-12">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-dark mb-3 sm:mb-4">Always Leading By Example</h3>
+              <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base">A first class travel experience for all.</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-8">
+              <div className="relative rounded-2xl overflow-hidden group">
+                <div className="aspect-[4/3]">
+                  <img
+                    src="/range-rover-5.jpg"
+                    alt="Range Rover Interior"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h4 className="text-lg font-bold text-white mb-1">Refined Travel</h4>
+                  <p className="text-white/60 text-sm">Heated centre and door armrests with 'hot stone' massage seats for comforting elegance.</p>
+                </div>
+              </div>
+              <div className="relative rounded-2xl overflow-hidden group">
+                <div className="aspect-[4/3]">
+                  <img
+                    src="/range-rover-2.jpg"
+                    alt="Range Rover Executive Cabin"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h4 className="text-lg font-bold text-white mb-1">Executive Control</h4>
+                  <p className="text-white/60 text-sm">8-inch Touchscreen controller within the Electrically Deployable centre armrest.</p>
+                </div>
+              </div>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
+              <div className="relative rounded-2xl overflow-hidden group">
+                <div className="aspect-[4/3]">
+                  <img
+                    src="/range-rover-4.jpg"
+                    alt="Range Rover Seven Seats"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h4 className="text-lg font-bold text-white mb-1">Space For All</h4>
+                  <p className="text-white/60 text-sm">Semi-Aniline heated leather seats in all three rows for up to seven adults.</p>
+                </div>
+              </div>
+              <div className="relative rounded-2xl overflow-hidden group">
+                <div className="aspect-[4/3]">
+                  <img
+                    src="/range-rover-3.jpg"
+                    alt="Range Rover Climate Control"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h4 className="text-lg font-bold text-white mb-1">Tailored Conditions</h4>
+                  <p className="text-white/60 text-sm">Four-zone Climate Control with separate temperature and airflow for driver and three passengers.</p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Capability + Technology */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="relative">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+                  <img
+                    src="/range-rover-7.jpg"
+                    alt="Range Rover Technology"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="h-px w-8 bg-brand-teal" />
+                  <span className="text-brand-teal uppercase tracking-[0.2em] text-sm font-medium">Effortless Capability</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark mb-6">Effortless Everywhere, Everyday</h3>
+                <p className="text-gray-500 leading-relaxed mb-6 text-sm sm:text-base">
+                  The power to go anywhere. With pioneering innovation at your fingertips, explore places only a Range Rover could take you with confidence, composure and comfort.
+                </p>
+                <div className="space-y-4">
+                  <div className="flex gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-brand-light text-brand-teal flex items-center justify-center shrink-0">
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-brand-dark">Always Looking Ahead</h4>
+                      <p className="text-gray-500 text-sm">3-inch Interactive Driver Display and optional Head-up Display keep your focus on the road.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-brand-light text-brand-teal flex items-center justify-center shrink-0">
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-brand-dark">The Full Picture</h4>
+                      <p className="text-gray-500 text-sm">3D Surround Camera and ClearSight Ground View provide 360° visibility including the path beneath your wheels.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-brand-light text-brand-teal flex items-center justify-center shrink-0">
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-brand-dark">Stillness In Motion</h4>
+                      <p className="text-gray-500 text-sm">MLA-Flex chassis with Electronic Air Suspension absorbs vibrations and adapts 500 times per second.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Propulsion Options */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-20">
+            <div className="text-center mb-8 sm:mb-12">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="h-px w-8 sm:w-10 bg-brand-teal" />
+                <span className="text-brand-teal uppercase tracking-[0.3em] text-xs font-medium">Progressive Power</span>
+                <div className="h-px w-8 sm:w-10 bg-brand-teal" />
+              </div>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-dark mb-3 sm:mb-4">The Most Advanced Propulsion Technologies</h3>
+              <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base">The original luxury SUV, leading by example.</p>
+            </div>
+            <div className="grid sm:grid-cols-3 gap-4 sm:gap-6">
+              <div className="bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 group hover:shadow-lg transition-all duration-500">
+                <div className="aspect-[16/10] overflow-hidden">
+                  <img
+                    src="/range-rover-8.jpg"
+                    alt="Range Rover PHEV"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-6">
+                  <span className="inline-block px-3 py-1 bg-brand-teal/10 text-brand-teal text-xs font-semibold rounded-full mb-3">Plug-in Electric Hybrid</span>
+                  <h4 className="text-lg font-bold text-brand-dark mb-2">P460e / P550e</h4>
+                  <p className="text-gray-500 text-sm mb-4">3.0L 6-cylinder Ingenium petrol + 160kW electric motor. Up to 116km EV range.</p>
+                  <div className="flex justify-between text-sm border-t border-gray-200 pt-3">
+                    <span className="text-gray-400">0-100km/h</span>
+                    <span className="font-semibold text-brand-dark">5.5s</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 group hover:shadow-lg transition-all duration-500">
+                <div className="aspect-[16/10] overflow-hidden">
+                  <img
+                    src="/range-rover-11.jpg"
+                    alt="Range Rover V8"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-6">
+                  <span className="inline-block px-3 py-1 bg-brand-dark/10 text-brand-dark text-xs font-semibold rounded-full mb-3">SV Petrol V8</span>
+                  <h4 className="text-lg font-bold text-brand-dark mb-2">P537 V8</h4>
+                  <p className="text-gray-500 text-sm mb-4">4.4L V8 with 537PS (395kW) and 750Nm torque. Mild hybrid technology.</p>
+                  <div className="flex justify-between text-sm border-t border-gray-200 pt-3">
+                    <span className="text-gray-400">0-100km/h</span>
+                    <span className="font-semibold text-brand-dark">4.8s</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 group hover:shadow-lg transition-all duration-500">
+                <div className="aspect-[16/10] overflow-hidden">
+                  <img
+                    src="/range-rover-6.jpg"
+                    alt="Range Rover Diesel"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-6">
+                  <span className="inline-block px-3 py-1 bg-gray-200 text-gray-600 text-xs font-semibold rounded-full mb-3">Diesel Mild Hybrid</span>
+                  <h4 className="text-lg font-bold text-brand-dark mb-2">D350</h4>
+                  <p className="text-gray-500 text-sm mb-4">Mild hybrid engine that harvests and redeploys energy normally lost during deceleration.</p>
+                  <div className="flex justify-between text-sm border-t border-gray-200 pt-3">
+                    <span className="text-gray-400">0-100km/h</span>
+                    <span className="font-semibold text-brand-dark">6.0s</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* CTA */}
+          <AnimatedSection className="text-center">
+            <Link
+              to="/contact"
+              className="inline-flex items-center px-8 py-3.5 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal/90 transition-all duration-300 shadow-lg shadow-brand-teal/25 hover:shadow-xl hover:shadow-brand-teal/30 hover:-translate-y-0.5"
+            >
+              Enquire About Range Rover
+              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
