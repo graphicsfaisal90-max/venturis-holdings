@@ -360,7 +360,7 @@ export default function VenturisWheels() {
             <AnimatedSection className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="/ford-raptor-4.jpg"
+                  src="/ford-raptor-1.jpeg"
                   alt="Ford F-150 Raptor"
                   className="w-full h-full object-cover"
                 />
