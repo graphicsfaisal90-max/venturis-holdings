@@ -1543,12 +1543,12 @@ export default function VenturisWheels() {
                   <source src="/nissan-patrol/nissan-patrol-hero.mp4" type="video/mp4" />
                 </video>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/70 via-brand-dark/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-8 md:p-12">
                 <div className="max-w-2xl">
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="w-1 h-4 bg-brand-teal" />
-                    <span className="text-brand-teal text-xs uppercase tracking-[0.2em] font-medium">All-New Generation</span>
+                    <span className="w-1 h-4 bg-white" />
+                    <span className="text-white/80 text-xs uppercase tracking-[0.2em] font-medium">All-New Generation</span>
                   </div>
                   <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 sm:mb-2">Seventh-Generation Legend</h3>
                   <p className="text-white/60 text-sm sm:text-base">Reborn with twin-turbo power, cutting-edge technology, and uncompromising luxury.</p>
