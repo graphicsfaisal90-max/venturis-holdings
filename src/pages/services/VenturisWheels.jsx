@@ -1451,6 +1451,393 @@ export default function VenturisWheels() {
         </div>
       </section>
 
+      {/* Nissan Patrol Showcase Section */}
+      <section className="relative py-16 sm:py-20 md:py-24 bg-black overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection className="text-center max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20">
+            <div className="flex items-center justify-center gap-3 mb-4 sm:mb-6">
+              <div className="h-px w-8 sm:w-10 bg-brand-teal" />
+              <span className="text-brand-teal uppercase tracking-[0.3em] text-xs font-medium">Tradition of Excellence</span>
+              <div className="h-px w-8 sm:w-10 bg-brand-teal" />
+            </div>
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-3 sm:mb-4">
+              Nissan Patrol
+            </h2>
+            <p className="text-lg sm:text-xl md:text-2xl text-white/40 font-light tracking-wide">
+              The all-new legend. Stronger. Smarter. Bolder.
+            </p>
+            <p className="mt-4 text-white/50 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+              For seven generations, the Nissan Patrol has defined what a full-size SUV should be. 
+              The all-new Patrol raises the bar with a twin-turbo V6, a breathtaking 28.6-inch 
+              Monolith display, and a cabin that reimagines luxury.
+            </p>
+          </AnimatedSection>
+
+          {/* Exterior Design Gallery */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="text-center mb-8 sm:mb-12">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="h-px w-8 bg-brand-teal" />
+                <span className="text-brand-teal uppercase tracking-[0.2em] text-sm font-medium">Exterior Design</span>
+                <div className="h-px w-8 bg-brand-teal" />
+              </div>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">Bold presence. Distinctive character.</h3>
+              <p className="text-white/50 max-w-2xl mx-auto text-sm sm:text-base">
+                Every line of the all-new Patrol communicates power and prestige, from the commanding grille to the sculpted profile.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-3 gap-4 sm:gap-6">
+              <div className="group bg-white/[0.03] rounded-2xl overflow-hidden border border-white/[0.06]">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="/nissan-patrol/v-motion-grill.png"
+                    alt="Nissan Patrol V-Motion Grille"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-4 sm:p-5">
+                  <h4 className="text-base sm:text-lg font-bold text-white">V-Motion Grille</h4>
+                  <p className="text-white/40 text-xs sm:text-sm mt-1">The bold new face of Patrol with an imposing presence.</p>
+                </div>
+              </div>
+              <div className="group bg-white/[0.03] rounded-2xl overflow-hidden border border-white/[0.06]">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="/nissan-patrol/signature-double-c-shape.png"
+                    alt="Nissan Patrol Signature Headlights"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-4 sm:p-5">
+                  <h4 className="text-base sm:text-lg font-bold text-white">Double C-Shape Lights</h4>
+                  <p className="text-white/40 text-xs sm:text-sm mt-1">Signature daytime running lights that command attention.</p>
+                </div>
+              </div>
+              <div className="group bg-white/[0.03] rounded-2xl overflow-hidden border border-white/[0.06]">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="/nissan-patrol/floating-roof-with-sign-d.png"
+                    alt="Nissan Patrol Floating Roof"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-4 sm:p-5">
+                  <h4 className="text-base sm:text-lg font-bold text-white">Floating Roof Design</h4>
+                  <p className="text-white/40 text-xs sm:text-sm mt-1">The iconic D-pillar detail meets a sleek floating roofline.</p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Key Specs Strip */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="text-center mb-8 sm:mb-12">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="h-px w-8 bg-brand-teal" />
+                <span className="text-brand-teal uppercase tracking-[0.2em] text-sm font-medium">Performance</span>
+                <div className="h-px w-8 bg-brand-teal" />
+              </div>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+              <div className="bg-white/[0.03] rounded-2xl p-6 sm:p-8 text-center border border-white/[0.06]">
+                <div className="text-2xl sm:text-3xl font-bold text-white font-number">425</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">HP Power</div>
+                <p className="text-white/40 text-xs mt-1">3.5L Twin-Turbo V6</p>
+              </div>
+              <div className="bg-white/[0.03] rounded-2xl p-6 sm:p-8 text-center border border-white/[0.06]">
+                <div className="text-2xl sm:text-3xl font-bold text-white font-number">700</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">Nm Torque</div>
+                <p className="text-white/40 text-xs mt-1">3.5L Twin-Turbo V6</p>
+              </div>
+              <div className="bg-white/[0.03] rounded-2xl p-6 sm:p-8 text-center border border-white/[0.06]">
+                <div className="text-2xl sm:text-3xl font-bold text-white font-number">9</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">Speed Auto</div>
+                <p className="text-white/40 text-xs mt-1">Paddle Shifters</p>
+              </div>
+              <div className="bg-white/[0.03] rounded-2xl p-6 sm:p-8 text-center border border-white/[0.06]">
+                <div className="text-2xl sm:text-3xl font-bold text-white font-number">4x4</div>
+                <div className="text-brand-teal text-xs uppercase tracking-widest font-medium mt-1">Drive</div>
+                <p className="text-white/40 text-xs mt-1">Rear Diff Lock</p>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Technology Monolith Display */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="h-px w-8 bg-brand-teal" />
+                  <span className="text-brand-teal uppercase tracking-[0.2em] text-sm font-medium">Advanced Infotainment</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6">28.6" Monolith Display</h3>
+                <p className="text-white/50 leading-relaxed mb-6 text-sm sm:text-base">
+                  Twin 14.3-inch displays seamlessly integrated into a single panoramic screen. 
+                  Navigation, entertainment, and vehicle data at your fingertips with intuitive 
+                  touchscreen controls — keeping you connected and informed on every journey.
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                      <svg className="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-white/60 text-sm">Twin 14.3" panoramic screens</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                      <svg className="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-white/60 text-sm">Wireless Apple CarPlay & Android Auto</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                      <svg className="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-white/60 text-sm">Real-time navigation & vehicle info</span>
+                  </div>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-white/5">
+                  <img
+                    src="/nissan-patrol/technology-28-6-monolith-display.png"
+                    alt="Nissan Patrol 28.6-inch Monolith Display"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-brand-teal/10 rounded-full blur-2xl" />
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Head-Up Display & Klipsch Audio */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
+              <div className="relative rounded-2xl overflow-hidden group shadow-2xl shadow-white/5 border border-white/[0.06] aspect-[4/3]">
+                <img
+                  src="/nissan-patrol/technology-head-up-display.png"
+                  alt="Nissan Patrol Head-Up Display"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-teal via-brand-teal/50 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
+                  <h4 className="text-lg font-bold text-white mb-1">Head-Up Display</h4>
+                  <p className="text-white/60 text-sm">Key driving data projected onto the windshield for a safer, more focused drive.</p>
+                </div>
+              </div>
+              <div className="relative rounded-2xl overflow-hidden group shadow-2xl shadow-white/5 border border-white/[0.06] aspect-[4/3]">
+                <img
+                  src="/nissan-patrol/technology-klipsch-audio.png"
+                  alt="Nissan Patrol Klipsch Audio"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-teal via-brand-teal/50 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
+                  <h4 className="text-lg font-bold text-white mb-1">Klipsch Premium Audio</h4>
+                  <p className="text-white/60 text-sm">12 speakers by Klipsch — a legendary American audio brand — for an immersive concert-like experience.</p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Interior & Comfort */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-24">
+            <div className="text-center mb-8 sm:mb-12">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="h-px w-8 bg-brand-teal" />
+                <span className="text-brand-teal uppercase tracking-[0.2em] text-sm font-medium">Interior & Comfort</span>
+                <div className="h-px w-8 bg-brand-teal" />
+              </div>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">A sanctuary on wheels</h3>
+              <p className="text-white/50 max-w-2xl mx-auto text-sm sm:text-base">
+                The Patrol cabin is crafted with premium materials and thoughtful details, offering unmatched comfort for up to eight passengers.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+              <div className="relative rounded-2xl overflow-hidden group shadow-2xl shadow-white/5 border border-white/[0.06] aspect-[4/3]">
+                <img
+                  src="/nissan-patrol/cabin.png"
+                  alt="Nissan Patrol Cabin"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <h4 className="text-sm font-bold text-white">Premium Cabin</h4>
+                </div>
+              </div>
+              <div className="relative rounded-2xl overflow-hidden group shadow-2xl shadow-white/5 border border-white/[0.06] aspect-[4/3]">
+                <img
+                  src="/nissan-patrol/nissan-patrol-seats.jpeg"
+                  alt="Nissan Patrol Seats"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <h4 className="text-sm font-bold text-white">8 Comfortable Seats</h4>
+                </div>
+              </div>
+              <div className="relative rounded-2xl overflow-hidden group shadow-2xl shadow-white/5 border border-white/[0.06] aspect-[4/3]">
+                <img
+                  src="/nissan-patrol/panaromic-sunroof.png"
+                  alt="Nissan Patrol Panoramic Sunroof"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <h4 className="text-sm font-bold text-white">Panoramic Sunroof</h4>
+                </div>
+              </div>
+              <div className="relative rounded-2xl overflow-hidden group shadow-2xl shadow-white/5 border border-white/[0.06] aspect-[4/3]">
+                <img
+                  src="/nissan-patrol/iconic-puddle-lamp.jpeg"
+                  alt="Nissan Patrol Puddle Lamp"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <h4 className="text-sm font-bold text-white">Iconic Puddle Lamp</h4>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Safety & Connected Services */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-20">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="relative order-2 lg:order-1">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="h-px w-8 bg-brand-teal" />
+                  <span className="text-brand-teal uppercase tracking-[0.2em] text-sm font-medium">Safety & Connectivity</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6">Advanced protection. Seamless control.</h3>
+                <p className="text-white/50 leading-relaxed mb-6 text-sm sm:text-base">
+                  Nissan's latest safety innovations and connected services work together to protect 
+                  and empower you. From automatic emergency braking to remote vehicle control via 
+                  the NissanConnect app, the Patrol keeps you in command.
+                </p>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="bg-white/[0.03] rounded-xl p-3 sm:p-4 border border-white/[0.06]">
+                    <div className="text-brand-teal text-sm font-bold">Auto Emergency Brake</div>
+                    <div className="text-white/40 text-xs mt-1">Rear cross-traffic</div>
+                  </div>
+                  <div className="bg-white/[0.03] rounded-xl p-3 sm:p-4 border border-white/[0.06]">
+                    <div className="text-brand-teal text-sm font-bold">ProPILOT</div>
+                    <div className="text-white/40 text-xs mt-1">Driver assistance</div>
+                  </div>
+                  <div className="bg-white/[0.03] rounded-xl p-3 sm:p-4 border border-white/[0.06]">
+                    <div className="text-brand-teal text-sm font-bold">Remote Climate</div>
+                    <div className="text-white/40 text-xs mt-1">Pre-condition cabin</div>
+                  </div>
+                  <div className="bg-white/[0.03] rounded-xl p-3 sm:p-4 border border-white/[0.06]">
+                    <div className="text-brand-teal text-sm font-bold">My Car Finder</div>
+                    <div className="text-white/40 text-xs mt-1">GPS locator</div>
+                  </div>
+                </div>
+              </div>
+              <div className="relative order-1 lg:order-2">
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="rounded-2xl overflow-hidden shadow-2xl shadow-white/5 border border-white/[0.06]">
+                    <img
+                      src="/nissan-patrol/nissan-patrol-emergency-brake.jpeg"
+                      alt="Nissan Patrol Emergency Brake"
+                      className="w-full h-full object-cover aspect-square"
+                    />
+                  </div>
+                  <div className="rounded-2xl overflow-hidden shadow-2xl shadow-white/5 border border-white/[0.06]">
+                    <img
+                      src="/nissan-patrol/safety-propilate.png"
+                      alt="Nissan Patrol ProPILOT"
+                      className="w-full h-full object-cover aspect-square"
+                    />
+                  </div>
+                  <div className="rounded-2xl overflow-hidden shadow-2xl shadow-white/5 border border-white/[0.06]">
+                    <img
+                      src="/nissan-patrol/technology-remote-climate-control.png"
+                      alt="Nissan Patrol Remote Climate"
+                      className="w-full h-full object-cover aspect-square"
+                    />
+                  </div>
+                  <div className="rounded-2xl overflow-hidden shadow-2xl shadow-white/5 border border-white/[0.06]">
+                    <img
+                      src="/nissan-patrol/technology-my-car-finder.png"
+                      alt="Nissan Patrol Car Finder"
+                      className="w-full h-full object-cover aspect-square"
+                    />
+                  </div>
+                </div>
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-brand-teal/5 rounded-full blur-xl" />
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Wheels & Finishing Details */}
+          <AnimatedSection className="mb-12 sm:mb-16 md:mb-20">
+            <div className="grid sm:grid-cols-3 gap-4 sm:gap-6">
+              <div className="bg-white/[0.03] rounded-2xl overflow-hidden border border-white/[0.06] group">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="/nissan-patrol/unique-wheel-design.png"
+                    alt="Nissan Patrol Wheels"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-5">
+                  <h4 className="font-bold text-white">Unique Wheel Design</h4>
+                  <p className="text-white/40 text-xs mt-1">Distinctive alloy wheels crafted to complement the Patrol's muscular stance.</p>
+                </div>
+              </div>
+              <div className="bg-white/[0.03] rounded-2xl overflow-hidden border border-white/[0.06] group">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="/nissan-patrol/technology-remote-door-control.png"
+                    alt="Nissan Patrol Remote Door Control"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-5">
+                  <h4 className="font-bold text-white">Remote Door Control</h4>
+                  <p className="text-white/40 text-xs mt-1">Lock and unlock your Patrol remotely via the NissanConnect app.</p>
+                </div>
+              </div>
+              <div className="bg-white/[0.03] rounded-2xl overflow-hidden border border-white/[0.06] group">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="/nissan-patrol/v-motion-grill.png"
+                    alt="Nissan Patrol V-Motion Grille"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-5">
+                  <h4 className="font-bold text-white">Commanding Front End</h4>
+                  <p className="text-white/40 text-xs mt-1">The signature V-Motion grille asserts dominance on every road.</p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* CTA */}
+          <AnimatedSection className="text-center">
+            <Link
+              to="/contact"
+              className="inline-flex items-center px-8 py-3.5 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal/90 transition-all duration-300 shadow-lg shadow-brand-teal/25 hover:shadow-xl hover:shadow-brand-teal/30 hover:-translate-y-0.5"
+            >
+              Enquire About Nissan Patrol
+              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
