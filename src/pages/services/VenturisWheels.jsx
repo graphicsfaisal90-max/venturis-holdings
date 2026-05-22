@@ -99,7 +99,7 @@ const jetourFeatures = [
   {
     title: 'GAIA Off-road Aesthetics Design',
     desc: 'Bold, aggressive lines and a commanding presence define the G700\'s design language, blending rugged capability with premium craftsmanship.',
-    image: '/Jetour G700.png',
+    image: '/jetour-g700.png',
   },
   {
     title: 'A Commanding, Rugged Off-road Stance',
@@ -275,7 +275,7 @@ export default function VenturisWheels() {
             playsInline
             className="w-full h-full object-cover opacity-70"
           >
-            <source src="/JETOUR G700, JETOUR G700 photos, JETOUR G700 specs, JETOUR G700 review.mp4" type="video/mp4" />
+            <source src="/jetour-g700.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20" />
@@ -440,7 +440,7 @@ export default function VenturisWheels() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-brand-teal/10 border border-white/5">
               <div className="aspect-[16/9]">
                 <img
-                  src="/Jetour G 700 (4).png"
+                  src="/jetour-g700-hero.png"
                   alt="JETOUR G700"
                   className="w-full h-full object-cover"
                 />
