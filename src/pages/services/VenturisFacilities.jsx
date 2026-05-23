@@ -241,7 +241,7 @@ export default function VenturisFacilities() {
             className="w-full h-full object-cover"
             onError={(e) => { console.log('Video error:', e.target.error) }}
           >
-            <source src="/Construction%20(1).mp4" type="video/mp4" />
+            <source src="/Construction-hero.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/90 via-brand-navy/80 to-brand-from/70" />
