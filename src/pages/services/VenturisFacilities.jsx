@@ -417,7 +417,7 @@ export default function VenturisFacilities() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             <div className="lg:col-span-2 relative rounded-3xl overflow-hidden group min-h-[320px] sm:min-h-[380px]">
               <img
-                src="/Hospitality.jpeg"
+                src="/hospitality.jpg"
                 alt="Hospitality Services"
                 className="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
               />
@@ -440,7 +440,7 @@ export default function VenturisFacilities() {
 
             <div className="relative rounded-3xl overflow-hidden group min-h-[320px] sm:min-h-[380px]">
               <img
-                src="/Construction workers.jpeg"
+                src="/construction-workers.jpg"
                 alt="Construction Workforce"
                 className="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
               />
@@ -463,7 +463,7 @@ export default function VenturisFacilities() {
 
             <div className="relative rounded-3xl overflow-hidden group min-h-[280px] sm:min-h-[320px]">
               <img
-                src="/Hotel Management.jpeg"
+                src="/hotel-management.jpg"
                 alt="Hotel Management"
                 className="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
               />
@@ -486,7 +486,7 @@ export default function VenturisFacilities() {
 
             <div className="relative rounded-3xl overflow-hidden group min-h-[280px] sm:min-h-[320px]">
               <img
-                src="/Cleaning Staff.jpeg"
+                src="/cleaning-staff.jpg"
                 alt="Cleaning Services"
                 className="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
               />
@@ -509,7 +509,7 @@ export default function VenturisFacilities() {
 
             <div className="relative rounded-3xl overflow-hidden group min-h-[280px] sm:min-h-[320px]">
               <img
-                src="/Admin Staff.jpeg"
+                src="/admin-staff.jpg"
                 alt="Administrative Staff"
                 className="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
               />
