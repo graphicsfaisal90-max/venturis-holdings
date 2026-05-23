@@ -229,8 +229,7 @@ export default function VenturisFacilities() {
   return (
     <>
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-navy to-brand-from/90" />
-        <div className="absolute inset-0 bg-brand-dark">
+        <div className="absolute inset-0">
           <video
             autoPlay
             muted
@@ -239,17 +238,12 @@ export default function VenturisFacilities() {
             preload="auto"
             poster="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=85"
             className="w-full h-full object-cover"
-            onError={(e) => { console.log('Video error:', e.target.error) }}
           >
             <source src="/Construction-hero.mp4" type="video/mp4" />
           </video>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/90 via-brand-navy/80 to-brand-from/70" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-white rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-20 w-[30rem] h-[30rem] bg-brand-teal rounded-full blur-3xl" />
-        </div>
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-36">
           <div className="animate-fade-in-down">
             <div className="flex items-center gap-4 mb-6">
