@@ -230,14 +230,16 @@ export default function VenturisFacilities() {
     <>
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-navy to-brand-from/90" />
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-brand-dark">
           <video
             autoPlay
             muted
             loop
             playsInline
+            preload="auto"
             poster="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=85"
             className="w-full h-full object-cover"
+            onError={(e) => { console.log('Video error:', e.target.error) }}
           >
             <source src="/Construction.mp4" type="video/mp4" />
           </video>
