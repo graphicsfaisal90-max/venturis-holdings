@@ -307,60 +307,91 @@ export default function VenturisFacilities() {
             Every HR policy is anchored to our group vision, ensuring consistency across all companies while allowing operational flexibility.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="group relative bg-white rounded-3xl border border-gray-100 shadow-lg shadow-gray-200/50 hover:shadow-2xl hover:shadow-brand-teal/15 hover:-translate-y-2 transition-all duration-500 overflow-hidden">
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
-              <div className="p-8 lg:p-10">
-                <div className="flex items-center justify-between mb-6">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center shadow-lg shadow-brand-teal/20">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                    </svg>
-                  </div>
-                  <span className="text-5xl font-bold text-brand-teal/10 font-number">01</span>
-                </div>
-                <h3 className="text-2xl font-bold text-brand-dark mb-3">Vision Alignment</h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
-                  All HR policies are designed to support the group&apos;s overarching vision of becoming a globally recognized innovation-driven company. Every policy reflects our core values while providing the flexibility needed to address each company&apos;s unique operational requirements.
-                </p>
-                <div className="flex items-center gap-2 text-sm text-brand-teal font-semibold">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
-                  </svg>
-                  Strategic Direction
-                </div>
-              </div>
-            </div>
-            <div className="group relative bg-white rounded-3xl border border-gray-100 shadow-lg shadow-gray-200/50 hover:shadow-2xl hover:shadow-brand-teal/15 hover:-translate-y-2 transition-all duration-500 overflow-hidden">
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-navy to-brand-teal" />
-              <div className="p-8 lg:p-10">
-                <div className="flex items-center justify-between mb-6">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-navy to-brand-teal flex items-center justify-center shadow-lg shadow-brand-teal/20">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                  <span className="text-5xl font-bold text-brand-navy/10 font-number">02</span>
-                </div>
-                <h3 className="text-2xl font-bold text-brand-dark mb-3">Culture & Values</h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
-                  Our policies cultivate a consistent culture of integrity, innovation, and customer-centricity across all group companies. While each division retains its unique character, shared values create a unified identity that strengthens our collective brand and employee experience.
-                </p>
-                <div className="flex items-center gap-2 text-sm text-brand-teal font-semibold">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
-                  </svg>
-                  Unified Identity
-                </div>
-              </div>
-            </div>
-          </div>
+          <div className="relative max-w-5xl mx-auto">
+            <div className="relative bg-white rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/50 overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-brand-teal via-brand-navy to-brand-from" />
+              <div className="absolute top-0 right-0 w-80 h-80 bg-gradient-to-bl from-brand-teal/[0.04] to-transparent rounded-bl-full pointer-events-none" />
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-brand-navy/[0.04] to-transparent rounded-tr-full pointer-events-none" />
 
-          <div className="mt-12 text-center">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-brand-light rounded-full">
-              <span className="w-2 h-2 rounded-full bg-brand-teal animate-pulse" />
-              <span className="text-brand-dark/60 text-sm font-medium">Policies are reviewed quarterly to ensure continued alignment with group vision</span>
+              <div className="relative p-8 sm:p-10 lg:p-12">
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center shadow-lg shadow-brand-teal/20 shrink-0">
+                    <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-brand-dark">Vision & Culture Framework</h3>
+                    <p className="text-brand-teal text-sm font-medium">How our policies connect vision to everyday practice</p>
+                  </div>
+                </div>
+
+                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+                  <div className="relative pl-8 lg:pl-10 border-l-2 border-brand-teal/20">
+                    <div className="absolute left-0 top-0 w-3 h-3 rounded-full bg-brand-teal -translate-x-[7px] ring-4 ring-brand-teal/10" />
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center text-brand-teal">
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                      </div>
+                      <span className="text-xs font-semibold uppercase tracking-[0.15em] text-brand-teal">Vision Alignment</span>
+                    </div>
+                    <h4 className="text-xl font-bold text-brand-dark mb-3">Strategic Direction</h4>
+                    <p className="text-gray-600 leading-relaxed text-sm">
+                      All HR policies are designed to support the group&apos;s overarching vision of becoming a globally recognized innovation-driven company. Every policy reflects our core values while providing the flexibility needed to address each company&apos;s unique operational requirements.
+                    </p>
+                    <div className="mt-4 flex items-center gap-2 text-xs text-gray-400">
+                      <svg className="w-3.5 h-3.5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      Anchored to group vision
+                    </div>
+                  </div>
+
+                  <div className="relative pl-8 lg:pl-10 border-l-2 border-brand-navy/20">
+                    <div className="absolute left-0 top-0 w-3 h-3 rounded-full bg-brand-navy -translate-x-[7px] ring-4 ring-brand-navy/10" />
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-navy/10 to-brand-teal/10 flex items-center justify-center text-brand-navy">
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                      </div>
+                      <span className="text-xs font-semibold uppercase tracking-[0.15em] text-brand-navy">Culture & Values</span>
+                    </div>
+                    <h4 className="text-xl font-bold text-brand-dark mb-3">Unified Identity</h4>
+                    <p className="text-gray-600 leading-relaxed text-sm">
+                      Our policies cultivate a consistent culture of integrity, innovation, and customer-centricity across all group companies. While each division retains its unique character, shared values create a unified identity that strengthens our collective brand and employee experience.
+                    </p>
+                    <div className="mt-4 flex items-center gap-2 text-xs text-gray-400">
+                      <svg className="w-3.5 h-3.5 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      Consistent across all divisions
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 pt-6 border-t border-gray-100 flex flex-wrap items-center gap-6 text-sm text-gray-400">
+                  <span className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                    Group-wide consistency
+                  </span>
+                  <span className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-navy" />
+                    Company-specific flexibility
+                  </span>
+                  <span className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-from" />
+                    Values-driven culture
+                  </span>
+                  <span className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-teal animate-pulse" />
+                    Quarterly policy reviews
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
