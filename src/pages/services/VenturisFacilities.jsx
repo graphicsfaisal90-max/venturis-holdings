@@ -307,44 +307,90 @@ export default function VenturisFacilities() {
           <p className="text-gray-500 max-w-2xl mx-auto text-lg text-center mb-16">
             Every HR policy is anchored to our group vision, ensuring consistency across all companies while allowing operational flexibility.
           </p>
-          <div className="grid md:grid-cols-2 gap-10">
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-brand-teal to-brand-navy rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-700" />
-              <div className="relative bg-white rounded-3xl p-10 sm:p-12 shadow-lg border border-gray-100 h-full">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center shadow-lg shadow-brand-teal/20 shrink-0">
-                    <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                    </svg>
+
+          <div className="relative bg-gradient-to-br from-brand-teal/5 via-white to-brand-navy/5 rounded-3xl border border-gray-100 shadow-xl shadow-brand-teal/5 overflow-hidden">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-brand-teal/10 to-transparent rounded-bl-full pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-brand-navy/10 to-transparent rounded-tr-full pointer-events-none" />
+            <div className="relative grid lg:grid-cols-5 gap-0">
+              <div className="lg:col-span-2 relative overflow-hidden min-h-[300px] lg:min-h-full">
+                <img
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+                  alt="Team collaboration"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-brand-teal/80 via-brand-navy/60 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40" />
+                <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-10">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <span className="text-white/70 text-sm font-medium uppercase tracking-wider">Core Principle</span>
                   </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-brand-dark">Vision Alignment</h3>
-                    <p className="text-brand-teal text-sm font-semibold uppercase tracking-[0.15em] mt-1">Strategic Direction</p>
-                  </div>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-white mb-2">Policies Anchored to Purpose</h3>
+                  <p className="text-white/80 text-sm leading-relaxed max-w-md">
+                    Every policy we create starts with our group vision and radiates outward to serve each unique business unit.
+                  </p>
                 </div>
-                <p className="text-gray-600 leading-relaxed text-lg">
-                  All HR policies are designed to support the group&apos;s overarching vision of becoming a globally recognized innovation-driven company. Every policy reflects our core values while providing the flexibility needed to address each company&apos;s unique operational requirements.
-                </p>
               </div>
-            </div>
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-brand-navy to-brand-teal rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-700" />
-              <div className="relative bg-white rounded-3xl p-10 sm:p-12 shadow-lg border border-gray-100 h-full">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-navy to-brand-teal flex items-center justify-center shadow-lg shadow-brand-teal/20 shrink-0">
-                    <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
+              <div className="lg:col-span-3 p-8 lg:p-12 xl:p-14 flex flex-col justify-center">
+                <div className="space-y-8">
+                  <div className="flex items-start gap-5">
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center shadow-lg shadow-brand-teal/20 shrink-0 mt-1">
+                      <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-brand-dark mb-2">Vision Alignment</h3>
+                      <p className="text-gray-600 leading-relaxed">
+                        All HR policies are designed to support the group&apos;s overarching vision of becoming a globally recognized innovation-driven company. Every policy reflects our core values while providing the flexibility needed to address each company&apos;s unique operational requirements.
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-brand-dark">Culture & Values</h3>
-                    <p className="text-brand-teal text-sm font-semibold uppercase tracking-[0.15em] mt-1">Unified Identity</p>
+                  <div className="relative pl-8 border-l-2 border-brand-teal/20">
+                    <div className="absolute left-0 top-0 w-2 h-2 rounded-full bg-brand-teal -translate-x-[5px]" />
+                    <p className="text-gray-500 italic text-sm">
+                      &ldquo;Our policies are not constraints — they are enablers that translate group vision into everyday practice across every division.&rdquo;
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-5 pt-2">
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-navy to-brand-teal flex items-center justify-center shadow-lg shadow-brand-teal/20 shrink-0 mt-1">
+                      <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-brand-dark mb-2">Culture & Values</h3>
+                      <p className="text-gray-600 leading-relaxed">
+                        Our policies cultivate a consistent culture of integrity, innovation, and customer-centricity across all group companies. While each division retains its unique character, shared values create a unified identity that strengthens our collective brand and employee experience.
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <p className="text-gray-600 leading-relaxed text-lg">
-                  Our policies cultivate a consistent culture of integrity, innovation, and customer-centricity across all group companies. While each division retains its unique character, shared values create a unified identity that strengthens our collective brand and employee experience.
-                </p>
+                <div className="mt-8 pt-8 border-t border-gray-100 flex flex-wrap gap-6">
+                  <div className="flex items-center gap-2 text-sm text-gray-500">
+                    <svg className="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    Group-wide consistency
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-500">
+                    <svg className="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    Company-specific flexibility
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-500">
+                    <svg className="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    Values-driven culture
+                  </div>
+                </div>
               </div>
             </div>
           </div>
