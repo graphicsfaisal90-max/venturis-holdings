@@ -231,11 +231,16 @@ export default function VenturisFacilities() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-navy to-brand-from/90" />
         <div className="absolute inset-0">
-          <img
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=85"
-            alt="Modern office facilities"
-            className="w-full h-full object-cover transition-all duration-[2s] ease-out scale-105 hover:scale-110 saturate-[0.7]"
-          />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=85"
+            className="w-full h-full object-cover"
+          >
+            <source src="/Construction.mp4" type="video/mp4" />
+          </video>
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/90 via-brand-navy/80 to-brand-from/70" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
