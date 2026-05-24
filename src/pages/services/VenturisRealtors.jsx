@@ -188,19 +188,26 @@ function CountUp({ end, suffix, label }) {
 }
 
 function GalleryModal({ images, activeIndex, onClose, onPrev, onNext }) {
+  const handleKeyRef = useRef(null)
+
   useEffect(() => {
+    if (activeIndex === null) {
+      document.body.style.overflow = ''
+      return
+    }
     const handleKey = (e) => {
       if (e.key === 'Escape') onClose()
       if (e.key === 'ArrowLeft') onPrev()
       if (e.key === 'ArrowRight') onNext()
     }
+    handleKeyRef.current = handleKey
     window.addEventListener('keydown', handleKey)
     document.body.style.overflow = 'hidden'
     return () => {
       window.removeEventListener('keydown', handleKey)
       document.body.style.overflow = ''
     }
-  }, [onClose, onPrev, onNext])
+  }, [activeIndex, onClose, onPrev, onNext])
 
   if (activeIndex === null) return null
 
@@ -248,7 +255,7 @@ export default function VenturisRealtors() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[600px] sm:min-h-[700px] flex items-center justify-center overflow-hidden bg-black">
+      <section className="relative h-screen min-h-[600px] sm:min-h-[700px] flex items-center justify-center bg-black">
         <div className="absolute inset-0">
           <video
             ref={videoRef}
