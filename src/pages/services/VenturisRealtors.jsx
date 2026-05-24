@@ -169,13 +169,6 @@ const galleryImages = [
   '/Venturis%20Realtors/2-Bedroom%20Premium%20Apartment/Screenshot%202026-05-24%20215733.png',
 ]
 
-const heroSlides = [
-  '/hero-slide-1.jpg',
-  '/hero-luxury-home.jpg',
-  '/hero-elegant.jpg',
-  '/hero-grand-entrance.jpg',
-]
-
 function AnimatedSection({ children, className }) {
   const ref = useRef(null)
   const [visible, setVisible] = useState(false)
@@ -279,39 +272,6 @@ function GalleryModal({ images, activeIndex, onClose, onPrev, onNext }) {
   )
 }
 
-function HeroCarousel({ slides }) {
-  const [current, setCurrent] = useState(0)
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length)
-    }, 5000)
-    return () => clearInterval(timer)
-  }, [slides.length])
-
-  return (
-    <>
-      {slides.map((slide, i) => (
-        <div
-          key={slide}
-          className={`absolute inset-0 transition-opacity duration-1000 ${i === current ? 'opacity-100' : 'opacity-0'}`}
-        >
-          <img src={slide} alt="" className="w-full h-full object-cover" />
-        </div>
-      ))}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-        {slides.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrent(i)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${i === current ? 'bg-white w-6' : 'bg-white/40'}`}
-          />
-        ))}
-      </div>
-    </>
-  )
-}
-
 export default function VenturisRealtors() {
   const [activeTab, setActiveTab] = useState(rooms[0].id)
   const [activeProperty, setActiveProperty] = useState('atlantis')
@@ -327,7 +287,15 @@ export default function VenturisRealtors() {
       {/* Hero Section */}
       <section className="relative h-screen min-h-[600px] sm:min-h-[700px] flex items-center justify-center bg-black">
         <div className="absolute inset-0">
-          <HeroCarousel slides={heroSlides} />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover opacity-60"
+          >
+            <source src="/Venturis%20Realtors/2-Bedroom%20Premium%20Apartment/Hero%20Section%20Video.mp4" type="video/mp4" />
+          </video>
           <div className="absolute inset-0 bg-black/60" />
         </div>
 
