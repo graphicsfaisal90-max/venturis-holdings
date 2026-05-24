@@ -245,11 +245,6 @@ export default function VenturisRealtors() {
   const prevImage = () => setModalIndex((prev) => (prev === 0 ? galleryImages.length - 1 : prev - 1))
   const nextImage = () => setModalIndex((prev) => (prev === galleryImages.length - 1 ? 0 : prev + 1))
 
-  const scrollToSection = (id) => {
-    const el = document.getElementById(id)
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
-  }
-
   return (
     <>
       {/* Hero Section */}
@@ -293,15 +288,15 @@ export default function VenturisRealtors() {
               {propertyDetails.subtitle}
             </p>
             <div className="flex flex-wrap gap-3 sm:gap-4 animate-fade-in-up delay-300">
-              <button
-                onClick={() => scrollToSection('overview')}
-                className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-3.5 bg-white text-brand-dark font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 hover:-translate-y-0.5 text-sm sm:text-base"
+              <a
+                href="#overview"
+                className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-3.5 bg-white text-brand-dark font-semibold rounded-lg hover:bg-white/90 transition-all duration-300 hover:-translate-y-0.5 text-sm sm:text-base cursor-pointer"
               >
                 Explore Property
                 <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-1.5 sm:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                 </svg>
-              </button>
+              </a>
               <Link
                 to="/contact"
                 className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-3.5 border border-white/20 text-white/70 font-semibold rounded-lg hover:bg-white/5 hover:text-white hover:border-white/40 transition-all duration-300 text-sm sm:text-base"
@@ -313,9 +308,9 @@ export default function VenturisRealtors() {
         </div>
 
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-3 animate-fade-in-up">
-          <span className="text-white/20 text-[10px] uppercase tracking-[0.25em]">Scroll</span>
-          <div className="w-5 h-8 rounded-full border border-white/20 flex items-start justify-center p-1.5">
-            <div className="w-1 h-2 rounded-full bg-white/40 animate-bounce" />
+          <span className="text-white/50 text-[10px] uppercase tracking-[0.25em]">Scroll</span>
+          <div className="w-5 h-8 rounded-full border border-white/40 flex items-start justify-center p-1.5">
+            <div className="w-1 h-2 rounded-full bg-white/60 animate-bounce" />
           </div>
         </div>
       </section>

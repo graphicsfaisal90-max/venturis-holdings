@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @theme {
   --font-sans: 'Playfair Display', 'Times New Roman', serif;
   --font-serif: 'Playfair Display', 'Times New Roman', serif;
