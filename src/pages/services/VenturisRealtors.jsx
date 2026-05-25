@@ -326,10 +326,10 @@ function CountUp({ end, suffix, label }) {
 
   return (
     <div ref={ref} className="text-center">
-      <div className="text-4xl md:text-5xl font-bold text-white mb-1 tracking-tight font-number">
+      <div className="text-4xl md:text-5xl font-bold text-brand-dark mb-1 tracking-tight font-number">
         {count}{suffix}
       </div>
-      <div className="text-white/60 text-sm uppercase tracking-widest font-medium">{label}</div>
+      <div className="text-gray-400 text-sm uppercase tracking-widest font-medium">{label}</div>
     </div>
   )
 }
