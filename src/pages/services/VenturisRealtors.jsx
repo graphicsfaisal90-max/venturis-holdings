@@ -575,6 +575,89 @@ export default function VenturisRealtors() {
         </div>
       </section>
 
+      {/* ============ SERVICE PORTFOLIO ============ */}
+      <section className="py-28 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+          <AnimatedSection className="text-center mb-16">
+            <span className="text-brand-teal text-xs uppercase tracking-[0.25em] font-medium">Portfolio</span>
+            <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark mt-3">Our Real Estate Service Portfolio</h2>
+            <p className="text-gray-400 mt-3 max-w-xl mx-auto">Comprehensive real estate services tailored to every need.</p>
+          </AnimatedSection>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                title: 'Business Centers',
+                desc: 'Professional sales and rental solutions for premium commercial spaces, including Ejari support and joint venture opportunities with leading developers across Dubai.',
+                icon: (
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Plots & Developments',
+                desc: 'Strategic investment opportunities and development collaborations designed for long-term growth and high-value returns in the UAE real estate market.',
+                icon: (
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Retail Spaces',
+                desc: 'Premium retail outlets and commercial spaces located in high-footfall and prime business destinations ideal for modern businesses and brands.',
+                icon: (
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Residential Properties',
+                desc: 'A wide range of villas, apartments, and townhouses available in both off-plan and ready property markets tailored to different lifestyle needs.',
+                icon: (
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Business Rentals',
+                desc: 'Flexible corporate leasing and rental solutions designed for startups, entrepreneurs, and growing businesses seeking professional workspaces.',
+                icon: (
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.193 23.193 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Mortgage Facilities',
+                desc: 'End-to-end mortgage and financing assistance that simplifies the property purchasing process with reliable financial guidance and support.',
+                icon: (
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                ),
+              },
+            ].map((service, i) => (
+              <AnimatedSection key={i}>
+                <div className="group bg-white rounded-2xl p-8 border border-gray-100 hover:border-brand-teal/20 hover:shadow-xl hover:shadow-brand-teal/5 transition-all duration-500 h-full">
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center group-hover:from-brand-teal group-hover:to-brand-navy transition-all duration-500">
+                      <div className="text-brand-teal group-hover:text-white transition-colors duration-500">{service.icon}</div>
+                    </div>
+                    <span className="text-4xl font-bold text-gray-100 font-number">0{i + 1}</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-brand-dark mb-3">{service.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{service.desc}</p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ============ SERVICES ============ */}
       <section id="services" className="py-28 bg-gray-50 scroll-mt-24">
         <div className="max-w-7xl mx-auto px-6">
