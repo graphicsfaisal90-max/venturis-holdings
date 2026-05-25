@@ -11,10 +11,10 @@ export default function VenturisPartners() {
           loop
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
-          style={{ filter: 'brightness(0.7)' }}
         >
           <source src="/For%20partners%20page%20hero%20section.mp4" type="video/mp4" />
         </video>
+        <div className="absolute inset-0 bg-black/30" />
 
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
