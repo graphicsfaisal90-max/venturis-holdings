@@ -1011,12 +1011,9 @@ export default function VenturisRealtors() {
               <div key={cat.id} className={`transition-all duration-500 ${bwiGalleryCat === cat.id ? 'block' : 'hidden'}`}>
                 <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
                   {cat.images.map((img, i) => (
-                    <div key={i} className={`relative rounded-xl overflow-hidden group/cat shadow-sm hover:shadow-lg transition-all duration-500 ${i === 0 ? 'lg:col-span-2 lg:row-span-2' : ''}`}>
-                      <img src={img} alt={`${cat.label} ${i + 1}`} className={`w-full object-cover transition-all duration-700 group-hover/cat:scale-110 ${i === 0 ? 'h-80 sm:h-96' : 'h-56 sm:h-64'}`} />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover/cat:opacity-100 transition-all duration-500" />
-                      <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm rounded-lg px-2.5 py-1 text-[10px] font-semibold text-brand-dark opacity-0 group-hover/cat:opacity-100 transition-all duration-500">
-                        {i + 1} / {cat.images.length}
-                      </div>
+                    <div key={i} className="relative rounded-xl overflow-hidden group/cat shadow-sm hover:shadow-lg transition-all duration-500">
+                      <img src={img} alt={`${cat.label} ${i + 1}`} className="w-full h-64 object-cover transition-all duration-700 group-hover/cat:scale-110" />
+                      <div className="absolute inset-0 bg-black/0 group-hover/cat:bg-black/10 transition-all duration-500" />
                     </div>
                   ))}
                 </div>
