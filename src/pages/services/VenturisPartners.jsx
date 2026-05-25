@@ -170,48 +170,7 @@ export default function VenturisPartners() {
         </div>
       </section>
 
-      {/* ============ VENTURIS IT SOLUTIONS ============ */}
-      <section className="py-28 relative overflow-hidden bg-white">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-brand-teal/3 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-brand-navy/3 rounded-full blur-3xl pointer-events-none" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="flex items-center gap-4 justify-center mb-4">
-            <span className="w-12 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
-            <span className="text-sm font-semibold text-brand-teal uppercase tracking-[0.2em]">Technology</span>
-            <span className="w-12 h-0.5 bg-gradient-to-r from-brand-navy to-brand-teal" />
-          </div>
-          <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark text-center mt-4 mb-6">Venturis IT Solutions</h2>
 
-          <div className="max-w-5xl mx-auto">
-            <div className="bg-brand-light rounded-3xl p-8 sm:p-12 border border-gray-100 mb-12">
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
-                Venturis IT Solutions delivers modern technology services designed to help businesses build a strong digital presence and improve operational efficiency. We specialize in website development, custom web applications, mobile application development, AI-powered solutions, graphic designing, branding, video editing, and digital transformation services tailored to modern business needs.
-              </p>
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
-                Our expertise includes responsive website design, eCommerce platforms, UI/UX design, creative branding, social media creatives, promotional videos, motion graphics, and intelligent AI systems including AI agents, automation workflows, and smart business tools. We also develop mobile and AI-integrated applications that help businesses stay innovative and competitive in the evolving digital world.
-              </p>
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                At Venturis IT Solutions, we combine creativity, technology, and innovation to deliver scalable and professional digital experiences that help brands grow with confidence.
-              </p>
-            </div>
-
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {[
-                'Website & Web Applications',
-                'Mobile App Development',
-                'AI-Powered Solutions',
-                'Graphic Design & Branding',
-                'Video & Motion Graphics',
-                'Digital Transformation',
-              ].map((tag) => (
-                <div key={tag} className="group bg-brand-light rounded-xl px-5 py-4 border border-gray-100 hover:border-brand-teal/30 hover:shadow-md hover:shadow-brand-teal/5 transition-all duration-500 text-center">
-                  <span className="text-gray-500 text-sm font-semibold group-hover:text-brand-teal transition-colors duration-300">{tag}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ============ VENTURIS DIGITAL MARKETING ============ */}
       <section className="py-28 relative overflow-hidden bg-gradient-to-br from-brand-dark via-black to-brand-dark">
@@ -233,7 +192,7 @@ export default function VenturisPartners() {
                   Venturis Digital Marketing helps businesses grow their online presence through strategic marketing, creative content, and result-driven campaigns. We provide complete social media management solutions including content creation, daily posting, audience engagement, account management, brand positioning, and digital advertising across major platforms.
                 </p>
                 <p className="text-white/60 text-base sm:text-lg leading-relaxed">
-                  Our digital marketing services include Meta Ads management, social media advertising, lead generation campaigns, performance marketing, content strategy, promotional designs, SEO-focused marketing, and online brand awareness campaigns designed to increase visibility and customer engagement.
+                  Our digital marketing services include Meta Ads management, social media advertising, lead generation campaigns, performance marketing, content strategy, promotional designs, SEO-focused marketing, video and motion graphics production, and digital transformation strategies designed to increase visibility and customer engagement.
                 </p>
               </div>
             </div>
@@ -243,7 +202,7 @@ export default function VenturisPartners() {
                   We focus on building strong digital identities for businesses by combining creative storytelling with targeted marketing strategies that generate measurable results, attract potential customers, and strengthen brand recognition across digital platforms.
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  {['Social Media', 'Meta Ads', 'SEO', 'Lead Gen', 'Content', 'Branding'].map((tag) => (
+                  {['Social Media', 'Meta Ads', 'SEO', 'Lead Gen', 'Content', 'Branding', 'Video & Motion Graphics', 'Digital Transformation'].map((tag) => (
                     <span key={tag} className="px-4 py-2 bg-white/[0.04] border border-white/[0.08] rounded-full text-white/50 text-xs font-semibold uppercase tracking-wider hover:border-brand-teal/30 hover:text-brand-teal transition-all duration-300">
                       {tag}
                     </span>
@@ -304,8 +263,13 @@ export default function VenturisPartners() {
                 icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>,
                 desc: 'Generate accurate and professional survey and inspection reports with structured documentation, real-time data collection, compliance tracking, and detailed analytical summaries.',
               },
+              {
+                title: 'Graphic Design & Branding',
+                icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg>,
+                desc: 'Elevate your brand identity with professional graphic design, creative branding, visual storytelling, logo design, and comprehensive brand guideline development for a cohesive market presence.',
+              },
             ].map((item, i) => (
-              <div key={i} className={`group relative bg-white/[0.03] backdrop-blur-xl rounded-2xl p-8 border border-white/[0.06] hover:border-brand-teal/30 hover:bg-white/[0.06] hover:-translate-y-1 transition-all duration-500 ${i === 4 ? 'lg:col-start-2' : ''}`}>
+              <div key={i} className="group relative bg-white/[0.03] backdrop-blur-xl rounded-2xl p-8 border border-white/[0.06] hover:border-brand-teal/30 hover:bg-white/[0.06] hover:-translate-y-1 transition-all duration-500">
                 <div className="absolute -top-px left-8 right-8 h-px bg-gradient-to-r from-transparent via-brand-teal/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="flex items-center gap-4 mb-5">
                   <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center border border-white/[0.06] group-hover:from-brand-teal/20 group-hover:to-brand-navy/20 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-brand-teal/10 transition-all duration-500">
@@ -338,7 +302,7 @@ export default function VenturisPartners() {
             <span className="w-12 h-0.5 bg-gradient-to-r from-brand-navy to-brand-teal" />
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark text-center mt-4 mb-4">
-            Venturis <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy">Documentation &amp; PRO Services</span>
+            Venturis <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy">Documentation</span>
           </h2>
 
           <div className="max-w-4xl mx-auto text-center mb-16">
@@ -414,7 +378,7 @@ export default function VenturisPartners() {
 
           <div className="max-w-4xl mx-auto mt-16 bg-gradient-to-br from-brand-teal/5 to-brand-navy/5 rounded-2xl p-8 border border-brand-teal/10 text-center">
             <p className="text-gray-600 text-base leading-relaxed max-w-3xl mx-auto">
-              With a strong focus on transparency, efficiency, and customer satisfaction, Venturis Documentation &amp; PRO Services serves as a trusted partner for startups, entrepreneurs, corporates, and individuals seeking smooth and hassle-free documentation solutions in the UAE.
+              With a strong focus on transparency, efficiency, and customer satisfaction, Venturis Documentation serves as a trusted partner for startups, entrepreneurs, corporates, and individuals seeking smooth and hassle-free documentation solutions in the UAE.
             </p>
           </div>
         </div>
@@ -422,72 +386,73 @@ export default function VenturisPartners() {
 
       {/* ============ CLIENT CONSULTATION & TRANSACTION SUPPORT ============ */}
       <section className="py-28 relative overflow-hidden bg-white">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-brand-teal/[0.02] to-transparent pointer-events-none" />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-brand-teal/3 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-brand-navy/3 rounded-full blur-3xl pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="flex items-center gap-4 mb-4">
+          <div className="flex items-center gap-4 justify-center mb-4">
             <span className="w-12 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
             <span className="text-sm font-semibold text-brand-teal uppercase tracking-[0.2em]">Consultation</span>
+            <span className="w-12 h-0.5 bg-gradient-to-r from-brand-navy to-brand-teal" />
           </div>
+          <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark text-center mt-4 mb-4">
+            Client <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy">Consultation &amp; Transaction Support</span>
+          </h2>
 
-          <div className="grid lg:grid-cols-5 gap-12">
-            <div className="lg:col-span-3">
-              <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark leading-tight">
-                Client Consultation<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy">&amp; Transaction Support</span>
-              </h2>
-              <p className="text-gray-500 text-base sm:text-lg leading-relaxed mt-6 max-w-2xl">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <div className="relative inline-block">
+              <svg className="absolute -top-4 -left-8 w-8 h-8 text-brand-teal/15" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" /></svg>
+              <p className="text-gray-500 text-lg leading-relaxed italic max-w-3xl mx-auto px-6">
                 At Venturis, we believe every successful transaction begins with understanding the client's vision, goals, and investment expectations. Our Client Consultation &amp; Transaction Support services are designed to provide personalized guidance, professional market insights, and complete assistance throughout every stage of the process.
               </p>
-              <p className="text-gray-500 text-base sm:text-lg leading-relaxed mt-5 max-w-2xl">
-                We carefully analyze client requirements, budgets, and business objectives to recommend the most suitable opportunities tailored to their needs. Leveraging our industry expertise, strategic partnerships, and extensive network, we ensure clients receive reliable solutions and informed decision-making support.
-              </p>
-            </div>
-            <div className="lg:col-span-2 flex items-start justify-center lg:justify-end pt-2">
-              <div className="relative">
-                <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center">
-                  <svg className="w-16 h-16 sm:w-20 sm:h-20 text-brand-teal/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                </div>
-                <div className="absolute -bottom-3 -right-3 bg-brand-light rounded-xl px-4 py-2 border border-gray-100 shadow-sm">
-                  <div className="text-brand-teal font-bold text-lg">100+</div>
-                  <div className="text-gray-400 text-xs">Clients Served</div>
-                </div>
-              </div>
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-3 gap-5 mt-16">
-            {[
-              {
-                number: '01',
-                title: 'Personalized Guidance',
-                text: 'Tailored recommendations based on client requirements, budgets, and business objectives.',
-              },
-              {
-                number: '02',
-                title: 'Expert Negotiation',
-                text: 'Professional market insights and strategic partnership leverage for informed decision-making.',
-              },
-              {
-                number: '03',
-                title: 'End-to-End Management',
-                text: 'From consultation and documentation to approvals, coordination, and final handover.',
-              },
-            ].map((step, i) => (
-              <div key={i} className="group relative bg-brand-light rounded-2xl p-6 sm:p-8 border border-gray-100 hover:border-brand-teal/20 hover:shadow-lg hover:shadow-brand-teal/5 transition-all duration-500">
-                <span className="text-5xl sm:text-6xl font-bold text-brand-dark/[0.04] font-number absolute top-3 right-4 select-none">{step.number}</span>
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center mb-4 group-hover:from-brand-teal group-hover:to-brand-navy transition-all duration-500">
-                  <span className="text-brand-teal font-bold text-sm group-hover:text-white transition-colors duration-500">{step.number}</span>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {[
+                {
+                  icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>,
+                  title: 'Personalized Guidance',
+                  items: ['Tailored Recommendations', 'Requirement Analysis', 'Budget & Objective Planning'],
+                  accent: 'from-brand-teal to-brand-navy',
+                },
+                {
+                  icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>,
+                  title: 'Expert Negotiation',
+                  items: ['Market Insights', 'Strategic Negotiations', 'Decision-Making Support'],
+                  accent: 'from-brand-teal to-brand-navy',
+                },
+                {
+                  icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>,
+                  title: 'End-to-End Management',
+                  items: ['Documentation & Approvals', 'Coordination & Follow-Up', 'Final Handover Support'],
+                  accent: 'from-brand-teal to-brand-navy',
+                },
+              ].map((cat, i) => (
+                <div key={i} className="group relative bg-brand-light rounded-2xl p-6 border border-gray-100 hover:border-brand-teal/20 hover:shadow-xl hover:shadow-brand-teal/5 hover:-translate-y-1 transition-all duration-500 overflow-hidden">
+                  <div className={`absolute top-0 left-0 w-1 h-full bg-gradient-to-b ${cat.accent} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center group-hover:from-brand-teal group-hover:to-brand-navy transition-all duration-500">
+                      <span className="text-brand-teal group-hover:text-white transition-colors duration-500">{cat.icon}</span>
+                    </div>
+                    <span className="text-3xl font-bold text-brand-dark/[0.06] font-number ml-auto">{(i + 1).toString().padStart(2, '0')}</span>
+                  </div>
+                  <h3 className="text-brand-dark font-bold text-base mb-3 group-hover:text-brand-teal transition-colors duration-300">{cat.title}</h3>
+                  <ul className="space-y-2">
+                    {cat.items.map((item, j) => (
+                      <li key={j} className="flex items-center gap-2.5 text-gray-500 text-sm">
+                        <span className="w-1.5 h-1.5 rounded-full bg-brand-teal/50 shrink-0" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <h3 className="text-brand-dark font-bold text-lg mb-2 group-hover:text-brand-teal transition-colors duration-300">{step.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{step.text}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
-          <div className="mt-14 max-w-4xl mx-auto bg-brand-light rounded-2xl p-6 sm:p-8 border border-gray-100 text-center">
-            <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
+          <div className="max-w-4xl mx-auto mt-16 bg-gradient-to-br from-brand-teal/5 to-brand-navy/5 rounded-2xl p-8 border border-brand-teal/10 text-center">
+            <p className="text-gray-600 text-base leading-relaxed max-w-3xl mx-auto">
               From initial consultation and negotiations to documentation, approvals, coordination, and final handover, our team manages every aspect with professionalism, transparency, and efficiency. We focus on creating a smooth, secure, and hassle-free experience while maintaining the highest standards of client service and long-term relationship building.
             </p>
           </div>
@@ -584,42 +549,40 @@ export default function VenturisPartners() {
             ))}
           </div>
 
-          {/* === SISTER CONCERNS === */}
-          <div>
-            <div className="flex items-center gap-4 justify-center mb-3">
-              <span className="w-8 h-px bg-gradient-to-r from-transparent to-white/20" />
-              <span className="text-xs font-semibold text-white/40 uppercase tracking-[0.25em]">Sister Concerns</span>
-              <span className="w-8 h-px bg-gradient-to-r from-white/20 to-transparent" />
-            </div>
-            <div className="grid sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
-              {[
-                {
-                  icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>,
-                  name: 'Accounting Services',
-                },
-                {
-                  icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z" /></svg>,
-                  name: 'Tax Advisory',
-                },
-                {
-                  icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>,
-                  name: 'Mortgage Consultancy',
-                },
-              ].map((item, i) => (
-                <div key={i} className="group relative">
-                  <div className="absolute -inset-[1px] bg-gradient-to-r from-brand-teal/20 to-brand-navy/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="relative bg-white/[0.03] backdrop-blur-xl rounded-xl border border-white/[0.06] px-5 py-4 flex items-center gap-4 group-hover:border-white/15 transition-all duration-500">
-                    <div className="w-10 h-10 rounded-lg bg-white/[0.05] flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-brand-teal/20 group-hover:to-brand-navy/20 transition-all duration-500">
-                      <span className="text-white/40 group-hover:text-brand-teal transition-colors duration-500">{item.icon}</span>
+          {/* === SISTER COMPANIES === */}
+          <div className="grid sm:grid-cols-3 gap-5 max-w-5xl mx-auto">
+            {[
+              {
+                icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>,
+                title: 'Accounting Services',
+                desc: 'Comprehensive accounting solutions including bookkeeping, financial reporting, payroll management, and audit support for businesses of all sizes.',
+              },
+              {
+                icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z" /></svg>,
+                title: 'Tax Advisory',
+                desc: 'Expert tax planning, VAT consultation, corporate tax compliance, and strategic advisory services to optimize tax efficiency and ensure regulatory adherence.',
+              },
+              {
+                icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>,
+                title: 'Mortgage Consultancy',
+                desc: 'Professional mortgage advisory services covering home loans, property financing, refinancing solutions, and tailored lending strategies for individuals and investors.',
+              },
+            ].map((item, i) => (
+              <div key={i} className="group relative">
+                <div className="absolute -inset-[1px] bg-gradient-to-b from-brand-teal/0 via-brand-navy/0 to-brand-teal/0 group-hover:from-brand-teal/30 group-hover:via-brand-navy/20 group-hover:to-brand-teal/30 rounded-2xl blur-sm transition-all duration-700 opacity-0 group-hover:opacity-100" />
+                <div className="relative h-full bg-white/[0.04] backdrop-blur-xl rounded-2xl border border-white/[0.07] p-6 group-hover:border-white/20 group-hover:-translate-y-1 transition-all duration-500">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-teal/15 to-brand-navy/15 flex items-center justify-center group-hover:from-brand-teal group-hover:to-brand-navy transition-all duration-500">
+                      <span className="text-brand-teal group-hover:text-white transition-colors duration-500">{item.icon}</span>
                     </div>
-                    <span className="text-white/70 text-sm font-semibold group-hover:text-white transition-colors duration-300">{item.name}</span>
-                    <svg className="w-3.5 h-3.5 text-white/20 ml-auto group-hover:text-brand-teal group-hover:translate-x-0.5 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
+                    <span className="text-2xl font-bold text-white/[0.04] font-number ml-auto">{(i + 1).toString().padStart(2, '0')}</span>
                   </div>
+                  <h3 className="text-white font-bold text-base mb-2.5 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-brand-teal group-hover:to-brand-navy transition-all duration-300">{item.title}</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
+                  <div className="absolute bottom-0 left-4 right-4 h-px bg-gradient-to-r from-brand-teal/0 via-brand-teal/30 to-brand-navy/0 scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left" />
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
