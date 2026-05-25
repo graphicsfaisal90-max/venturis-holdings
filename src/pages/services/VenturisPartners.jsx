@@ -256,7 +256,7 @@ export default function VenturisPartners() {
       </section>
 
       {/* ============ VENTURIS TECH SERVICE PORTFOLIO ============ */}
-      <section className="py-28 relative overflow-hidden bg-gradient-to-br from-[#070b14] via-[#0a0f1e] to-[#070b14]">
+      <section className="py-28 relative overflow-hidden bg-gradient-to-br from-brand-dark via-black to-brand-dark">
         <div className="absolute inset-0 opacity-[0.05] pointer-events-none">
           <div className="absolute top-10 right-1/4 w-[500px] h-[500px] bg-brand-teal rounded-full blur-3xl" />
           <div className="absolute bottom-10 left-1/4 w-[450px] h-[450px] bg-brand-navy rounded-full blur-3xl" />
