@@ -63,7 +63,7 @@ export default function Home() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-brand-teal/10">
                 <img
-                  src="/Building.png"
+                  src="/Building%205425.png"
                   alt="Venturis Holdings"
                   className="w-full h-[400px] sm:h-[480px] object-cover"
                 />
