@@ -171,27 +171,26 @@ export default function VenturisPartners() {
       </section>
 
       {/* ============ VENTURIS IT SOLUTIONS ============ */}
-      <section className="py-28 relative overflow-hidden bg-gradient-to-br from-brand-dark via-brand-navy/30 to-brand-dark">
-        <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-          <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-brand-teal rounded-full blur-3xl" />
-        </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <section className="py-28 relative overflow-hidden bg-white">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-brand-teal/3 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-brand-navy/3 rounded-full blur-3xl pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="flex items-center gap-4 justify-center mb-4">
             <span className="w-12 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
             <span className="text-sm font-semibold text-brand-teal uppercase tracking-[0.2em]">Technology</span>
             <span className="w-12 h-0.5 bg-gradient-to-r from-brand-navy to-brand-teal" />
           </div>
-          <h2 className="text-4xl sm:text-5xl font-bold text-white text-center mt-4 mb-6">Venturis IT Solutions</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark text-center mt-4 mb-6">Venturis IT Solutions</h2>
 
           <div className="max-w-5xl mx-auto">
-            <div className="bg-white/[0.02] backdrop-blur-xl rounded-3xl p-8 sm:p-12 border border-white/[0.06] mb-12">
-              <p className="text-white/60 text-base sm:text-lg leading-relaxed mb-6">
+            <div className="bg-brand-light rounded-3xl p-8 sm:p-12 border border-gray-100 mb-12">
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
                 Venturis IT Solutions delivers modern technology services designed to help businesses build a strong digital presence and improve operational efficiency. We specialize in website development, custom web applications, mobile application development, AI-powered solutions, graphic designing, branding, video editing, and digital transformation services tailored to modern business needs.
               </p>
-              <p className="text-white/60 text-base sm:text-lg leading-relaxed mb-6">
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
                 Our expertise includes responsive website design, eCommerce platforms, UI/UX design, creative branding, social media creatives, promotional videos, motion graphics, and intelligent AI systems including AI agents, automation workflows, and smart business tools. We also develop mobile and AI-integrated applications that help businesses stay innovative and competitive in the evolving digital world.
               </p>
-              <p className="text-white/60 text-base sm:text-lg leading-relaxed">
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
                 At Venturis IT Solutions, we combine creativity, technology, and innovation to deliver scalable and professional digital experiences that help brands grow with confidence.
               </p>
             </div>
@@ -205,8 +204,8 @@ export default function VenturisPartners() {
                 'Video & Motion Graphics',
                 'Digital Transformation',
               ].map((tag) => (
-                <div key={tag} className="group bg-white/[0.03] backdrop-blur-xl rounded-xl px-5 py-4 border border-white/[0.06] hover:border-brand-teal/30 hover:bg-white/[0.06] transition-all duration-500 text-center">
-                  <span className="text-white/70 text-sm font-semibold group-hover:text-brand-teal transition-colors duration-300">{tag}</span>
+                <div key={tag} className="group bg-brand-light rounded-xl px-5 py-4 border border-gray-100 hover:border-brand-teal/30 hover:shadow-md hover:shadow-brand-teal/5 transition-all duration-500 text-center">
+                  <span className="text-gray-500 text-sm font-semibold group-hover:text-brand-teal transition-colors duration-300">{tag}</span>
                 </div>
               ))}
             </div>
