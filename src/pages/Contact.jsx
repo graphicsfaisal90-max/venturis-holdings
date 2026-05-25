@@ -170,7 +170,16 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-brand-dark mb-1">Address</h3>
-                    <p className="text-gray-600">123 Business Avenue<br />Sandton, Johannesburg<br />South Africa</p>
+                    <p className="text-gray-600">
+                      <span className="font-medium text-brand-teal">Head Office:</span><br />
+                      5th Floor, Al Saqr Tower, SZR<br />
+                      Dubai, UAE
+                    </p>
+                    <p className="text-gray-600 mt-2">
+                      <span className="font-medium text-brand-teal">US Office:</span><br />
+                      9219 Tamworth Road<br />
+                      Jacksonville, Florida, USA
+                    </p>
                   </div>
                 </div>
 
