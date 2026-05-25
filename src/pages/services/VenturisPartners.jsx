@@ -2,11 +2,9 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const heroImages = [
-  '/Partners%20hero%20section%20%20(1).jpg',
-  '/Partners%20hero%20section%20%20(2).jpg',
+  '/Partners%20hero%20section%20%20%281%29.jpg',
+  '/Partners%20hero%20section%20%20%282%29.jpg',
 ]
-
-
 
 const services = [
   'Strategic Business Partnerships',
@@ -27,6 +25,7 @@ export default function VenturisPartners() {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   useEffect(() => {
+    heroImages.forEach((src) => { const img = new Image(); img.src = src })
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % heroImages.length)
     }, 5000)
@@ -50,8 +49,8 @@ export default function VenturisPartners() {
             }}
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/70" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
 
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
