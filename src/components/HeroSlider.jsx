@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom'
 
 const slides = [
   {
-    id: 'interiors',
-    title: 'Luxury Interior Design',
-    subtitle: 'Venturis Interiors',
-    desc: 'Modern interiors crafted with elegance, style, and functionality.',
-    image: '/interiors-hero.jpeg',
-    btn1: 'View Projects',
-    btn1Link: '/services/interiors',
-    btn2: 'Get Consultation',
-    btn2Link: '/contact',
+    id: 'holdings',
+    title: 'Venturis Holdings',
+    subtitle: 'Venturis Holdings',
+    desc: 'Venturis Holdings serves as the parent organization overseeing a diversified portfolio of specialized subsidiaries, each dedicated to its own core area of expertise while operating together under a unified vision, strategy, and commitment to excellence.',
+    image: '/Building%205423.png',
+    btn1: 'Explore Our Divisions',
+    btn1Link: '/services',
+    btn2: 'Learn About Us',
+    btn2Link: '/about',
   },
   {
     id: 'facilities',
