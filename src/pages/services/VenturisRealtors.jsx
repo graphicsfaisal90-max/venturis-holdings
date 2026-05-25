@@ -168,25 +168,31 @@ const type3Property = {
 }
 
 const type3Gallery = [
-  type3Img + 'Screenshot%202026-05-25%20151626.png',
-  type3Img + 'Screenshot%202026-05-25%20151638.png',
-  type3Img + 'Screenshot%202026-05-25%20151651.png',
-  type3Img + 'Screenshot%202026-05-25%20151704.png',
-  type3Img + 'Screenshot%202026-05-25%20151712.png',
-  type3Img + 'Screenshot%202026-05-25%20151720.png',
-  type3Img + 'Screenshot%202026-05-25%20151729.png',
-  type3Img + 'Screenshot%202026-05-25%20151739.png',
-  type3Img + 'Screenshot%202026-05-25%20151750.png',
-  type3Img + 'Screenshot%202026-05-25%20151759.png',
-  type3Img + 'Screenshot%202026-05-25%20151807.png',
-  type3Img + 'Screenshot%202026-05-25%20151817.png',
-  type3Img + 'Screenshot%202026-05-25%20151825.png',
-  type3Img + 'Screenshot%202026-05-25%20151902.png',
-  type3Img + 'Screenshot%202026-05-25%20151914.png',
-  type3Img + 'Screenshot%202026-05-25%20152005.png',
-  type3Img + 'Screenshot%202026-05-25%20152014.png',
-  type3Img + 'Screenshot%202026-05-25%20152021.png',
-  type3Img + 'Screenshot%202026-05-25%20152034.png',
+  type3Img + 'Kitchen%20and%20Cabinatery%20(1).png',
+  type3Img + 'Kitchen%20and%20Cabinatery%20(2).png',
+  type3Img + 'Kitchen%20and%20Cabinatery%20(3).png',
+  type3Img + 'Kitchen%20and%20Cabinatery%20(4).png',
+  type3Img + 'Kitchen%20and%20Cabinatery%20(5).png',
+  type3Img + 'Kitchen%20and%20Cabinatery%20(6).png',
+  type3Img + 'Kitchen%20and%20Cabinatery%20(7).png',
+  type3Img + 'Kitchen%20and%20Cabinatery%20(8).png',
+  type3Img + 'Living%20Room%20(1).png',
+  type3Img + 'Living%20Room%20(2).png',
+  type3Img + 'Living%20Room%20(3).png',
+  type3Img + 'Bedroom%20%26%20Bathrooms%20(1).png',
+  type3Img + 'Bedroom%20%26%20Bathrooms%20(2).png',
+  type3Img + 'Bedroom%20%26%20Bathrooms%20(3).png',
+  type3Img + 'Bedroom%20%26%20Bathrooms%20(4).png',
+  type3Img + 'Bedroom%20%26%20Bathrooms%20(5).png',
+  type3Img + 'Bedroom%20%26%20Bathrooms%20(6).png',
+  type3Img + 'Bedroom%20%26%20Bathrooms%20(7).png',
+  type3Img + 'Bedroom%20%26%20Bathrooms%20(8).png',
+  type3Img + 'Bedroom%20%26%20Bathrooms%20(9).png',
+  type3Img + 'Views%20And%20Balconys%20(1).png',
+  type3Img + 'Views%20And%20Balconys%20(2).png',
+  type3Img + 'Views%20And%20Balconys%20(3).png',
+  type3Img + 'Views%20And%20Balconys%20(4).png',
+  type3Img + 'Views%20And%20Balconys%20(5).png',
 ]
 
 const type3Highlights = [
@@ -247,29 +253,29 @@ const type3Highlights = [
   },
 ]
 
-const type3Hero = type3Img + 'Screenshot%202026-05-25%20152034.png'
-const type3Hero2 = type3Img + 'Screenshot%202026-05-25%20151626.png'
+const type3Hero = type3Img + 'Living%20Room%20(1).png'
+const type3Hero2 = type3Img + 'Views%20And%20Balconys%20(1).png'
 
 const galleryCategories = [
   {
     id: 'kitchen',
     label: 'Kitchen & Cabinetry',
-    images: type3Gallery.slice(0, 5),
+    images: type3Gallery.slice(0, 8),
   },
   {
     id: 'living',
-    label: 'Living & Dining',
-    images: type3Gallery.slice(5, 10),
+    label: 'Living Room',
+    images: type3Gallery.slice(8, 11),
   },
   {
     id: 'bedrooms',
-    label: 'Bedrooms & Bathrooms',
-    images: type3Gallery.slice(10, 15),
+    label: 'Bedroom & Bathrooms',
+    images: type3Gallery.slice(11, 20),
   },
   {
     id: 'views',
     label: 'Views & Balcony',
-    images: type3Gallery.slice(15, 19),
+    images: type3Gallery.slice(20, 25),
   },
 ]
 
