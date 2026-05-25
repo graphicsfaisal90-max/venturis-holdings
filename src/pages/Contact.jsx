@@ -191,8 +191,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-brand-dark mb-1">Email</h3>
-                    <p className="text-gray-600">info@venturisholdings.co.za</p>
-                    <p className="text-gray-600">projects@venturisholdings.co.za</p>
+                    <p className="text-gray-600">info@venturisholdings.com</p>
                   </div>
                 </div>
 
@@ -204,8 +203,14 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-brand-dark mb-1">Phone</h3>
-                    <p className="text-gray-600">+27 11 234 5678</p>
-                    <p className="text-gray-600">+27 11 234 5679</p>
+                    <p className="text-gray-600">
+                      <a href="tel:+971585318860" className="hover:text-brand-teal transition-colors">+971 58 531 8860</a>
+                      <span className="text-gray-400 text-xs ml-2">Main</span>
+                    </p>
+                    <p className="text-gray-600">
+                      <a href="tel:+971581007066" className="hover:text-brand-teal transition-colors">+971 58 100 7066</a>
+                      <span className="text-gray-400 text-xs ml-2">Alternative</span>
+                    </p>
                   </div>
                 </div>
 
