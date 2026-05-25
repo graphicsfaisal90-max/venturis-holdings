@@ -14,15 +14,15 @@ const slides = [
     btn2Link: '/about',
   },
   {
-    id: 'facilities',
-    title: 'Smart Facility Solutions',
-    subtitle: 'Venturis Facilities Management',
-    desc: 'Reliable maintenance and operational excellence for modern businesses.',
-    image: '/Facilirtes.jpeg',
-    btn1: 'Explore Services',
-    btn1Link: '/services/facilities',
-    btn2: 'Contact Team',
-    btn2Link: '/contact',
+    id: 'built-different',
+    title: 'Built Different.\nBuilt Better.',
+    subtitle: 'Venturis Holdings',
+    desc: 'At Venturis Holdings, we don\'t just deliver services — we forge partnerships that drive lasting success. Our multi-division structure, experienced team, and unwavering commitment to quality make us the preferred choice for businesses across the UAE and beyond.',
+    image: '/Building%205424.png',
+    btn1: 'Explore Our Divisions',
+    btn1Link: '/services',
+    btn2: 'Learn About Us',
+    btn2Link: '/about',
   },
   {
     id: 'realtors',
@@ -154,7 +154,7 @@ export default function HeroSlider() {
               </div>
             </div>
             <div className="overflow-hidden">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-5 sm:mb-6 animate-fade-in-up delay-100">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-5 sm:mb-6 animate-fade-in-up delay-100 whitespace-pre-line">
                 {slide.title}
               </h1>
             </div>
