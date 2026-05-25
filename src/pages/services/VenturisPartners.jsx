@@ -616,6 +616,123 @@ export default function VenturisPartners() {
         </div>
       </section>
 
+      {/* ============ PRODUCT OVERVIEW ============ */}
+      <section className="py-28 relative overflow-hidden bg-white">
+        <div className="absolute -top-40 -right-40 w-96 h-96 bg-brand-teal/3 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-brand-navy/3 rounded-full blur-3xl pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="flex items-center gap-4 justify-center mb-4">
+            <span className="w-12 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
+            <span className="text-sm font-semibold text-brand-teal uppercase tracking-[0.2em]">Trading</span>
+            <span className="w-12 h-0.5 bg-gradient-to-r from-brand-navy to-brand-teal" />
+          </div>
+          <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark text-center mt-4 mb-5">
+            Product <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy">Overview</span>
+          </h2>
+          <p className="text-gray-500 max-w-3xl mx-auto text-center text-base sm:text-lg leading-relaxed mb-16">
+            Venturis Trading provides a diversified portfolio of products across food commodities, electronics, and recyclable materials, delivering quality, reliability, and efficient global distribution solutions tailored to evolving market demands.
+          </p>
+
+          <div className="space-y-20">
+            {/* === FOODSTUFFS === */}
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+              <div className="relative group">
+                <div className="absolute -inset-2 bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 rounded-3xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                <div className="relative rounded-2xl overflow-hidden shadow-lg shadow-brand-teal/5">
+                  <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=700&q=80" alt="Food commodities" className="w-full h-[320px] object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-brand-dark/30 via-transparent to-transparent" />
+                  <div className="absolute bottom-5 left-5 flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-xl px-4 py-2 border border-white/15">
+                    <span className="w-2 h-2 rounded-full bg-brand-teal animate-pulse" />
+                    <span className="text-white text-xs font-semibold">Trading Since 2010</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center">
+                    <svg className="w-5 h-5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" /></svg>
+                  </div>
+                  <span className="text-3xl font-bold text-brand-teal/10 font-number">01</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark mb-6">Foodstuffs</h3>
+                <div className="grid grid-cols-2 gap-3">
+                  {['Onions', 'Potatoes', 'Rice', 'Maize', 'Dry Dates', 'Spices', 'Meat Products'].map((item) => (
+                    <div key={item} className="group/item flex items-center gap-2.5 bg-brand-light rounded-xl px-4 py-3 border border-gray-100 hover:border-brand-teal/20 hover:shadow-sm hover:shadow-brand-teal/5 transition-all duration-300">
+                      <span className="w-1.5 h-1.5 rounded-full bg-brand-teal/60 shrink-0 group-hover/item:bg-brand-teal transition-colors duration-300" />
+                      <span className="text-gray-600 text-sm font-medium group-hover/item:text-brand-teal transition-colors duration-300">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* === ELECTRONICS === */}
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+              <div className="order-last lg:order-first">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center">
+                    <svg className="w-5 h-5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                  </div>
+                  <span className="text-3xl font-bold text-brand-teal/10 font-number">02</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark mb-6">Electronics</h3>
+                <div className="grid grid-cols-2 gap-3">
+                  {['Computers', 'Laptops & Tablets', 'iPhones & Smartphones', 'Android Devices', 'Small Electronic Goods', 'Household Electronics'].map((item) => (
+                    <div key={item} className="group/item flex items-center gap-2.5 bg-brand-light rounded-xl px-4 py-3 border border-gray-100 hover:border-brand-teal/20 hover:shadow-sm hover:shadow-brand-teal/5 transition-all duration-300">
+                      <span className="w-1.5 h-1.5 rounded-full bg-brand-teal/60 shrink-0 group-hover/item:bg-brand-teal transition-colors duration-300" />
+                      <span className="text-gray-600 text-sm font-medium group-hover/item:text-brand-teal transition-colors duration-300">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="relative group order-first lg:order-last">
+                <div className="absolute -inset-2 bg-gradient-to-br from-brand-navy/10 to-brand-teal/10 rounded-3xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                <div className="relative rounded-2xl overflow-hidden shadow-lg shadow-brand-teal/5">
+                  <img src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?w=700&q=80" alt="Electronics" className="w-full h-[320px] object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-tl from-brand-dark/30 via-transparent to-transparent" />
+                  <div className="absolute bottom-5 right-5 flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-xl px-4 py-2 border border-white/15">
+                    <span className="w-2 h-2 rounded-full bg-brand-teal animate-pulse" />
+                    <span className="text-white text-xs font-semibold">Premium Quality</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* === RECYCLABLE MATERIALS === */}
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+              <div className="relative group">
+                <div className="absolute -inset-2 bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 rounded-3xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                <div className="relative rounded-2xl overflow-hidden shadow-lg shadow-brand-teal/5">
+                  <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=700&q=80" alt="Recyclable materials" className="w-full h-[320px] object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-brand-dark/30 via-transparent to-transparent" />
+                  <div className="absolute bottom-5 left-5 flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-xl px-4 py-2 border border-white/15">
+                    <span className="w-2 h-2 rounded-full bg-brand-teal animate-pulse" />
+                    <span className="text-white text-xs font-semibold">Sustainability</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center">
+                    <svg className="w-5 h-5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" /></svg>
+                  </div>
+                  <span className="text-3xl font-bold text-brand-teal/10 font-number">03</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark mb-6">Recyclable Materials</h3>
+                <div className="grid grid-cols-2 gap-3">
+                  {['Metals', 'LEDs', 'Plastics', 'Recyclable Components'].map((item) => (
+                    <div key={item} className="group/item flex items-center gap-2.5 bg-brand-light rounded-xl px-4 py-3 border border-gray-100 hover:border-brand-teal/20 hover:shadow-sm hover:shadow-brand-teal/5 transition-all duration-300">
+                      <span className="w-1.5 h-1.5 rounded-full bg-brand-teal/60 shrink-0 group-hover/item:bg-brand-teal transition-colors duration-300" />
+                      <span className="text-gray-600 text-sm font-medium group-hover/item:text-brand-teal transition-colors duration-300">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ============ OUR APPROACH ============ */}
       <section className="py-28 relative overflow-hidden bg-gradient-to-br from-brand-dark via-black to-brand-dark">
         <div className="absolute inset-0 opacity-[0.04] pointer-events-none">
