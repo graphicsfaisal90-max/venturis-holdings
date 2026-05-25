@@ -108,11 +108,10 @@ export default function VenturisPartners() {
       </section>
 
       {/* ============ VENTURIS IT SOLUTIONS ============ */}
-      <section className="py-28 relative overflow-hidden bg-gradient-to-br from-[#0a0e1a] via-[#0d1525] to-[#0a0e1a]">
+      <section className="py-28 relative overflow-hidden bg-gradient-to-br from-brand-dark via-black to-brand-dark">
         <div className="absolute inset-0 opacity-[0.04] pointer-events-none">
           <div className="absolute top-20 left-1/4 w-[600px] h-[600px] bg-brand-teal rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-1/4 w-[500px] h-[500px] bg-blue-500 rounded-full blur-3xl" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-navy rounded-full blur-3xl" />
+          <div className="absolute bottom-20 right-1/4 w-[500px] h-[500px] bg-brand-navy rounded-full blur-3xl" />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
@@ -122,7 +121,7 @@ export default function VenturisPartners() {
               <span className="w-12 h-0.5 bg-gradient-to-r from-brand-navy to-brand-teal" />
             </div>
             <h2 className="text-4xl sm:text-5xl font-bold text-white mt-4 mb-4">
-              Venturis <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-blue-400">IT Solutions</span>
+              Venturis <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy">IT Solutions</span>
             </h2>
             <p className="text-white/40 max-w-2xl mx-auto text-lg">
               Future-ready technology services engineered to accelerate your digital transformation and drive measurable business outcomes.
@@ -136,8 +135,8 @@ export default function VenturisPartners() {
               { value: '150+', label: 'Happy Clients' },
               { value: '99.9%', label: 'Uptime Guarantee' },
             ].map((s, i) => (
-              <div key={i} className="relative bg-white/[0.03] backdrop-blur-xl rounded-2xl p-6 border border-white/[0.06] text-center group hover:border-brand-teal/30 hover:bg-white/[0.06] transition-all duration-500">
-                <div className="text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-blue-400 font-number mb-1">{s.value}</div>
+              <div key={i} className="bg-white/[0.03] backdrop-blur-xl rounded-2xl p-6 border border-white/[0.06] text-center hover:border-brand-teal/30 hover:bg-white/[0.06] transition-all duration-500">
+                <div className="text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy font-number mb-1">{s.value}</div>
                 <div className="text-white/40 text-xs uppercase tracking-[0.15em]">{s.label}</div>
               </div>
             ))}
@@ -149,10 +148,10 @@ export default function VenturisPartners() {
                 <span className="text-brand-teal text-sm font-semibold uppercase tracking-[0.2em]">Our Capabilities</span>
                 <h3 className="text-3xl sm:text-4xl font-bold text-white mt-3 mb-6 leading-tight">
                   Engineering the Future<br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-blue-400">Through Code &amp; Cloud</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy">Through Code &amp; Cloud</span>
                 </h3>
                 <p className="text-white/40 leading-relaxed mb-8">
-                  From custom software to AI-driven automation, we build end-to-end technology ecosystems that scale with your ambition and secure your digital future.
+                  From custom software to AI-driven automation, we build end-to-end technology ecosystems that scale with your ambition.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   {['Software', 'AI', 'Cloud', 'Security', 'Mobile', 'Data'].map((tag) => (
@@ -188,7 +187,7 @@ export default function VenturisPartners() {
                 {
                   title: 'E-Commerce & Digital Platforms',
                   icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>,
-                  items: ['Full-Stack E-Commerce Solutions', 'Payment Gateway Integration', 'Inventory & Order Management', 'Marketplace Development'],
+                  items: ['Full-Stack E-Commerce Solutions', 'Payment Gateway Integration', 'Inventory Management', 'Marketplace Development'],
                 },
                 {
                   title: 'Digital Transformation & Consulting',
@@ -196,18 +195,17 @@ export default function VenturisPartners() {
                   items: ['Digital Transformation Strategy', 'Startup Tech Solutions', 'Technical Support & Maintenance', 'IT Infrastructure Consulting'],
                 },
               ].map((group, i) => (
-                <div key={i} className="group relative bg-white/[0.03] backdrop-blur-xl rounded-2xl p-6 border border-white/[0.06] hover:border-brand-teal/30 hover:bg-white/[0.06] hover:-translate-y-0.5 transition-all duration-500">
-                  <div className="absolute -top-px left-6 right-6 h-px bg-gradient-to-r from-transparent via-brand-teal/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div key={i} className="group bg-white/[0.03] backdrop-blur-xl rounded-2xl p-6 border border-white/[0.06] hover:border-brand-teal/30 hover:bg-white/[0.06] hover:-translate-y-0.5 transition-all duration-500">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-teal/10 to-blue-500/10 flex items-center justify-center border border-white/[0.06] group-hover:from-brand-teal/20 group-hover:to-blue-500/20 group-hover:scale-110 transition-all duration-500">
-                      <span className="text-brand-teal group-hover:text-blue-300 transition-colors duration-500">{group.icon}</span>
+                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center border border-white/[0.06] group-hover:from-brand-teal/20 group-hover:to-brand-navy/20 group-hover:scale-110 transition-all duration-500">
+                      <span className="text-brand-teal group-hover:text-brand-teal transition-colors duration-500">{group.icon}</span>
                     </div>
                     <h3 className="text-lg font-bold text-white">{group.title}</h3>
                   </div>
                   <ul className="space-y-2">
                     {group.items.map((item, j) => (
-                      <li key={j} className="flex items-center gap-3 text-white/50 text-sm group/li">
-                        <span className="w-1 h-1 rounded-full bg-brand-teal/60 group-hover/li:bg-brand-teal transition-colors shrink-0" />
+                      <li key={j} className="flex items-center gap-3 text-white/50 text-sm">
+                        <span className="w-1 h-1 rounded-full bg-brand-teal/60 shrink-0" />
                         {item}
                       </li>
                     ))}
@@ -217,8 +215,7 @@ export default function VenturisPartners() {
             </div>
           </div>
 
-          <div className="relative bg-gradient-to-br from-brand-teal/5 via-blue-500/5 to-transparent backdrop-blur-xl rounded-3xl p-10 sm:p-12 border border-brand-teal/10 text-center group hover:border-brand-teal/30 transition-all duration-500">
-            <div className="absolute -top-0.5 left-1/2 -translate-x-1/2 w-32 h-0.5 bg-gradient-to-r from-brand-teal to-blue-400 rounded-full" />
+          <div className="bg-gradient-to-br from-brand-teal/5 to-brand-navy/5 backdrop-blur-xl rounded-3xl p-10 sm:p-12 border border-brand-teal/10 text-center hover:border-brand-teal/30 transition-all duration-500">
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Ready to Build Something Extraordinary?</h3>
             <p className="text-white/40 max-w-2xl mx-auto mb-8">Let's discuss how our technology solutions can transform your business.</p>
             <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-br from-brand-teal to-brand-navy text-white font-semibold rounded-xl hover:shadow-xl hover:shadow-brand-teal/20 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300">
@@ -230,7 +227,7 @@ export default function VenturisPartners() {
       </section>
 
       {/* ============ VENTURIS DIGITAL MARKETING ============ */}
-      <section className="py-28 relative overflow-hidden bg-gradient-to-br from-brand-dark via-[#0f1120] to-brand-dark">
+      <section className="py-28 relative overflow-hidden bg-gradient-to-br from-brand-dark via-brand-navy/20 to-brand-dark">
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
           <div className="absolute top-20 right-1/3 w-[500px] h-[500px] bg-brand-teal rounded-full blur-3xl" />
           <div className="absolute bottom-20 left-1/3 w-[600px] h-[600px] bg-brand-navy rounded-full blur-3xl" />
@@ -274,8 +271,7 @@ export default function VenturisPartners() {
                   items: ['Multi-Channel Lead Generation', 'Conversion Rate Optimization', 'Analytics & Performance Reporting', 'E-Commerce Marketing Strategy'],
                 },
               ].map((group, i) => (
-                <div key={i} className="group relative bg-white/[0.03] backdrop-blur-xl rounded-2xl p-6 border border-white/[0.06] hover:border-brand-teal/30 hover:bg-white/[0.06] hover:-translate-y-0.5 transition-all duration-500">
-                  <div className="absolute -top-px left-6 right-6 h-px bg-gradient-to-r from-transparent via-brand-teal/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div key={i} className="group bg-white/[0.03] backdrop-blur-xl rounded-2xl p-6 border border-white/[0.06] hover:border-brand-teal/30 hover:bg-white/[0.06] hover:-translate-y-0.5 transition-all duration-500">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center border border-white/[0.06] group-hover:from-brand-teal/20 group-hover:to-brand-navy/20 group-hover:scale-110 transition-all duration-500">
                       <span className="text-brand-teal group-hover:text-brand-teal transition-colors duration-500">{group.icon}</span>
@@ -284,8 +280,8 @@ export default function VenturisPartners() {
                   </div>
                   <ul className="space-y-2">
                     {group.items.map((item, j) => (
-                      <li key={j} className="flex items-center gap-3 text-white/50 text-sm group/li">
-                        <span className="w-1 h-1 rounded-full bg-brand-teal/60 group-hover/li:bg-brand-teal transition-colors shrink-0" />
+                      <li key={j} className="flex items-center gap-3 text-white/50 text-sm">
+                        <span className="w-1 h-1 rounded-full bg-brand-teal/60 shrink-0" />
                         {item}
                       </li>
                     ))}
@@ -297,7 +293,7 @@ export default function VenturisPartners() {
               <div className="sticky top-28">
                 <span className="text-brand-teal text-sm font-semibold uppercase tracking-[0.2em]">Growth Engine</span>
                 <h3 className="text-3xl sm:text-4xl font-bold text-white mt-3 mb-6 leading-tight">
-                  Amplify Your Brand.<br className="hidden sm:block" />
+                  Amplify Your Brand.<br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy">Dominate Your Market.</span>
                 </h3>
                 <p className="text-white/40 leading-relaxed mb-8">
@@ -327,8 +323,7 @@ export default function VenturisPartners() {
             </div>
           </div>
 
-          <div className="relative bg-gradient-to-br from-brand-teal/5 via-brand-navy/5 to-transparent backdrop-blur-xl rounded-3xl p-10 sm:p-12 border border-brand-teal/10 text-center group hover:border-brand-teal/30 transition-all duration-500">
-            <div className="absolute -top-0.5 left-1/2 -translate-x-1/2 w-32 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy rounded-full" />
+          <div className="bg-gradient-to-br from-brand-teal/5 to-brand-navy/5 backdrop-blur-xl rounded-3xl p-10 sm:p-12 border border-brand-teal/10 text-center hover:border-brand-teal/30 transition-all duration-500">
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Let's Grow Your Brand Together</h3>
             <p className="text-white/40 max-w-2xl mx-auto mb-8">Partner with us to create marketing campaigns that deliver real, measurable results.</p>
             <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-br from-brand-teal to-brand-navy text-white font-semibold rounded-xl hover:shadow-xl hover:shadow-brand-teal/20 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300">
