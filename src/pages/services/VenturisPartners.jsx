@@ -1,55 +1,20 @@
-import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-const heroImages = [
-  '/partners-hero-1.jpg',
-  '/partners-hero-2.jpg',
-]
-
-const services = [
-  'Strategic Business Partnerships',
-  'Joint Ventures & Collaborations',
-  'Corporate Advisory Services',
-  'Business Development Programs',
-  'Networking & Matchmaking',
-  'Growth & Expansion Consulting',
-]
-
-const highlights = [
-  { icon: '🤝', title: 'Collaborative Approach', desc: 'Building meaningful partnerships based on trust and mutual success.' },
-  { icon: '📈', title: 'Growth Focused', desc: 'Strategic alliances designed to accelerate business growth.' },
-  { icon: '🌐', title: 'Extensive Network', desc: 'Access to a wide network of industry leaders and innovators.' },
-]
-
 export default function VenturisPartners() {
-  const [currentIndex, setCurrentIndex] = useState(0)
-
-  useEffect(() => {
-    heroImages.forEach((src) => { const img = new Image(); img.src = src })
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % heroImages.length)
-    }, 5000)
-    return () => clearInterval(interval)
-  }, [])
-
   return (
     <>
       {/* ============ HERO SECTION ============ */}
       <section className="relative h-[90vh] min-h-[600px] overflow-hidden bg-brand-dark">
-        {heroImages.map((img, i) => (
-          <img
-            key={img}
-            src={img}
-            alt=""
-            className="absolute inset-0 w-full h-full object-cover"
-            style={{
-              opacity: i === currentIndex ? 1 : 0,
-              transform: i === currentIndex ? 'scale(1.05)' : 'scale(1)',
-              transition: 'opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), transform 1000ms cubic-bezier(0.4, 0, 0.2, 1)',
-            }}
-          />
-        ))}
-        <div className="absolute inset-0 bg-black/70" />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ filter: 'brightness(0.7)' }}
+        >
+          <source src="/For%20partners%20page%20hero%20section.mp4" type="video/mp4" />
+        </video>
 
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
@@ -95,16 +60,6 @@ export default function VenturisPartners() {
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-3 z-10">
-          {heroImages.map((_, i) => (
-            <span
-              key={i}
-              className={`h-1 rounded-full transition-all duration-700 ${
-                i === currentIndex ? 'w-10 bg-brand-teal' : 'w-3 bg-white/20'
-              }`}
-            />
-          ))}
-        </div>
       </section>
 
       {/* ============ WHY VENTURIS PARTNERS ============ */}
