@@ -49,8 +49,7 @@ export default function VenturisPartners() {
             }}
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/50" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-black/20" />
 
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
