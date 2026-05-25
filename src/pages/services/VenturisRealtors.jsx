@@ -1068,52 +1068,125 @@ export default function VenturisRealtors() {
         </div>
       </section>
 
-      {/* ============ INVESTMENT ============ */}
+      {/* ============ INVESTMENT MARKETS ============ */}
       <section className="py-0">
-        <div className="grid lg:grid-cols-2">
-          <div className="relative min-h-[420px] flex items-center p-10 lg:p-16 overflow-hidden group bg-black">
-            <div className="absolute inset-0 opacity-20">
-              <img src="/Ain%20Dubai%20(Dubai,%20UAE).jpg" alt="" className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-br from-black via-black/95 to-brand-dark/80" />
-            <div className="relative z-10">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center mb-5">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <span className="text-brand-teal text-xs uppercase tracking-[0.25em] font-medium">Market</span>
-              <h3 className="text-3xl font-bold text-white mt-2 mb-4">UAE Market</h3>
-              <p className="text-white/50 text-sm leading-relaxed max-w-md mb-5">
-                The UAE offers a tax-free environment, world-class infrastructure, and a resilient property market. From Dubai's iconic skyline to Abu Dhabi's prestigious developments.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {['Freehold Areas', 'Tax-Free Returns', 'Residency Visa', 'Luxury Living'].map((tag) => (
-                  <span key={tag} className="px-3 py-1.5 bg-white/5 text-white/50 text-xs rounded-full border border-white/10">{tag}</span>
-                ))}
-              </div>
-            </div>
+        <div className="relative bg-gradient-to-br from-brand-dark via-black to-brand-dark py-20 lg:py-0">
+          <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+            <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-teal rounded-full blur-3xl" />
+            <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-white rounded-full blur-3xl" />
           </div>
-          <div className="relative min-h-[420px] flex items-center p-10 lg:p-16 overflow-hidden group bg-black">
-            <div className="absolute inset-0 opacity-20">
-              <img src="/Building.png" alt="" className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-bl from-black via-black/95 to-brand-dark/80" />
-            <div className="relative z-10">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-navy to-brand-steel flex items-center justify-center mb-5">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+          <div className="max-w-7xl mx-auto px-6 text-center lg:hidden">
+            <span className="text-brand-teal text-xs uppercase tracking-[0.25em] font-medium">Investment</span>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mt-3 mb-2">Markets We Serve</h2>
+            <p className="text-white/40 text-sm max-w-lg mx-auto mb-10">Strategic insights into the world's most dynamic real estate markets.</p>
+          </div>
+          <div className="grid lg:grid-cols-2">
+            <div className="relative min-h-[500px] flex items-center p-10 lg:p-16 overflow-hidden group">
+              <div className="absolute inset-0">
+                <img src="/Ain%20Dubai%20(Dubai,%20UAE).jpg" alt="" className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 opacity-30" />
+                <div className="absolute inset-0 bg-gradient-to-br from-black via-black/95 to-brand-dark/90" />
+              </div>
+              <div className="absolute top-6 right-6 opacity-[0.04] pointer-events-none">
+                <svg className="w-32 h-32 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={0.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <span className="text-brand-teal text-xs uppercase tracking-[0.25em] font-medium">Market</span>
-              <h3 className="text-3xl font-bold text-white mt-2 mb-4">USA Market</h3>
-              <p className="text-white/50 text-sm leading-relaxed max-w-md mb-5">
-                The United States remains one of the world's most stable and lucrative real estate markets. We connect investors with premium opportunities across major cities.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {['Stable Economy', 'Strong Appreciation', 'Diverse Portfolio', 'Global Hub'].map((tag) => (
-                  <span key={tag} className="px-3 py-1.5 bg-white/5 text-white/50 text-xs rounded-full border border-white/10">{tag}</span>
-                ))}
+              <div className="relative z-10">
+                <div className="hidden lg:flex items-center gap-3 mb-6">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center shadow-lg shadow-brand-teal/20">
+                    <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div className="hidden lg:block text-left">
+                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.3em] font-medium">Market</span>
+                    <p className="text-white/20 text-[10px] uppercase tracking-wider">United Arab Emirates</p>
+                  </div>
+                </div>
+                <div className="lg:hidden flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center shadow-lg shadow-brand-teal/20">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div className="text-left">
+                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.3em] font-medium">Market</span>
+                    <p className="text-white/30 text-[10px] uppercase tracking-wider">United Arab Emirates</p>
+                  </div>
+                </div>
+                <span className="text-brand-teal hidden lg:block text-xs uppercase tracking-[0.25em] font-medium">&nbsp;</span>
+                <h3 className="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">UAE Market</h3>
+                <p className="text-white/40 text-sm leading-relaxed max-w-md mb-6">
+                  The UAE offers a tax-free environment, world-class infrastructure, and a resilient property market. From Dubai's iconic skyline to Abu Dhabi's prestigious developments.
+                </p>
+                <div className="flex flex-wrap gap-2.5">
+                  {[
+                    { label: 'Freehold Areas', desc: 'Full ownership for foreign investors' },
+                    { label: 'Tax-Free Returns', desc: 'No property or capital gains tax' },
+                    { label: 'Residency Visa', desc: 'Property-linked golden visa' },
+                    { label: 'Luxury Living', desc: 'World-class amenities & lifestyle' },
+                  ].map((tag) => (
+                    <div key={tag.label} className="group/tag cursor-default">
+                      <span className="inline-block px-4 py-2 bg-white/[0.04] text-white/60 text-xs font-medium rounded-xl border border-white/[0.06] hover:bg-brand-teal/10 hover:text-brand-teal hover:border-brand-teal/20 transition-all duration-300">
+                        {tag.label}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="relative min-h-[500px] flex items-center p-10 lg:p-16 overflow-hidden group">
+              <div className="absolute inset-0">
+                <img src="/Building.png" alt="" className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 opacity-30" />
+                <div className="absolute inset-0 bg-gradient-to-bl from-black via-black/95 to-brand-navy/90" />
+              </div>
+              <div className="absolute top-6 right-6 opacity-[0.04] pointer-events-none">
+                <svg className="w-32 h-32 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={0.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                </svg>
+              </div>
+              <div className="relative z-10">
+                <div className="hidden lg:flex items-center gap-3 mb-6">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-navy to-brand-steel flex items-center justify-center shadow-lg shadow-brand-navy/20">
+                    <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                    </svg>
+                  </div>
+                  <div className="text-left">
+                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.3em] font-medium">Market</span>
+                    <p className="text-white/20 text-[10px] uppercase tracking-wider">United States of America</p>
+                  </div>
+                </div>
+                <div className="lg:hidden flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-navy to-brand-steel flex items-center justify-center shadow-lg shadow-brand-navy/20">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                    </svg>
+                  </div>
+                  <div className="text-left">
+                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.3em] font-medium">Market</span>
+                    <p className="text-white/30 text-[10px] uppercase tracking-wider">United States of America</p>
+                  </div>
+                </div>
+                <span className="text-brand-teal hidden lg:block text-xs uppercase tracking-[0.25em] font-medium">&nbsp;</span>
+                <h3 className="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">USA Market</h3>
+                <p className="text-white/40 text-sm leading-relaxed max-w-md mb-6">
+                  The United States remains one of the world's most stable and lucrative real estate markets. We connect investors with premium opportunities across major cities.
+                </p>
+                <div className="flex flex-wrap gap-2.5">
+                  {[
+                    { label: 'Stable Economy', desc: 'Global economic powerhouse' },
+                    { label: 'Strong Appreciation', desc: 'Consistent long-term growth' },
+                    { label: 'Diverse Portfolio', desc: 'Residential, commercial & more' },
+                    { label: 'Global Hub', desc: 'New York, LA, Miami & beyond' },
+                  ].map((tag) => (
+                    <div key={tag.label} className="group/tag cursor-default">
+                      <span className="inline-block px-4 py-2 bg-white/[0.04] text-white/60 text-xs font-medium rounded-xl border border-white/[0.06] hover:bg-brand-teal/10 hover:text-brand-teal hover:border-brand-teal/20 transition-all duration-300">
+                        {tag.label}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
