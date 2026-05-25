@@ -36,15 +36,16 @@ const slides = [
     btn2Link: '/about',
   },
   {
-    id: 'partners',
-    title: 'Strategic Business Growth',
-    subtitle: 'Venturis Partners',
-    desc: 'Building strong partnerships through innovation and professional collaboration.',
-    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80',
-    btn1: 'Become a Partner',
-    btn1Link: '/services/partners',
-    btn2: 'Learn More',
-    btn2Link: '/services/partners',
+    id: 'vision-mission',
+    title: 'Driven by Vision & Purpose',
+    subtitle: 'Venturis Holdings',
+    vision: 'To become a globally recognized conglomerate that bridges investors, businesses, and emerging technologies — driving value creation, operational excellence, and long-term prosperity.',
+    mission: 'To deliver trusted, expert-driven solutions across finance, real estate, business consultancy, and emerging technologies — empowering clients with confidence, clarity, and strategic advantage in every decision.',
+    image: '/Building%205426.png',
+    btn1: 'Explore Our Divisions',
+    btn1Link: '/services',
+    btn2: 'Learn About Us',
+    btn2Link: '/about',
   },
   {
     id: 'wheels',
@@ -159,9 +160,22 @@ export default function HeroSlider() {
               </h1>
             </div>
             <div className="overflow-hidden">
-              <p className="text-xl sm:text-xl text-white/60 max-w-xl leading-relaxed mb-8 sm:mb-10 animate-fade-in-up delay-200">
-                {slide.desc}
-              </p>
+              {slide.vision ? (
+                <div className="space-y-4 mb-8 sm:mb-10 animate-fade-in-up delay-200">
+                  <div>
+                    <span className="text-brand-teal text-xs font-semibold uppercase tracking-[0.2em]">Vision</span>
+                    <p className="text-white/60 text-base sm:text-lg leading-relaxed mt-1 max-w-xl">{slide.vision}</p>
+                  </div>
+                  <div>
+                    <span className="text-brand-teal text-xs font-semibold uppercase tracking-[0.2em]">Mission</span>
+                    <p className="text-white/60 text-base sm:text-lg leading-relaxed mt-1 max-w-xl">{slide.mission}</p>
+                  </div>
+                </div>
+              ) : (
+                <p className="text-xl sm:text-xl text-white/60 max-w-xl leading-relaxed mb-8 sm:mb-10 animate-fade-in-up delay-200">
+                  {slide.desc}
+                </p>
+              )}
             </div>
             <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 animate-fade-in-up delay-300 pb-16 sm:pb-0">
               <Link
