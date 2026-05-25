@@ -8,24 +8,40 @@ export default function Layout() {
       {/* Announcement Bar */}
       <div className="bg-[#2E7688]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-12 text-sm sm:text-base" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-            <div className="flex items-center gap-2">
-              <a href="tel:+971585318860" className="flex items-center gap-1.5 text-white/90 hover:text-white transition-colors font-medium">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="flex items-center justify-between h-12 sm:h-14 text-sm sm:text-base" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            <div className="flex items-center gap-3">
+              <div className="w-7 h-7 rounded-full bg-white/15 flex items-center justify-center">
+                <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
+              </div>
+              <a href="tel:+971585318860" className="text-white/90 hover:text-white transition-colors font-medium tracking-wide">
                 +971 58 531 8860
               </a>
             </div>
-            <span className="text-white/80 text-sm sm:text-base font-medium tracking-wide hidden sm:block" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-              Global Business Solutions
-            </span>
-            <div className="flex items-center gap-1.5 text-white/90">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+
+            <div className="flex items-center gap-3 text-white/70 hidden sm:flex">
+              <svg className="w-4 h-4 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 11l5-5m0 0l5 5m-5-5v12" />
               </svg>
-              <span className="font-medium text-sm sm:text-base" style={{ fontFamily: "'Times New Roman', Times, serif" }}>5th Floor, Al Saqr Tower, SZR, Dubai</span>
+              <span className="text-white/90 text-sm sm:text-base font-medium tracking-widest uppercase" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                Global Business Solutions
+              </span>
+              <svg className="w-4 h-4 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 13l-5 5m0 0l-5-5m5 5V6" />
+              </svg>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <div className="w-7 h-7 rounded-full bg-white/15 flex items-center justify-center">
+                <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <span className="text-white/90 font-medium tracking-wide text-sm sm:text-base" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                5th Floor, Al Saqr Tower, SZR, Dubai
+              </span>
             </div>
           </div>
         </div>
