@@ -169,6 +169,95 @@ export default function VenturisPartners() {
         </div>
       </section>
 
+      {/* ============ BRIEF STORY ABOUT VENTURIS TECH ============ */}
+      <section className="py-28 relative overflow-hidden bg-white">
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-brand-teal/[0.02] to-transparent pointer-events-none" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-brand-navy/3 rounded-full blur-3xl pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="flex items-center gap-4 mb-2">
+            <span className="w-12 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
+            <span className="text-sm font-semibold text-brand-teal uppercase tracking-[0.2em]">Our Story</span>
+          </div>
+
+          <div className="grid lg:grid-cols-12 gap-10 mt-8 mb-16">
+            <div className="lg:col-span-5">
+              <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark leading-tight sticky top-8">
+                A Brief Story<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy">About Venturis Tech</span>
+              </h2>
+              <div className="hidden lg:block mt-8">
+                <div className="flex items-center gap-3 text-gray-300">
+                  <span className="w-8 h-px bg-gradient-to-r from-brand-teal to-brand-navy" />
+                  <span className="text-xs font-semibold text-brand-teal/60 uppercase tracking-[0.2em]">Est. 2010</span>
+                </div>
+              </div>
+            </div>
+            <div className="lg:col-span-7 space-y-6">
+              <p className="text-gray-500 text-base sm:text-lg leading-relaxed">
+                Venturis Tech was established as a forward-thinking technology and digital solutions company focused on delivering innovative, scalable, and future-ready business services. With expertise spanning software development, AI-powered solutions, digital transformation, automation, and strategic technology consulting, Venturis Tech empowers businesses to grow efficiently in the modern digital era.
+              </p>
+              <p className="text-gray-500 text-base sm:text-lg leading-relaxed">
+                From website and mobile application development to cloud systems, AI integration, cybersecurity, branding, and digital marketing solutions, Venturis Tech provides comprehensive services tailored to evolving market demands. Our commitment to innovation, reliability, creativity, and operational excellence enables us to deliver high-quality digital experiences and long-term business value for clients across multiple industries.
+              </p>
+              <p className="text-gray-500 text-base sm:text-lg leading-relaxed">
+                By combining advanced technology with strategic thinking, Venturis Tech continues to build strong partnerships and deliver impactful solutions that support business growth, transformation, and global competitiveness.
+              </p>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-brand-teal/0 via-brand-teal/20 to-brand-navy/0" />
+            <div className="pt-14">
+              <div className="flex items-center gap-3 mb-10">
+                <span className="text-4xl font-bold text-brand-dark/[0.04] font-number">04</span>
+                <div>
+                  <span className="text-xs font-semibold text-brand-teal uppercase tracking-[0.2em]">Core Pillars</span>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark mt-1">Key Features</h3>
+                </div>
+              </div>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                {[
+                  {
+                    number: '01',
+                    title: 'Innovation',
+                    text: 'We aim to deliver advanced technology solutions through AI integration, automation, software development, and digital transformation strategies that help businesses remain competitive and future-focused.',
+                    accent: 'from-brand-teal to-brand-navy',
+                  },
+                  {
+                    number: '02',
+                    title: 'Responsibility',
+                    text: 'Our company is committed to professional excellence, ethical business practices, data security, operational reliability, and responsible innovation while ensuring long-term client satisfaction and trust.',
+                    accent: 'from-brand-teal to-brand-navy',
+                  },
+                  {
+                    number: '03',
+                    title: 'Relations',
+                    text: 'We prioritize building strong and lasting relationships with clients, partners, and businesses through transparency, collaboration, reliability, and a customer-focused approach that drives sustainable growth.',
+                    accent: 'from-brand-teal to-brand-navy',
+                  },
+                  {
+                    number: '04',
+                    title: 'Creative Vision',
+                    text: 'Venturis Tech envisions becoming a leading technology-driven enterprise delivering innovative digital experiences, intelligent business solutions, and modern scalable systems designed for the future.',
+                    accent: 'from-brand-teal to-brand-navy',
+                  },
+                ].map((pillar, i) => (
+                  <div key={i} className="group relative">
+                    <div className="absolute -left-5 top-0 bottom-0 w-px bg-gradient-to-b from-brand-teal/0 via-brand-teal/10 to-brand-navy/0 group-hover:via-brand-teal/40 transition-all duration-500" />
+                    <div className="pl-5">
+                      <div className={`w-10 h-1 rounded-full bg-gradient-to-r ${pillar.accent} mb-5 group-hover:w-14 transition-all duration-500`} />
+                      <span className="text-4xl font-bold text-brand-teal/15 font-number block mb-2 group-hover:text-brand-teal/30 transition-colors duration-500">{pillar.number}</span>
+                      <h4 className="text-brand-dark font-bold text-lg mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-brand-teal group-hover:to-brand-navy transition-all duration-300">{pillar.title}</h4>
+                      <p className="text-gray-400 text-sm leading-relaxed">{pillar.text}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ============ VENTURIS TECH SERVICE PORTFOLIO ============ */}
       <section className="py-28 relative overflow-hidden bg-gradient-to-br from-brand-dark via-black to-brand-dark">
         <div className="absolute inset-0 opacity-[0.05] pointer-events-none">
