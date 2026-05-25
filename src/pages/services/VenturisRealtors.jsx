@@ -343,10 +343,10 @@ export default function VenturisRealtors() {
       {/* ============ HERO ============ */}
       <section className="relative h-screen min-h-[600px] flex items-center bg-black overflow-hidden">
         <div className="absolute inset-0">
-          <video autoPlay muted loop playsInline className="w-full h-full object-cover opacity-50">
-            <source src="/Venturis%20Realtors/2-Bedroom%20Premium%20Apartment/Hero%20Section%20Video.mp4" type="video/mp4" />
+          <video autoPlay muted loop playsInline className="w-full h-full object-cover opacity-60">
+            <source src="/Main%20hero%20section.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
           <Link to="/services" className="inline-flex items-center gap-1.5 text-white/30 hover:text-white text-xs uppercase tracking-widest mb-12 transition-all group">
