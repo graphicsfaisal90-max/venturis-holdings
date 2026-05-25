@@ -6,6 +6,8 @@ const heroImages = [
   '/Partners%20hero%20section%20%20(2).jpg',
 ]
 
+
+
 const services = [
   'Strategic Business Partnerships',
   'Joint Ventures & Collaborations',
@@ -34,25 +36,25 @@ export default function VenturisPartners() {
   return (
     <>
       {/* ============ HERO SECTION ============ */}
-      <section className="relative h-[90vh] min-h-[600px] overflow-hidden">
+      <section className="relative h-[90vh] min-h-[600px] overflow-hidden bg-brand-dark">
         {heroImages.map((img, i) => (
-          <div
+          <img
             key={img}
-            className="absolute inset-0 transition-all duration-1000 ease-in-out"
+            src={img}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover"
             style={{
-              backgroundImage: `url(${img})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
               opacity: i === currentIndex ? 1 : 0,
               transform: i === currentIndex ? 'scale(1.05)' : 'scale(1)',
+              transition: 'opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), transform 1000ms cubic-bezier(0.4, 0, 0.2, 1)',
             }}
           />
         ))}
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/70" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
 
-        <div className="relative z-10 h-full flex items-center">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="absolute inset-0 flex items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
             <Link
               to="/services"
               className="inline-flex items-center gap-2 text-white/50 hover:text-white text-sm transition-colors mb-8 group"
@@ -97,13 +99,11 @@ export default function VenturisPartners() {
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-3 z-10">
           {heroImages.map((_, i) => (
-            <button
+            <span
               key={i}
               className={`h-1 rounded-full transition-all duration-700 ${
-                i === currentIndex ? 'w-10 bg-brand-teal' : 'w-3 bg-white/20 hover:bg-white/40'
+                i === currentIndex ? 'w-10 bg-brand-teal' : 'w-3 bg-white/20'
               }`}
-              onClick={() => setCurrentIndex(i)}
-              aria-label={`Go to slide ${i + 1}`}
             />
           ))}
         </div>
