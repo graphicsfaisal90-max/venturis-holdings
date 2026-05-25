@@ -171,89 +171,74 @@ export default function VenturisPartners() {
 
       {/* ============ BRIEF STORY ABOUT VENTURIS TECH ============ */}
       <section className="py-28 relative overflow-hidden bg-white">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-brand-teal/[0.02] to-transparent pointer-events-none" />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-brand-teal/3 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-brand-navy/3 rounded-full blur-3xl pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="flex items-center gap-4 mb-2">
+          <div className="flex items-center gap-4 justify-center mb-4">
             <span className="w-12 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
             <span className="text-sm font-semibold text-brand-teal uppercase tracking-[0.2em]">Our Story</span>
+            <span className="w-12 h-0.5 bg-gradient-to-r from-brand-navy to-brand-teal" />
           </div>
+          <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark text-center mt-4 mb-4">
+            A Brief Story <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy">About Venturis Tech</span>
+          </h2>
 
-          <div className="grid lg:grid-cols-12 gap-10 mt-8 mb-16">
-            <div className="lg:col-span-5">
-              <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark leading-tight sticky top-8">
-                A Brief Story<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy">About Venturis Tech</span>
-              </h2>
-              <div className="hidden lg:block mt-8">
-                <div className="flex items-center gap-3 text-gray-300">
-                  <span className="w-8 h-px bg-gradient-to-r from-brand-teal to-brand-navy" />
-                  <span className="text-xs font-semibold text-brand-teal/60 uppercase tracking-[0.2em]">Est. 2010</span>
-                </div>
-              </div>
-            </div>
-            <div className="lg:col-span-7 space-y-6">
-              <p className="text-gray-500 text-base sm:text-lg leading-relaxed">
-                Venturis Tech was established as a forward-thinking technology and digital solutions company focused on delivering innovative, scalable, and future-ready business services. With expertise spanning software development, AI-powered solutions, digital transformation, automation, and strategic technology consulting, Venturis Tech empowers businesses to grow efficiently in the modern digital era.
-              </p>
-              <p className="text-gray-500 text-base sm:text-lg leading-relaxed">
-                From website and mobile application development to cloud systems, AI integration, cybersecurity, branding, and digital marketing solutions, Venturis Tech provides comprehensive services tailored to evolving market demands. Our commitment to innovation, reliability, creativity, and operational excellence enables us to deliver high-quality digital experiences and long-term business value for clients across multiple industries.
-              </p>
-              <p className="text-gray-500 text-base sm:text-lg leading-relaxed">
-                By combining advanced technology with strategic thinking, Venturis Tech continues to build strong partnerships and deliver impactful solutions that support business growth, transformation, and global competitiveness.
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <div className="relative inline-block">
+              <svg className="absolute -top-4 -left-8 w-8 h-8 text-brand-teal/15" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" /></svg>
+              <p className="text-gray-500 text-lg leading-relaxed italic max-w-3xl mx-auto px-6">
+                Venturis Tech was established as a forward-thinking technology and digital solutions company delivering innovative, scalable, and future-ready business services across software development, AI, automation, and digital transformation.
               </p>
             </div>
           </div>
 
-          <div className="relative">
-            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-brand-teal/0 via-brand-teal/20 to-brand-navy/0" />
-            <div className="pt-14">
-              <div className="flex items-center gap-3 mb-10">
-                <span className="text-4xl font-bold text-brand-dark/[0.04] font-number">04</span>
-                <div>
-                  <span className="text-xs font-semibold text-brand-teal uppercase tracking-[0.2em]">Core Pillars</span>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark mt-1">Key Features</h3>
-                </div>
-              </div>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                {[
-                  {
-                    number: '01',
-                    title: 'Innovation',
-                    text: 'We aim to deliver advanced technology solutions through AI integration, automation, software development, and digital transformation strategies that help businesses remain competitive and future-focused.',
-                    accent: 'from-brand-teal to-brand-navy',
-                  },
-                  {
-                    number: '02',
-                    title: 'Responsibility',
-                    text: 'Our company is committed to professional excellence, ethical business practices, data security, operational reliability, and responsible innovation while ensuring long-term client satisfaction and trust.',
-                    accent: 'from-brand-teal to-brand-navy',
-                  },
-                  {
-                    number: '03',
-                    title: 'Relations',
-                    text: 'We prioritize building strong and lasting relationships with clients, partners, and businesses through transparency, collaboration, reliability, and a customer-focused approach that drives sustainable growth.',
-                    accent: 'from-brand-teal to-brand-navy',
-                  },
-                  {
-                    number: '04',
-                    title: 'Creative Vision',
-                    text: 'Venturis Tech envisions becoming a leading technology-driven enterprise delivering innovative digital experiences, intelligent business solutions, and modern scalable systems designed for the future.',
-                    accent: 'from-brand-teal to-brand-navy',
-                  },
-                ].map((pillar, i) => (
-                  <div key={i} className="group relative">
-                    <div className="absolute -left-5 top-0 bottom-0 w-px bg-gradient-to-b from-brand-teal/0 via-brand-teal/10 to-brand-navy/0 group-hover:via-brand-teal/40 transition-all duration-500" />
-                    <div className="pl-5">
-                      <div className={`w-10 h-1 rounded-full bg-gradient-to-r ${pillar.accent} mb-5 group-hover:w-14 transition-all duration-500`} />
-                      <span className="text-4xl font-bold text-brand-teal/15 font-number block mb-2 group-hover:text-brand-teal/30 transition-colors duration-500">{pillar.number}</span>
-                      <h4 className="text-brand-dark font-bold text-lg mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-brand-teal group-hover:to-brand-navy transition-all duration-300">{pillar.title}</h4>
-                      <p className="text-gray-400 text-sm leading-relaxed">{pillar.text}</p>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              {[
+                {
+                  icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>,
+                  title: 'Innovation',
+                  desc: 'Delivering advanced technology solutions through AI integration, automation, software development, and digital transformation strategies that keep businesses future-focused.',
+                  accent: 'from-brand-teal to-brand-navy',
+                },
+                {
+                  icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>,
+                  title: 'Responsibility',
+                  desc: 'Committed to professional excellence, ethical business practices, data security, operational reliability, and responsible innovation for long-term client trust.',
+                  accent: 'from-brand-teal to-brand-navy',
+                },
+                {
+                  icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>,
+                  title: 'Relations',
+                  desc: 'Building strong and lasting relationships through transparency, collaboration, reliability, and a customer-focused approach that drives sustainable growth.',
+                  accent: 'from-brand-teal to-brand-navy',
+                },
+                {
+                  icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" /></svg>,
+                  title: 'Creative Vision',
+                  desc: 'Envisioning a leading technology-driven enterprise delivering innovative digital experiences, intelligent solutions, and modern scalable systems for the future.',
+                  accent: 'from-brand-teal to-brand-navy',
+                },
+              ].map((item, i) => (
+                <div key={i} className="group relative bg-brand-light rounded-2xl p-6 border border-gray-100 hover:border-brand-teal/20 hover:shadow-xl hover:shadow-brand-teal/5 hover:-translate-y-1 transition-all duration-500 overflow-hidden">
+                  <div className={`absolute top-0 left-0 w-1 h-full bg-gradient-to-b ${item.accent} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center group-hover:from-brand-teal group-hover:to-brand-navy transition-all duration-500">
+                      <span className="text-brand-teal group-hover:text-white transition-colors duration-500">{item.icon}</span>
                     </div>
+                    <span className="text-3xl font-bold text-brand-dark/[0.06] font-number ml-auto">{(i + 1).toString().padStart(2, '0')}</span>
                   </div>
-                ))}
-              </div>
+                  <h3 className="text-brand-dark font-bold text-base mb-3 group-hover:text-brand-teal transition-colors duration-300">{item.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
             </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto mt-16 bg-gradient-to-br from-brand-teal/5 to-brand-navy/5 rounded-2xl p-8 border border-brand-teal/10 text-center">
+            <p className="text-gray-600 text-base leading-relaxed max-w-3xl mx-auto">
+              By combining advanced technology with strategic thinking, Venturis Tech continues to build strong partnerships and deliver impactful solutions that support business growth, transformation, and global competitiveness.
+            </p>
           </div>
         </div>
       </section>
