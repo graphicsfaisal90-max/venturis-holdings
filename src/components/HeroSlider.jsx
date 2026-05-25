@@ -48,15 +48,21 @@ const slides = [
     btn2Link: '/about',
   },
   {
-    id: 'wheels',
-    title: 'Luxury Automotive Services',
-    subtitle: 'Venturis Wheels',
-    desc: 'Premium mobility and automotive solutions with performance and style.',
-    image: '/wheels2.jpg',
-    btn1: 'Explore Services',
-    btn1Link: '/services/wheels',
-    btn2: 'Contact Us',
-    btn2Link: '/contact',
+    id: 'core-values',
+    title: 'Our Core Values',
+    subtitle: 'Venturis Holdings',
+    values: [
+      { label: 'Innovation', text: 'We embrace creativity and modern solutions to drive continuous growth and industry leadership.' },
+      { label: 'Integrity', text: 'We conduct business with honesty, transparency, and strong ethical standards in every partnership.' },
+      { label: 'Customer Centricity', text: 'Our customers are at the heart of everything we do, and we strive to exceed their expectations.' },
+      { label: 'Agility', text: 'We adapt quickly to changing market demands while maintaining efficiency and excellence.' },
+      { label: 'Global Mindset', text: 'We think beyond borders, building international connections and delivering worldwide impact.' },
+    ],
+    image: '/Building%205427.png',
+    btn1: 'Explore Our Divisions',
+    btn1Link: '/services',
+    btn2: 'Learn About Us',
+    btn2Link: '/about',
   },
   {
     id: 'tourism',
@@ -160,7 +166,16 @@ export default function HeroSlider() {
               </h1>
             </div>
             <div className="overflow-hidden">
-              {slide.vision ? (
+              {slide.values ? (
+                <div className="grid grid-cols-2 gap-x-6 gap-y-3 mb-8 sm:mb-10 animate-fade-in-up delay-200 max-w-2xl">
+                  {slide.values.map((v, i) => (
+                    <div key={i}>
+                      <span className="text-white text-xs font-bold uppercase tracking-[0.2em]">{v.label}</span>
+                      <p className="text-white/60 text-sm leading-relaxed mt-0.5">{v.text}</p>
+                    </div>
+                  ))}
+                </div>
+              ) : slide.vision ? (
                 <div className="space-y-4 mb-8 sm:mb-10 animate-fade-in-up delay-200">
                   <div>
                     <span className="text-white text-xs font-bold uppercase tracking-[0.2em]">Vision</span>
