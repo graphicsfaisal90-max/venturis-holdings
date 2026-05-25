@@ -337,56 +337,72 @@ export default function VenturisPartners() {
             <span className="text-sm font-semibold text-brand-teal uppercase tracking-[0.2em]">Documentation</span>
             <span className="w-12 h-0.5 bg-gradient-to-r from-brand-navy to-brand-teal" />
           </div>
-          <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark text-center mt-4 mb-6">
+          <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark text-center mt-4 mb-4">
             Venturis <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy">Documentation &amp; PRO Services</span>
           </h2>
 
-          <div className="grid lg:grid-cols-2 gap-10 max-w-5xl mx-auto mb-14">
-            <div className="bg-brand-light rounded-3xl p-8 sm:p-10 border border-gray-100">
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
-                Venturis Documentation &amp; PRO Services provides reliable, efficient, and professional support for businesses and individuals across the UAE. We specialize in handling government documentation, licensing assistance, business setup procedures, visa processing, legal attestations, and corporate PRO services with accuracy and professionalism. Our goal is to simplify complex administrative processes and help clients save time while ensuring smooth compliance with UAE regulations.
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <div className="relative inline-block">
+              <svg className="absolute -top-4 -left-8 w-8 h-8 text-brand-teal/15" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" /></svg>
+              <p className="text-gray-500 text-lg leading-relaxed italic max-w-3xl mx-auto px-6">
+                Simplifying complex administrative processes across the UAE — from business setup and visa processing to legal attestation and government coordination.
               </p>
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                Our services include company formation assistance, trade license processing, visa and immigration support, Emirates ID services, labor and immigration documentation, MOFA attestation, notary and legal documentation, business consultancy, VAT and accounting assistance, translation services, bank account opening support, and complete coordination with UAE government authorities. We also provide expert support for Dubai Courts, RTA-related services, Dubai Health documentation, Tasheel, Tawjeeh, Tadbeer, and other essential governmental procedures.
-              </p>
-            </div>
-            <div className="bg-brand-light rounded-3xl p-8 sm:p-10 border border-gray-100 flex flex-col justify-center">
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-8">
-                With a strong focus on transparency, efficiency, and customer satisfaction, Venturis Documentation &amp; PRO Services serves as a trusted partner for startups, entrepreneurs, corporates, and individuals seeking smooth and hassle-free documentation solutions in the UAE.
-              </p>
-              <div className="flex items-center gap-4 pt-6 border-t border-gray-200">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center">
-                  <svg className="w-7 h-7 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </div>
-                <div>
-                  <div className="text-brand-dark font-bold">Trusted by Startups &amp; Corporates</div>
-                  <div className="text-gray-400 text-sm">Across the UAE</div>
-                </div>
-              </div>
             </div>
           </div>
 
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-8">
-              <span className="text-brand-dark/40 text-sm font-semibold uppercase tracking-[0.2em]">Service Categories</span>
-            </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {[
-                { title: 'Business Setup & Licensing', items: ['Company Formation', 'Trade License Processing', 'Business Consultancy'] },
-                { title: 'Visa & Immigration', items: ['Visa Processing', 'Emirates ID Services', 'Immigration Documentation'] },
-                { title: 'Legal & Attestation', items: ['MOFA Attestation', 'Notary & Legal Docs', 'Dubai Courts Support'] },
-                { title: 'Government Services', items: ['Tasheel & Tawjeeh', 'Tadbeer Services', 'RTA & Health Docs'] },
-                { title: 'Financial & Support', items: ['VAT & Accounting', 'Translation Services', 'Bank Account Opening'] },
-                { title: 'Corporate PRO', items: ['Government Coordination', 'License Renewals', 'Document Clearing'] },
+                {
+                  icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>,
+                  title: 'Business Setup & Licensing',
+                  items: ['Company Formation', 'Trade License Processing', 'Business Consultancy'],
+                  accent: 'from-brand-teal to-brand-navy',
+                },
+                {
+                  icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>,
+                  title: 'Visa & Immigration',
+                  items: ['Visa Processing', 'Emirates ID Services', 'Immigration Documentation'],
+                  accent: 'from-brand-teal to-brand-navy',
+                },
+                {
+                  icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>,
+                  title: 'Legal & Attestation',
+                  items: ['MOFA Attestation', 'Notary & Legal Docs', 'Dubai Courts Support'],
+                  accent: 'from-brand-teal to-brand-navy',
+                },
+                {
+                  icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>,
+                  title: 'Government Services',
+                  items: ['Tasheel & Tawjeeh', 'Tadbeer Services', 'RTA & Health Docs'],
+                  accent: 'from-brand-teal to-brand-navy',
+                },
+                {
+                  icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
+                  title: 'Financial & Support',
+                  items: ['VAT & Accounting', 'Translation Services', 'Bank Account Opening'],
+                  accent: 'from-brand-teal to-brand-navy',
+                },
+                {
+                  icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>,
+                  title: 'Corporate PRO',
+                  items: ['Government Coordination', 'License Renewals', 'Document Clearing'],
+                  accent: 'from-brand-teal to-brand-navy',
+                },
               ].map((cat, i) => (
-                <div key={i} className="group bg-brand-light rounded-xl p-5 border border-gray-100 hover:border-brand-teal/20 hover:shadow-md hover:shadow-brand-teal/5 hover:-translate-y-0.5 transition-all duration-500">
-                  <h3 className="text-brand-dark font-bold text-sm mb-3 group-hover:text-brand-teal transition-colors duration-300">{cat.title}</h3>
-                  <ul className="space-y-1.5">
+                <div key={i} className="group relative bg-brand-light rounded-2xl p-6 border border-gray-100 hover:border-brand-teal/20 hover:shadow-xl hover:shadow-brand-teal/5 hover:-translate-y-1 transition-all duration-500 overflow-hidden">
+                  <div className={`absolute top-0 left-0 w-1 h-full bg-gradient-to-b ${cat.accent} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center group-hover:from-brand-teal group-hover:to-brand-navy transition-all duration-500">
+                      <span className="text-brand-teal group-hover:text-white transition-colors duration-500">{cat.icon}</span>
+                    </div>
+                    <span className="text-3xl font-bold text-brand-dark/[0.06] font-number ml-auto">{(i + 1).toString().padStart(2, '0')}</span>
+                  </div>
+                  <h3 className="text-brand-dark font-bold text-base mb-3 group-hover:text-brand-teal transition-colors duration-300">{cat.title}</h3>
+                  <ul className="space-y-2">
                     {cat.items.map((item, j) => (
-                      <li key={j} className="flex items-center gap-2 text-gray-500 text-xs">
-                        <span className="w-1 h-1 rounded-full bg-brand-teal/60 shrink-0" />
+                      <li key={j} className="flex items-center gap-2.5 text-gray-500 text-sm">
+                        <span className="w-1.5 h-1.5 rounded-full bg-brand-teal/50 shrink-0" />
                         {item}
                       </li>
                     ))}
@@ -394,6 +410,12 @@ export default function VenturisPartners() {
                 </div>
               ))}
             </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto mt-16 bg-gradient-to-br from-brand-teal/5 to-brand-navy/5 rounded-2xl p-8 border border-brand-teal/10 text-center">
+            <p className="text-gray-600 text-base leading-relaxed max-w-3xl mx-auto">
+              With a strong focus on transparency, efficiency, and customer satisfaction, Venturis Documentation &amp; PRO Services serves as a trusted partner for startups, entrepreneurs, corporates, and individuals seeking smooth and hassle-free documentation solutions in the UAE.
+            </p>
           </div>
         </div>
       </section>
