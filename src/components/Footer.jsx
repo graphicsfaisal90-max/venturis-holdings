@@ -66,22 +66,13 @@ export default function Footer() {
                 </svg>
                 <span>info@venturisholdings.com</span>
               </li>
-              <li className="flex items-center gap-2">
-                <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <li className="flex items-start gap-2">
+                <svg className="w-4 h-4 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <div>
-                  <span className="text-white/60 text-xs block">Main</span>
-                  <a href="tel:+971585318860" className="hover:text-white transition-colors">+971 58 531 8860</a>
-                </div>
-              </li>
-              <li className="flex items-center gap-2">
-                <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                <div>
-                  <span className="text-white/60 text-xs block">Alternative</span>
-                  <a href="tel:+971581007066" className="hover:text-white transition-colors">+971 58 100 7066</a>
+                <div className="space-y-1">
+                  <a href="tel:+971585318860" className="block hover:text-white transition-colors">+971 58 531 8860</a>
+                  <a href="tel:+971581007066" className="block hover:text-white transition-colors">+971 58 100 7066</a>
                 </div>
               </li>
             </ul>
