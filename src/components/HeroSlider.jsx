@@ -163,12 +163,12 @@ export default function HeroSlider() {
               {slide.vision ? (
                 <div className="space-y-4 mb-8 sm:mb-10 animate-fade-in-up delay-200">
                   <div>
-                    <span className="text-brand-teal text-xs font-bold uppercase tracking-[0.2em]">Vision</span>
-                    <p className="text-white/60 text-base sm:text-lg leading-relaxed mt-1 max-w-xl">{slide.vision}</p>
+                    <span className="text-white text-xs font-bold uppercase tracking-[0.2em]">Vision</span>
+                    <p className="text-white/60 text-base sm:text-lg leading-relaxed mt-1 max-w-2xl">{slide.vision}</p>
                   </div>
                   <div>
-                    <span className="text-brand-teal text-xs font-bold uppercase tracking-[0.2em]">Mission</span>
-                    <p className="text-white/60 text-base sm:text-lg leading-relaxed mt-1 max-w-xl">{slide.mission}</p>
+                    <span className="text-white text-xs font-bold uppercase tracking-[0.2em]">Mission</span>
+                    <p className="text-white/60 text-base sm:text-lg leading-relaxed mt-1 max-w-2xl">{slide.mission}</p>
                   </div>
                 </div>
               ) : (
