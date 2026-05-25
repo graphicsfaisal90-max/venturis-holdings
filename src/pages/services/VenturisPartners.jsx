@@ -633,34 +633,60 @@ export default function VenturisPartners() {
             Venturis Trading provides a diversified portfolio of products across food commodities, electronics, and recyclable materials, delivering quality, reliability, and efficient global distribution solutions tailored to evolving market demands.
           </p>
 
-          <div className="space-y-20">
+          <div className="grid sm:grid-cols-3 gap-6 mb-20">
+            {[
+              { value: '50+', label: 'Trading Partners' },
+              { value: '20+', label: 'Export Markets' },
+              { value: '15+', label: 'Years of Excellence' },
+            ].map((s, i) => (
+              <div key={i} className="bg-gradient-to-br from-brand-teal/5 to-brand-navy/5 rounded-2xl p-6 text-center border border-brand-teal/10">
+                <div className="text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy font-number mb-1">{s.value}</div>
+                <div className="text-gray-400 text-xs uppercase tracking-[0.15em]">{s.label}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="space-y-24">
             {/* === FOODSTUFFS === */}
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               <div className="relative group">
                 <div className="absolute -inset-2 bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 rounded-3xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                 <div className="relative rounded-2xl overflow-hidden shadow-lg shadow-brand-teal/5">
-                  <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=700&q=80" alt="Food commodities" className="w-full h-[320px] object-cover group-hover:scale-105 transition-transform duration-700" />
-                  <div className="absolute inset-0 bg-gradient-to-tr from-brand-dark/30 via-transparent to-transparent" />
+                  <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=700&q=80" alt="Food commodities" className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-brand-dark/40 via-transparent to-transparent" />
                   <div className="absolute bottom-5 left-5 flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-xl px-4 py-2 border border-white/15">
                     <span className="w-2 h-2 rounded-full bg-brand-teal animate-pulse" />
-                    <span className="text-white text-xs font-semibold">Trading Since 2010</span>
+                    <span className="text-white text-xs font-semibold">Global Food Supply Chain</span>
+                  </div>
+                  <div className="absolute top-5 right-5 bg-white/10 backdrop-blur-md rounded-xl px-3 py-1.5 border border-white/15">
+                    <span className="text-white text-xs font-bold">01</span>
                   </div>
                 </div>
               </div>
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center">
-                    <svg className="w-5 h-5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" /></svg>
+              <div className="space-y-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center">
+                    <svg className="w-6 h-6 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" /></svg>
                   </div>
-                  <span className="text-3xl font-bold text-brand-teal/10 font-number">01</span>
+                  <div>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark">Foodstuffs</h3>
+                    <p className="text-gray-400 text-xs uppercase tracking-[0.15em]">Agri-Commodities & Food Products</p>
+                  </div>
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark mb-6">Foodstuffs</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">
+                  Venturis Trading supplies high-quality agricultural commodities and food products sourced from trusted global producers. Our foodstuff division ensures freshness, competitive pricing, and reliable supply chains for bulk and retail distribution across international markets.
+                </p>
                 <div className="grid grid-cols-2 gap-3">
-                  {['Onions', 'Potatoes', 'Rice', 'Maize', 'Dry Dates', 'Spices', 'Meat Products'].map((item) => (
-                    <div key={item} className="group/item flex items-center gap-2.5 bg-brand-light rounded-xl px-4 py-3 border border-gray-100 hover:border-brand-teal/20 hover:shadow-sm hover:shadow-brand-teal/5 transition-all duration-300">
+                  {['Fresh Onions', 'Premium Potatoes', 'Basmati Rice', 'Yellow Maize', 'Premium Dry Dates', 'Cinnamon & Spices', 'Frozen Meat Products', 'Pulses & Grains'].map((item) => (
+                    <div key={item} className="group/item flex items-center gap-2.5 bg-brand-light rounded-xl px-4 py-3 border border-gray-100 hover:border-brand-teal/20 hover:shadow-sm hover:shadow-brand-teal/5 hover:-translate-y-0.5 transition-all duration-300">
                       <span className="w-1.5 h-1.5 rounded-full bg-brand-teal/60 shrink-0 group-hover/item:bg-brand-teal transition-colors duration-300" />
                       <span className="text-gray-600 text-sm font-medium group-hover/item:text-brand-teal transition-colors duration-300">{item}</span>
                     </div>
+                  ))}
+                </div>
+                <div className="flex flex-wrap gap-3 pt-2">
+                  {['ISO Certified', 'HACCP Compliant', 'Direct Sourcing', 'Bulk Supply'].map((tag) => (
+                    <span key={tag} className="px-3 py-1 bg-gradient-to-r from-brand-teal/5 to-brand-navy/5 border border-brand-teal/10 rounded-full text-xs font-semibold text-brand-teal">{tag}</span>
                   ))}
                 </div>
               </div>
@@ -668,31 +694,44 @@ export default function VenturisPartners() {
 
             {/* === ELECTRONICS === */}
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-              <div className="order-last lg:order-first">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center">
-                    <svg className="w-5 h-5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+              <div className="order-last lg:order-first space-y-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center">
+                    <svg className="w-6 h-6 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                   </div>
-                  <span className="text-3xl font-bold text-brand-teal/10 font-number">02</span>
+                  <div>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark">Electronics</h3>
+                    <p className="text-gray-400 text-xs uppercase tracking-[0.15em]">Consumer Electronics & IT Hardware</p>
+                  </div>
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark mb-6">Electronics</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">
+                  Venturis Trading distributes a wide range of consumer electronics and IT hardware from leading global brands. From smartphones and computers to household electronics, we ensure authentic products, competitive wholesale pricing, and timely delivery to retailers and enterprises.
+                </p>
                 <div className="grid grid-cols-2 gap-3">
-                  {['Computers', 'Laptops & Tablets', 'iPhones & Smartphones', 'Android Devices', 'Small Electronic Goods', 'Household Electronics'].map((item) => (
-                    <div key={item} className="group/item flex items-center gap-2.5 bg-brand-light rounded-xl px-4 py-3 border border-gray-100 hover:border-brand-teal/20 hover:shadow-sm hover:shadow-brand-teal/5 transition-all duration-300">
+                  {['Desktop Computers', 'Laptops & Tablets', 'iPhones & Smartphones', 'Android Devices', 'Small Electronic Goods', 'Household Electronics', 'Gaming Consoles', 'Audio & Wearables'].map((item) => (
+                    <div key={item} className="group/item flex items-center gap-2.5 bg-brand-light rounded-xl px-4 py-3 border border-gray-100 hover:border-brand-teal/20 hover:shadow-sm hover:shadow-brand-teal/5 hover:-translate-y-0.5 transition-all duration-300">
                       <span className="w-1.5 h-1.5 rounded-full bg-brand-teal/60 shrink-0 group-hover/item:bg-brand-teal transition-colors duration-300" />
                       <span className="text-gray-600 text-sm font-medium group-hover/item:text-brand-teal transition-colors duration-300">{item}</span>
                     </div>
+                  ))}
+                </div>
+                <div className="flex flex-wrap gap-3 pt-2">
+                  {['Authorized Distributor', 'Brand Warranty', 'Wholesale Pricing', 'Nationwide Delivery'].map((tag) => (
+                    <span key={tag} className="px-3 py-1 bg-gradient-to-r from-brand-teal/5 to-brand-navy/5 border border-brand-teal/10 rounded-full text-xs font-semibold text-brand-teal">{tag}</span>
                   ))}
                 </div>
               </div>
               <div className="relative group order-first lg:order-last">
                 <div className="absolute -inset-2 bg-gradient-to-br from-brand-navy/10 to-brand-teal/10 rounded-3xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                 <div className="relative rounded-2xl overflow-hidden shadow-lg shadow-brand-teal/5">
-                  <img src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?w=700&q=80" alt="Electronics" className="w-full h-[320px] object-cover group-hover:scale-105 transition-transform duration-700" />
-                  <div className="absolute inset-0 bg-gradient-to-tl from-brand-dark/30 via-transparent to-transparent" />
+                  <img src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?w=700&q=80" alt="Electronics" className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-tl from-brand-dark/40 via-transparent to-transparent" />
                   <div className="absolute bottom-5 right-5 flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-xl px-4 py-2 border border-white/15">
                     <span className="w-2 h-2 rounded-full bg-brand-teal animate-pulse" />
-                    <span className="text-white text-xs font-semibold">Premium Quality</span>
+                    <span className="text-white text-xs font-semibold">Premium Quality Electronics</span>
+                  </div>
+                  <div className="absolute top-5 right-5 bg-white/10 backdrop-blur-md rounded-xl px-3 py-1.5 border border-white/15">
+                    <span className="text-white text-xs font-bold">02</span>
                   </div>
                 </div>
               </div>
@@ -703,32 +742,55 @@ export default function VenturisPartners() {
               <div className="relative group">
                 <div className="absolute -inset-2 bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 rounded-3xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                 <div className="relative rounded-2xl overflow-hidden shadow-lg shadow-brand-teal/5">
-                  <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=700&q=80" alt="Recyclable materials" className="w-full h-[320px] object-cover group-hover:scale-105 transition-transform duration-700" />
-                  <div className="absolute inset-0 bg-gradient-to-tr from-brand-dark/30 via-transparent to-transparent" />
+                  <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=700&q=80" alt="Recyclable materials" className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-brand-dark/40 via-transparent to-transparent" />
                   <div className="absolute bottom-5 left-5 flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-xl px-4 py-2 border border-white/15">
                     <span className="w-2 h-2 rounded-full bg-brand-teal animate-pulse" />
-                    <span className="text-white text-xs font-semibold">Sustainability</span>
+                    <span className="text-white text-xs font-semibold">Sustainability & Recycling</span>
+                  </div>
+                  <div className="absolute top-5 right-5 bg-white/10 backdrop-blur-md rounded-xl px-3 py-1.5 border border-white/15">
+                    <span className="text-white text-xs font-bold">03</span>
                   </div>
                 </div>
               </div>
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center">
-                    <svg className="w-5 h-5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" /></svg>
+              <div className="space-y-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center">
+                    <svg className="w-6 h-6 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" /></svg>
                   </div>
-                  <span className="text-3xl font-bold text-brand-teal/10 font-number">03</span>
+                  <div>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark">Recyclable Materials</h3>
+                    <p className="text-gray-400 text-xs uppercase tracking-[0.15em]">Sustainable Resource Recovery & Trading</p>
+                  </div>
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark mb-6">Recyclable Materials</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">
+                  Venturis Trading is committed to environmental sustainability through responsible recycling and resource recovery. We trade and process recyclable materials including metals, plastics, and electronic components, supporting circular economy initiatives and helping industries reduce their environmental footprint.
+                </p>
                 <div className="grid grid-cols-2 gap-3">
-                  {['Metals', 'LEDs', 'Plastics', 'Recyclable Components'].map((item) => (
-                    <div key={item} className="group/item flex items-center gap-2.5 bg-brand-light rounded-xl px-4 py-3 border border-gray-100 hover:border-brand-teal/20 hover:shadow-sm hover:shadow-brand-teal/5 transition-all duration-300">
+                  {['Scrap Metals', 'Copper & Aluminum', 'Electronic Waste (LEDs)', 'Industrial Plastics', 'Recyclable Components', 'Paper & Cardboard', 'Glass Materials', 'Cable Recycling'].map((item) => (
+                    <div key={item} className="group/item flex items-center gap-2.5 bg-brand-light rounded-xl px-4 py-3 border border-gray-100 hover:border-brand-teal/20 hover:shadow-sm hover:shadow-brand-teal/5 hover:-translate-y-0.5 transition-all duration-300">
                       <span className="w-1.5 h-1.5 rounded-full bg-brand-teal/60 shrink-0 group-hover/item:bg-brand-teal transition-colors duration-300" />
                       <span className="text-gray-600 text-sm font-medium group-hover/item:text-brand-teal transition-colors duration-300">{item}</span>
                     </div>
                   ))}
                 </div>
+                <div className="flex flex-wrap gap-3 pt-2">
+                  {['Eco-Friendly', 'Zero Waste', 'Compliant Recycling', 'Global Shipping'].map((tag) => (
+                    <span key={tag} className="px-3 py-1 bg-gradient-to-r from-brand-teal/5 to-brand-navy/5 border border-brand-teal/10 rounded-full text-xs font-semibold text-brand-teal">{tag}</span>
+                  ))}
+                </div>
               </div>
             </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto mt-20 bg-gradient-to-br from-brand-teal/5 to-brand-navy/5 rounded-2xl p-8 border border-brand-teal/10 text-center">
+            <div className="flex items-center justify-center gap-2 text-brand-teal mb-3">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <span className="text-sm font-semibold uppercase tracking-[0.15em]">Global Reach</span>
+            </div>
+            <p className="text-gray-600 text-base leading-relaxed max-w-3xl mx-auto">
+              Venturis Trading serves clients across multiple continents with a commitment to quality, reliability, and sustainable business practices. From food commodities to electronics and recyclable materials, we deliver value at every stage of the supply chain.
+            </p>
           </div>
         </div>
       </section>
