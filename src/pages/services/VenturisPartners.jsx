@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const heroImages = [
-  '/Partners%20hero%20section%20%20%281%29.jpg',
-  '/Partners%20hero%20section%20%20%282%29.jpg',
+  '/partners-hero-1.jpg',
+  '/partners-hero-2.jpg',
 ]
 
 const services = [
