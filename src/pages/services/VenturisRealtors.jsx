@@ -17,7 +17,6 @@ const realEstateServices = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
       </svg>
     ),
-    image: '/hero-luxury-home.jpg',
   },
   {
     title: 'Luxury Rentals',
@@ -27,7 +26,6 @@ const realEstateServices = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
       </svg>
     ),
-    image: '/hero-elegant.jpg',
   },
   {
     title: 'Investment Advisory',
@@ -37,7 +35,6 @@ const realEstateServices = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
       </svg>
     ),
-    image: '/hero-grand-entrance.jpg',
   },
   {
     title: 'Property Management',
@@ -47,7 +44,6 @@ const realEstateServices = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
       </svg>
     ),
-    image: '/hero-luxury-living.jpg',
   },
   {
     title: 'Market Expertise',
@@ -57,7 +53,6 @@ const realEstateServices = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
       </svg>
     ),
-    image: '/project-1.png',
   },
   {
     title: 'Private Client Services',
@@ -67,7 +62,6 @@ const realEstateServices = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
       </svg>
     ),
-    image: '/project-2.png',
   },
 ]
 
@@ -174,12 +168,25 @@ const type3Property = {
 }
 
 const type3Gallery = [
-  type3Img + 'Screenshot%202026-05-25%20152034.png',
-  type3Img + 'Screenshot%202026-05-25%20152021.png',
-  type3Img + 'Screenshot%202026-05-25%20152014.png',
-  type3Img + 'Screenshot%202026-05-25%20152005.png',
-  type3Img + 'Screenshot%202026-05-25%20151914.png',
+  type3Img + 'Screenshot%202026-05-25%20151626.png',
+  type3Img + 'Screenshot%202026-05-25%20151638.png',
+  type3Img + 'Screenshot%202026-05-25%20151651.png',
+  type3Img + 'Screenshot%202026-05-25%20151704.png',
+  type3Img + 'Screenshot%202026-05-25%20151712.png',
+  type3Img + 'Screenshot%202026-05-25%20151720.png',
+  type3Img + 'Screenshot%202026-05-25%20151729.png',
+  type3Img + 'Screenshot%202026-05-25%20151739.png',
+  type3Img + 'Screenshot%202026-05-25%20151750.png',
+  type3Img + 'Screenshot%202026-05-25%20151759.png',
+  type3Img + 'Screenshot%202026-05-25%20151807.png',
+  type3Img + 'Screenshot%202026-05-25%20151817.png',
+  type3Img + 'Screenshot%202026-05-25%20151825.png',
   type3Img + 'Screenshot%202026-05-25%20151902.png',
+  type3Img + 'Screenshot%202026-05-25%20151914.png',
+  type3Img + 'Screenshot%202026-05-25%20152005.png',
+  type3Img + 'Screenshot%202026-05-25%20152014.png',
+  type3Img + 'Screenshot%202026-05-25%20152021.png',
+  type3Img + 'Screenshot%202026-05-25%20152034.png',
 ]
 
 const type3Highlights = [
@@ -430,24 +437,20 @@ export default function VenturisRealtors() {
             </h2>
           </AnimatedSection>
 
-          <div className="space-y-20">
+          <div className="space-y-16">
             {realEstateServices.map((service, i) => (
               <AnimatedSection key={i}>
-                <div className={`grid lg:grid-cols-2 gap-10 lg:gap-16 items-center ${i % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}>
-                  <div className={`${i % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center shadow-lg shrink-0">
-                        {service.icon}
-                      </div>
-                      <span className="text-4xl font-bold text-gray-100 font-number">0{i + 1}</span>
-                    </div>
-                    <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark mb-4">{service.title}</h3>
-                    <p className="text-gray-500 leading-relaxed">{service.desc}</p>
+                <div className={`flex items-start gap-8 ${i % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center shadow-lg shrink-0">
+                    {service.icon}
                   </div>
-                  <div className={`${i % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-                    <div className="aspect-[16/10] rounded-2xl overflow-hidden shadow-xl">
-                      <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-4 mb-3">
+                      <span className="text-5xl font-bold text-gray-100 font-number leading-none">0{i + 1}</span>
+                      <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark">{service.title}</h3>
                     </div>
+                    <p className="text-gray-500 leading-relaxed max-w-3xl">{service.desc}</p>
+                    <div className="mt-4 w-16 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
                   </div>
                 </div>
               </AnimatedSection>
@@ -737,7 +740,7 @@ export default function VenturisRealtors() {
             </div>
           </AnimatedSection>
 
-          {/* GALLERY — staggered grid */}
+          {/* GALLERY — clean multi-row grid with all images */}
           <AnimatedSection className="mt-24">
             <div className="flex items-center gap-4 justify-center mb-4">
               <span className="w-12 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
@@ -748,23 +751,24 @@ export default function VenturisRealtors() {
               A Glimpse Inside
             </h3>
 
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-              {type3Gallery.slice(0, 6).map((img, i) => (
+            <div className="columns-2 lg:columns-3 gap-4 space-y-4">
+              {type3Gallery.map((img, i) => (
                 <div
                   key={i}
-                  className={`relative rounded-2xl overflow-hidden group/gallery shadow-md ${
-                    i === 0 ? 'lg:col-span-2 lg:row-span-2' : ''
-                  } ${i === 5 ? 'lg:col-span-2' : ''}`}
+                  className="relative rounded-2xl overflow-hidden group/gallery shadow-md break-inside-avoid hover:shadow-xl hover:shadow-brand-teal/10 transition-all duration-500"
                 >
                   <img
                     src={img}
                     alt={`Residence 1002 interior ${i + 1}`}
-                    className={`w-full object-cover transition-all duration-700 group-hover/gallery:scale-110 ${
-                      i === 0 ? 'h-[400px] sm:h-[500px]' : 'h-[240px] sm:h-[300px]'
-                    }`}
+                    className="w-full object-cover transition-all duration-700 group-hover/gallery:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover/gallery:bg-black/20 transition-all duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-transparent group-hover/gallery:from-black/10 transition-all duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-transparent group-hover/gallery:from-black/5 transition-all duration-500" />
+                  <div className="absolute bottom-3 right-3 opacity-0 group-hover/gallery:opacity-100 transition-all duration-300">
+                    <span className="text-[10px] text-white/70 bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-full">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                  </div>
                 </div>
               ))}
             </div>
