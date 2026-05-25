@@ -28,11 +28,11 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2">
-              <li><Link to="/services/interiors" className="text-brand-light hover:text-white text-sm transition-colors">Venturis Interiors</Link></li>
-              <li><Link to="/services/facilities" className="text-brand-light hover:text-white text-sm transition-colors">Venturis Facilities Management</Link></li>
-              <li><Link to="/services/realtors" className="text-brand-light hover:text-white text-sm transition-colors">Venturis Realtors</Link></li>
               <li><Link to="/services/partners" className="text-brand-light hover:text-white text-sm transition-colors">Venturis Partners</Link></li>
+              <li><Link to="/services/realtors" className="text-brand-light hover:text-white text-sm transition-colors">Venturis Realtors</Link></li>
+              <li><Link to="/services/facilities" className="text-brand-light hover:text-white text-sm transition-colors">Venturis Facilities Management</Link></li>
               <li><Link to="/services/wheels" className="text-brand-light hover:text-white text-sm transition-colors">Venturis Wheels</Link></li>
+              <li><Link to="/services/interiors" className="text-brand-light hover:text-white text-sm transition-colors">Venturis Interiors</Link></li>
               <li><Link to="/services/tourism" className="text-brand-light hover:text-white text-sm transition-colors">Venturis Tourism</Link></li>
             </ul>
           </div>

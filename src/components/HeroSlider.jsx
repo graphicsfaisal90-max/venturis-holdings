@@ -64,17 +64,6 @@ const slides = [
     btn2: 'Learn About Us',
     btn2Link: '/about',
   },
-  {
-    id: 'tourism',
-    title: 'Desert Safari Adventures',
-    subtitle: 'Venturis Tourism',
-    desc: "Experience the thrill of Dubai's golden dunes with premium safari tours and luxury desert escapes.",
-    image: '/Desert-Safari-Dubai.jpg',
-    btn1: 'Explore Packages',
-    btn1Link: '/services/tourism',
-    btn2: 'Plan Your Trip',
-    btn2Link: '/contact',
-  },
 ]
 
 export default function HeroSlider() {

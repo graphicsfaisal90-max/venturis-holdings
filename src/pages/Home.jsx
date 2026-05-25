@@ -3,18 +3,11 @@ import HeroSlider from '../components/HeroSlider'
 
 const services = [
   {
-    title: 'Venturis Interiors',
-    tagline: 'Design & Fit-Out',
-    desc: 'Creating elegant, modern, and functional interior spaces with premium craftsmanship.',
-    path: '/services/interiors',
-    image: '/interiors-hero.jpeg',
-  },
-  {
-    title: 'Venturis Facilities Management',
-    tagline: 'Maintenance & Operations',
-    desc: 'Delivering professional maintenance and integrated facility solutions for modern businesses.',
-    path: '/services/facilities',
-    image: '/Facilirtes.jpeg',
+    title: 'Venturis Partners',
+    tagline: 'Strategic Alliances',
+    desc: 'Empowering businesses through collaborative partnerships and corporate solutions.',
+    path: '/services/partners',
+    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80',
   },
   {
     title: 'Venturis Realtors',
@@ -24,11 +17,11 @@ const services = [
     image: '/realtors.jpeg',
   },
   {
-    title: 'Venturis Partners',
-    tagline: 'Strategic Alliances',
-    desc: 'Empowering businesses through collaborative partnerships and corporate solutions.',
-    path: '/services/partners',
-    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80',
+    title: 'Venturis Facilities Management',
+    tagline: 'Maintenance & Operations',
+    desc: 'Delivering professional maintenance and integrated facility solutions for modern businesses.',
+    path: '/services/facilities',
+    image: '/Facilirtes.jpeg',
   },
   {
     title: 'Venturis Wheels',
@@ -36,6 +29,13 @@ const services = [
     desc: 'Premium automotive services and mobility solutions with professionalism and innovation.',
     path: '/services/wheels',
     image: '/wheels2.jpg',
+  },
+  {
+    title: 'Venturis Interiors',
+    tagline: 'Design & Fit-Out',
+    desc: 'Creating elegant, modern, and functional interior spaces with premium craftsmanship.',
+    path: '/services/interiors',
+    image: '/interiors-hero.jpeg',
   },
   {
     title: 'Venturis Tourism',
