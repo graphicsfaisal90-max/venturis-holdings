@@ -420,6 +420,80 @@ export default function VenturisPartners() {
         </div>
       </section>
 
+      {/* ============ CLIENT CONSULTATION & TRANSACTION SUPPORT ============ */}
+      <section className="py-28 relative overflow-hidden bg-white">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-brand-teal/[0.02] to-transparent pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="flex items-center gap-4 mb-4">
+            <span className="w-12 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
+            <span className="text-sm font-semibold text-brand-teal uppercase tracking-[0.2em]">Consultation</span>
+          </div>
+
+          <div className="grid lg:grid-cols-5 gap-12">
+            <div className="lg:col-span-3">
+              <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark leading-tight">
+                Client Consultation<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy">&amp; Transaction Support</span>
+              </h2>
+              <p className="text-gray-500 text-base sm:text-lg leading-relaxed mt-6 max-w-2xl">
+                At Venturis, we believe every successful transaction begins with understanding the client's vision, goals, and investment expectations. Our Client Consultation &amp; Transaction Support services are designed to provide personalized guidance, professional market insights, and complete assistance throughout every stage of the process.
+              </p>
+              <p className="text-gray-500 text-base sm:text-lg leading-relaxed mt-5 max-w-2xl">
+                We carefully analyze client requirements, budgets, and business objectives to recommend the most suitable opportunities tailored to their needs. Leveraging our industry expertise, strategic partnerships, and extensive network, we ensure clients receive reliable solutions and informed decision-making support.
+              </p>
+            </div>
+            <div className="lg:col-span-2 flex items-start justify-center lg:justify-end pt-2">
+              <div className="relative">
+                <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center">
+                  <svg className="w-16 h-16 sm:w-20 sm:h-20 text-brand-teal/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div className="absolute -bottom-3 -right-3 bg-brand-light rounded-xl px-4 py-2 border border-gray-100 shadow-sm">
+                  <div className="text-brand-teal font-bold text-lg">100+</div>
+                  <div className="text-gray-400 text-xs">Clients Served</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid sm:grid-cols-3 gap-5 mt-16">
+            {[
+              {
+                number: '01',
+                title: 'Personalized Guidance',
+                text: 'Tailored recommendations based on client requirements, budgets, and business objectives.',
+              },
+              {
+                number: '02',
+                title: 'Expert Negotiation',
+                text: 'Professional market insights and strategic partnership leverage for informed decision-making.',
+              },
+              {
+                number: '03',
+                title: 'End-to-End Management',
+                text: 'From consultation and documentation to approvals, coordination, and final handover.',
+              },
+            ].map((step, i) => (
+              <div key={i} className="group relative bg-brand-light rounded-2xl p-6 sm:p-8 border border-gray-100 hover:border-brand-teal/20 hover:shadow-lg hover:shadow-brand-teal/5 transition-all duration-500">
+                <span className="text-5xl sm:text-6xl font-bold text-brand-dark/[0.04] font-number absolute top-3 right-4 select-none">{step.number}</span>
+                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center mb-4 group-hover:from-brand-teal group-hover:to-brand-navy transition-all duration-500">
+                  <span className="text-brand-teal font-bold text-sm group-hover:text-white transition-colors duration-500">{step.number}</span>
+                </div>
+                <h3 className="text-brand-dark font-bold text-lg mb-2 group-hover:text-brand-teal transition-colors duration-300">{step.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{step.text}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-14 max-w-4xl mx-auto bg-brand-light rounded-2xl p-6 sm:p-8 border border-gray-100 text-center">
+            <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
+              From initial consultation and negotiations to documentation, approvals, coordination, and final handover, our team manages every aspect with professionalism, transparency, and efficiency. We focus on creating a smooth, secure, and hassle-free experience while maintaining the highest standards of client service and long-term relationship building.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ============ OUR APPROACH ============ */}
       <section className="py-28 relative overflow-hidden bg-gradient-to-br from-brand-dark via-black to-brand-dark">
         <div className="absolute inset-0 opacity-[0.04] pointer-events-none">
