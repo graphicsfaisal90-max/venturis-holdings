@@ -170,6 +170,92 @@ export default function VenturisPartners() {
         </div>
       </section>
 
+      {/* ============ VENTURIS IT SOLUTIONS ============ */}
+      <section className="py-28 relative overflow-hidden bg-gradient-to-br from-brand-dark via-brand-navy/30 to-brand-dark">
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+          <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-brand-teal rounded-full blur-3xl" />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="flex items-center gap-4 justify-center mb-4">
+            <span className="w-12 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
+            <span className="text-sm font-semibold text-brand-teal uppercase tracking-[0.2em]">Technology</span>
+            <span className="w-12 h-0.5 bg-gradient-to-r from-brand-navy to-brand-teal" />
+          </div>
+          <h2 className="text-4xl sm:text-5xl font-bold text-white text-center mt-4 mb-6">Venturis IT Solutions</h2>
+
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-white/[0.02] backdrop-blur-xl rounded-3xl p-8 sm:p-12 border border-white/[0.06] mb-12">
+              <p className="text-white/60 text-base sm:text-lg leading-relaxed mb-6">
+                Venturis IT Solutions delivers modern technology services designed to help businesses build a strong digital presence and improve operational efficiency. We specialize in website development, custom web applications, mobile application development, AI-powered solutions, graphic designing, branding, video editing, and digital transformation services tailored to modern business needs.
+              </p>
+              <p className="text-white/60 text-base sm:text-lg leading-relaxed mb-6">
+                Our expertise includes responsive website design, eCommerce platforms, UI/UX design, creative branding, social media creatives, promotional videos, motion graphics, and intelligent AI systems including AI agents, automation workflows, and smart business tools. We also develop mobile and AI-integrated applications that help businesses stay innovative and competitive in the evolving digital world.
+              </p>
+              <p className="text-white/60 text-base sm:text-lg leading-relaxed">
+                At Venturis IT Solutions, we combine creativity, technology, and innovation to deliver scalable and professional digital experiences that help brands grow with confidence.
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                'Website & Web Applications',
+                'Mobile App Development',
+                'AI-Powered Solutions',
+                'Graphic Design & Branding',
+                'Video & Motion Graphics',
+                'Digital Transformation',
+              ].map((tag) => (
+                <div key={tag} className="group bg-white/[0.03] backdrop-blur-xl rounded-xl px-5 py-4 border border-white/[0.06] hover:border-brand-teal/30 hover:bg-white/[0.06] transition-all duration-500 text-center">
+                  <span className="text-white/70 text-sm font-semibold group-hover:text-brand-teal transition-colors duration-300">{tag}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============ VENTURIS DIGITAL MARKETING ============ */}
+      <section className="py-28 relative overflow-hidden bg-gradient-to-br from-brand-dark via-black to-brand-dark">
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+          <div className="absolute bottom-10 right-1/3 w-[600px] h-[600px] bg-brand-navy rounded-full blur-3xl" />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="flex items-center gap-4 justify-center mb-4">
+            <span className="w-12 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
+            <span className="text-sm font-semibold text-brand-teal uppercase tracking-[0.2em]">Marketing</span>
+            <span className="w-12 h-0.5 bg-gradient-to-r from-brand-navy to-brand-teal" />
+          </div>
+          <h2 className="text-4xl sm:text-5xl font-bold text-white text-center mt-4 mb-6">Venturis Digital Marketing</h2>
+
+          <div className="grid lg:grid-cols-5 gap-8 max-w-5xl mx-auto">
+            <div className="lg:col-span-3">
+              <div className="bg-white/[0.02] backdrop-blur-xl rounded-3xl p-8 sm:p-10 border border-white/[0.06] h-full">
+                <p className="text-white/60 text-base sm:text-lg leading-relaxed mb-6">
+                  Venturis Digital Marketing helps businesses grow their online presence through strategic marketing, creative content, and result-driven campaigns. We provide complete social media management solutions including content creation, daily posting, audience engagement, account management, brand positioning, and digital advertising across major platforms.
+                </p>
+                <p className="text-white/60 text-base sm:text-lg leading-relaxed">
+                  Our digital marketing services include Meta Ads management, social media advertising, lead generation campaigns, performance marketing, content strategy, promotional designs, SEO-focused marketing, and online brand awareness campaigns designed to increase visibility and customer engagement.
+                </p>
+              </div>
+            </div>
+            <div className="lg:col-span-2">
+              <div className="bg-white/[0.02] backdrop-blur-xl rounded-3xl p-8 sm:p-10 border border-white/[0.06] h-full flex flex-col justify-center">
+                <p className="text-white/60 text-base sm:text-lg leading-relaxed mb-8">
+                  We focus on building strong digital identities for businesses by combining creative storytelling with targeted marketing strategies that generate measurable results, attract potential customers, and strengthen brand recognition across digital platforms.
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  {['Social Media', 'Meta Ads', 'SEO', 'Lead Gen', 'Content', 'Branding'].map((tag) => (
+                    <span key={tag} className="px-4 py-2 bg-white/[0.04] border border-white/[0.08] rounded-full text-white/50 text-xs font-semibold uppercase tracking-wider hover:border-brand-teal/30 hover:text-brand-teal transition-all duration-300">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ============ OUR APPROACH ============ */}
       <section className="py-28 relative overflow-hidden bg-gradient-to-br from-brand-dark via-black to-brand-dark">
         <div className="absolute inset-0 opacity-[0.04] pointer-events-none">
