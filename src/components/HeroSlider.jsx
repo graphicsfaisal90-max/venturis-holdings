@@ -155,7 +155,7 @@ export default function HeroSlider() {
               </div>
             </div>
             <div className="overflow-hidden">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-5 sm:mb-6 animate-fade-in-up delay-100 whitespace-pre-line">
+              <h1 className={`text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-5 sm:mb-6 animate-fade-in-up delay-100 ${slide.title.includes('\n') ? 'whitespace-pre-line' : ''}`}>
                 {slide.title}
               </h1>
             </div>
