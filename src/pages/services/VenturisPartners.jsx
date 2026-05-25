@@ -255,6 +255,78 @@ export default function VenturisPartners() {
         </div>
       </section>
 
+      {/* ============ VENTURIS TECH SERVICE PORTFOLIO ============ */}
+      <section className="py-28 relative overflow-hidden bg-gradient-to-br from-[#070b14] via-[#0a0f1e] to-[#070b14]">
+        <div className="absolute inset-0 opacity-[0.05] pointer-events-none">
+          <div className="absolute top-10 right-1/4 w-[500px] h-[500px] bg-brand-teal rounded-full blur-3xl" />
+          <div className="absolute bottom-10 left-1/4 w-[450px] h-[450px] bg-brand-navy rounded-full blur-3xl" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-brand-dark rounded-full blur-3xl" />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <div className="flex items-center gap-4 justify-center mb-4">
+              <span className="w-12 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
+              <span className="text-sm font-semibold text-brand-teal uppercase tracking-[0.2em]">Portfolio</span>
+              <span className="w-12 h-0.5 bg-gradient-to-r from-brand-navy to-brand-teal" />
+            </div>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mt-4 mb-4">
+              Venturis <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy">Tech Service Portfolio</span>
+            </h2>
+            <p className="text-white/40 max-w-2xl mx-auto text-lg">
+              A curated suite of modern technology services engineered to drive digital excellence and business transformation.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {[
+              {
+                title: 'Digital Marketing & SEO',
+                icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" /></svg>,
+                desc: 'Boost your online visibility and business growth with advanced SEO strategies, targeted digital campaigns, social media marketing, and performance-driven advertising solutions designed to maximize engagement and conversions.',
+              },
+              {
+                title: 'CRM Solutions',
+                icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" /></svg>,
+                desc: 'Streamline customer relationships and business operations with intelligent CRM systems that improve workflow automation, customer engagement, sales tracking, and data management efficiency.',
+              },
+              {
+                title: 'AI & BI Applications',
+                icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" /></svg>,
+                desc: 'Empower your business with AI-powered automation and business intelligence solutions that deliver predictive insights, smart analytics, process optimization, and data-driven decision-making.',
+              },
+              {
+                title: 'Data Analysis & Reporting',
+                icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>,
+                desc: 'Transform complex data into meaningful insights through advanced analytics, interactive dashboards, performance tracking, and visually engaging reporting systems for smarter business strategies.',
+              },
+              {
+                title: 'Survey & Inspection Reports',
+                icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>,
+                desc: 'Generate accurate and professional survey and inspection reports with structured documentation, real-time data collection, compliance tracking, and detailed analytical summaries.',
+              },
+            ].map((item, i) => (
+              <div key={i} className={`group relative bg-white/[0.03] backdrop-blur-xl rounded-2xl p-8 border border-white/[0.06] hover:border-brand-teal/30 hover:bg-white/[0.06] hover:-translate-y-1 transition-all duration-500 ${i === 4 ? 'lg:col-start-2' : ''}`}>
+                <div className="absolute -top-px left-8 right-8 h-px bg-gradient-to-r from-transparent via-brand-teal/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="flex items-center gap-4 mb-5">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 flex items-center justify-center border border-white/[0.06] group-hover:from-brand-teal/20 group-hover:to-brand-navy/20 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-brand-teal/10 transition-all duration-500">
+                    <span className="text-brand-teal group-hover:text-brand-teal transition-colors duration-500">{item.icon}</span>
+                  </div>
+                  <span className="text-3xl font-bold text-white/[0.05] font-number ml-auto">{(i + 1).toString().padStart(2, '0')}</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
+                <p className="text-white/45 text-sm leading-relaxed">{item.desc}</p>
+                <div className="mt-5 pt-5 border-t border-white/[0.04]">
+                  <span className="inline-flex items-center gap-1.5 text-brand-teal text-xs font-semibold group-hover:translate-x-1 transition-transform duration-300">
+                    Explore Service
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ============ OUR APPROACH ============ */}
       <section className="py-28 relative overflow-hidden bg-gradient-to-br from-brand-dark via-black to-brand-dark">
         <div className="absolute inset-0 opacity-[0.04] pointer-events-none">
