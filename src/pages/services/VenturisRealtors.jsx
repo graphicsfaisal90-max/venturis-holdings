@@ -277,6 +277,147 @@ const galleryCategories = [
     label: 'Views & Balcony',
     images: type3Gallery.slice(20, 25),
   },
+  ]
+
+const bwi = '/Venturis%20Realtors/Blue%20water%20island/'
+
+const bwiHighlights = [
+  {
+    title: 'Double-Height Living Room',
+    desc: 'Dramatic 6-meter high ceilings creating a bright and luxurious atmosphere.',
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Sea & Promenade Views',
+    desc: 'Breathtaking waterfront and promenade views from every level.',
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Private Swimming Pool',
+    desc: 'Large terrace with private pool for resort-style living at home.',
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Fully Furnished & Upgraded',
+    desc: 'Premium designer furnishings and upgraded finishes throughout.',
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Inner Courtyard & BBQ',
+    desc: 'Private courtyard with dedicated barbecue area for entertaining.',
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+      </svg>
+    ),
+  },
+  {
+    title: '3 Private Parking Spaces',
+    desc: 'Ample parking with three dedicated spaces for residents and guests.',
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+      </svg>
+    ),
+  },
+]
+
+const bwiGalleryCategories = [
+  {
+    id: 'entrance',
+    label: 'Entrance & Living Room',
+    count: '7 Photos',
+    images: [
+      bwi + 'Entrance%20Area%20%26%20Living%20Room%20(1).png',
+      bwi + 'Entrance%20Area%20%26%20Living%20Room%20(2).png',
+      bwi + 'Entrance%20Area%20%26%20Living%20Room%20(3).png',
+      bwi + 'Entrance%20Area%20%26%20Living%20Room%20(4).png',
+      bwi + 'Entrance%20Area%20%26%20Living%20Room%20(5).png',
+      bwi + 'Entrance%20Area%20%26%20Living%20Room%20(6).png',
+      bwi + 'Entrance%20Area%20%26%20Living%20Room%20(7).png',
+    ],
+  },
+  {
+    id: 'dining',
+    label: 'Dining & Kitchen',
+    count: '5 Photos',
+    images: [
+      bwi + 'Dinning%20Area%20%26%20Kitchen%20(1).png',
+      bwi + 'Dinning%20Area%20%26%20Kitchen%20(2).png',
+      bwi + 'Dinning%20Area%20%26%20Kitchen%20(3).png',
+      bwi + 'Dinning%20Area%20%26%20Kitchen%20(4).png',
+      bwi + 'Dinning%20Area%20%26%20Kitchen%20(5).png',
+    ],
+  },
+  {
+    id: 'master',
+    label: 'Master Bedroom & Bath',
+    count: '8 Photos',
+    images: [
+      bwi + 'Master%20Bedroom%20%26%20Bath%20room%20(1).png',
+      bwi + 'Master%20Bedroom%20%26%20Bath%20room%20(2).png',
+      bwi + 'Master%20Bedroom%20%26%20Bath%20room%20(3).png',
+      bwi + 'Master%20Bedroom%20%26%20Bath%20room%20(4).png',
+      bwi + 'Master%20Bedroom%20%26%20Bath%20room%20(5).png',
+      bwi + 'Master%20Bedroom%20%26%20Bath%20room%20(6).png',
+      bwi + 'Master%20Bedroom%20%26%20Bath%20room%20(7).png',
+      bwi + 'Master%20Bedroom%20%26%20Bath%20room%20(8).png',
+    ],
+  },
+  {
+    id: 'pool',
+    label: 'Pool Terrace',
+    count: '6 Photos',
+    images: [
+      bwi + 'Private%20Swimming%20Pool%20Terrace%20(1).png',
+      bwi + 'Private%20Swimming%20Pool%20Terrace%20(2).png',
+      bwi + 'Private%20Swimming%20Pool%20Terrace%20(3).png',
+      bwi + 'Private%20Swimming%20Pool%20Terrace%20(4).png',
+      bwi + 'Private%20Swimming%20Pool%20Terrace%20(5).png',
+      bwi + 'Private%20Swimming%20Pool%20Terrace%20(6).png',
+    ],
+  },
+  {
+    id: 'views',
+    label: 'Views',
+    count: '8 Photos',
+    images: [
+      bwi + 'Views%20(1).png',
+      bwi + 'Views%20(2).png',
+      bwi + 'Views%20(3).png',
+      bwi + 'Views%20(4).png',
+      bwi + 'Views%20(5).png',
+      bwi + 'Views%20(6).png',
+      bwi + 'Views%20(7).png',
+      bwi + 'Views%20(8).png',
+    ],
+  },
+]
+
+const bwiExtraFeatures = [
+  "Maid's Room",
+  'Warehouse / Storage',
+  'Private Work Office',
+  'Inner Courtyard',
+  'Barbecue Area',
+  '3 Private Parking Spaces',
 ]
 
 function AnimatedSection({ children, className }) {
@@ -337,6 +478,7 @@ function CountUp({ end, suffix, label }) {
 export default function VenturisRealtors() {
   const [activeTab, setActiveTab] = useState(rooms[0].id)
   const [galleryCat, setGalleryCat] = useState(galleryCategories[0].id)
+  const [bwiGalleryCat, setBwiGalleryCat] = useState(bwiGalleryCategories[0].id)
 
   return (
     <>
@@ -724,6 +866,196 @@ export default function VenturisRealtors() {
                 <h3 className="text-3xl sm:text-4xl font-bold text-white mb-3">Live at The <span className="text-brand-teal">Royal Atlantis</span></h3>
                 <p className="text-white/50 text-sm max-w-md mb-6">
                   Contact Venturis Realtors today for more details and private viewing arrangements.
+                </p>
+                <div className="flex flex-wrap justify-center gap-3">
+                  <Link to="/contact" className="px-7 py-3 bg-gradient-to-br from-brand-teal to-brand-navy text-white text-sm font-semibold rounded-xl hover:shadow-lg hover:shadow-brand-teal/20 hover:-translate-y-0.5 transition-all">
+                    Schedule Private Viewing
+                  </Link>
+                  <a href="tel:+971585318860" className="px-7 py-3 border border-white/20 text-white/70 text-sm font-semibold rounded-xl hover:bg-white/10 hover:text-white transition-all">
+                    Call +971 58 531 8860
+                  </a>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* ============ BLUEWATERS ISLAND - LUXURY TOWNHOUSE ============ */}
+      <section className="py-28 bg-gradient-to-b from-white via-brand-light/30 to-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+          <AnimatedSection className="text-center mb-14">
+            <span className="text-brand-teal text-xs uppercase tracking-[0.25em] font-medium">Exclusive Listing</span>
+            <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark mt-3">Bluewaters Island</h2>
+            <p className="text-xl text-brand-teal font-light mt-1">Luxury 2-Storey Townhouse</p>
+            <div className="flex items-center justify-center gap-3 mt-4">
+              <span className="w-12 h-px bg-gray-200" />
+              <span className="text-gray-400 text-xs uppercase tracking-[0.2em]">4 Bedroom &middot; 620 SQ.M. &middot; Dubai</span>
+              <span className="w-12 h-px bg-gray-200" />
+            </div>
+          </AnimatedSection>
+
+          {/* Hero banner */}
+          <AnimatedSection className="mt-4">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl group">
+              <img src={bwi + 'Views%20(1).png'} alt="" className="w-full h-[420px] sm:h-[520px] object-cover transition-all duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6 flex flex-wrap gap-2.5">
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-lg rounded-xl px-4 py-2.5 border border-white/10">
+                  <svg className="w-4 h-4 text-brand-teal shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                  <span className="text-white text-xs font-medium">Sea &amp; Promenade Views</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-lg rounded-xl px-4 py-2.5 border border-white/10">
+                  <svg className="w-4 h-4 text-brand-teal shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                  <span className="text-white text-xs font-medium">Private Pool Terrace</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-lg rounded-xl px-4 py-2.5 border border-white/10">
+                  <svg className="w-4 h-4 text-brand-teal shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                  </svg>
+                  <span className="text-white text-xs font-medium">6m Ceiling Height</span>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Specs */}
+          <AnimatedSection className="mt-10">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
+                { label: 'Bedrooms', value: '4' },
+                { label: 'Total Area', value: '620 SQ.M.' },
+                { label: 'Price', value: '42.4M AED' },
+                { label: 'Status', value: 'Vacant' },
+              ].map((spec, i) => (
+                <div key={i} className="bg-white rounded-xl px-5 py-5 border border-gray-100 text-center shadow-sm hover:shadow-md hover:border-brand-teal/20 transition-all duration-300">
+                  <div className="text-2xl font-bold text-brand-dark font-number">{spec.value}</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-wider mt-0.5">{spec.label}</div>
+                </div>
+              ))}
+            </div>
+          </AnimatedSection>
+
+          {/* Narrative + Highlights */}
+          <AnimatedSection className="mt-16">
+            <div className="grid lg:grid-cols-2 gap-12">
+              <div>
+                <span className="text-brand-teal text-xs uppercase tracking-[0.25em] font-medium">Waterfront Living</span>
+                <h3 className="text-3xl font-bold text-brand-dark mt-2 mb-6">
+                  Exceptional Island<br />
+                  <span className="text-brand-teal">Waterfront Residence</span>
+                </h3>
+                <div className="space-y-4 text-gray-500 leading-relaxed text-sm">
+                  <p>
+                    Experience exceptional waterfront living in this stunning 2-storey townhouse located on the prestigious Bluewaters Island, Dubai. Designed with elegance and modern sophistication, this fully furnished 4-bedroom residence offers expansive interiors, premium finishes, and breathtaking sea and promenade views.
+                  </p>
+                  <p>
+                    Featuring a dramatic double-height living room with impressive 6-meter ceilings, the home creates a bright and luxurious atmosphere perfect for modern family living and entertaining.
+                  </p>
+                  <p>
+                    This exclusive townhouse combines luxury, privacy, and resort-style living in one of Dubai's most sought-after waterfront communities. Perfect for homeowners and investors seeking premium architecture and world-class surroundings.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                  <span className="text-xs font-semibold text-brand-teal uppercase tracking-[0.2em]">Property Highlights</span>
+                  <div className="mt-6 space-y-5">
+                    {bwiHighlights.slice(0, 6).map((h, i) => (
+                      <div key={i} className="flex items-start gap-3">
+                        <div className="w-9 h-9 rounded-lg bg-brand-teal/10 flex items-center justify-center shrink-0">
+                          <div className="text-brand-teal">{h.icon}</div>
+                        </div>
+                        <div>
+                          <div className="text-sm font-semibold text-brand-dark">{h.title}</div>
+                          <div className="text-xs text-gray-400 mt-0.5">{h.desc}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Gallery */}
+          <AnimatedSection className="mt-20">
+            <div className="flex items-center gap-3 justify-center mb-2">
+              <span className="w-8 h-px bg-gray-200" />
+              <span className="text-xs font-semibold text-brand-teal uppercase tracking-[0.2em]">Gallery</span>
+              <span className="w-8 h-px bg-gray-200" />
+            </div>
+            <h3 className="text-3xl sm:text-4xl font-bold text-brand-dark text-center mb-3">
+              A Glimpse Inside
+            </h3>
+
+            {/* Category tabs */}
+            <div className="flex flex-wrap justify-center gap-2 mb-10">
+              {bwiGalleryCategories.map((cat) => (
+                <button key={cat.id} onClick={() => setBwiGalleryCat(cat.id)}
+                  className={`px-5 py-2 text-sm font-medium rounded-full transition-all duration-300 ${bwiGalleryCat === cat.id ? 'bg-brand-teal text-white shadow-md shadow-brand-teal/20' : 'bg-white text-gray-500 border border-gray-200 hover:border-brand-teal/30 hover:text-brand-teal'}`}
+                >
+                  {cat.label}
+                  <span className="ml-1.5 text-[10px] opacity-60">({cat.count})</span>
+                </button>
+              ))}
+            </div>
+
+            {/* Category images */}
+            {bwiGalleryCategories.map((cat) => (
+              <div key={cat.id} className={`transition-all duration-500 ${bwiGalleryCat === cat.id ? 'block' : 'hidden'}`}>
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                  {cat.images.map((img, i) => (
+                    <div key={i} className={`relative rounded-xl overflow-hidden group/cat shadow-sm hover:shadow-lg transition-all duration-500 ${i === 0 ? 'lg:col-span-2 lg:row-span-2' : ''}`}>
+                      <img src={img} alt={`${cat.label} ${i + 1}`} className={`w-full object-cover transition-all duration-700 group-hover/cat:scale-110 ${i === 0 ? 'h-80 sm:h-96' : 'h-56 sm:h-64'}`} />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover/cat:opacity-100 transition-all duration-500" />
+                      <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm rounded-lg px-2.5 py-1 text-[10px] font-semibold text-brand-dark opacity-0 group-hover/cat:opacity-100 transition-all duration-500">
+                        {i + 1} / {cat.images.length}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </AnimatedSection>
+
+          {/* Extra Features */}
+          <AnimatedSection className="mt-16">
+            <div className="bg-white rounded-2xl p-8 sm:p-10 border border-gray-100 shadow-sm">
+              <div className="text-center mb-8">
+                <span className="text-xs font-semibold text-brand-teal uppercase tracking-[0.2em]">Additional Features</span>
+                <h3 className="text-2xl font-bold text-brand-dark mt-2">Everything You Need</h3>
+              </div>
+              <div className="flex flex-wrap justify-center gap-3">
+                {bwiExtraFeatures.map((feature, i) => (
+                  <div key={i} className="flex items-center gap-2.5 bg-brand-light rounded-xl px-5 py-3 border border-brand-teal/10 hover:bg-brand-teal hover:text-white hover:border-brand-teal transition-all duration-300 cursor-default group">
+                    <div className="w-6 h-6 rounded-full bg-brand-teal/10 group-hover:bg-white/20 flex items-center justify-center shrink-0">
+                      <svg className="w-3 h-3 text-brand-teal group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-sm font-medium text-brand-dark group-hover:text-white">{feature}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* CTA */}
+          <AnimatedSection className="mt-16">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+              <img src={bwi + 'Views%20(3).png'} alt="" className="w-full h-[340px] object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-brand-dark/70" />
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+                <span className="text-brand-teal text-xs uppercase tracking-[0.3em] font-medium mb-2">Premium Island Lifestyle</span>
+                <h3 className="text-3xl sm:text-4xl font-bold text-white mb-2">42,400,000 <span className="text-brand-teal text-2xl">AED</span></h3>
+                <p className="text-white/50 text-sm max-w-md mb-6">
+                  4-Bedroom Luxury Townhouse on <span className="text-white/80">Bluewaters Island</span>
                 </p>
                 <div className="flex flex-wrap justify-center gap-3">
                   <Link to="/contact" className="px-7 py-3 bg-gradient-to-br from-brand-teal to-brand-navy text-white text-sm font-semibold rounded-xl hover:shadow-lg hover:shadow-brand-teal/20 hover:-translate-y-0.5 transition-all">
