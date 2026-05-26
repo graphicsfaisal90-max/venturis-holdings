@@ -317,6 +317,7 @@ export default function VenturisTourism() {
         path="/services/tourism"
         keywords="Venturis Tourism, Dubai desert safari, UAE travel agency, luxury travel Dubai, Pakistan tourism, Venturis Holdings LLC tourism, desert safari Dubai, UAE tour packages, Pakistan travel"
       />
+      <link rel="preload" href="/Hero%20Section%20of%20venturis%20tourism%20.mp4" as="video" type="video/mp4" />
       {/* Hero Section */}
       <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
         <video autoPlay muted loop playsInline preload="auto" className="absolute inset-0 w-full h-full object-cover">
