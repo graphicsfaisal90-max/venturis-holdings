@@ -308,22 +308,7 @@ function StarRating({ rating }) {
   )
 }
 
-const heroSlides = [
-  { image: '/Venturis%20Tourism%20Hero%20Section%201st%20slider.jpg', alt: 'Dubai Desert Safari' },
-  { image: '/Ain Dubai (Dubai, UAE).jpg', alt: 'Ain Dubai Observation Wheel' },
-  { image: '/Fairy Meadows & Nanga Parbat (Pakistan).jpg', alt: 'Fairy Meadows Nanga Parbat' },
-]
-
 export default function VenturisTourism() {
-  const [activeSlide, setActiveSlide] = useState(0)
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveSlide((prev) => (prev + 1) % heroSlides.length)
-    }, 5000)
-    return () => clearInterval(timer)
-  }, [])
-
   return (
     <>
       <SEO
@@ -334,33 +319,10 @@ export default function VenturisTourism() {
       />
       {/* Hero Section */}
       <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
-        {heroSlides.map((slide, i) => (
-          <div
-            key={slide.image}
-            className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
-              i === activeSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
-            }`}
-          >
-            <img
-              src={slide.image}
-              alt={slide.alt}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        ))}
+        <video autoPlay muted loop playsInline preload="auto" className="absolute inset-0 w-full h-full object-cover">
+          <source src="/Hero%20Section%20of%20venturis%20tourism%20.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/30" />
-
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex gap-3">
-          {heroSlides.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setActiveSlide(i)}
-              className={`w-2.5 h-2.5 rounded-full transition-all duration-500 ${
-                i === activeSlide ? 'bg-brand-teal w-8' : 'bg-white/40 hover:bg-white/60'
-              }`}
-            />
-          ))}
-        </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center lg:text-left w-full">
           <Link
