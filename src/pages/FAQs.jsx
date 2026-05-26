@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 const faqs = [
   {
-    q: 'What is Venturis Holdings?',
-    a: 'Venturis Holdings is a diversified group of companies operating across interior design, facilities management, automotive services, and strategic investments. We bring together specialized expertise under one umbrella to deliver comprehensive solutions.',
+    q: 'What is Venturis Holdings LLC?',
+    a: 'Venturis Holdings LLC is a diversified group of companies operating across interior design, facilities management, automotive services, and strategic investments. We bring together specialized expertise under one umbrella to deliver comprehensive solutions.',
   },
   {
     q: 'How do I know which division I need?',
@@ -32,7 +33,7 @@ const faqs = [
   },
   {
     q: 'Are you looking for investment partners?',
-    a: 'Venturis Holdings is always open to strategic partnerships and investment opportunities. Reach out to our Holdings division to discuss potential collaborations.',
+    a: 'Venturis Holdings LLC is always open to strategic partnerships and investment opportunities. Reach out to our Holdings division to discuss potential collaborations.',
   },
 ]
 
@@ -41,11 +42,17 @@ export default function FAQs() {
 
   return (
     <>
+      <SEO
+        title="FAQs"
+        description="Find answers to common questions about Venturis Holdings LLC and our services across interiors, facilities management, automotive, tourism, and investment divisions."
+        path="/faqs"
+        keywords="Venturis Holdings LLC FAQs, UAE business group questions, Venturis services FAQ, Dubai holding company FAQ, business inquiries UAE"
+      />
       <section className="bg-gradient-to-br from-brand-from to-brand-to text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Frequently Asked Questions</h1>
           <p className="text-xl text-brand-light max-w-3xl leading-relaxed">
-            Find answers to common questions about Venturis Holdings and our services.
+            Find answers to common questions about Venturis Holdings LLC and our services.
           </p>
         </div>
       </section>

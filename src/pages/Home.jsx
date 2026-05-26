@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import HeroSlider from '../components/HeroSlider'
+import SEO from '../components/SEO'
 
 const services = [
   {
@@ -49,6 +50,12 @@ const services = [
 export default function Home() {
   return (
     <>
+      <SEO
+        title="Home"
+        description="Venturis Holdings LLC is a UAE-based diversified holding company delivering excellence across transport, heavy equipment, logistics, facilities management, interiors, real estate, and industrial solutions."
+        path="/"
+        keywords="Venturis Holdings LLC, UAE holding company, diversified business group Dubai, transport UAE, heavy equipment UAE, logistics Dubai, facilities management UAE, interiors Dubai, real estate UAE, industrial solutions UAE"
+      />
       <HeroSlider />
 
       <section className="py-28 bg-white relative overflow-hidden">
@@ -57,14 +64,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="flex items-center gap-4 mb-4">
             <span className="w-12 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
-            <span className="text-sm font-semibold text-brand-teal uppercase tracking-[0.2em]">About Venturis Holdings</span>
+            <span className="text-sm font-semibold text-brand-teal uppercase tracking-[0.2em]">About Venturis Holdings LLC</span>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center mt-8">
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-brand-teal/10">
                 <img
                   src="/Building%205425.png"
-                  alt="Venturis Holdings"
+                  alt="Venturis Holdings LLC"
                   className="w-full h-[400px] sm:h-[480px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-brand-dark/40 via-transparent to-brand-teal/10" />
@@ -91,7 +98,7 @@ export default function Home() {
                   "We don't just build businesses — we build lasting partnerships and a legacy of trust."
                 </p>
                 <p>
-                  Venturis Holdings is a UAE-born multi-division corporate group redefining excellence across Facilities Management, Interiors, Realtors, Partners, and Wheels. We blend innovation, operational precision, and premium design to deliver business solutions that set new industry standards.
+                  Venturis Holdings LLC is a UAE-born multi-division corporate group redefining excellence across Facilities Management, Interiors, Realtors, Partners, and Wheels. We blend innovation, operational precision, and premium design to deliver business solutions that set new industry standards.
                 </p>
                 <p>
                   Rooted in integrity and driven by strategic growth, our team crafts meaningful experiences through quality craftsmanship and attention to detail.
@@ -205,7 +212,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">Ready to Work With Us?</h2>
           <p className="text-brand-light text-lg mb-10 max-w-2xl mx-auto">
-            Let's discuss how Venturis Holdings can help bring your vision to life.
+            Let's discuss how Venturis Holdings LLC can help bring your vision to life.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

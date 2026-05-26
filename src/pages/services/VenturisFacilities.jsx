@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
+import SEO from '../../components/SEO'
 
 const policyCategories = [
   {
@@ -229,6 +230,12 @@ export default function VenturisFacilities() {
 
   return (
     <>
+      <SEO
+        title="Venturis Facilities Management"
+        description="Venturis Facilities Management division of Venturis Holdings LLC — professional maintenance, security, cleaning, and utilities management services across the UAE for commercial and residential properties."
+        path="/services/facilities"
+        keywords="Venturis Facilities Management, facilities management Dubai, maintenance services UAE, security services Dubai, cleaning services UAE, utilities management, Venturis Holdings LLC facilities, property management UAE"
+      />
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <video

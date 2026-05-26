@@ -1,13 +1,14 @@
 import { useState, useEffect, useRef } from 'react'
 import { submitContactForm } from '../supabase'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 const divisions = [
   { value: 'general', label: 'General Enquiry' },
   { value: 'interiors', label: 'Venturis Interiors' },
   { value: 'facilities', label: 'Venturis Facilities' },
   { value: 'wheels', label: 'Venturis Wheels' },
-  { value: 'holdings', label: 'Venturis Holdings' },
+  { value: 'holdings', label: 'Venturis Holdings LLC' },
 ]
 
 const contactInfo = [
@@ -111,6 +112,12 @@ export default function Contact() {
 
   return (
     <>
+      <SEO
+        title="Contact Us"
+        description="Contact Venturis Holdings LLC — reach out for business inquiries, partnerships, or project discussions. Call +971 58 531 8860 or email info@venturisholdings.com."
+        path="/contact"
+        keywords="contact Venturis Holdings LLC, Dubai business inquiries, UAE holding company contact, Venturis phone number, Venturis email, business partnerships UAE"
+      />
       {/* ============ HERO ============ */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center overflow-hidden bg-brand-dark">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--color-brand-teal)_0%,_transparent_60%)] opacity-20" />
@@ -203,7 +210,7 @@ export default function Contact() {
                       <input
                         type="text" id="company" name="company" value={form.company} onChange={handleChange}
                         className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand-teal focus:border-brand-teal outline-none transition-colors text-sm"
-                        placeholder="Venturis Holdings"
+                        placeholder="Venturis Holdings LLC"
                       />
                     </div>
                   </div>
@@ -308,7 +315,7 @@ export default function Contact() {
             <span className="text-brand-teal text-sm font-semibold uppercase tracking-[0.2em]">Join Us</span>
             <h2 className="text-4xl sm:text-5xl font-bold text-white mt-4 mb-4">Ready to Start Your Project?</h2>
             <p className="text-white/40 max-w-2xl mx-auto text-lg mb-10">
-              Let's discuss how Venturis Holdings can help bring your vision to life with our comprehensive suite of services.
+              Let's discuss how Venturis Holdings LLC can help bring your vision to life with our comprehensive suite of services.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link

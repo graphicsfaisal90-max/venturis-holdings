@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 const stats = [
   { value: '200+', label: 'Projects Delivered' },
@@ -114,7 +115,7 @@ const teamRow3 = [
 ]
 
 const journey = [
-  { year: '2010', title: 'Founded', desc: 'Venturis Holdings was established with a vision to create a diversified business group.' },
+  { year: '2010', title: 'Founded', desc: 'Venturis Holdings LLC was established with a vision to create a diversified business group.' },
   { year: '2012', title: 'Expansion', desc: 'Expanded into facilities management and interior solutions, doubling our team.' },
   { year: '2016', title: 'Partners And Facilities', desc: 'Launched Venturis Realtors and Partners divisions, expanding into new markets with enhanced service offerings.' },
   { year: '2022', title: 'Information Technology', desc: 'Established IT division to drive digital transformation, innovation, and technology solutions across all operations.' },
@@ -143,6 +144,12 @@ const benefits = [
 export default function About() {
   return (
     <>
+      <SEO
+        title="About Us"
+        description="Learn about Venturis Holdings LLC — a diversified group of companies operating in real estate, facilities management, interiors, automotive, tourism, and IT across UAE, USA, and Pakistan since 2010."
+        path="/about"
+        keywords="about Venturis Holdings LLC, diversified business group UAE, holding company Dubai, UAE business group, Venturis team, leadership UAE, company history 2010"
+      />
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-navy to-brand-from/90" />
         <div className="absolute inset-0">
@@ -169,7 +176,7 @@ export default function About() {
               <span className="text-white">Building Trust</span>
             </h1>
             <p className="text-xl sm:text-2xl text-white max-w-3xl leading-relaxed mb-10">
-              Venturis Holdings is a diversified group of companies committed to delivering exceptional value across transport, heavy equipment, logistics, construction support, and industrial solutions.
+              Venturis Holdings LLC is a diversified group of companies committed to delivering exceptional value across transport, heavy equipment, logistics, construction support, and industrial solutions.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -217,7 +224,7 @@ export default function About() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-brand-teal/10">
                 <img
                   src="/Building 5424.png"
-                  alt="Venturis Holdings Headquarters"
+                  alt="Venturis Holdings LLC Headquarters"
                   className="w-full h-[500px] sm:h-[600px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-brand-dark/40 via-transparent to-brand-teal/10" />
@@ -244,13 +251,13 @@ export default function About() {
                   "We don't just build businesses — we build lasting partnerships and a legacy of trust."
                 </p>
                 <p>
-                  Founded with a vision to create a dynamic multi-dimensional business group serving diverse industries under one umbrella, Venturis Holdings has evolved into a comprehensive holding company with multiple specialized consultancy and service divisions.
+                  Founded with a vision to create a dynamic multi-dimensional business group serving diverse industries under one umbrella, Venturis Holdings LLC has evolved into a comprehensive holding company with multiple specialized consultancy and service divisions.
                 </p>
                 <p>
                   Our journey began with a simple belief — excellence is not limited to one industry. By bringing together experienced professionals across financial consultancy, mortgage and banking advisory, information technology, cyber security, business development, marketing, real estate consultancy, and digital solutions, we have built a strong ecosystem capable of delivering integrated and innovative solutions to our clients.
                 </p>
                 <p>
-                  Today, Venturis Holdings proudly serves businesses and individuals across the UAE, USA And Pakistan, recognized for our professionalism, reliability, innovation, and unwavering commitment to quality and long-term client success.
+                  Today, Venturis Holdings LLC proudly serves businesses and individuals across the UAE, USA And Pakistan, recognized for our professionalism, reliability, innovation, and unwavering commitment to quality and long-term client success.
                 </p>
               </div>
             </div>
@@ -553,7 +560,7 @@ export default function About() {
                 <span className="text-white/70">Built Better.</span>
               </p>
               <p className="text-white/60 text-lg leading-relaxed">
-                At Venturis Holdings, we don't just deliver services — we forge partnerships that drive lasting success. Our multi-division structure, experienced team, and unwavering commitment to quality make us the preferred choice for businesses across the UAE and beyond.
+                At Venturis Holdings LLC, we don't just deliver services — we forge partnerships that drive lasting success. Our multi-division structure, experienced team, and unwavering commitment to quality make us the preferred choice for businesses across the UAE and beyond.
               </p>
               <div className="flex items-center gap-4 pt-4">
                 <div className="flex -space-x-3">
@@ -982,7 +989,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">Ready to Work With Us?</h2>
           <p className="text-white/70 text-lg mb-10 max-w-2xl mx-auto">
-            Let's discuss how Venturis Holdings can help bring your vision to life.
+            Let's discuss how Venturis Holdings LLC can help bring your vision to life.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

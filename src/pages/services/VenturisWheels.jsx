@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'
+import SEO from '../../components/SEO'
 
 const services = [
   {
@@ -264,6 +265,12 @@ export default function VenturisWheels() {
 
   return (
     <>
+      <SEO
+        title="Venturis Wheels"
+        description="Venturis Wheels division of Venturis Holdings LLC — premium automotive solutions including vehicle sales, leasing, fleet management, maintenance, and luxury car rentals in the UAE."
+        path="/services/wheels"
+        keywords="Venturis Wheels, automotive Dubai, car sales UAE, vehicle leasing Dubai, fleet management UAE, luxury car rental Dubai, Venturis Holdings LLC automotive, Mercedes G-Class UAE, Jetour G700"
+      />
       {/* Hero Section with Jetour G700 Video */}
       <section className="relative h-screen min-h-[600px] sm:min-h-[700px] flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0">
@@ -300,7 +307,7 @@ export default function VenturisWheels() {
             <div className="flex items-center gap-3 mb-6 animate-fade-in-down">
               <div className="h-px w-10 bg-brand-teal" />
               <span className="text-brand-teal uppercase tracking-[0.3em] text-xs font-medium">
-                Venturis Holdings Division
+                Venturis Holdings LLC Division
               </span>
             </div>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight mb-4 animate-fade-in-down delay-100">

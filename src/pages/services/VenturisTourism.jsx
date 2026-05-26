@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'
+import SEO from '../../components/SEO'
 
 const uaeDestinations = [
   {
@@ -325,6 +326,12 @@ export default function VenturisTourism() {
 
   return (
     <>
+      <SEO
+        title="Venturis Tourism"
+        description="Venturis Tourism division of Venturis Holdings LLC — curated travel experiences, desert safaris, luxury stays, and premium tourism services across UAE and Pakistan."
+        path="/services/tourism"
+        keywords="Venturis Tourism, Dubai desert safari, UAE travel agency, luxury travel Dubai, Pakistan tourism, Venturis Holdings LLC tourism, desert safari Dubai, UAE tour packages, Pakistan travel"
+      />
       {/* Hero Section */}
       <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
         {heroSlides.map((slide, i) => (
@@ -367,7 +374,7 @@ export default function VenturisTourism() {
           </Link>
           <div className="max-w-3xl">
             <p className="text-brand-teal uppercase tracking-[0.25em] text-sm font-medium mb-4 animate-fade-in-down">
-              Venturis Holdings Division
+              Venturis Holdings LLC Division
             </p>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight mb-6 animate-fade-in-down delay-100">
               Venturis Tourism,

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'
+import SEO from '../../components/SEO'
 
 const stats = [
   { value: '500', label: 'Properties Sold', suffix: '+' },
@@ -482,6 +483,12 @@ export default function VenturisRealtors() {
 
   return (
     <>
+      <SEO
+        title="Venturis Realtors"
+        description="Venturis Realtors — premier real estate division of Venturis Holdings LLC. Luxury properties, commercial real estate, and investment opportunities across UAE and USA with over 15 years of market expertise."
+        path="/services/realtors"
+        keywords="Venturis Realtors, real estate Dubai, luxury properties UAE, commercial real estate USA, property investment Dubai, Venturis Holdings LLC real estate, Dubai properties for sale, UAE realtor"
+      />
       {/* ============ HERO ============ */}
       <section className="relative h-screen min-h-[600px] flex items-center bg-black overflow-hidden">
         <div className="absolute inset-0">
@@ -500,7 +507,7 @@ export default function VenturisRealtors() {
           <div className="max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
               <span className="w-8 h-px bg-brand-teal" />
-              <span className="text-brand-teal uppercase tracking-[0.25em] text-xs font-medium">Venturis Holdings Division</span>
+              <span className="text-brand-teal uppercase tracking-[0.25em] text-xs font-medium">Venturis Holdings LLC Division</span>
             </div>
             <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold text-white leading-none mb-5 tracking-tight">
               Venturis<br />
@@ -556,7 +563,7 @@ export default function VenturisRealtors() {
                 <span className="text-brand-teal">Unmatched Expertise</span>
               </h2>
               <p className="text-gray-500 leading-relaxed mb-8">
-                Venturis Realtors is a premier real estate division of Venturis Holdings, dedicated to providing exceptional property solutions across the UAE and United States. With over 15 years of market expertise, we specialize in luxury residential properties, commercial real estate, and high-value investment opportunities.
+                Venturis Realtors is a premier real estate division of Venturis Holdings LLC, dedicated to providing exceptional property solutions across the UAE and United States. With over 15 years of market expertise, we specialize in luxury residential properties, commercial real estate, and high-value investment opportunities.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {['UAE Market Experts', 'USA Property Access', 'Luxury Portfolio', 'Client-First Approach'].map((item) => (

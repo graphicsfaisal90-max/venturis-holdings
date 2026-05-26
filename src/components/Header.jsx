@@ -28,7 +28,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center gap-3">
-            <img src="/logo.png" alt="Venturis Holdings" className="h-12 w-auto" />
+            <img src="/logo.png" alt="Venturis Holdings LLC" className="h-12 w-auto" />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-1">

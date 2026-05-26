@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 const projects = [
   {
@@ -56,6 +57,12 @@ const divisions = ['All', 'Interiors', 'Facilities', 'Wheels', 'Holdings']
 export default function Projects() {
   return (
     <>
+      <SEO
+        title="Our Projects"
+        description="Explore the portfolio of Venturis Holdings LLC — showcasing successful projects across interior design, facilities management, real estate, and automotive sectors in the UAE."
+        path="/projects"
+        keywords="Venturis Holdings LLC projects, UAE project portfolio, interior design projects Dubai, facilities management projects, real estate projects UAE, automotive projects"
+      />
       <section className="bg-gradient-to-br from-brand-from to-brand-to text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Our Projects</h1>

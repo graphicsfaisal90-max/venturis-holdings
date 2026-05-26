@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'
+import SEO from '../../components/SEO'
 
 const services = [
   {
@@ -241,6 +242,12 @@ export default function VenturisInteriors() {
 
   return (
     <>
+      <SEO
+        title="Venturis Interiors"
+        description="Venturis Interiors division of Venturis Holdings LLC — award-winning interior design, architecture, and commercial fit-out solutions across the UAE for residential, commercial, and hospitality projects."
+        path="/services/interiors"
+        keywords="Venturis Interiors, interior design Dubai, architecture UAE, commercial fit-out Dubai, residential interior design, hospitality design UAE, Venturis Holdings LLC interiors, office fit-out Dubai"
+      />
       {/* Hero Section */}
       <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
         {heroSlides.map((slide, i) => (
@@ -286,7 +293,7 @@ export default function VenturisInteriors() {
           </Link>
           <div className="max-w-3xl">
             <p className="text-brand-teal uppercase tracking-[0.25em] text-sm font-medium mb-4 animate-fade-in-down">
-              Venturis Holdings Division
+              Venturis Holdings LLC Division
             </p>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight mb-6 animate-fade-in-down delay-100">
               Venturis Interiors,

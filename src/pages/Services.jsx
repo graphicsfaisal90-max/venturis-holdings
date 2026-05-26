@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'
+import SEO from '../components/SEO'
 
 const divisions = [
   {
@@ -81,6 +82,12 @@ function AnimatedSection({ children, className = '' }) {
 export default function Services() {
   return (
     <>
+      <SEO
+        title="Our Services"
+        description="Explore 6 specialized divisions of Venturis Holdings LLC — Venturis Partners, Realtors, Facilities Management, Wheels, Interiors, and Tourism. Comprehensive business solutions across the UAE."
+        path="/services"
+        keywords="Venturis Holdings LLC services, business divisions UAE, strategic partnerships Dubai, real estate services UAE, facilities management Dubai, automotive solutions UAE, interior design Dubai, tourism UAE"
+      />
       {/* ============ HERO ============ */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center overflow-hidden bg-brand-dark">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--color-brand-teal)_0%,_transparent_60%)] opacity-20" />
@@ -90,7 +97,7 @@ export default function Services() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-5">
               <span className="w-10 h-0.5 bg-brand-teal" />
-              <span className="text-brand-teal text-sm font-semibold uppercase tracking-[0.2em]">Venturis Holdings</span>
+              <span className="text-brand-teal text-sm font-semibold uppercase tracking-[0.2em]">Venturis Holdings LLC</span>
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
               Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-white">Services</span>
@@ -225,7 +232,7 @@ export default function Services() {
             <span className="text-brand-teal text-sm font-semibold uppercase tracking-[0.2em]">Let's Collaborate</span>
             <h2 className="text-4xl sm:text-5xl font-bold text-white mt-4 mb-4">Ready to Work With Us?</h2>
             <p className="text-white/40 max-w-2xl mx-auto text-lg mb-10">
-              Let's discuss how Venturis Holdings can help bring your vision to life with our comprehensive suite of services.
+              Let's discuss how Venturis Holdings LLC can help bring your vision to life with our comprehensive suite of services.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link

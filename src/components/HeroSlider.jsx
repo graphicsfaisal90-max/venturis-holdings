@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 const slides = [
   {
     id: 'holdings',
-    title: 'Venturis Holdings',
-    subtitle: 'Venturis Holdings',
-    desc: 'Venturis Holdings serves as the parent organization overseeing a diversified portfolio of specialized subsidiaries, each dedicated to its own core area of expertise while operating together under a unified vision, strategy, and commitment to excellence.',
+    title: 'Venturis Holdings LLC',
+    subtitle: 'Venturis Holdings LLC',
+    desc: 'Venturis Holdings LLC serves as the parent organization overseeing a diversified portfolio of specialized subsidiaries, each dedicated to its own core area of expertise while operating together under a unified vision, strategy, and commitment to excellence.',
     image: '/Building%205423.png',
     btn1: 'Explore Our Divisions',
     btn1Link: '/services',
@@ -16,8 +16,8 @@ const slides = [
   {
     id: 'built-different',
     title: 'Built Different.\nBuilt Better.',
-    subtitle: 'Venturis Holdings',
-    desc: 'At Venturis Holdings, we don\'t just deliver services — we forge partnerships that drive lasting success. Our multi-division structure, experienced team, and unwavering commitment to quality make us the preferred choice for businesses across the UAE and beyond.',
+    subtitle: 'Venturis Holdings LLC',
+    desc: 'At Venturis Holdings LLC, we don\'t just deliver services — we forge partnerships that drive lasting success. Our multi-division structure, experienced team, and unwavering commitment to quality make us the preferred choice for businesses across the UAE and beyond.',
     image: '/Building%205424.png',
     btn1: 'Explore Our Divisions',
     btn1Link: '/services',
@@ -27,7 +27,7 @@ const slides = [
   {
     id: 'vision-future',
     title: 'Vision for the Future',
-    subtitle: 'Venturis Holdings',
+    subtitle: 'Venturis Holdings LLC',
     desc: 'Venturis envisions becoming a multi-sector global enterprise delivering innovative solutions across real estate, technology, consultancy, and digital transformation industries.',
     image: '/Building%205425.png',
     btn1: 'Explore Our Divisions',
@@ -38,7 +38,7 @@ const slides = [
   {
     id: 'vision-mission',
     title: 'Driven by Vision & Purpose',
-    subtitle: 'Venturis Holdings',
+    subtitle: 'Venturis Holdings LLC',
     vision: 'To become a globally recognized conglomerate that bridges investors, businesses, and emerging technologies — driving value creation, operational excellence, and long-term prosperity.',
     mission: 'To deliver trusted, expert-driven solutions across finance, real estate, business consultancy, and emerging technologies — empowering clients with confidence, clarity, and strategic advantage in every decision.',
     image: '/Building%205426.png',
@@ -50,7 +50,7 @@ const slides = [
   {
     id: 'core-values',
     title: 'Our Core Values',
-    subtitle: 'Venturis Holdings',
+    subtitle: 'Venturis Holdings LLC',
     values: [
       { label: 'Innovation', text: 'We embrace creativity and modern solutions to drive continuous growth and industry leadership.' },
       { label: 'Integrity', text: 'We conduct business with honesty, transparency, and strong ethical standards in every partnership.' },
