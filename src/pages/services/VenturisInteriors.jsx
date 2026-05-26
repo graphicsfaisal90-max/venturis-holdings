@@ -667,10 +667,10 @@ export default function VenturisInteriors() {
               </svg>
             </Link>
             <Link
-              to="/projects"
+              to="/contact"
               className="inline-flex items-center px-8 py-3.5 border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
             >
-              View All Projects
+              Get in Touch
             </Link>
           </div>
         </div>

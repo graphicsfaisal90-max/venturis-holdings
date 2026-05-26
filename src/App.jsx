@@ -9,7 +9,6 @@ import VenturisRealtors from './pages/services/VenturisRealtors'
 import VenturisPartners from './pages/services/VenturisPartners'
 import VenturisWheels from './pages/services/VenturisWheels'
 import VenturisTourism from './pages/services/VenturisTourism'
-import Projects from './pages/Projects'
 import FAQs from './pages/FAQs'
 import Contact from './pages/Contact'
 
@@ -26,7 +25,6 @@ export default function App() {
         <Route path="services/partners" element={<VenturisPartners />} />
         <Route path="services/wheels" element={<VenturisWheels />} />
         <Route path="services/tourism" element={<VenturisTourism />} />
-        <Route path="projects" element={<Projects />} />
         <Route path="faqs" element={<FAQs />} />
         <Route path="contact" element={<Contact />} />
       </Route>

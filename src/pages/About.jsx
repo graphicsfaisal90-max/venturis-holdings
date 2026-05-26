@@ -1002,10 +1002,10 @@ export default function About() {
               </svg>
             </Link>
             <Link
-              to="/projects"
+              to="/services"
               className="inline-flex items-center gap-2 px-8 py-3.5 border-2 border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-all hover:-translate-y-0.5 active:translate-y-0"
             >
-              View Our Projects
+              Explore Our Services
             </Link>
           </div>
         </div>
