@@ -320,9 +320,9 @@ export default function VenturisTourism() {
       {/* Hero Section */}
       <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
         <video autoPlay muted loop playsInline preload="auto" className="absolute inset-0 w-full h-full object-cover">
-          <source src="/venturis-tourism-hero.mp4" type="video/mp4" />
+          <source src="/Hero%20Section%20of%20venturis%20tourism%20.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/30" />
+        <div className="absolute inset-0 bg-black/60" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center lg:text-left w-full">
           <Link
