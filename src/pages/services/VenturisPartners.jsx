@@ -652,7 +652,7 @@ export default function VenturisPartners() {
               <div className="relative group">
                 <div className="absolute -inset-2 bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 rounded-3xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                 <div className="relative rounded-2xl overflow-hidden shadow-lg shadow-brand-teal/5">
-                  <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=700&q=80" alt="Food commodities" className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=700&q=80" alt="Food commodities" className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-tr from-brand-dark/40 via-transparent to-transparent" />
                   <div className="absolute bottom-5 left-5 flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-xl px-4 py-2 border border-white/15">
                     <span className="w-2 h-2 rounded-full bg-brand-teal animate-pulse" />
@@ -669,15 +669,15 @@ export default function VenturisPartners() {
                     <svg className="w-6 h-6 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" /></svg>
                   </div>
                   <div>
-                    <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark">Foodstuffs</h3>
-                    <p className="text-gray-400 text-xs uppercase tracking-[0.15em]">Agri-Commodities & Food Products</p>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark">Spices</h3>
+                     <p className="text-gray-400 text-xs uppercase tracking-[0.15em]">Premium Quality Spices</p>
                   </div>
                 </div>
                 <p className="text-gray-500 text-sm leading-relaxed">
                   Venturis Trading supplies high-quality agricultural commodities and food products sourced from trusted global producers. Our foodstuff division ensures freshness, competitive pricing, and reliable supply chains for bulk and retail distribution across international markets.
                 </p>
                 <div className="grid grid-cols-2 gap-3">
-                  {['Fresh Onions', 'Premium Potatoes', 'Basmati Rice', 'Yellow Maize', 'Premium Dry Dates', 'Cinnamon & Spices', 'Frozen Meat Products', 'Pulses & Grains'].map((item) => (
+                  {['Spices'].map((item) => (
                     <div key={item} className="group/item flex items-center gap-2.5 bg-brand-light rounded-xl px-4 py-3 border border-gray-100 hover:border-brand-teal/20 hover:shadow-sm hover:shadow-brand-teal/5 hover:-translate-y-0.5 transition-all duration-300">
                       <span className="w-1.5 h-1.5 rounded-full bg-brand-teal/60 shrink-0 group-hover/item:bg-brand-teal transition-colors duration-300" />
                       <span className="text-gray-600 text-sm font-medium group-hover/item:text-brand-teal transition-colors duration-300">{item}</span>

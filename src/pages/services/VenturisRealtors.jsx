@@ -81,35 +81,35 @@ const rooms = [
     id: 'entrance',
     title: 'Entrance & Hallway',
     desc: 'A welcoming, sophisticated hallway that creates a grand sense of arrival with fluid transition into the core living and culinary areas.',
-    image: '/Venturis%20Realtors/2-Bedroom%20Premium%20Apartment/Screenshot%202026-05-24%20215206.png',
+    image: '/Venturis Realtors/2-Bedroom Premium Apartment/Screenshot 2026-05-24 215206.png',
     highlights: ['Grand sense of arrival', 'Sophisticated design', 'Fluid transition to living areas'],
   },
   {
     id: 'living',
     title: 'Living & Dining',
     desc: 'A massive open-plan layout designed for ultra-luxury entertainment and family comfort, with direct access to the main grand balcony overlooking the ocean.',
-    image: '/Venturis%20Realtors/2-Bedroom%20Premium%20Apartment/Screenshot%202026-05-24%20215220.png',
+    image: '/Venturis Realtors/2-Bedroom Premium Apartment/Screenshot 2026-05-24 215220.png',
     highlights: ['Open-plan luxury layout', 'Direct balcony access', 'Ocean views', 'Premium dining setup'],
   },
   {
     id: 'kitchen',
     title: 'Gourmet Kitchen',
     desc: 'A contemporary open-plan kitchen integrated seamlessly near the dining area, outfitted with bespoke wooden cabinetry, top-tier marble countertops, and integrated luxury appliances.',
-    image: '/Venturis%20Realtors/2-Bedroom%20Premium%20Apartment/Screenshot%202026-05-24%20215232.png',
+    image: '/Venturis Realtors/2-Bedroom Premium Apartment/Screenshot 2026-05-24 215232.png',
     highlights: ['Bespoke wooden cabinetry', 'Marble countertops', 'Integrated luxury appliances', 'Open-plan design'],
   },
   {
     id: 'master',
     title: 'Master Bedroom Suite',
     desc: 'An extremely spacious master layout featuring a dedicated lounge corner, private balcony with direct sea views, a massive en-suite luxury bathroom with freestanding bathtub, and generous walk-in wardrobe.',
-    image: '/Venturis%20Realtors/2-Bedroom%20Premium%20Apartment/Screenshot%202026-05-24%20215337.png',
+    image: '/Venturis Realtors/2-Bedroom Premium Apartment/Screenshot 2026-05-24 215337.png',
     highlights: ['Private sea-view balcony', 'Luxury en-suite bathroom', 'Walk-in wardrobe', 'Dedicated lounge corner'],
   },
   {
     id: 'second',
     title: 'Second Bedroom Suite',
     desc: 'A generously-sized bedroom offering maximum privacy on the opposite side of the apartment, with a dedicated workspace, private balcony access, and an attached high-end bathroom.',
-    image: '/Venturis%20Realtors/2-Bedroom%20Premium%20Apartment/Screenshot%202026-05-24%20215352.png',
+    image: '/Venturis Realtors/2-Bedroom Premium Apartment/Screenshot 2026-05-24 215352.png',
     highlights: ['Maximum privacy layout', 'Dedicated workspace', 'Private balcony', 'Attached bathroom'],
   },
 ]
@@ -154,10 +154,10 @@ const atlantisFeatures = [
   },
 ]
 
-const type3Img = '/Venturis%20Realtors/4%20bedroom%20apprtment%20type%203/'
+const type3Img = '/Venturis Realtors/4 bedroom apprtment type 3/'
 
 const type3Property = {
-  title: 'The Royal Atlantis \u2013 Residence 1002',
+  title: 'The Royal Atlantis',
   tagline: 'Where Sophistication Meets the Sea',
   type: '4 Bedroom Signature Residence',
   layout: 'Type 3',
@@ -168,31 +168,31 @@ const type3Property = {
 }
 
 const type3Gallery = [
-  type3Img + 'Kitchen%20and%20Cabinatery%20(1).png',
-  type3Img + 'Kitchen%20and%20Cabinatery%20(2).png',
-  type3Img + 'Kitchen%20and%20Cabinatery%20(3).png',
-  type3Img + 'Kitchen%20and%20Cabinatery%20(4).png',
-  type3Img + 'Kitchen%20and%20Cabinatery%20(5).png',
-  type3Img + 'Kitchen%20and%20Cabinatery%20(6).png',
-  type3Img + 'Kitchen%20and%20Cabinatery%20(7).png',
-  type3Img + 'Kitchen%20and%20Cabinatery%20(8).png',
-  type3Img + 'Living%20Room%20(1).png',
-  type3Img + 'Living%20Room%20(2).png',
-  type3Img + 'Living%20Room%20(3).png',
-  type3Img + 'Bedroom%20%26%20Bathrooms%20(1).png',
-  type3Img + 'Bedroom%20%26%20Bathrooms%20(2).png',
-  type3Img + 'Bedroom%20%26%20Bathrooms%20(3).png',
-  type3Img + 'Bedroom%20%26%20Bathrooms%20(4).png',
-  type3Img + 'Bedroom%20%26%20Bathrooms%20(5).png',
-  type3Img + 'Bedroom%20%26%20Bathrooms%20(6).png',
-  type3Img + 'Bedroom%20%26%20Bathrooms%20(7).png',
-  type3Img + 'Bedroom%20%26%20Bathrooms%20(8).png',
-  type3Img + 'Bedroom%20%26%20Bathrooms%20(9).png',
-  type3Img + 'Views%20And%20Balconys%20(1).png',
-  type3Img + 'Views%20And%20Balconys%20(2).png',
-  type3Img + 'Views%20And%20Balconys%20(3).png',
-  type3Img + 'Views%20And%20Balconys%20(4).png',
-  type3Img + 'Views%20And%20Balconys%20(5).png',
+  type3Img + 'Kitchen and Cabinatery (1).png',
+  type3Img + 'Kitchen and Cabinatery (2).png',
+  type3Img + 'Kitchen and Cabinatery (3).png',
+  type3Img + 'Kitchen and Cabinatery (4).png',
+  type3Img + 'Kitchen and Cabinatery (5).png',
+  type3Img + 'Kitchen and Cabinatery (6).png',
+  type3Img + 'Kitchen and Cabinatery (7).png',
+  type3Img + 'Kitchen and Cabinatery (8).png',
+  type3Img + 'Living Room (1).png',
+  type3Img + 'Living Room (2).png',
+  type3Img + 'Living Room (3).png',
+  type3Img + 'Bedroom & Bathrooms (1).png',
+  type3Img + 'Bedroom & Bathrooms (2).png',
+  type3Img + 'Bedroom & Bathrooms (3).png',
+  type3Img + 'Bedroom & Bathrooms (4).png',
+  type3Img + 'Bedroom & Bathrooms (5).png',
+  type3Img + 'Bedroom & Bathrooms (6).png',
+  type3Img + 'Bedroom & Bathrooms (7).png',
+  type3Img + 'Bedroom & Bathrooms (8).png',
+  type3Img + 'Bedroom & Bathrooms (9).png',
+  type3Img + 'Views And Balconys (1).png',
+  type3Img + 'Views And Balconys (2).png',
+  type3Img + 'Views And Balconys (3).png',
+  type3Img + 'Views And Balconys (4).png',
+  type3Img + 'Views And Balconys (5).png',
 ]
 
 const type3Highlights = [
@@ -253,8 +253,8 @@ const type3Highlights = [
   },
 ]
 
-const type3Hero = type3Img + 'Living%20Room%20(1).png'
-const type3Hero2 = type3Img + 'Views%20And%20Balconys%20(1).png'
+const type3Hero = type3Img + 'Living Room (1).png'
+const type3Hero2 = type3Img + 'Views And Balconys (1).png'
 
 const galleryCategories = [
   {
@@ -279,7 +279,7 @@ const galleryCategories = [
   },
   ]
 
-const bwi = '/Venturis%20Realtors/Blue%20water%20island/'
+const bwi = '/Venturis Realtors/Blue water island/'
 
 const bwiHighlights = [
   {
@@ -345,13 +345,13 @@ const bwiGalleryCategories = [
     label: 'Entrance & Living Room',
     count: '7 Photos',
     images: [
-      bwi + 'Entrance%20Area%20%26%20Living%20Room%20(1).png',
-      bwi + 'Entrance%20Area%20%26%20Living%20Room%20(2).png',
-      bwi + 'Entrance%20Area%20%26%20Living%20Room%20(3).png',
-      bwi + 'Entrance%20Area%20%26%20Living%20Room%20(4).png',
-      bwi + 'Entrance%20Area%20%26%20Living%20Room%20(5).png',
-      bwi + 'Entrance%20Area%20%26%20Living%20Room%20(6).png',
-      bwi + 'Entrance%20Area%20%26%20Living%20Room%20(7).png',
+      bwi + 'Entrance Area & Living Room (1).png',
+      bwi + 'Entrance Area & Living Room (2).png',
+      bwi + 'Entrance Area & Living Room (3).png',
+      bwi + 'Entrance Area & Living Room (4).png',
+      bwi + 'Entrance Area & Living Room (5).png',
+      bwi + 'Entrance Area & Living Room (6).png',
+      bwi + 'Entrance Area & Living Room (7).png',
     ],
   },
   {
@@ -359,11 +359,11 @@ const bwiGalleryCategories = [
     label: 'Dining & Kitchen',
     count: '5 Photos',
     images: [
-      bwi + 'Dinning%20Area%20%26%20Kitchen%20(1).png',
-      bwi + 'Dinning%20Area%20%26%20Kitchen%20(2).png',
-      bwi + 'Dinning%20Area%20%26%20Kitchen%20(3).png',
-      bwi + 'Dinning%20Area%20%26%20Kitchen%20(4).png',
-      bwi + 'Dinning%20Area%20%26%20Kitchen%20(5).png',
+      bwi + 'Dinning Area & Kitchen (1).png',
+      bwi + 'Dinning Area & Kitchen (2).png',
+      bwi + 'Dinning Area & Kitchen (3).png',
+      bwi + 'Dinning Area & Kitchen (4).png',
+      bwi + 'Dinning Area & Kitchen (5).png',
     ],
   },
   {
@@ -371,14 +371,14 @@ const bwiGalleryCategories = [
     label: 'Master Bedroom & Bath',
     count: '8 Photos',
     images: [
-      bwi + 'Master%20Bedroom%20%26%20Bath%20room%20(1).png',
-      bwi + 'Master%20Bedroom%20%26%20Bath%20room%20(2).png',
-      bwi + 'Master%20Bedroom%20%26%20Bath%20room%20(3).png',
-      bwi + 'Master%20Bedroom%20%26%20Bath%20room%20(4).png',
-      bwi + 'Master%20Bedroom%20%26%20Bath%20room%20(5).png',
-      bwi + 'Master%20Bedroom%20%26%20Bath%20room%20(6).png',
-      bwi + 'Master%20Bedroom%20%26%20Bath%20room%20(7).png',
-      bwi + 'Master%20Bedroom%20%26%20Bath%20room%20(8).png',
+      bwi + 'Master Bedroom & Bath room (1).png',
+      bwi + 'Master Bedroom & Bath room (2).png',
+      bwi + 'Master Bedroom & Bath room (3).png',
+      bwi + 'Master Bedroom & Bath room (4).png',
+      bwi + 'Master Bedroom & Bath room (5).png',
+      bwi + 'Master Bedroom & Bath room (6).png',
+      bwi + 'Master Bedroom & Bath room (7).png',
+      bwi + 'Master Bedroom & Bath room (8).png',
     ],
   },
   {
@@ -386,12 +386,12 @@ const bwiGalleryCategories = [
     label: 'Pool Terrace',
     count: '6 Photos',
     images: [
-      bwi + 'Private%20Swimming%20Pool%20Terrace%20(1).png',
-      bwi + 'Private%20Swimming%20Pool%20Terrace%20(2).png',
-      bwi + 'Private%20Swimming%20Pool%20Terrace%20(3).png',
-      bwi + 'Private%20Swimming%20Pool%20Terrace%20(4).png',
-      bwi + 'Private%20Swimming%20Pool%20Terrace%20(5).png',
-      bwi + 'Private%20Swimming%20Pool%20Terrace%20(6).png',
+      bwi + 'Private Swimming Pool Terrace (1).png',
+      bwi + 'Private Swimming Pool Terrace (2).png',
+      bwi + 'Private Swimming Pool Terrace (3).png',
+      bwi + 'Private Swimming Pool Terrace (4).png',
+      bwi + 'Private Swimming Pool Terrace (5).png',
+      bwi + 'Private Swimming Pool Terrace (6).png',
     ],
   },
   {
@@ -399,14 +399,14 @@ const bwiGalleryCategories = [
     label: 'Views',
     count: '8 Photos',
     images: [
-      bwi + 'Views%20(1).png',
-      bwi + 'Views%20(2).png',
-      bwi + 'Views%20(3).png',
-      bwi + 'Views%20(4).png',
-      bwi + 'Views%20(5).png',
-      bwi + 'Views%20(6).png',
-      bwi + 'Views%20(7).png',
-      bwi + 'Views%20(8).png',
+      bwi + 'Views (1).png',
+      bwi + 'Views (2).png',
+      bwi + 'Views (3).png',
+      bwi + 'Views (4).png',
+      bwi + 'Views (5).png',
+      bwi + 'Views (6).png',
+      bwi + 'Views (7).png',
+      bwi + 'Views (8).png',
     ],
   },
 ]
@@ -486,7 +486,7 @@ export default function VenturisRealtors() {
       <section className="relative h-screen min-h-[600px] flex items-center bg-black overflow-hidden">
         <div className="absolute inset-0">
           <video autoPlay muted loop playsInline className="w-full h-full object-cover opacity-60">
-            <source src="/Main%20hero%20section.mp4" type="video/mp4" />
+            <source src="/Main hero section.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-black/50" />
         </div>
@@ -702,7 +702,7 @@ export default function VenturisRealtors() {
           <div className="grid lg:grid-cols-5 gap-10">
             <div className="lg:col-span-3">
               <div className="relative rounded-2xl overflow-hidden shadow-lg group">
-                <img src="/Venturis%20Realtors/2-Bedroom%20Premium%20Apartment/Masterfully%20Crafted%20Living%20Spaces.png" alt="" className="w-full h-[380px] object-cover transition-all duration-700 group-hover:scale-105" />
+                <img src="/Venturis Realtors/2-Bedroom Premium Apartment/Masterfully Crafted Living Spaces.png" alt="" className="w-full h-[380px] object-cover transition-all duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                 <div className="absolute bottom-5 left-5 right-5 flex flex-wrap gap-2">
                   {atlantisFeatures.slice(0, 2).map((f, i) => (
@@ -789,7 +789,6 @@ export default function VenturisRealtors() {
           <AnimatedSection className="text-center">
             <span className="text-brand-teal text-xs uppercase tracking-[0.25em] font-medium">Signature Collection</span>
             <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark mt-3">The Royal Atlantis</h2>
-            <p className="text-xl text-brand-teal font-light mt-1">Residence 1002</p>
             <div className="flex items-center justify-center gap-3 mt-4">
               <span className="w-12 h-px bg-gray-200" />
               <span className="text-gray-400 text-xs uppercase tracking-[0.2em]">4 Bedroom Signature Residence &middot; Type 3</span>
@@ -981,7 +980,7 @@ export default function VenturisRealtors() {
           {/* Hero banner */}
           <AnimatedSection className="mt-4">
             <div className="relative rounded-2xl overflow-hidden shadow-xl group">
-              <img src={bwi + 'Views%20(1).png'} alt="" className="w-full h-[420px] sm:h-[520px] object-cover transition-all duration-700 group-hover:scale-105" />
+                <img src={bwi + 'Views (1).png'} alt="" className="w-full h-[420px] sm:h-[520px] object-cover transition-all duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6 flex flex-wrap gap-2.5">
                 <div className="flex items-center gap-2 bg-white/10 backdrop-blur-lg rounded-xl px-4 py-2.5 border border-white/10">
@@ -1129,7 +1128,7 @@ export default function VenturisRealtors() {
           {/* CTA */}
           <AnimatedSection className="mt-16">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <img src={bwi + 'Views%20(3).png'} alt="" className="w-full h-[340px] object-cover" />
+              <img src={bwi + 'Views (3).png'} alt="" className="w-full h-[340px] object-cover" />
               <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-brand-dark/70" />
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
                 <span className="text-brand-teal text-xs uppercase tracking-[0.3em] font-medium mb-2">Premium Island Lifestyle</span>
@@ -1152,54 +1151,33 @@ export default function VenturisRealtors() {
       </section>
 
       {/* ============ INVESTMENT MARKETS ============ */}
-      <section className="py-0">
-        <div className="relative bg-gradient-to-br from-brand-dark via-black to-brand-dark py-20 lg:py-0">
-          <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-            <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-teal rounded-full blur-3xl" />
-            <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-white rounded-full blur-3xl" />
-          </div>
-          <div className="max-w-7xl mx-auto px-6 text-center lg:hidden">
-            <span className="text-brand-teal text-xs uppercase tracking-[0.25em] font-medium">Investment</span>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mt-3 mb-2">Markets We Serve</h2>
-            <p className="text-white/40 text-sm max-w-lg mx-auto mb-10">Strategic insights into the world's most dynamic real estate markets.</p>
-          </div>
-          <div className="grid lg:grid-cols-2">
-            <div className="relative min-h-[500px] flex items-center p-10 lg:p-16 overflow-hidden group">
-              <div className="absolute inset-0">
-                <img src="/Ain%20Dubai%20(Dubai,%20UAE).jpg" alt="" className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 opacity-30" />
-                <div className="absolute inset-0 bg-gradient-to-br from-black via-black/95 to-brand-dark/90" />
-              </div>
-              <div className="absolute top-6 right-6 opacity-[0.04] pointer-events-none">
-                <svg className="w-32 h-32 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={0.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6 text-center mb-14">
+          <span className="text-brand-teal text-xs uppercase tracking-[0.25em] font-medium">Investment</span>
+          <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark mt-3 mb-2">Markets We Serve</h2>
+          <p className="text-gray-400 text-sm max-w-lg mx-auto">Strategic insights into the world's most dynamic real estate markets.</p>
+        </div>
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-3 gap-8">
+            <div className="relative min-h-[500px] flex items-center p-10 lg:p-12 overflow-hidden group rounded-2xl bg-white shadow-xl shadow-gray-200/50 border border-gray-100 hover:shadow-2xl hover:shadow-brand-teal/10 transition-all duration-500">
+              <div className="absolute inset-0 rounded-2xl overflow-hidden">
+                <img src="/Ain Dubai (Dubai, UAE).jpg" alt="" className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 opacity-20" />
+                <div className="absolute inset-0 bg-gradient-to-br from-white via-white/95 to-brand-teal/5" />
               </div>
               <div className="relative z-10">
-                <div className="hidden lg:flex items-center gap-3 mb-6">
+                <div className="flex items-center gap-3 mb-6">
                   <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center shadow-lg shadow-brand-teal/20">
                     <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <div className="hidden lg:block text-left">
-                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.3em] font-medium">Market</span>
-                    <p className="text-white/20 text-[10px] uppercase tracking-wider">United Arab Emirates</p>
-                  </div>
-                </div>
-                <div className="lg:hidden flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-teal to-brand-navy flex items-center justify-center shadow-lg shadow-brand-teal/20">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
                   <div className="text-left">
                     <span className="text-brand-teal text-[10px] uppercase tracking-[0.3em] font-medium">Market</span>
-                    <p className="text-white/30 text-[10px] uppercase tracking-wider">United Arab Emirates</p>
+                    <p className="text-gray-300 text-[10px] uppercase tracking-wider">United Arab Emirates</p>
                   </div>
                 </div>
-                <span className="text-brand-teal hidden lg:block text-xs uppercase tracking-[0.25em] font-medium">&nbsp;</span>
-                <h3 className="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">UAE Market</h3>
-                <p className="text-white/40 text-sm leading-relaxed max-w-md mb-6">
+                <h3 className="text-3xl sm:text-4xl font-bold text-brand-dark mt-2 mb-4">UAE Market</h3>
+                <p className="text-gray-500 text-sm leading-relaxed max-w-md mb-6">
                   The UAE offers a tax-free environment, world-class infrastructure, and a resilient property market. From Dubai's iconic skyline to Abu Dhabi's prestigious developments.
                 </p>
                 <div className="flex flex-wrap gap-2.5">
@@ -1210,7 +1188,7 @@ export default function VenturisRealtors() {
                     { label: 'Luxury Living', desc: 'World-class amenities & lifestyle' },
                   ].map((tag) => (
                     <div key={tag.label} className="group/tag cursor-default">
-                      <span className="inline-block px-4 py-2 bg-white/[0.04] text-white/60 text-xs font-medium rounded-xl border border-white/[0.06] hover:bg-brand-teal/10 hover:text-brand-teal hover:border-brand-teal/20 transition-all duration-300">
+                      <span className="inline-block px-4 py-2 bg-gray-50 text-gray-500 text-xs font-medium rounded-xl border border-gray-200 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:border-brand-teal transition-all duration-300">
                         {tag.label}
                       </span>
                     </div>
@@ -1218,18 +1196,13 @@ export default function VenturisRealtors() {
                 </div>
               </div>
             </div>
-            <div className="relative min-h-[500px] flex items-center p-10 lg:p-16 overflow-hidden group">
-              <div className="absolute inset-0">
-                <img src="/Building.png" alt="" className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 opacity-30" />
-                <div className="absolute inset-0 bg-gradient-to-bl from-black via-black/95 to-brand-navy/90" />
-              </div>
-              <div className="absolute top-6 right-6 opacity-[0.04] pointer-events-none">
-                <svg className="w-32 h-32 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={0.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                </svg>
+            <div className="relative min-h-[500px] flex items-center p-10 lg:p-12 overflow-hidden group rounded-2xl bg-white shadow-xl shadow-gray-200/50 border border-gray-100 hover:shadow-2xl hover:shadow-brand-teal/10 transition-all duration-500">
+              <div className="absolute inset-0 rounded-2xl overflow-hidden">
+                <img src="/Building.png" alt="" className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 opacity-20" />
+                <div className="absolute inset-0 bg-gradient-to-br from-white via-white/95 to-brand-navy/5" />
               </div>
               <div className="relative z-10">
-                <div className="hidden lg:flex items-center gap-3 mb-6">
+                <div className="flex items-center gap-3 mb-6">
                   <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-navy to-brand-steel flex items-center justify-center shadow-lg shadow-brand-navy/20">
                     <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
@@ -1237,23 +1210,11 @@ export default function VenturisRealtors() {
                   </div>
                   <div className="text-left">
                     <span className="text-brand-teal text-[10px] uppercase tracking-[0.3em] font-medium">Market</span>
-                    <p className="text-white/20 text-[10px] uppercase tracking-wider">United States of America</p>
+                    <p className="text-gray-300 text-[10px] uppercase tracking-wider">United States of America</p>
                   </div>
                 </div>
-                <div className="lg:hidden flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-navy to-brand-steel flex items-center justify-center shadow-lg shadow-brand-navy/20">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                    </svg>
-                  </div>
-                  <div className="text-left">
-                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.3em] font-medium">Market</span>
-                    <p className="text-white/30 text-[10px] uppercase tracking-wider">United States of America</p>
-                  </div>
-                </div>
-                <span className="text-brand-teal hidden lg:block text-xs uppercase tracking-[0.25em] font-medium">&nbsp;</span>
-                <h3 className="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">USA Market</h3>
-                <p className="text-white/40 text-sm leading-relaxed max-w-md mb-6">
+                <h3 className="text-3xl sm:text-4xl font-bold text-brand-dark mt-2 mb-4">USA Market</h3>
+                <p className="text-gray-500 text-sm leading-relaxed max-w-md mb-6">
                   The United States remains one of the world's most stable and lucrative real estate markets. We connect investors with premium opportunities across major cities.
                 </p>
                 <div className="flex flex-wrap gap-2.5">
@@ -1264,7 +1225,44 @@ export default function VenturisRealtors() {
                     { label: 'Global Hub', desc: 'New York, LA, Miami & beyond' },
                   ].map((tag) => (
                     <div key={tag.label} className="group/tag cursor-default">
-                      <span className="inline-block px-4 py-2 bg-white/[0.04] text-white/60 text-xs font-medium rounded-xl border border-white/[0.06] hover:bg-brand-teal/10 hover:text-brand-teal hover:border-brand-teal/20 transition-all duration-300">
+                      <span className="inline-block px-4 py-2 bg-gray-50 text-gray-500 text-xs font-medium rounded-xl border border-gray-200 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:border-brand-teal transition-all duration-300">
+                        {tag.label}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="relative min-h-[500px] flex items-center p-10 lg:p-12 overflow-hidden group rounded-2xl bg-white shadow-xl shadow-gray-200/50 border border-gray-100 hover:shadow-2xl hover:shadow-brand-teal/10 transition-all duration-500">
+              <div className="absolute inset-0 rounded-2xl overflow-hidden">
+                <img src="/Fairy Meadows & Nanga Parbat (Pakistan).jpg" alt="" className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 opacity-20" />
+                <div className="absolute inset-0 bg-gradient-to-br from-white via-white/95 to-brand-teal/5" />
+              </div>
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-teal to-emerald-700 flex items-center justify-center shadow-lg shadow-brand-teal/20">
+                    <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div className="text-left">
+                    <span className="text-brand-teal text-[10px] uppercase tracking-[0.3em] font-medium">Market</span>
+                    <p className="text-gray-300 text-[10px] uppercase tracking-wider">Islamic Republic of Pakistan</p>
+                  </div>
+                </div>
+                <h3 className="text-3xl sm:text-4xl font-bold text-brand-dark mt-2 mb-4">Pakistan Market</h3>
+                <p className="text-gray-500 text-sm leading-relaxed max-w-md mb-6">
+                  Pakistan's real estate market offers high growth potential with affordable entry points, strong remittance-driven demand, and emerging smart city developments across major urban centers.
+                </p>
+                <div className="flex flex-wrap gap-2.5">
+                  {[
+                    { label: 'High Growth', desc: 'Rapid urbanization & demand' },
+                    { label: 'Affordable Entry', desc: 'Competitive price points' },
+                    { label: 'Remittance Driven', desc: 'Strong overseas Pakistanis investment' },
+                    { label: 'Emerging Cities', desc: 'Karachi, Lahore, Islamabad & more' },
+                  ].map((tag) => (
+                    <div key={tag.label} className="group/tag cursor-default">
+                      <span className="inline-block px-4 py-2 bg-gray-50 text-gray-500 text-xs font-medium rounded-xl border border-gray-200 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:border-brand-teal transition-all duration-300">
                         {tag.label}
                       </span>
                     </div>

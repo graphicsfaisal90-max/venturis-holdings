@@ -181,7 +181,7 @@ export default function HeroSlider() {
                 </p>
               )}
             </div>
-            <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 animate-fade-in-up delay-300 pb-16 sm:pb-0">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 animate-fade-in-up delay-300 pb-20 sm:pb-0">
               <Link
                 to={slide.btn1Link}
                 className="group relative px-10 py-4 font-bold text-xl sm:text-lg rounded-xl overflow-hidden transition-all duration-500 bg-gradient-to-br from-brand-teal to-brand-navy text-white hover:shadow-2xl hover:shadow-brand-teal/25 hover:-translate-y-1 active:translate-y-0"

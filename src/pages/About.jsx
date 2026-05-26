@@ -98,6 +98,21 @@ const teamRow2 = [
   },
 ]
 
+const teamRow3 = [
+  {
+    name: 'Syed Inam Ul Haq',
+    role: 'Head Of Legal Compliance',
+    bio: 'Led by a qualified law graduate, our company provides professional PRO and compliance services across Dubai, including visa processing, MOHRE submissions, trade license renewals, MOFA attestations, and AML compliance — ensuring businesses remain fully compliant, efficient, and hassle-free.',
+    image: '/656565 (1).png',
+  },
+  {
+    name: 'Jason Wood',
+    role: 'Chief Tourism Officer',
+    bio: 'A seasoned tourism professional with 5+ years of experience in travel management, destination partnerships, and customer engagement. Responsible for leading tourism operations, enhancing client experiences, and developing premium travel solutions aligned with the company\'s vision, market trends, and growth objectives.',
+    image: '/4323.png',
+  },
+]
+
 const journey = [
   { year: '2010', title: 'Founded', desc: 'Venturis Holdings was established with a vision to create a diversified business group.' },
   { year: '2012', title: 'Expansion', desc: 'Expanded into facilities management and interior solutions, doubling our team.' },
@@ -201,7 +216,7 @@ export default function About() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-brand-teal/10">
                 <img
-                  src="/Building.png"
+                  src="/Building 5424.png"
                   alt="Venturis Holdings Headquarters"
                   className="w-full h-[500px] sm:h-[600px] object-cover"
                 />
@@ -235,7 +250,7 @@ export default function About() {
                   Our journey began with a simple belief — excellence is not limited to one industry. By bringing together experienced professionals across financial consultancy, mortgage and banking advisory, information technology, cyber security, business development, marketing, real estate consultancy, and digital solutions, we have built a strong ecosystem capable of delivering integrated and innovative solutions to our clients.
                 </p>
                 <p>
-                  Today, Venturis Holdings proudly serves businesses and individuals across South Africa and the UAE, recognized for our professionalism, reliability, innovation, and unwavering commitment to quality and long-term client success.
+                  Today, Venturis Holdings proudly serves businesses and individuals across the UAE, USA And Pakistan, recognized for our professionalism, reliability, innovation, and unwavering commitment to quality and long-term client success.
                 </p>
               </div>
             </div>
@@ -441,6 +456,43 @@ export default function About() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8">
               {teamRow2.map((member, i) => (
+                <div
+                  key={member.name}
+                  className="group relative bg-white rounded-2xl overflow-hidden shadow-md shadow-gray-200/50 border border-gray-100 hover:shadow-xl hover:shadow-brand-teal/15 hover:-translate-y-1.5 active:shadow-xl active:shadow-brand-teal/15 active:-translate-y-1 transition-all duration-500"
+                >
+                  <div className="relative h-56 sm:h-64 overflow-hidden">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-[center_30%] object-cover transition-all duration-700 ease-out group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/50 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-5">
+                      <span className="inline-block px-3 py-1 text-[10px] font-bold uppercase tracking-wider bg-gradient-to-r from-brand-teal to-brand-navy text-white rounded-lg shadow-lg shadow-brand-teal/20">
+                        {member.role}
+                      </span>
+                    </div>
+                    <div className="absolute top-3 right-3 flex gap-1.5 opacity-0 group-hover:opacity-100 transition-all duration-400 translate-x-2 group-hover:translate-x-0">
+                      <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy transition-all duration-400 cursor-pointer shadow-lg">
+                        <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 2s-7.64-.37-10.66 4.34c-1.19 1.86-1.44 4.16-1.32 5.66-2.71.26-5.96-.71-8.02-2.66 0 0-3.31 5.65 4.33 9.66-1.73 1.06-5.33 1.5-5.33 1.5s3.13 4.49 10.66 4.49c9.5 0 14.34-8.31 14.34-16.98 0-.26-.02-.52-.05-.78C20.94 4.58 22 2 22 2z"/></svg>
+                      </div>
+                      <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy transition-all duration-400 cursor-pointer shadow-lg">
+                        <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 4.75c1.24 0 2.25 1.01 2.25 2.25s-1.01 2.25-2.25 2.25S9.75 10.24 9.75 9 10.76 6.75 12 6.75zM17 17H7v-1.5c0-1.67 3.33-2.5 5-2.5s5 .83 5 2.5V17z"/></svg>
+                      </div>
+                      <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy transition-all duration-400 cursor-pointer shadow-lg">
+                        <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-5">
+                    <h3 className="text-lg font-bold text-brand-dark mb-1.5">{member.name}</h3>
+                    <p className="text-gray-500 text-xs leading-relaxed line-clamp-3">{member.bio}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 xl:gap-8 max-w-3xl mx-auto">
+              {teamRow3.map((member, i) => (
                 <div
                   key={member.name}
                   className="group relative bg-white rounded-2xl overflow-hidden shadow-md shadow-gray-200/50 border border-gray-100 hover:shadow-xl hover:shadow-brand-teal/15 hover:-translate-y-1.5 active:shadow-xl active:shadow-brand-teal/15 active:-translate-y-1 transition-all duration-500"

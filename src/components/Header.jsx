@@ -84,6 +84,27 @@ export default function Header() {
             )}
           </nav>
 
+          <div className="hidden lg:flex items-center gap-4">
+            <a
+              href="tel:+971585318860"
+              className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-brand-dark transition-all duration-300 hover:-translate-x-0.5 group"
+            >
+              <span className="flex items-center justify-center w-8 h-8 rounded-full bg-brand-light text-brand-teal group-hover:bg-brand-teal group-hover:text-white transition-all duration-300">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </span>
+              <span className="group-hover:text-brand-teal transition-colors font-number font-bold">+971 58 531 8860</span>
+            </a>
+            <Link
+              to="/contact"
+              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-white transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:scale-95"
+              style={{ backgroundColor: '#2C627E' }}
+            >
+              Get Quote
+            </Link>
+          </div>
+
           <button
             className="lg:hidden p-2.5 rounded-xl bg-gradient-to-br from-brand-teal to-brand-navy text-white shadow-lg shadow-brand-teal/20 hover:shadow-xl hover:shadow-brand-teal/30 transition-all duration-300 active:scale-95"
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -102,7 +123,7 @@ export default function Header() {
 
       <div
         className={`lg:hidden border-t border-gray-100 bg-white/95 backdrop-blur-xl overflow-hidden transition-all duration-300 ease-in-out ${
-          mobileOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
+          mobileOpen ? 'max-h-[900px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
           <div className="px-4 py-5 space-y-1.5">
@@ -176,6 +197,32 @@ export default function Header() {
                   >
                     {link.name}
                   </NavLink>
+                  {i === navLinks.length - 1 && (
+                    <div className="flex flex-col gap-3 mt-3 px-4">
+                      <a
+                        href="tel:+971585318860"
+                        onClick={() => setMobileOpen(false)}
+                        className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold text-white transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:scale-95"
+                        style={{ backgroundColor: '#2C627E' }}
+                      >
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <span className="font-number font-bold">+971 58 531 8860</span>
+                      </a>
+                      <Link
+                        to="/contact"
+                        onClick={() => setMobileOpen(false)}
+                        className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold text-white transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:scale-95"
+                        style={{ backgroundColor: '#2C627E' }}
+                      >
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                        Get Quote
+                      </Link>
+                    </div>
+                  )}
                 </div>
               )
             })}

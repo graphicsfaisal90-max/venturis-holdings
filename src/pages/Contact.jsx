@@ -30,6 +30,7 @@ const contactInfo = [
     ),
     title: 'US Office',
     lines: ['9219 Tamworth Road', 'Jacksonville, Florida, USA'],
+    note: 'Book an Appointment Before Visit',
   },
   {
     icon: (
@@ -48,7 +49,7 @@ const contactInfo = [
       </svg>
     ),
     title: 'Phone',
-    lines: ['+971 58 531 8860', '+971 58 100 7066'],
+    lines: ['+971 58 531 8860', '+1 (904) 6550900'],
     href: 'tel:+971585318860',
   },
   {
@@ -58,7 +59,7 @@ const contactInfo = [
       </svg>
     ),
     title: 'Business Hours',
-    lines: ['Mon - Fri: 8:00 AM - 5:00 PM', 'Sat: 8:00 AM - 1:00 PM', 'Sun: Closed'],
+    lines: ['Mon - Sat: 10:00 AM - 7:00 PM', 'Sunday: Closed'],
   },
 ]
 
@@ -267,6 +268,11 @@ export default function Contact() {
                           <p key={j} className="text-gray-500 text-sm">{line}</p>
                         )
                       ))}
+                      {info.note && (
+                        <p className="mt-2 text-xs font-semibold text-brand-teal uppercase tracking-wider bg-brand-teal/5 px-3 py-1.5 rounded-lg border border-brand-teal/20 inline-block">
+                          {info.note}
+                        </p>
+                      )}
                     </div>
                   </div>
                 </div>
