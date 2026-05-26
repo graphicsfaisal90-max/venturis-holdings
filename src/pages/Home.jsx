@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import HeroSlider from '../components/HeroSlider'
+import TrustedPartnersCarousel from '../components/TrustedPartnersCarousel'
 import SEO from '../components/SEO'
 
 const services = [
@@ -203,6 +204,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <TrustedPartnersCarousel />
 
       <section className="py-24 bg-gradient-to-br from-brand-from via-brand-navy to-brand-to text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
