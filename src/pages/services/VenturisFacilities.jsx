@@ -675,8 +675,8 @@ export default function VenturisFacilities() {
             <div className="lg:col-span-2 lg:sticky lg:top-24">
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
-                  alt="Modern office workspace"
+                  src="/Project-Status-Meetings.jpg"
+                  alt="Project Status Meetings"
                   className="rounded-3xl shadow-2xl w-full h-auto object-cover"
                 />
                 <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-brand-teal/20 to-brand-navy/20 rounded-2xl -z-10" />
@@ -947,11 +947,7 @@ export default function VenturisFacilities() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <div className="absolute bottom-6 right-6 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-2xl flex items-center justify-center shadow-lg">
-                <svg className="w-6 h-6 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
-                </svg>
-              </div>
+
             </div>
             <div className="space-y-6">
               <div className="group bg-white rounded-3xl border border-gray-100 shadow-lg shadow-gray-200/50 p-6 hover:shadow-xl hover:shadow-brand-teal/10 hover:-translate-y-1 transition-all duration-500">

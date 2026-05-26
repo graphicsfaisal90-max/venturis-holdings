@@ -85,7 +85,7 @@ export default function VenturisPartners() {
               <div className="grid grid-cols-3 gap-6">
                 {[
                   { value: '50+', label: 'Partners' },
-                  { value: '6', label: 'Divisions' },
+                  { value: '6+', label: 'Divisions' },
                   { value: '15+', label: 'Markets' },
                 ].map((s, i) => (
                   <div key={i}>
@@ -163,9 +163,9 @@ export default function VenturisPartners() {
                 <p className="text-white/60 text-base sm:text-lg leading-relaxed mb-8">
                   We focus on building strong digital identities for businesses by combining creative storytelling with targeted marketing strategies that generate measurable results, attract potential customers, and strengthen brand recognition across digital platforms.
                 </p>
-                <div className="flex flex-wrap gap-3">
+                <div className="grid grid-cols-2 gap-3">
                   {['Social Media', 'Meta Ads', 'SEO', 'Lead Gen', 'Content', 'Branding', 'Video & Motion Graphics', 'Digital Transformation'].map((tag) => (
-                    <span key={tag} className="px-4 py-2 bg-white/[0.04] border border-white/[0.08] rounded-full text-white/50 text-xs font-semibold uppercase tracking-wider hover:border-brand-teal/30 hover:text-brand-teal transition-all duration-300">
+                    <span key={tag} className="px-3 py-2 bg-white/[0.04] border border-white/[0.08] rounded-full text-white/50 text-xs font-semibold uppercase tracking-wider text-center hover:border-brand-teal/30 hover:text-brand-teal transition-all duration-300">
                       {tag}
                     </span>
                   ))}
@@ -265,7 +265,7 @@ export default function VenturisPartners() {
               <span className="w-12 h-0.5 bg-gradient-to-r from-brand-navy to-brand-teal" />
             </div>
             <h2 className="text-4xl sm:text-5xl font-bold text-white mt-4 mb-4">
-              Venturis <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy">Tech Service Portfolio</span>
+              Venturis <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-navy">Tech Portfolio</span>
             </h2>
             <p className="text-white/40 max-w-2xl mx-auto text-lg">
               A curated suite of modern technology services engineered to drive digital excellence and business transformation.
@@ -749,7 +749,7 @@ export default function VenturisPartners() {
               <div className="relative group">
                 <div className="absolute -inset-2 bg-gradient-to-br from-brand-teal/10 to-brand-navy/10 rounded-3xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                 <div className="relative rounded-2xl overflow-hidden shadow-lg shadow-brand-teal/5">
-                  <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=700&q=80" alt="Recyclable materials" className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <img src="/Recycle%20able%20matterials%20images.jpeg" alt="Recyclable materials" className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-tr from-brand-dark/40 via-transparent to-transparent" />
                   <div className="absolute bottom-5 left-5 flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-xl px-4 py-2 border border-white/15">
                     <span className="w-2 h-2 rounded-full bg-brand-teal animate-pulse" />

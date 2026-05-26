@@ -68,7 +68,7 @@ const realEstateServices = [
 
 const atlantisProperty = {
   title: '2-Bedroom Premium Apartment',
-  location: 'The Royal Atlantis, Dubai',
+  location: 'The Royal Atlantis - Dubai',
   tower: 'Tower B',
   floor: '3rd Floor',
   area: '209 sq.m. (2,250 sq.ft.)',
@@ -566,7 +566,7 @@ export default function VenturisRealtors() {
                 Venturis Realtors is a premier real estate division of Venturis Holdings LLC, dedicated to providing exceptional property solutions across the UAE and United States. With over 15 years of market expertise, we specialize in luxury residential properties, commercial real estate, and high-value investment opportunities.
               </p>
               <div className="grid grid-cols-2 gap-4">
-                {['UAE Market Experts', 'USA Property Access', 'Luxury Portfolio', 'Client-First Approach'].map((item) => (
+                {['UAE Market Experts', 'USA Property Access', 'PAK Market Experts', 'Client-First Approach'].map((item) => (
                   <div key={item} className="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3">
                     <div className="w-7 h-7 rounded-full bg-brand-teal/15 flex items-center justify-center shrink-0">
                       <svg className="w-3.5 h-3.5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -671,7 +671,7 @@ export default function VenturisRealtors() {
           <AnimatedSection className="text-center mb-16">
             <span className="text-brand-teal text-xs uppercase tracking-[0.25em] font-medium">Our Expertise</span>
             <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark mt-3">Real Estate Solutions</h2>
-            <p className="text-gray-400 mt-3 max-w-xl mx-auto">Six specialized services, one standard of excellence.</p>
+            <p className="text-gray-400 mt-3 max-w-xl mx-auto">6+ specialized services, one standard of excellence.</p>
           </AnimatedSection>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -728,7 +728,7 @@ export default function VenturisRealtors() {
               <div className="space-y-3 mb-6">
                 {[
                   { label: 'Status', value: atlantisProperty.status, color: 'text-brand-teal' },
-                  { label: 'Location', value: `${atlantisProperty.location} — ${atlantisProperty.tower}, ${atlantisProperty.floor}` },
+                  { label: 'Location', value: atlantisProperty.location },
                   { label: 'Area', value: atlantisProperty.area },
                   { label: 'Views', value: atlantisProperty.views },
                 ].map((d) => (
@@ -1015,11 +1015,10 @@ export default function VenturisRealtors() {
 
           {/* Specs */}
           <AnimatedSection className="mt-10">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto">
               {[
                 { label: 'Bedrooms', value: '4' },
                 { label: 'Total Area', value: '620 SQ.M.' },
-                { label: 'Price', value: '42.4M AED' },
                 { label: 'Status', value: 'Vacant' },
               ].map((spec, i) => (
                 <div key={i} className="bg-white rounded-xl px-5 py-5 border border-gray-100 text-center shadow-sm hover:shadow-md hover:border-brand-teal/20 transition-all duration-300">
@@ -1139,7 +1138,6 @@ export default function VenturisRealtors() {
               <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-brand-dark/70" />
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
                 <span className="text-brand-teal text-xs uppercase tracking-[0.3em] font-medium mb-2">Premium Island Lifestyle</span>
-                <h3 className="text-3xl sm:text-4xl font-bold text-white mb-2">42,400,000 <span className="text-brand-teal text-2xl">AED</span></h3>
                 <p className="text-white/50 text-sm max-w-md mb-6">
                   4-Bedroom Luxury Townhouse on <span className="text-white/80">Bluewaters Island</span>
                 </p>

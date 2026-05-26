@@ -309,7 +309,7 @@ function StarRating({ rating }) {
 }
 
 const heroSlides = [
-  { image: '/Desert Safari 2.jpg', alt: 'Dubai Desert Safari' },
+  { image: '/Venturis%20Tourism%20Hero%20Section%201st%20slider.jpg', alt: 'Dubai Desert Safari' },
   { image: '/Ain Dubai (Dubai, UAE).jpg', alt: 'Ain Dubai Observation Wheel' },
   { image: '/Fairy Meadows & Nanga Parbat (Pakistan).jpg', alt: 'Fairy Meadows Nanga Parbat' },
 ]

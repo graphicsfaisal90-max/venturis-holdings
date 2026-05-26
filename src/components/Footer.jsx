@@ -46,7 +46,7 @@ export default function Footer() {
                 </svg>
                 <div>
                   <span className="text-white/60 text-xs block">Head Office</span>
-                  <span>5th Floor, Al Saqr Tower, SZR, Dubai, UAE</span>
+                  <span>5th Floor Al Saqr Tower SZR Dubai UAE</span>
                 </div>
               </li>
               <li className="flex items-start gap-2">
@@ -56,7 +56,7 @@ export default function Footer() {
                 </svg>
                 <div>
                   <span className="text-white/60 text-xs block">US Office</span>
-                  <span>9219 Tamworth Road, Jacksonville, Florida, USA</span>
+                  <span>9219 Tamworth Road Jacksonville Florida USA</span>
                 </div>
               </li>
               <li className="flex items-center gap-2">

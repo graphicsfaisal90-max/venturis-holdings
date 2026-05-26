@@ -109,7 +109,7 @@ export default function Home() {
                 {[
                   { value: '200+', label: 'Projects' },
                   { value: '50+', label: 'Experts' },
-                  { value: '6', label: 'Divisions' },
+                  { value: '6+', label: 'Divisions' },
                 ].map((item) => (
                   <div key={item.label}>
                     <div className="text-2xl sm:text-3xl font-bold text-brand-dark font-number">{item.value}</div>
@@ -150,7 +150,7 @@ export default function Home() {
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark text-center mt-4 mb-4">Our Services</h2>
           <p className="text-gray-500 max-w-2xl mx-auto text-lg text-center mb-16">
-            Six specialized divisions, one standard of excellence.
+            6+ specialized divisions, one standard of excellence.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {services.map((s, i) => (

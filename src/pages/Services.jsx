@@ -84,7 +84,7 @@ export default function Services() {
     <>
       <SEO
         title="Our Services"
-        description="Explore 6 specialized divisions of Venturis Holdings LLC — Venturis Partners, Realtors, Facilities Management, Wheels, Interiors, and Tourism. Comprehensive business solutions across the UAE."
+        description="Explore 6+ specialized divisions of Venturis Holdings LLC — Venturis Partners, Realtors, Facilities Management, Wheels, Interiors, and Tourism. Comprehensive business solutions across the UAE."
         path="/services"
         keywords="Venturis Holdings LLC services, business divisions UAE, strategic partnerships Dubai, real estate services UAE, facilities management Dubai, automotive solutions UAE, interior design Dubai, tourism UAE"
       />
@@ -103,7 +103,7 @@ export default function Services() {
               Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-white">Services</span>
             </h1>
             <p className="text-lg sm:text-xl text-white/60 max-w-2xl leading-relaxed mb-10">
-              Six specialized divisions working together to deliver comprehensive solutions across multiple industries — united by a single standard of excellence.
+              6+ specialized divisions working together to deliver comprehensive solutions across multiple industries — united by a single standard of excellence.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -133,7 +133,7 @@ export default function Services() {
             <div className="bg-gradient-to-br from-brand-dark via-brand-navy to-brand-dark rounded-2xl shadow-2xl p-8 sm:p-10">
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
                 {[
-                  { value: '6', label: 'Divisions' },
+                  { value: '6+', label: 'Divisions' },
                   { value: '15+', label: 'Years Experience' },
                   { value: '50+', label: 'Partners' },
                   { value: '200+', label: 'Projects Delivered' },
@@ -160,7 +160,7 @@ export default function Services() {
             </div>
             <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark mt-4 mb-4">Our Divisions</h2>
             <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-              Six specialized divisions, one standard of excellence.
+              6+ specialized divisions, one standard of excellence.
             </p>
           </AnimatedSection>
 

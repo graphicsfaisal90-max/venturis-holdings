@@ -5,7 +5,7 @@ const stats = [
   { value: '200+', label: 'Projects Delivered' },
   { value: '50+', label: 'Expert Team Members' },
   { value: '15+', label: 'Years of Excellence' },
-  { value: '6', label: 'Specialized Divisions' },
+  { value: '6+', label: 'Specialized Divisions' },
   { value: '500+', label: 'Happy Clients' },
 ]
 
@@ -80,6 +80,21 @@ const teamRow2 = [
     image: '/Viartseika Maryana.png',
   },
   {
+    name: 'Jason Wood',
+    role: 'Chief Tourism Officer',
+    bio: 'A seasoned tourism professional with 5+ years of experience in travel management, destination partnerships, and customer engagement. Responsible for leading tourism operations, enhancing client experiences, and developing premium travel solutions aligned with the company\'s vision, market trends, and growth objectives.',
+    image: '/4323.png',
+  },
+  {
+    name: 'Zuleide Pereira',
+    role: 'Managing Director',
+    bio: 'Results-driven Managing Director from Brazil with extensive experience in design, production, and business development across diverse industries.',
+    image: '/Zuleide Pereira.png',
+  },
+]
+
+const teamRow3 = [
+  {
     name: 'Muhammad Faisal',
     role: 'Head Of IT',
     bio: 'Experienced IT professional with expertise in technology solutions, digital innovation, and business support services, focused on delivering efficient, reliable, and modern IT solutions for business growth.',
@@ -92,25 +107,10 @@ const teamRow2 = [
     image: '/Ella Jean Bihasa.png',
   },
   {
-    name: 'Zuleide Pereira',
-    role: 'Managing Director',
-    bio: 'Results-driven Managing Director from Brazil with extensive experience in design, production, and business development across diverse industries.',
-    image: '/Zuleide Pereira.png',
-  },
-]
-
-const teamRow3 = [
-  {
     name: 'Syed Inam Ul Haq',
     role: 'Head Of Legal Compliance',
     bio: 'Led by a qualified law graduate, our company provides professional PRO and compliance services across Dubai, including visa processing, MOHRE submissions, trade license renewals, MOFA attestations, and AML compliance — ensuring businesses remain fully compliant, efficient, and hassle-free.',
     image: '/656565 (1).png',
-  },
-  {
-    name: 'Jason Wood',
-    role: 'Chief Tourism Officer',
-    bio: 'A seasoned tourism professional with 5+ years of experience in travel management, destination partnerships, and customer engagement. Responsible for leading tourism operations, enhancing client experiences, and developing premium travel solutions aligned with the company\'s vision, market trends, and growth objectives.',
-    image: '/4323.png',
   },
 ]
 
@@ -125,7 +125,7 @@ const journey = [
 const benefits = [
   {
     title: 'Integrated Solutions',
-    desc: 'Six specialized divisions working in synergy to provide end-to-end solutions under one roof.',
+    desc: '6+ specialized divisions working in synergy to provide end-to-end solutions under one roof.',
   },
   {
     title: 'Proven Track Record',
@@ -410,11 +410,11 @@ export default function About() {
                   key={member.name}
                   className="group relative bg-white rounded-3xl overflow-hidden shadow-lg shadow-gray-200/50 border border-gray-200 hover:shadow-2xl hover:shadow-brand-teal/15 hover:-translate-y-1 active:shadow-2xl active:shadow-brand-teal/15 active:-translate-y-0.5 transition-all duration-700 flex flex-col sm:flex-row"
                 >
-                  <div className="relative sm:w-2/5 h-64 sm:h-auto overflow-hidden">
+                  <div className="relative sm:w-2/5 h-80 sm:h-auto overflow-hidden">
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
+                      className="absolute inset-0 w-full h-full object-cover object-top transition-all duration-700 ease-out group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-white/20" />
                     <div className="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-transparent sm:bg-none" />
@@ -442,10 +442,10 @@ export default function About() {
                     <p className="text-gray-500 text-sm leading-relaxed mb-5">{member.bio}</p>
                     <div className="flex items-center gap-3 pt-5 border-t border-gray-100 mt-auto">
                       <div className="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-lg hover:shadow-brand-teal/20 transition-all duration-500 cursor-pointer group/icon">
-                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22 2s-7.64-.37-10.66 4.34c-1.19 1.86-1.44 4.16-1.32 5.66-2.71.26-5.96-.71-8.02-2.66 0 0-3.31 5.65 4.33 9.66-1.73 1.06-5.33 1.5-5.33 1.5s3.13 4.49 10.66 4.49c9.5 0 14.34-8.31 14.34-16.98 0-.26-.02-.52-.05-.78C20.94 4.58 22 2 22 2z"/></svg>
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                       </div>
                       <div className="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-lg hover:shadow-brand-teal/20 transition-all duration-500 cursor-pointer group/icon">
-                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 4.75c1.24 0 2.25 1.01 2.25 2.25s-1.01 2.25-2.25 2.25S9.75 10.24 9.75 9 10.76 6.75 12 6.75zM17 17H7v-1.5c0-1.67 3.33-2.5 5-2.5s5 .83 5 2.5V17z"/></svg>
+                        <img src="/Indeed%20logo%20icon.png" alt="Indeed" className="w-4 h-4 object-contain" />
                       </div>
                       <div className="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-lg hover:shadow-brand-teal/20 transition-all duration-500 cursor-pointer group/icon">
                         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -461,7 +461,7 @@ export default function About() {
                 </div>
               ))}
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-8 max-w-5xl mx-auto">
               {teamRow2.map((member, i) => (
                 <div
                   key={member.name}
@@ -498,7 +498,7 @@ export default function About() {
                 </div>
               ))}
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 xl:gap-8 max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-8 max-w-5xl mx-auto">
               {teamRow3.map((member, i) => (
                 <div
                   key={member.name}
@@ -599,143 +599,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* ============ SWOT ANALYSIS ============ */}
-      <section className="py-28 relative overflow-hidden bg-gradient-to-br from-brand-dark via-black to-brand-dark">
-        <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-          <div className="absolute top-20 left-1/3 w-96 h-96 bg-brand-teal rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-1/3 w-80 h-80 bg-white rounded-full blur-3xl" />
-        </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="flex items-center gap-4 justify-center mb-4">
-            <span className="w-12 h-0.5 bg-gradient-to-r from-brand-teal to-brand-navy" />
-            <span className="text-sm font-semibold text-brand-teal uppercase tracking-[0.2em]">Analysis</span>
-            <span className="w-12 h-0.5 bg-gradient-to-r from-brand-navy to-brand-teal" />
-          </div>
-          <h2 className="text-4xl sm:text-5xl font-bold text-white text-center mt-4 mb-4">SWOT Analysis</h2>
-          <p className="text-white/40 max-w-2xl mx-auto text-lg text-center mb-16">
-            Strategic assessment of our brand's position across all divisions.
-          </p>
-
-          <div className="grid sm:grid-cols-2 gap-6">
-            {/* Strengths */}
-            <div className="group relative bg-white/[0.03] backdrop-blur-xl rounded-3xl p-8 border border-white/[0.06] hover:border-emerald-500/30 hover:bg-white/[0.06] hover:-translate-y-1 transition-all duration-500">
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-400 to-emerald-600 rounded-t-3xl opacity-60" />
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20 group-hover:bg-emerald-500/20 group-hover:scale-110 transition-all duration-500">
-                  <svg className="w-7 h-7 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-white">Strengths</h3>
-                  <span className="text-emerald-400/60 text-xs uppercase tracking-wider">Internal &amp; Positive</span>
-                </div>
-              </div>
-              <ul className="space-y-3">
-                {[
-                  'Diversified business portfolio across real estate, IT, digital marketing, consultancy, and documentation services',
-                  'Strong integration of technology and AI-driven solutions',
-                  'Multi-sector business expertise under one brand vision',
-                  'Professional client-focused and scalable business approach',
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-white/60 text-sm leading-relaxed group/li">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400/60 mt-2 shrink-0 group-hover/li:bg-emerald-400 transition-colors" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Weaknesses */}
-            <div className="group relative bg-white/[0.03] backdrop-blur-xl rounded-3xl p-8 border border-white/[0.06] hover:border-red-500/30 hover:bg-white/[0.06] hover:-translate-y-1 transition-all duration-500">
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-red-400 to-red-600 rounded-t-3xl opacity-60" />
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-2xl bg-red-500/10 flex items-center justify-center border border-red-500/20 group-hover:bg-red-500/20 group-hover:scale-110 transition-all duration-500">
-                  <svg className="w-7 h-7 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-white">Weaknesses</h3>
-                  <span className="text-red-400/60 text-xs uppercase tracking-wider">Internal &amp; Negative</span>
-                </div>
-              </div>
-              <ul className="space-y-3">
-                {[
-                  'Growing brand still building wider international recognition',
-                  'Expansion across multiple industries requires structured scaling',
-                  'Dependence on continuous innovation and market adaptation',
-                  'Competitive industries require constant digital advancement',
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-white/60 text-sm leading-relaxed group/li">
-                    <span className="w-1.5 h-1.5 rounded-full bg-red-400/60 mt-2 shrink-0 group-hover/li:bg-red-400 transition-colors" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Opportunities */}
-            <div className="group relative bg-white/[0.03] backdrop-blur-xl rounded-3xl p-8 border border-white/[0.06] hover:border-blue-500/30 hover:bg-white/[0.06] hover:-translate-y-1 transition-all duration-500">
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-t-3xl opacity-60" />
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-2xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20 group-hover:bg-blue-500/20 group-hover:scale-110 transition-all duration-500">
-                  <svg className="w-7 h-7 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-white">Opportunities</h3>
-                  <span className="text-blue-400/60 text-xs uppercase tracking-wider">External &amp; Positive</span>
-                </div>
-              </div>
-              <ul className="space-y-3">
-                {[
-                  'Increasing demand for AI and digital transformation services',
-                  'Growing UAE real estate and business consultancy market',
-                  'Expansion opportunities in global IT and marketing sectors',
-                  'Potential strategic partnerships and investment collaborations',
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-white/60 text-sm leading-relaxed group/li">
-                    <span className="w-1.5 h-1.5 rounded-full bg-blue-400/60 mt-2 shrink-0 group-hover/li:bg-blue-400 transition-colors" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Threats */}
-            <div className="group relative bg-white/[0.03] backdrop-blur-xl rounded-3xl p-8 border border-white/[0.06] hover:border-amber-500/30 hover:bg-white/[0.06] hover:-translate-y-1 transition-all duration-500">
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-t-3xl opacity-60" />
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-2xl bg-amber-500/10 flex items-center justify-center border border-amber-500/20 group-hover:bg-amber-500/20 group-hover:scale-110 transition-all duration-500">
-                  <svg className="w-7 h-7 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-white">Threats</h3>
-                  <span className="text-amber-400/60 text-xs uppercase tracking-wider">External &amp; Negative</span>
-                </div>
-              </div>
-              <ul className="space-y-3">
-                {[
-                  'High competition across technology and real estate industries',
-                  'Rapidly changing digital and AI trends',
-                  'Economic and regulatory market fluctuations',
-                  'Constant need for innovation and operational upgrades',
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-white/60 text-sm leading-relaxed group/li">
-                    <span className="w-1.5 h-1.5 rounded-full bg-amber-400/60 mt-2 shrink-0 group-hover/li:bg-amber-400 transition-colors" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ============ PESTLE ANALYSIS ============ */}
       <section className="py-28 relative overflow-hidden bg-white">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-brand-teal/3 rounded-full blur-3xl pointer-events-none" />
@@ -746,7 +609,7 @@ export default function About() {
             <span className="text-sm font-semibold text-brand-teal uppercase tracking-[0.2em]">Analysis</span>
             <span className="w-12 h-0.5 bg-gradient-to-r from-brand-navy to-brand-teal" />
           </div>
-          <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark text-center mt-4 mb-4">PESTLE Analysis</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark text-center mt-4 mb-4">PESTLE</h2>
           <p className="text-gray-500 max-w-2xl mx-auto text-lg text-center mb-16">
             Macro-environmental factors shaping our strategic direction.
           </p>
@@ -912,7 +775,7 @@ export default function About() {
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
               <p className="text-xl sm:text-2xl font-light text-white/80 leading-relaxed italic max-w-4xl mx-auto px-8">
-                "Venturis is not just building businesses — it is building the future of global innovation and business transformation."
+                "Venturis Holdings is not just building businesses — it is building the future of global innovation and business transformation."
               </p>
               <svg className="absolute -bottom-6 -right-6 w-12 h-12 text-brand-teal/20 rotate-180" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />

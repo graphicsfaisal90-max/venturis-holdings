@@ -66,21 +66,21 @@ Trusted Channel Partners
         >
           <button
             onClick={prev}
-            className="absolute -left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-lg shadow-black/5 border border-gray-100 flex items-center justify-center text-brand-navy hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-xl hover:shadow-brand-teal/20 hover:scale-110 active:scale-95 transition-all duration-300 hidden lg:flex"
+            className="absolute -left-14 top-[42%] -translate-y-[calc(50%+5px)] z-20 w-10 h-10 rounded-full bg-gradient-to-br from-brand-teal/90 to-brand-navy/90 backdrop-blur-lg border border-white/20 flex items-center justify-center text-white shadow-lg shadow-brand-teal/10 hover:shadow-xl hover:shadow-brand-teal/20 hover:scale-110 hover:-translate-x-0.5 active:scale-95 transition-all duration-300"
             aria-label="Previous"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
 
           <button
             onClick={next}
-            className="absolute -right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-lg shadow-black/5 border border-gray-100 flex items-center justify-center text-brand-navy hover:bg-gradient-to-br hover:from-brand-teal hover:to-brand-navy hover:text-white hover:shadow-xl hover:shadow-brand-teal/20 hover:scale-110 active:scale-95 transition-all duration-300 hidden lg:flex"
+            className="absolute -right-14 top-[42%] -translate-y-[calc(50%+5px)] z-20 w-10 h-10 rounded-full bg-gradient-to-br from-brand-teal/90 to-brand-navy/90 backdrop-blur-lg border border-white/20 flex items-center justify-center text-white shadow-lg shadow-brand-teal/10 hover:shadow-xl hover:shadow-brand-teal/20 hover:scale-110 hover:translate-x-0.5 active:scale-95 transition-all duration-300"
             aria-label="Next"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
             </svg>
           </button>
 

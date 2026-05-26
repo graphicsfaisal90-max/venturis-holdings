@@ -478,7 +478,7 @@ export default function VenturisInteriors() {
             {process.map((p, i) => (
               <div key={p.step} className="relative pb-12 lg:pb-20 last:pb-0">
                 <div className={`lg:flex items-center gap-12 ${i % 2 === 0 ? '' : 'lg:flex-row-reverse'}`}>
-                  <div className={`lg:w-1/2 ${i % 2 === 0 ? 'lg:text-right lg:pr-16' : 'lg:text-left lg:pl-16'}`}>
+                  <div className={`lg:w-1/2 ${i % 2 === 0 ? 'lg:text-right lg:pr-8' : 'lg:text-left lg:pl-8'}`}>
                     <div className="group bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-1">
                       <div className={`flex items-center gap-4 mb-5 ${i % 2 === 0 ? 'lg:flex-row-reverse' : ''}`}>
                         <div className="w-14 h-14 rounded-xl bg-brand-light text-brand-teal flex items-center justify-center shrink-0 group-hover:bg-brand-teal group-hover:text-white transition-all duration-300">

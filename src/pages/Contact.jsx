@@ -20,7 +20,7 @@ const contactInfo = [
       </svg>
     ),
     title: 'Head Office',
-    lines: ['5th Floor, Al Saqr Tower, SZR', 'Dubai, UAE'],
+    lines: ['5th Floor Al Saqr Tower SZR', 'Dubai UAE'],
   },
   {
     icon: (
@@ -30,7 +30,7 @@ const contactInfo = [
       </svg>
     ),
     title: 'US Office',
-    lines: ['9219 Tamworth Road', 'Jacksonville, Florida, USA'],
+    lines: ['9219 Tamworth Road', 'Jacksonville Florida USA'],
     note: 'Book an Appointment Before Visit',
   },
   {
@@ -276,7 +276,7 @@ export default function Contact() {
                         )
                       ))}
                       {info.note && (
-                        <p className="mt-2 text-xs font-semibold text-brand-teal uppercase tracking-wider bg-brand-teal/5 px-3 py-1.5 rounded-lg border border-brand-teal/20 inline-block">
+                        <p className="mt-1 text-sm text-brand-teal font-medium">
                           {info.note}
                         </p>
                       )}
