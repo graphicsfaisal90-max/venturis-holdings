@@ -53,7 +53,7 @@ export default function TrustedPartnersCarousel() {
         </div>
 
         <h2 className="text-4xl sm:text-5xl font-bold text-brand-dark text-center mt-4 mb-4">
-          Trusted Government Partners
+Trusted Channel Partners
         </h2>
         <p className="text-gray-500 max-w-3xl mx-auto text-lg text-center mb-16 leading-relaxed">
           Associated with trusted UAE government authorities and regulatory entities to ensure excellence, compliance, and professional business operations.
