@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: 'What areas do you service?',
-    a: 'We are based in Johannesburg, South Africa, and service clients across Gauteng and surrounding provinces. For larger projects, we can accommodate national requirements.',
+    a: 'We serve clients across the USA and the UAE, with our primary operations based in Pakistan. For large-scale projects, we are fully equipped to accommodate global and international requirements.',
   },
   {
     q: 'How can I get a quote?',
@@ -43,10 +43,10 @@ export default function FAQs() {
   return (
     <>
       <SEO
-        title="FAQs"
-        description="Find answers to common questions about Venturis Holdings LLC and our services across interiors, facilities management, automotive, tourism, and investment divisions."
+        title="FAQs - Venturis Holdings LLC UAE | Dubai Business Group"
+        description="Find answers to common questions about Venturis Holdings LLC UAE and our services across interiors, facilities management, automotive, tourism, logistics, and investment divisions in Dubai."
         path="/faqs"
-        keywords="Venturis Holdings LLC FAQs, UAE business group questions, Venturis services FAQ, Dubai holding company FAQ, business inquiries UAE"
+        keywords="Venturis Holdings LLC UAE FAQs, Venturis Holdings Dubai FAQ, diversified holding company questions UAE, Dubai business group FAQ, Venturis services FAQ"
       />
       <section className="bg-gradient-to-br from-brand-from to-brand-to text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

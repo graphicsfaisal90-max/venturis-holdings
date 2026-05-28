@@ -145,10 +145,10 @@ export default function About() {
   return (
     <>
       <SEO
-        title="About Us"
-        description="Learn about Venturis Holdings LLC — a diversified group of companies operating in real estate, facilities management, interiors, automotive, tourism, and IT across UAE, USA, and Pakistan since 2010."
+        title="About Venturis Holdings LLC UAE | Diversified Business Group Dubai"
+        description="Learn about Venturis Holdings LLC UAE — a diversified holding company based in Dubai operating in real estate, facilities management, interiors, automotive, tourism, and logistics across UAE, USA, and Pakistan since 2010."
         path="/about"
-        keywords="about Venturis Holdings LLC, diversified business group UAE, holding company Dubai, UAE business group, Venturis team, leadership UAE, company history 2010"
+        keywords="about Venturis Holdings LLC UAE, Venturis Holdings Dubai, diversified holding company UAE, business group Dubai, holding company Dubai UAE, Venturis team, Venturis history 2010"
       />
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-navy to-brand-from/90" />

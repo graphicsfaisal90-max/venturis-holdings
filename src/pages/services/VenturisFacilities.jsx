@@ -231,10 +231,10 @@ export default function VenturisFacilities() {
   return (
     <>
       <SEO
-        title="Venturis Facilities Management"
-        description="Venturis Facilities Management division of Venturis Holdings LLC — professional maintenance, security, cleaning, and utilities management services across the UAE for commercial and residential properties."
+        title="Venturis Facilities Management UAE | Facilities Services Dubai"
+        description="Venturis Facilities Management UAE — professional maintenance, security, cleaning, and utilities management services by Venturis Holdings LLC. Serving commercial and residential properties across Dubai."
         path="/services/facilities"
-        keywords="Venturis Facilities Management, facilities management Dubai, maintenance services UAE, security services Dubai, cleaning services UAE, utilities management, Venturis Holdings LLC facilities, property management UAE"
+        keywords="Venturis Facilities Management UAE, Venturis Holdings logistics, facilities management Dubai, maintenance services UAE, security services Dubai, cleaning services UAE, property management Dubai, Venturis Holdings LLC UAE"
       />
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">

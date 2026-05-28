@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import HeroSlider from '../components/HeroSlider'
 import TrustedPartnersCarousel from '../components/TrustedPartnersCarousel'
+import PaymentMethodsCarousel from '../components/PaymentMethodsCarousel'
 import SEO from '../components/SEO'
 
 const services = [
@@ -52,10 +53,10 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Home"
-        description="Venturis Holdings LLC is a UAE-based diversified holding company delivering excellence across transport, heavy equipment, logistics, facilities management, interiors, real estate, and industrial solutions."
+        title="Venturis Holdings LLC UAE | Diversified Holding Company Dubai"
+        description="Venturis Holdings LLC UAE is a diversified holding company based in Dubai delivering excellence across transport, logistics, interiors, facilities management, real estate, automotive, and tourism."
         path="/"
-        keywords="Venturis Holdings LLC, UAE holding company, diversified business group Dubai, transport UAE, heavy equipment UAE, logistics Dubai, facilities management UAE, interiors Dubai, real estate UAE, industrial solutions UAE"
+        keywords="Venturis Holdings LLC UAE, Venturis Holdings Dubai, diversified holding company UAE, Venturis Holdings transport, Venturis Holdings logistics, Venturis Holdings interiors, UAE diversified holding company, business group Dubai"
       />
       <HeroSlider />
 
@@ -206,6 +207,8 @@ export default function Home() {
       </section>
 
       <TrustedPartnersCarousel />
+
+      <PaymentMethodsCarousel />
 
       <section className="py-24 bg-gradient-to-br from-brand-from via-brand-navy to-brand-to text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">

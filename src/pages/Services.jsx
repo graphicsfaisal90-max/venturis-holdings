@@ -83,10 +83,10 @@ export default function Services() {
   return (
     <>
       <SEO
-        title="Our Services"
-        description="Explore 6+ specialized divisions of Venturis Holdings LLC — Venturis Partners, Realtors, Facilities Management, Wheels, Interiors, and Tourism. Comprehensive business solutions across the UAE."
+        title="Venturis Holdings LLC Services | 6+ Business Divisions Dubai"
+        description="Explore 6+ specialized divisions of Venturis Holdings LLC UAE — Venturis Partners, Realtors, Facilities Management, Wheels, Interiors, and Tourism. Comprehensive business solutions in Dubai and across the UAE."
         path="/services"
-        keywords="Venturis Holdings LLC services, business divisions UAE, strategic partnerships Dubai, real estate services UAE, facilities management Dubai, automotive solutions UAE, interior design Dubai, tourism UAE"
+        keywords="Venturis Holdings LLC UAE services, Venturis Holdings Dubai divisions, business solutions UAE, strategic partnerships Dubai, real estate Dubai UAE, facilities management Dubai, automotive solutions UAE, interior design Dubai, tourism UAE, diversified holding company Dubai"
       />
       {/* ============ HERO ============ */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center overflow-hidden bg-brand-dark">

@@ -92,7 +92,7 @@ export default function HeroSlider() {
 
   return (
     <section
-      className="relative h-[90vh] min-h-[600px] max-h-[1000px] overflow-hidden group"
+      className="relative h-[85vh] min-h-[480px] sm:min-h-[600px] max-h-[1000px] overflow-hidden group"
       onMouseEnter={() => { setIsAutoPlaying(false); setIsHovered(true) }}
       onMouseLeave={() => { setIsAutoPlaying(true); setIsHovered(false) }}
     >
@@ -142,56 +142,56 @@ export default function HeroSlider() {
 
       <div className="relative z-20 h-full flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="max-w-3xl" key={current}>
+          <div className="sm:max-w-3xl" key={current}>
             <div className="overflow-hidden">
-              <div className="flex items-center gap-4 mb-4 sm:mb-5 animate-fade-in-down">
-                <span className="w-10 h-px bg-white/40" />
-                <span className="text-base sm:text-sm text-white/60 font-semibold uppercase tracking-[0.2em]">{slide.subtitle}</span>
+              <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-5 animate-fade-in-down">
+                <span className="w-8 sm:w-10 h-px bg-white/40" />
+                <span className="text-xs sm:text-sm text-white/60 font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em]">{slide.subtitle}</span>
               </div>
             </div>
             <div className="overflow-hidden">
-              <h1 className={`text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-5 sm:mb-6 animate-fade-in-up delay-100 ${slide.title.includes('\n') ? 'whitespace-pre-line' : ''}`}>
+              <h1 className={`text-3xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-4 sm:mb-6 animate-fade-in-up delay-100 ${slide.title.includes('\n') ? 'whitespace-pre-line' : ''}`}>
                 {slide.title}
               </h1>
             </div>
             <div className="overflow-hidden">
               {slide.values ? (
-                <div className="grid grid-cols-2 gap-x-6 gap-y-3 mb-8 sm:mb-10 animate-fade-in-up delay-200 max-w-2xl">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mb-4 sm:mb-10 animate-fade-in-up delay-200 max-w-2xl">
                   {slide.values.map((v, i) => (
-                    <div key={i}>
-                      <span className="text-white text-xs font-bold uppercase tracking-[0.2em]">{v.label}</span>
-                      <p className="text-white/60 text-sm leading-relaxed mt-0.5">{v.text}</p>
+                    <div key={i} className="bg-white/5 rounded-lg p-2.5 sm:p-0 sm:bg-transparent">
+                      <span className="text-white text-[11px] sm:text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em]">{v.label}</span>
+                      <p className="text-white/60 text-xs sm:text-sm leading-relaxed mt-0.5">{v.text}</p>
                     </div>
                   ))}
                 </div>
               ) : slide.vision ? (
-                <div className="space-y-4 mb-8 sm:mb-10 animate-fade-in-up delay-200">
-                  <div>
-                    <span className="text-white text-xs font-bold uppercase tracking-[0.2em]">Vision</span>
-                    <p className="text-white/60 text-base sm:text-lg leading-relaxed mt-1 max-w-2xl">{slide.vision}</p>
+                <div className="space-y-3 sm:space-y-4 mb-4 sm:mb-10 animate-fade-in-up delay-200">
+                  <div className="bg-white/5 rounded-lg p-2.5 sm:p-0 sm:bg-transparent">
+                    <span className="text-white text-[11px] sm:text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em]">Vision</span>
+                    <p className="text-white/60 text-xs sm:text-lg leading-relaxed mt-1 max-w-2xl">{slide.vision}</p>
                   </div>
-                  <div>
-                    <span className="text-white text-xs font-bold uppercase tracking-[0.2em]">Mission</span>
-                    <p className="text-white/60 text-base sm:text-lg leading-relaxed mt-1 max-w-2xl">{slide.mission}</p>
+                  <div className="bg-white/5 rounded-lg p-2.5 sm:p-0 sm:bg-transparent">
+                    <span className="text-white text-[11px] sm:text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em]">Mission</span>
+                    <p className="text-white/60 text-xs sm:text-lg leading-relaxed mt-1 max-w-2xl">{slide.mission}</p>
                   </div>
                 </div>
               ) : (
-                <p className="text-xl sm:text-xl text-white/60 max-w-xl leading-relaxed mb-8 sm:mb-10 animate-fade-in-up delay-200">
+                <p className="text-base sm:text-lg text-white/60 max-w-xl leading-relaxed mb-6 sm:mb-10 animate-fade-in-up delay-200">
                   {slide.desc}
                 </p>
               )}
             </div>
-            <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 animate-fade-in-up delay-300 pb-20 sm:pb-0">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-6 animate-fade-in-up delay-300 pb-16 sm:pb-0">
               <Link
                 to={slide.btn1Link}
-                className="group relative px-10 py-4 font-bold text-xl sm:text-lg rounded-xl overflow-hidden transition-all duration-500 bg-gradient-to-br from-brand-teal to-brand-navy text-white hover:shadow-2xl hover:shadow-brand-teal/25 hover:-translate-y-1 active:translate-y-0"
+                className="group relative px-6 sm:px-10 py-3.5 sm:py-4 font-bold text-sm sm:text-lg rounded-xl overflow-hidden transition-all duration-500 bg-gradient-to-br from-brand-teal to-brand-navy text-white hover:shadow-2xl hover:shadow-brand-teal/25 hover:-translate-y-1 active:translate-y-0 text-center"
               >
                 <span className="relative z-10">{slide.btn1}</span>
                 <div className="absolute inset-0 -translate-x-full skew-x-12 bg-gradient-to-r from-transparent via-white/15 to-transparent group-hover:translate-x-full transition-transform duration-700" />
               </Link>
               <Link
                 to={slide.btn2Link}
-                className="group relative px-10 py-4 font-bold text-xl sm:text-lg rounded-xl overflow-hidden transition-all duration-500 bg-gradient-to-br from-brand-teal to-brand-navy text-white shadow-xl shadow-brand-teal/10 hover:shadow-2xl hover:shadow-brand-teal/25 hover:-translate-y-1 active:translate-y-0"
+                className="group relative px-6 sm:px-10 py-3.5 sm:py-4 font-bold text-sm sm:text-lg rounded-xl overflow-hidden transition-all duration-500 bg-gradient-to-br from-brand-teal to-brand-navy text-white shadow-xl shadow-brand-teal/10 hover:shadow-2xl hover:shadow-brand-teal/25 hover:-translate-y-1 active:translate-y-0 text-center"
               >
                 <span className="relative z-10">{slide.btn2}</span>
                 <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

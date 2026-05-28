@@ -312,10 +312,10 @@ export default function VenturisTourism() {
   return (
     <>
       <SEO
-        title="Venturis Tourism"
-        description="Venturis Tourism division of Venturis Holdings LLC — curated travel experiences, desert safaris, luxury stays, and premium tourism services across UAE and Pakistan."
+        title="Venturis Tourism Dubai | Travel by Venturis Holdings LLC UAE"
+        description="Venturis Tourism Dubai — curated travel experiences, desert safaris, luxury stays, and premium tourism services by Venturis Holdings LLC UAE across UAE and Pakistan."
         path="/services/tourism"
-        keywords="Venturis Tourism, Dubai desert safari, UAE travel agency, luxury travel Dubai, Pakistan tourism, Venturis Holdings LLC tourism, desert safari Dubai, UAE tour packages, Pakistan travel"
+        keywords="Venturis Tourism Dubai, Venturis Holdings LLC UAE tourism, Dubai desert safari, UAE travel agency, luxury travel Dubai, Pakistan tourism, desert safari Dubai, UAE tour packages"
       />
       <link rel="preload" href="/65453.mp4" as="video" type="video/mp4" />
       {/* Hero Section */}

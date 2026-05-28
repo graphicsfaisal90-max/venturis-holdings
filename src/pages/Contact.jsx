@@ -30,7 +30,7 @@ const contactInfo = [
       </svg>
     ),
     title: 'US Office',
-    lines: ['9219 Tamworth Road', 'Jacksonville Florida USA'],
+    lines: ['6501 Arlington Expressway B105 #7330', 'Jacksonville FL 32211 United States'],
     note: 'Book an Appointment Before Visit',
   },
   {
@@ -113,10 +113,10 @@ export default function Contact() {
   return (
     <>
       <SEO
-        title="Contact Us"
-        description="Contact Venturis Holdings LLC — reach out for business inquiries, partnerships, or project discussions. Call +971 58 531 8860 or email info@venturisholdings.com."
+        title="Contact Venturis Holdings LLC UAE | Dubai Office"
+        description="Contact Venturis Holdings LLC UAE — reach out for business inquiries, partnerships, or project discussions. Call +971 58 531 8860 or email info@venturisholdings.com. Dubai office located at Al Saqr Tower, SZR."
         path="/contact"
-        keywords="contact Venturis Holdings LLC, Dubai business inquiries, UAE holding company contact, Venturis phone number, Venturis email, business partnerships UAE"
+        keywords="contact Venturis Holdings LLC UAE, Venturis Holdings Dubai office, UAE holding company contact, Dubai business inquiries, Venturis phone number, Venturis email, business partnerships UAE"
       />
       {/* ============ HERO ============ */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center overflow-hidden bg-brand-dark">

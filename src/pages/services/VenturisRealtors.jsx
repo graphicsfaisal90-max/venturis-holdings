@@ -484,10 +484,10 @@ export default function VenturisRealtors() {
   return (
     <>
       <SEO
-        title="Venturis Realtors"
-        description="Venturis Realtors — premier real estate division of Venturis Holdings LLC. Luxury properties, commercial real estate, and investment opportunities across UAE and USA with over 15 years of market expertise."
+        title="Venturis Realtors Dubai | Real Estate by Venturis Holdings LLC UAE"
+        description="Venturis Realtors Dubai — premier real estate division of Venturis Holdings LLC UAE. Luxury properties, commercial real estate, and investment opportunities across UAE and USA."
         path="/services/realtors"
-        keywords="Venturis Realtors, real estate Dubai, luxury properties UAE, commercial real estate USA, property investment Dubai, Venturis Holdings LLC real estate, Dubai properties for sale, UAE realtor"
+        keywords="Venturis Realtors Dubai, Venturis Holdings real estate, real estate Dubai UAE, luxury properties Dubai, commercial real estate UAE, property investment Dubai, Venturis Holdings LLC UAE realtor"
       />
       {/* ============ HERO ============ */}
       <section className="relative h-screen min-h-[600px] flex items-center bg-black overflow-hidden">

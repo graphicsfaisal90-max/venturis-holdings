@@ -5,10 +5,10 @@ export default function VenturisPartners() {
   return (
     <>
       <SEO
-        title="Venturis Partners"
-        description="Venturis Partners division of Venturis Holdings LLC — empowering businesses through collaborative partnerships, joint ventures, corporate advisory, and business development across the UAE."
+        title="Venturis Partners Dubai | Strategic Partnerships by Venturis Holdings LLC UAE"
+        description="Venturis Partners Dubai — empowering businesses through collaborative partnerships, joint ventures, corporate advisory, and business development by Venturis Holdings LLC UAE."
         path="/services/partners"
-        keywords="Venturis Partners, strategic partnerships UAE, joint ventures Dubai, corporate advisory UAE, business development Dubai, Venturis Holdings LLC partners, business alliances"
+        keywords="Venturis Partners Dubai, Venturis Holdings LLC UAE partnerships, strategic partnerships UAE, joint ventures Dubai, corporate advisory UAE, business development Dubai, business alliances"
       />
       {/* ============ HERO SECTION ============ */}
       <section className="relative h-[90vh] min-h-[600px] overflow-hidden bg-brand-dark">

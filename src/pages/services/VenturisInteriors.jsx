@@ -243,10 +243,10 @@ export default function VenturisInteriors() {
   return (
     <>
       <SEO
-        title="Venturis Interiors"
-        description="Venturis Interiors division of Venturis Holdings LLC — award-winning interior design, architecture, and commercial fit-out solutions across the UAE for residential, commercial, and hospitality projects."
+        title="Venturis Interiors Dubai | Interior Design by Venturis Holdings LLC UAE"
+        description="Venturis Interiors Dubai — award-winning interior design, architecture, and commercial fit-out solutions by Venturis Holdings LLC UAE. Residential, commercial, and hospitality projects across Dubai."
         path="/services/interiors"
-        keywords="Venturis Interiors, interior design Dubai, architecture UAE, commercial fit-out Dubai, residential interior design, hospitality design UAE, Venturis Holdings LLC interiors, office fit-out Dubai"
+        keywords="Venturis Interiors Dubai, Venturis Holdings interiors, interior design Dubai UAE, architecture UAE, commercial fit-out Dubai, residential interior design, hospitality design UAE, Venturis Holdings LLC UAE"
       />
       {/* Hero Section */}
       <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">

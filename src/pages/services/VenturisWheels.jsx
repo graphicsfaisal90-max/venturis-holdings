@@ -266,10 +266,10 @@ export default function VenturisWheels() {
   return (
     <>
       <SEO
-        title="Venturis Wheels"
-        description="Venturis Wheels division of Venturis Holdings LLC — premium automotive solutions including vehicle sales, leasing, fleet management, maintenance, and luxury car rentals in the UAE."
+        title="Venturis Wheels Dubai | Automotive by Venturis Holdings LLC UAE"
+        description="Venturis Wheels Dubai — premium automotive solutions including vehicle sales, leasing, fleet management, and luxury car rentals by Venturis Holdings LLC UAE in Dubai."
         path="/services/wheels"
-        keywords="Venturis Wheels, automotive Dubai, car sales UAE, vehicle leasing Dubai, fleet management UAE, luxury car rental Dubai, Venturis Holdings LLC automotive, Mercedes G-Class UAE, Jetour G700"
+        keywords="Venturis Wheels Dubai, Venturis Holdings transport, automotive Dubai UAE, car sales UAE, vehicle leasing Dubai, fleet management UAE, luxury car rental Dubai, Mercedes G-Class UAE, Jetour G700, Venturis Holdings LLC UAE"
       />
       {/* Hero Section with Jetour G700 Video */}
       <section className="relative h-screen min-h-[600px] sm:min-h-[700px] flex items-center justify-center overflow-hidden bg-black">

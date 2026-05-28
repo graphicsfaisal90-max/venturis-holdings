@@ -56,7 +56,7 @@ export default function Footer() {
                 </svg>
                 <div>
                   <span className="text-white/60 text-xs block">US Office</span>
-                  <span>9219 Tamworth Road Jacksonville Florida USA</span>
+                  <span>6501 Arlington Expressway B105 #7330 Jacksonville FL 32211 United States</span>
                 </div>
               </li>
               <li className="flex items-center gap-2">
