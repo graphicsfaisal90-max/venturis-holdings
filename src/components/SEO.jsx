@@ -2,10 +2,10 @@ import { Helmet } from 'react-helmet-async'
 
 const BASE_URL = 'https://venturisholdings.com'
 
-export default function SEO({ title, description, path, keywords }) {
+export default function SEO({ title, description, path, keywords, robots = 'index, follow' }) {
   const fullTitle = title ? `${title} | Venturis Holdings LLC` : 'Venturis Holdings LLC | UAE-Based Diversified Holding Company'
   const url = `${BASE_URL}${path}`
-  const image = `${BASE_URL}/logo.png`
+  const image = `${BASE_URL}/favicon.png`
 
   const schemaOrg = {
     '@context': 'https://schema.org',
@@ -44,6 +44,7 @@ export default function SEO({ title, description, path, keywords }) {
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
+      <meta name="robots" content={robots} />
       <link rel="canonical" href={url} />
 
       <meta property="og:title" content={fullTitle} />
@@ -51,8 +52,8 @@ export default function SEO({ title, description, path, keywords }) {
       <meta property="og:url" content={url} />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={image} />
-      <meta property="og:image:width" content="512" />
-      <meta property="og:image:height" content="512" />
+      <meta property="og:image:width" content="449" />
+      <meta property="og:image:height" content="529" />
       <meta property="og:site_name" content="Venturis Holdings LLC" />
 
       <meta name="twitter:card" content="summary_large_image" />

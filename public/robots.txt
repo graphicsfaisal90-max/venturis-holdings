@@ -1,4 +1,21 @@
+# robots.txt for Venturis Holdings LLC
+# https://venturisholdings.com
+
+# Allow all search engines full access to public content
 User-agent: *
 Allow: /
 
+# Prevent crawling of non-public paths (if they exist)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /system/
+Disallow: /api/
+Disallow: /temp/
+Disallow: /node_modules/
+Disallow: /dist/
+
+# Respectful crawl delay to reduce server load
+Crawl-delay: 10
+
+# Sitemap location
 Sitemap: https://venturisholdings.com/sitemap.xml
