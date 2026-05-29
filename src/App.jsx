@@ -11,6 +11,7 @@ import VenturisWheels from './pages/services/VenturisWheels'
 import VenturisTourism from './pages/services/VenturisTourism'
 import FAQs from './pages/FAQs'
 import Contact from './pages/Contact'
+import Careers from './pages/Careers'
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="services/tourism" element={<VenturisTourism />} />
         <Route path="faqs" element={<FAQs />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="careers" element={<Careers />} />
       </Route>
     </Routes>
   )
